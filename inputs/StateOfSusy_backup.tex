@@ -1,0 +1,983 @@
+\chapter{The Viability of SUSY: The pMSSM Interpretation}
+\label{sec:run1pmssm}
+CMS has a gamut of searches devoted to the exploration of the data for evidence of SUSY. To assess the impact of a representative set of these searches on the MSSM, an interpretation of a statistical combination of these results has been performed in the context of the pMSSM, taken as a proxy for the MSSM. 
+
+\section{Methods for the combination CMS analyses}
+\label{sec:anl}
+The purpose of this study is to assess how the current data constrain the MSSM using the more tractable pMSSM as a proxy.  We use the results from several CMS analyses, which cover a
+variety of final states, to construct posterior densities of model
+parameters, masses, and observables. The posterior density of the
+model parameters, which are denoted by $\theta$, is given by
+\begin{equation}
+	p(\theta|D^\textrm{CMS}) \propto L(D^\textrm{CMS} | \theta ) \, p^\textrm{non-DCS}(\theta),
+	\label{eq:posterior}
+\end{equation}
+where $D^\textrm{CMS}$ denotes the data analyzed by the direct CMS
+SUSY searches, $L(D^\textrm{CMS} | \theta )$ is the associated CMS
+likelihood that
+incorporates the impact of these direct CMS searches, and
+$p^\textrm{non-DCS}(\theta)$ is the prior density constructed from
+results not based on direct CMS SUSY searches (non-DCS results).
+%where $D^\textrm{CMS}$ denotes the CMS data, $L(D^\textrm{CMS} | \theta )$ the associated CMS likelihood, and $p^\textrm{non-DCS}(\theta)$ the prior density constructed from results other than those from direct CMS searches (DCS). 
+The posterior density for an observable $\lambda$ is obtained as follows,
+\begin{equation}
+	p(\lambda|D^\textrm{CMS}) = \int \delta[\lambda- \lambda^\prime(\theta)] \, p(\theta| D^\textrm{CMS}) \, d\theta,
+	\label{eq:lambda}
+\end{equation}
+where $\lambda^\prime(\theta)$ is the value of the observable as
+predicted by model point $\theta$. Equation \ref{eq:lambda} is approximated using Monte Carlo (MC) integration.  In the following, we describe the construction of the prior density and CMS likelihoods.
+
+\section{Construction of the prior}
+\label{sec:prior}
+If the posterior density for a given parameter differs significantly from its prior density (or prior, for short), then we may conclude that the data have provided useful information about the parameter; otherwise, the converse is true. However, for such conclusions to be meaningful, it is necessary to start with a prior that encodes as much relevant information as
+possible. In this study, the prior $p^\textrm{non-DCS}(\theta)$
+encodes several constraints: the parameter space boundary, some
+theoretical conditions, the chargino lifetimes, and most importantly
+the constraints from non-DCS data, such as precision measurements or pre-LHC new physics searches.
+
+The prior $p^\textrm{non-DCS}(\theta)$ is formulated as a product of four factors,
+\begin{align}
+	p^\textrm{non-DCS}(\theta) &\propto \left [ \prod_j L(D_j^\textrm{non-DCS} | \lambda_j(\theta)) \right] \,
+		\cdot p(c\tau(\tilde{\chi}^\pm) < \textrm{10mm}| \theta) \,
+		 \cdot p(\textrm{theory}|\theta) \,
+		 \cdot p_0(\theta).
+		\label{eq:prior}
+\end{align}
+The initial prior $p_0(\theta)$ is taken to be uniform in the pMSSM sub-space,
+\begin{eqnarray}
+	&-3 \le M_1, M_2 \le 3\TeV,& \nonumber\\
+	&0 \le M_3 \le 3\TeV,			& \nonumber\\
+	&-3 \le \mu \le 3\TeV,		& \nonumber\\
+	&0 \le m_{\rm A} \le 3\TeV,			& \nonumber\\
+	&2 \le \tan\beta \le 60,		& \nonumber\\
+	&0 \le m_{{\tilde{\text{Q}}_{1,2}}}, m_{{\tilde{\text{U}}_{1,2}}}, m_{{\tilde{\text{D}}_{1,2}}}, m_{{\tilde{\text{L}}_{1,2}}}, m_{{\tilde{\text{E}}_{1,2}}}, m_{{\tilde{\text{Q}}_3}}, m_{{\tilde{\text{U}}_3}}, m_{{\tilde{\text{D}}_3}},m_{{\tilde{\text{L}}_3}}, m_{{\tilde{\text{E}}_3}} \le 3\TeV,	& \nonumber\\
+	&-7 \le A_{\text{t}}, A_{\text{b}}, A_\tau \le 7\TeV,
+\label{eq:subspace}
+\end{eqnarray}
+and the formally unbounded 
+SM subspace defined by $m_{\rm t}$, $m_{\rm b}(m_{\rm
+  b})$, and $\alpha_{\rm s}(m_{\rm Z})$; the non-DCS measurements constrain these parameters within narrow ranges.  A point in this sub-space is denoted by $\theta$.
+The sub-space defined in Eqs. (\ref{eq:subspace}) 
+covers the 
+phenomenologically viable parameter space for the LHC and 
+is large enough to cover sparticle masses to which the LHC might
+conceivably be 
+ultimately sensitive.  The lower bound of 2 for $\tanb$ evades non-perturbative effects in the top-quark Yukawa coupling after evolution up to the GUT scale. These effects typically become a very serious issue for $\tanb\lsim 1.7$~\cite{Das:2000uk}.  
+%{\color{red} TODO: SK, JG - Add a note on the range of $A_i$}. 
+The term $p(\textrm{theory} | \theta)$  imposes the theoretical constraints listed at the end of Section~\ref{sec:pmssm}, while $p(c\tau(\tilde{\chi}^\pm)<10mm | \theta)$ imposes the prompt chargino constraint. Both  $p(\textrm{theory} | \theta)$ 
+and $p(c\tau(\tilde{\chi}^\pm)<10mm | \theta)$ are unity if the
+inequalities are satisfied and zero otherwise. 
+
+
+The product of likelihoods $L(D^\mpreCMS|\lambda(\theta))$ in
+Eq. (\ref{eq:prior}) over measurements $j$ is associated with \preCMS data $D^\mpreCMS$,
+which imposes constraints from precision measurements and a selection
+of pre-LHC searches for new physics.
+
+The data and their associated likelihoods are listed in Table~\ref{tab:preCMS}.
+To avoid introducing any bias from cosmological assumptions (e.g., dark matter density and distribution, assumption of one thermal relic, no late entropy production, etc.), we do not include data from dark matter experiments in the prior.  
+
+
+Since the explicit functional dependence of the prior $p^\textrm{non-DCS}(\theta)$ on
+$\theta$ is not available \emph{a priori}, but the predictions $\lambda(\theta)$ are available point by point, it is natural to represent the prior as set of points sampled from it.  Owing to the complexity of the parameter space, the sampling is done
+using a Markov chain Monte Carlo (MCMC) 
+method~\cite{MCMC1,MCMC2,MCMC3,MCMC4,Bayes:2}. 
+
+
+% The \preCMS data included in the prior are shown in
+% Table~\ref{tab:preCMS}.  All data except Higgs signal strenths $\mu_h$
+% were used in the original MCMC scan.  However, measurements marked
+% "reweight" in the last column were updated during this study, and the
+% scanned points were reweighted to take into account the updated
+% effects, as described in Appendix~\ref{sec:mcmcorigvars}, along with
+% the original measurement values. 
+
+All data in Table~\ref{tab:preCMS} except the Higgs boson signal strengths $\mu_{\rm h}$ were used in the
+original MCMC scan. The $\mu_{\rm h}$ measurements were incorporated into the prior post-MCMC.    
+A number of measurements, marked ``reweight"€™ in the last
+column, were updated during the course of this study as new results
+became available.  The weights, applied to the subset of scan points which were selected for simulation, were computed as the likelihood ratio of the new measurements shown in
+Table~\ref{tab:preCMS} to the previously available measurements.    
+%the original ones used in the MCMC sampling and the reweighting procedure are detailed in Appendix~\ref{sec:mcmcorigvars}. 
+
+For a given point $\theta$, the predictions $\lambda(\theta)$ --- including those needed
+to calculate the likelihoods $L(D^\mpreCMS|\lambda(\theta))$ --- are obtained as follows. 
+The physical masses and interactions are calculated 
+using the SUSY spectrum generator {\sc SoftSUSY } 3.3.1~\cite{Allanach:2001kg},
+with the input parameters $\theta$ defined at $m_{\rm SUSY}$. 
+This calculation includes 1-loop corrections for sparticle masses and mixings, 
+as well as 2-loop corrections for the small Higgs boson mass.
+Low-energy constraints are calculated with {\sc SuperIso}
+v3.3~\cite{Mahmoudi:2008tp}. {\sc micrOMEGAs} 2.4.5~\cite{Belanger:2001fz,Belanger:2004yn,Belanger:2008sj} is used 
+to check the compatibility of pMSSM points with direct detection cross section limits from LEP and other pre-LHC sparticle mass limits. {\sc micrOMEGAs} is also used to compute the dark matter relic density $\Omega_{\tilde{\chi}^0_1}h^2$ shown in Fig. \ref{fig:more1D_dm} (a). The program  {\sc SDECAY} 1.3~\cite{Muhlleitner:2003vg} is used to calculate sparticle decay tables and 
+{\sc HDECAY} 5.11~\cite{Djouadi:1997yw} to calculate Higgs boson decay tables.
+For evaluating the Higgs boson signal likelihood based on the latest ATLAS~\cite{ATLAS-CONF-2014-009}
+and CMS~\cite{Khachatryan:2014jba} measurements, we use {\sc Lilith} 1.01~\cite{Bernon:2014vta,Bernon:2015hsa}, following the approach
+explained in Section~2.3 of Ref.~\cite{Dumont:2013npa}. The experimental results used in {\sc Lilith} are the signal strengths
+of the Higgs boson decay modes $Y=(\gamma\gamma,\,{\rm WW}^*,\,{\rm ZZ}^*,{\rm
+  b}\bar {\rm b},\tau\tau)$ in terms of the primary Higgs boson production modes
+gluon-gluon fusion (ggF), vector boson fusion (VBF), associated
+production with a W or Z boson (Wh and Zh, commonly denoted as
+Vh), and associated production with a top-quark pair (t$\bar{\text{t}}$h) as
+published by ATLAS, CMS,
+and Tevatron experiments.
+When these signal strengths are given as 2-dimensional (2D) CL contours in, e.g., the
+$\lambda_{\rm ggF+tth}(Y)$ versus $\mu_{\rm VBF+Vh}(Y)$ plane, the
+likelihood is reconstructed by fitting a 2D Gaussian function to the 68\%~CL
+contour provided by the experiments.
+For each experiment, the likelihood is then given by $- 2 \log L_Y
+= \chi_Y^2$ for each decay mode $Y$, and the combined likelihood is
+then obtained by summing over all the individual $\chi_Y^2$ values.
+Additional information on signal strengths (and invisible decays) in
+one dimension is included analogously, using the published likelihood function
+when available or else the Gaussian approximation.
+ 
+The uncertainty in the anomalous magnetic moment of the muon includes a component that accounts for theoretical uncertainties in the SUSY calculations.
+
+The large window on the Higgs boson mass of 120--130 GeV covers the theoretical uncertainty in the Higgs boson
+mass calculation in the MSSM. All tools use the SUSY Les Houches accord~\cite{Skands:2003cj} for
+data entry and output.  Approximately 20 million points are sampled from $p^\textrm{non-DCS}(\theta)$ using multiple MCMC chains, but omitting the prompt chargino requirement. When that requirement is imposed, the number of sampled points is reduced by 30\%. A random subsample of 7200 points is selected for simulation studies. Given the large dimensionality of the model, this is a rather sparse scan. However, the scan density is sufficient to learn much about the viability of the pMSSM model space.
+
+
+
+\input{pMSSMpaper/preCMStable}
+
+
+\section{Incorporation of the CMS data}
+\label{sec:cmslhd}
+We consider the analyses given in Table~\ref{tab:CMS}, which explore final-state topologies 
+characterized by a variety of event-level observables:
+the scalar sum of the transverse momenta of jets (\HT{}); the magnitude of the vector sum of 
+the transverse momenta of final-state particles (\MET{} or \MHT{}); a measure of the transverse
+mass in events with two semi-invisibly decaying particles (\MTtwo{}); the multiplicity of b-tagged jets; and a
+range of lepton multiplicities, including opposite-sign (OS) and
+like-sign (LS) lepton pairs.  The searches together comprise hundreds of signal regions and address a large diversity of possible signal topologies.
+
+\input{pMSSMpaper/CMStable} 
+
+The CMS likelihoods $L(D^\mCMS|\theta)$ are calculated for each of these analyses (or combinations of analyses), using different forms of likelihood depending on the nature of the results that are available.
+The first form of likelihood (\emph{counts}) uses observed counts,
+$N$, and associated background estimates, $B \pm \delta B$; the second
+($\chi^2$) uses profile likelihoods, $T(\mu, \theta)$, where $\mu =
+\sigma / \sigma^\textrm{SUSY}(\theta)$ is the signal strength modifier
+and $\sigma$ and $\sigma^\textrm{SUSY}(\theta)$ are the observed and
+predicted SUSY cross sections, respectively; while the third
+(\emph{binary}) joins either of the first two kinds of result together
+with a signal significance measure $Z$, and is used for combining
+results from overlapping search regions. In the following, we describe the three forms of the
+likelihood used and the signal significance measure $Z$.
+
+%Details of these likelihoods and the signal significance measure are given in Appendix~\ref{sec:likelihoods}.
+
+\paragraph*{Counts likelihood}
+For a single-count analysis, the likelihood is given by  
+\begin{equation}
+L(D^\mCMS|\theta) = \int \textrm{Poisson}(N | s(\theta) + b) \, p(b|B, \delta B) db,
+\label{eq:lhd_counts}
+\end{equation}
+where $N$ is the observed count,
+$s(\theta)$ and $b$ are the expected number of signal and background counts, respectively,
+and $B \pm\delta B$ is the estimated number of background event counts and its uncertainty.
+The prior density for $b$, $p(b|B, \delta B)$, is modeled as a gamma density, 
+$\textrm{gamma}(x;\alpha,\beta) = \beta \exp(-\beta x)  (\beta x)^{\alpha-1}/\Gamma(\alpha)$,
+with $\alpha$ and $\beta$ defined such that the mode and variance of the gamma density are  $B$ and $(\delta B)^2$, respectively. 
+%This likelihood provides an accurate description of statistical uncertainties and
+%describes systematic uncertainties in an approximative way.
+For analyses that yield multiple independent counts, the likelihood is
+the product of the likelihoods of the individual counts. For analyses
+with multiple counts, we neglect the correlations between
+the background predictions for the different search regions.  Systematic effects on the signal counts are taken into account by varying the signal yield by multiplying it with a signal strength modifier $\mu$ with values $1-\delta\mu, 1, 1+\delta\mu$, where $\delta\mu$ is the fractional value of the systematic uncertainty.
+
+\paragraph*{$\chi^2$ likelihood}
+This likelihood is used for CMS searches that provide profile
+likelihoods, $T(\mu,\theta) \equiv
+L(D^\mCMS|\mu,\theta,\hat\nu(\mu,\theta))$, for the signal strength
+modifier $\mu$, where $\nu$ represents the nuisance parameters and
+$\hat\nu(\mu,\theta)$ their conditional maximum likelihood
+estimates. Taking $\hat\mu$ to be the signal strength modifier that
+maximizes $T(\mu,\theta)$, it can be shown that the quantity $t =
+-2\ln\left[T(1,\theta)/T(\hat\mu,\theta)\right]$ follows a $\chi^2$
+density with one degree of freedom in the
+asymptotic limit~\cite{Wilks:1938dza},
+\begin{eqnarray}
+L(D^\mCMS|\theta) & = &\exp(-t/2) / \sqrt{2\pi t}, 
+  ~\label{eq:lhd_chi2}
+\end{eqnarray}
+which we adopt as the CMS likelihood in this case. Systematic uncertainty in the signal yield can again be incorporated by varying the value of $\mu$.
+%This likelihood provides a good description of systematic and statistical uncertainties.
+
+\paragraph*{$Z$-significance}
+This study uses a signal significance measure defined by 
+\begin{align}
+  Z(\theta) = \textrm{sign} [\ln B_{10}(D, \theta )] \sqrt{2 | \ln B_{10}(D, \theta )|} ,
+  \label{eq:Zsingle}
+\end{align}
+where 
+\begin{equation}
+  B_{10}(D, \theta) = \frac{L(D | \theta, H_1)}{L(D | H_0)} 
+  \label{eq:B10}
+\end{equation}
+is the local Bayes factor for data $D$, at point $\theta$, and $L(D | \theta, H_1)$ and $L(D  | H_0)$
+are the likelihoods for the signal plus background ($H_1$) and background only ($H_0$) hypotheses, respectively.  The function $Z(\theta)$ is a signed Bayesian analog of the frequentist ``$n$-sigma".
+The case $Z \gg 0$ would indicate the presence of a signal 
+at a significance of $Z$ standard deviations, while the case $Z \ll 0$ would indicate the absence of signal, i.e., an \emph{exclusion} at a significance of $Z$ standard deviations.  The $Z$-significance is the basis of the binary likelihood.
+
+\paragraph*{Binary likelihood}
+This likelihood is used for combining results from search regions in
+which data may not be independent, for example, multiple counts from
+overlapping search regions.  We first divide the data into subsets for
+which either a count or $\chi^2$ likelihood can be calculated.  For
+each subset $j$, with data $D_j$, we compute $Z_j(\theta)$ using Eq. 
+(\ref{eq:Zsingle}).  An overall significance measure that includes all subsets under consideration is defined by
+\begin{equation}
+  Z(\theta) \equiv  Z_{j\rm max}(\theta),
+  \label{eq:Zmulti}
+\end{equation}
+where $j$max is the index of the maximum element in the set \{$|Z_j(\theta)|$\}.
+This quantity is used to define the binary likelihood as follows,
+\begin{equation}
+  L(D^\mCMS|\theta) =
+  \begin{cases}
+    1 & \text{if } Z(\theta) > -1.64, \\
+    0 & \text{if } Z(\theta) \leq -1.64,
+  \end{cases}
+  \label{eq:lhd_binary}
+\end{equation}
+where $Z(\theta) =-1.64$ corresponds to the frequentist threshold for
+exclusion at the 95\% confidence level (CL). Systematic uncertainties are incorporated by computing each $Z_j(\theta)$ by varying the value of $\mu$, and using these recalculated $Z_j(\theta)$ to compute the binary likelihood.  
+Although use of the binary likelihood entails a loss of information, it is a convenient approach in cases of non-disjoint data, where a proper likelihood calculation is not feasible without more information.  In this study, we use binary likelihoods for monojet searches, which have overlapping search regions, and for combining the 7 TeV, 8 TeV, and 7$+$8 TeV results, where the considered analyses use nondisjoint data.
+
+In order to compute likelihoods and $Z$-significances,  expected signal counts for
+the search regions of every analysis under consideration were computed
+for the 7200 pMSSM points.  The individual CMS analysis teams
+provided these counts by analyzing simulated signal events that were generated using {\sc pythia} 6.4~\cite{Sjostrand:2006za} and processed with the CMS fast detector simulation program~\cite{Abdullin:2011zz}.  
+For each pMSSM point, 10\,000 events were simulated.  
+
+
+
+\section{Results}
+We present the results of our study using three
+different approaches to assess what we have learned about the pMSSM.  In the first approach, we compare the distributions of the $Z$-significances.
+In the second approach, we compare the prior and posterior densities of the pMSSM parameters.
+In the third approach, we use a measure of the parameter space that remains after inclusion of the CMS search results.  This measure, the survival probability in a region $\Theta$ of the pMSSM parameter space, is defined by
+\begin{equation}
+  \frac{\int_\Theta p(\theta)H(Z + 1.64)d\theta}{\int_\Theta p(\theta) \, d\theta},
+\end{equation}
+where $p(\theta)$ is the posterior density, $H$ is the
+Heaviside step function with a threshold value $Z = -1.64$, which
+again is the threshold for exclusion at the 95\% CL. 
+
+%%%%%%%%%%%%%%%%%%
+% Z
+%%%%%%%%%%%%%%%%%%
+\section{Global signifiance}
+Distributions of $Z$-significance are shown in Fig. \ref{fig:Z} for all the CMS
+searches included in this study: 8\TeV searches, combinations of 7\TeV searches, and combinations of
+7$+$8\TeV searches. The farther a $Z$ distribution is from zero, the
+greater the impact of the analysis on the pMSSM parameter space.   As
+noted in Section \ref{sec:anl}, negative and positive values indicate a preference for the background only ($H_0$) and the signal plus background ($H_1$) hypotheses, respectively.
+
+All 8\TeV searches lead to distributions with negative tails,
+indicating that each disfavors some region of the parameter space.
+The searches making the greatest impact are the \HT{}$+$\MHT{} and \MTtwo{}
+searches, which disfavor a significant portion of the parameter space.
+The \MTtwo{}, \HT{}$+$\MET{}$+b$-jets, EW, and OS dilepton searches,
+which yield modest excesses over the SM predictions, have
+$Z$-significances up to 4. This indicates that
+the data are more consistent with small regions of the pMSSM space than with the SM.
+
+As expected, the combined 7$+$8\TeV result has a greater impact than any individual analysis. 
+Overall, the impact of the 7\TeV combined result is relatively small as indicated by the high peak around zero.  The dip around zero in the combined 7$+$8\TeV distribution arises from the way we combine $Z$-significances. As expressed in Eq.~(\ref{eq:Zmulti}), the maximum $Z$-significance values are used in the combination.
+
+%{\color{red} SS: Should we say something quantitative about what percent of the pMSSM space is excluded, etc here? {\color{blue} HP: No! This may open a can of worms!}}
+
+\begin{figure}[t]
+\centering
+\resizebox{0.8\linewidth}{!}{
+  \begin{tabular}{c}
+  \incfigNum{(a)}{inclusive.pdf}
+  \incfigNum{(b)}{hadExcl.pdf} \\
+  \incfigNum{(c)}{leptonic.pdf} 
+  \incfigNum{(d)}{combined.pdf}
+  \end{tabular}
+}
+\vspace{1mm}
+\caption{The $Z$-significance distributions for the individual 8\TeV searches (a-c), and for 7\TeV combined and 7$+$8\TeV combined searches (d). The leftmost bin contains the underflow entries.}
+\label{fig:Z}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%
+% gluino mass
+%%%%%%%%%%%%%%%%%%
+\section{Impact on parameters}
+Figure \ref{fig:mg} shows the impact of the CMS searches on our
+knowledge of the gluino mass. Figures \ref{fig:mg} (a)-(d) show marginalized
+distributions of the gluino mass.  Posterior distributions obtained
+using three  signal strength modifier values $\mu = 0.5, 1.0, 1.5$
+illustrate the effect of a $\pm50$\% systematic uncertainty in the
+predicted SUSY cross sections.  Figure \ref{fig:mg} (a) shows the strong impact of
+the inclusive analyses on the gluino mass distribution.  The
+\HT{}$+$\MHT{} search strongly disfavors the region below 1200\GeV,
+while the \MTtwo{} search leads to a distribution with two preferred
+regions, one at relatively low mass, around 600 to 1000\GeV, and one
+above 1200\GeV.  In Fig. \ref{fig:mg} (b) we observe that the other hadronic
+analyses also disfavor the low-mass region, though to a lesser degree,
+ and two of these analyses (the \HT{}$+$\MET{}$+$b-jets and the
+ hadronic third generation) also exhibit secondary
+ preferred regions around 1100\GeV, while Fig. \ref{fig:mg} (c) shows that the leptonic
+ analyses have little impact on the gluino mass distribution.
+Figure \ref{fig:mg} (d) compares the  prior distribution to posterior distributions after inclusion of the combined 7\TeV and combined 7$+$8\TeV data.  The 7\TeV data already strongly disfavor the low-mass region, a conclusion that is strengthened 
+after adding the 8\TeV data.  The enhancements induced by the hadronic
+searches in the 800\textendash1300\GeV range disappear in the combination
+since the observed excesses driving the enhancements are not
+consistently predicted by a single point or group of points.
+%The binary likelihood combination results in an ascending probability density.
+%{\color{red} HP: It is not clear what point we wish to make with the last sentence}.
+%This is consequence of the important drawback, loss of information, of the binary likelihood method used to calculate the CMS likelihood for the distributions for combinations of CMS searches.
+
+
+\begin{figure}[t]
+    \sixpackNum{mg}
+\vspace{1mm}
+    \caption{\captionOneD{gluino mass}{gluino mass}}
+    \label{fig:mg}
+\end{figure}
+
+Figure \ref{fig:mg} (e) shows the survival probability as a function of gluino mass
+for the combined 7\TeV, and 7$+$8\TeV results. 
+The CMS searches exclude all the pMSSM points we have considered with a gluino mass below 500\GeV, and can probe scenarios up to the highest masses covered in the scan.  Of course, masses of order 3\TeV are not probed directly but rather through the production of lighter particles in the model.   
+Finally, Fig. \ref{fig:mg} (f) shows the $Z$-significance versus gluino mass.  A
+slight negative correlation for positive $Z$ values and gluino masses
+is observed below 1200\GeV; $Z$ declines slightly as mass
+increases, which indicates that some small excesses of events observed by the various searches are consistent with models with light gluinos.  
+
+%%%%%%%%%%%%%%%%%%
+% squark LCSP mass
+%%%%%%%%%%%%%%%%%%
+
+Figures \ref{fig:mq} and~\ref{fig:mLCSP} similarly summarize the impact
+of searches on the first- and second-generation right-handed up squark mass and the mass of the lightest colored SUSY particle (LCSP), respectively.  The picture is similar to that for the gluino mass.  For both $\suL$ and the LCSP, the \MTtwo{} search shows a preference for masses from 500 to 1100\GeV.  The overall impact of the searches on $\suL$ is less than the impact on the gluino mass owing to the more diverse gluino decay structure that can be accessed by a greater number of searches.  For the LCSP, the overall impact is the least  because the LCSP has the fewest decay channels; nevertheless CMS searches can conclusively exclude cases with LCSPs below 300\GeV.  We also see that the searches can be sensitive to scenarios with LCSP masses up to $\sim$1500\GeV.  Again we find that the
+Higgs boson results  make a negligible contribution. In each case we find a negative correlation between the $Z$-significance and the sparticle mass for positive $Z$ values and masses below 1200 GeV; this is most pronounced for the LCSP.
+
+\begin{figure}[t]
+    \sixpackNum{muL}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\suL$ mass (equivalently, the $\scL$ mass)}{$\suL$ mass}}
+    \label{fig:mq}
+\end{figure}
+
+\begin{figure}[t]
+    \sixpackNum{mLCSP}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{mass of the lightest colored SUSY particle (LCSP)}{LCSP mass}}
+    \label{fig:mLCSP}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% stop mass
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Figure \ref{fig:mt1} illustrates what information has been gained about the mass of the lightest top squark $\stl$.   
+The difference between the prior and posterior distributions is minor. The reason is that 
+ the measurements of the b $\to$ s $\gamma$ branching fraction (see 
+Table \ref{tab:preCMS}) impose much stronger constraints on the mass of the  $\stl$
+than do the LHC data. This highlights the
+importance of using a prior that encodes as much experimental information as possible in order to arrive at
+a meaningful assessment of the
+added value of data from the LHC.
+The exception to the statement about the $\stl$ is the posterior distribution for the \MTtwo{} search which, relative to the \preCMS distribution, has a preference for low $\stl$ masses. 
+% {\color{red} HP - unclear what point is being made: The survival probability shows this to be rather independent of the $\stl$ mass}. 
+ In the distribution of the top squark mass versus $Z$, the positive $Z$ values have a slight negative correlation with the $\stl$ mass below 1200\GeV. The overall conclusion is that light top squarks with masses of the order of 500\GeV cannot be excluded.
+ 
+\begin{figure}[t]
+    \sixpackNum{mt1}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\stopi$ mass}{$\stopi$ mass}}
+    \label{fig:mt1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% mz1 and mLNDw
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Turning now to the EW sector, we first show, in
+Fig. \ref{fig:mz1}, the effect of the CMS data on our knowledge of the
+mass of the lightest neutralino $\chiz$.  We see that the hadronic
+inclusive searches disfavor low $\chiz$ masses; the hadronic
+searches targeting specific topologies also have an effect, although
+smaller, and the leptonic searches have a marginal impact.  The
+7$+$8\TeV combined distribution is very similar to the \MTtwo{}
+distribution, especially in the lower mass region, making this the
+search most sensitive to the $\chiz$ mass.  The
+significant impact on the $\chiz$ mass is indirect.  Since $\chiz$ is
+the LSP, its mass is constrained by the masses of
+the heavier sparticles.  As CMS searches push the probability
+distributions for the colored particles to higher values, more phase
+space opens for $\chiz$ and the $\chiz$ distributions shift to higher
+values.  The survival probability distribution shows that no $\chiz$
+mass is totally excluded at the 95\% CL by CMS.  In general, the nonexcluded points with light $\chiz$ are those with heavy colored sparticles.  The fact that the survival probability decreases below a $\chiz$ mass of $\sim$700\GeV shows that CMS searches are sensitive up to this mass value.
+%{\color{red} Question from JG: What is the definition of sensitive, and why 700\GeV?}
+The Higgs boson data disfavor neutralino masses below about 60\GeV, that is,
+the mass range in which invisible decays
+$h\to\tilde\chi^0_1\tilde\chi^0_1$ could occur; this is visible in the
+first bin in Fig. \ref{fig:mz1} (d) (See Ref.~\cite{Bernon:2014vta}).
+
+\begin{figure}[t]
+    \sixpackNum{mz1}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\chiz$ mass}{$\chiz$ mass}}
+    \label{fig:mz1}
+\end{figure}
+
+
+In the MSSM, the lightest chargino becomes degenerate with the lightest neutralino for the condition 
+$|M_1| \geq \min(|M_2|,|\mu|)$.  
+Therefore, we define the lightest non-degenerate (LND) chargino
+chargino as
+\begin{equation}
+    \mathrm{LND~}{\chi^\pm} =
+    \begin{cases}
+        \tilde{\chi}^\pm_1 & \mbox{if~~~} |M_1| < \min(|M_2|,|\mu|) \\
+        \tilde{\chi}^\pm_2 & \mbox{if~~~} |M_1| > \min(|M_2|,|\mu|).
+    \end{cases}
+\end{equation}
+Figure \ref{fig:mLNDw} summarizes what information has been gained about the mass of the 
+LND chargino. 
+%{\color{red} SS: Sabine or Jack, is the LND content ok?}.
+Again, the impact of the CMS searches is found to be rather limited and no chargino mass
+can be reliably excluded.
+%We note the rather limited impact of the CMS data.
+It is worth noticing the impact of the leptonic searches.
+In Fig. \ref{fig:mLNDw} (c), the distributions differ from the \preCMS distribution,
+while these searches have negligible impact on most of the other  SUSY observables and parameters considered in this study. We also note that the survival probability is lowest in the first bin where LND mass is between 0 and 200\GeV, but a small percentage of points still survive.
+
+\begin{figure}[t]
+  \sixpackNum{mLNDw}
+  \vspace{1mm}
+  \caption{\captionOneDReduced{the mass of the lightest non-degenerate (LND) chargino}{LND $\widetilde{\chi}^\pm$ mass} }
+  \label{fig:mLNDw}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% xsect
+%%%%%%%%%%%%%%%%%%%%%%%
+
+A more generic view is  possible by looking at the overall CMS impact on the inclusive SUSY production cross section for 8\TeV, which is shown in Fig. \ref{fig:xsect}. 
+Before adding the CMS results, the most probable cross section is
+around 100\,$\fb$; the effect of the CMS SUSY searches is to reduce this
+value by an order of magnitude.  The inclusive \HT{}$+$\MHT{} search
+has the largest individual contribution to this because of its ability to address a great diversity of final states comprising different sparticle compositions.  The survival probability distribution confirms that CMS is sensitive to SUSY scenarios with total cross sections as low as 1\,$\fb$.  The cross section is the variable found to correlate most strongly with the
+$Z$-significance, so we conclude that the cross section is the observable to which the analyses are most sensitive.  The $Z$ values above $\sim$1\,$\fb$ are all nonzero, which implies that CMS data are capable of making an impact above that value.
+
+%\sigma^{8\TeV}_{\rm SUSY}
+\begin{figure}[t]
+    \sixpackNum{log10_xsect_8TeV}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{the logarithm of the cross
+        section for inclusive sparticle production in 8~TeV pp
+        collisions, $\log_{10}(\sigma^{8\TeV}_{\rm SUSY})$,}{$\log_{10}(\sigma^{8\TeV}_{\rm SUSY})$}}
+    \label{fig:xsect}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% more 1D
+%%%%%%%%%%%%%%%%%%%%%%%
+
+In Fig. \ref{fig:more1D}, the  \preCMS and post CMS distributions are
+compared after 7 and 7$+$8\TeV data for several other important
+observables.  We first note that the impact of the CMS data on the
+first and second generation right-handed up squarks is lower than on the
+corresponding left-handed up squarks. This is because left-handed up squarks in
+the MSSM form doublets with mass-degenerate left-handed down squarks, while
+the right-handed up and down squarks are singlets and their
+masses are unrelated.  Therefore, for the left-handed up squarks, the CMS
+sensitivity for a given mass is increased by the left-handed down squarks,
+which have the same mass.  We also observe a mild impact on the bottom
+squark mass, where CMS disfavors masses below 400\GeV.  The CMS
+searches also have some sensitivity to the selectron and stau masses,
+which comes from the leptonic searches.  The impact on $\chitz$ and
+$\chipm$ masses is relatively larger, mostly due to the dedicated EW
+analyses. The CMS SUSY searches have no impact on the masses of the light and heavy pseudoscalar Higgs
+bosons. The preference of the Higgs data for negative values of the higgsino mass parameter $\mu$ comes primarily from the fact that the measured signal 
+strength normalized to its SM value for Vh$\to$b$\bar{\text{b}}$ (where V is a W or a Z boson) is currently slightly below one. In a SUSY model, this requires that radiative corrections reduce the bottom Yukawa coupling, thereby creating a preference for $\mu<0$~\cite{Dumont:2013npa}. The $\tan\beta$ distribution is largely unaffected by both the CMS SUSY searches and the current Higgs boson data evaluated via {\sc Lilith} 1.01. 
+
+We also investigate the effect of CMS searches on some observables
+related to dark matter related. Figure \ref{fig:more1D_dm}  shows distributions of the
+dark matter relic density, the spin-dependent (SD) direct detection cross section,
+and spin-independent (SI) direct detection cross section. 
+%{\col{red} TODO - SS: Sabine, I leave this to you.}
+
+\begin{figure}[p]
+\centering
+\makebox[.33\textwidth][c]{
+\incfigNum{(a)}{combined_higgs/combined_higgs_muR_rebin.pdf}
+\incfigNum{(b)}{combined_higgs/combined_higgs_mb1_rebin.pdf}
+\incfigNum{(c)}{combined_higgs/combined_higgs_meL_rebin.pdf}
+}\\
+\makebox[.33\textwidth][c]{
+\incfigNum{(d)}{combined_higgs/combined_higgs_mtau1_rebin.pdf}
+\incfigNum{(e)}{combined_higgs/combined_higgs_mz2_rebin.pdf}
+\incfigNum{(f)}{combined_higgs/combined_higgs_mw1_rebin.pdf}
+}\\
+\makebox[.33\textwidth][c]{
+\incfigNum{(g)}{combined_higgs/combined_higgs_mu.pdf}
+\incfigNum{(h)}{combined_higgs/combined_higgs_tanb_rebin.pdf}
+\incfigNum{(i)}{combined_higgs/combined_higgs_mA_pole_rebin.pdf}
+}
+\vspace{1mm}
+\caption{Comparison of prior and posterior distributions after several combinations of data from the CMS searches for the
+$\suR,\scR$ mass, $\sb_{1}$ mass, $\seL,\smuL$ mass, $\stauOne$ mass, $\chitz$ mass, $\chipm$ mass, the higgsino mass parameter $\mu$, $\tanb$, and $A$ mass.}
+\label{fig:more1D}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  \makebox[.33\textwidth][c]{
+  \incfigNum{(a)}{combined_higgs/combined_higgs_log10_omgh2_rebin.pdf}
+  \incfigNum{(b)}{combined_higgs/combined_higgs_log10_sigSD_rebin.pdf}
+  \incfigNum{(c)}{combined_higgs/combined_higgs_log10_sigSI_rebin.pdf}}\\
+        \vspace{1mm}
+    \caption{Comparison of prior and posterior distributions after several
+  combinations of data from the CMS searches for $\Omega_{\tilde{\chi}^{0}_{1}}$, $\xi\sigma^{\text{SD}}(p\tilde{\chi}_{1}^{0})$, and $\xi\sigma^{\text{SI}}(p\tilde{\chi}_{1}^{0})$.}
+    \label{fig:more1D_dm}
+\end{figure}
+
+
+\section{Correlations among pMSSM parameters}
+A virtue of high-dimensional models like the pMSSM is that they
+enable the examination of correlations among parameters not 
+possible in the context of more constrained models.
+
+Figure \ref{fig:twoD} compares marginalized distributions in 2-dimensions of \preCMS (left) to post-CMS distributions (middle), and also shows the post-CMS to \preCMS survival probability (right) for several observable pairs.  The first two rows show that the CMS impact on our knowledge of 
+the $\chiz$ mass is strongly correlated with the gluino or the LCSP mass.  Since $\chiz$ is the LSP,  light colored particles imply a light $\chiz$.
+% and therefore the exclusion of scenarios with light colored particles.  
+Consequently, since colored particles are more dominant in the pMSSM than in constrained models, the disfavoring of light colored sparticles implies the disfavoring of a light $\chiz$.  In the last row, we see that the $\chiz$ mass is correlated most strongly with the cross section and that  light $\chiz$ LSPs are indeed disfavored for the reason just given.  
+We note, however, that scenarios with $\chiz$ masses around 100\GeV
+can still survive even though they have cross sections above 1\,pb.
+In the third row, we show the probability distributions and survival
+probability for $\chiz$ versus $\stl$ mass.  Here we see that, although the
+post-CMS probabilities shift towards higher values, the survival
+probabilities never really go down to zero.  Although current SMS
+scenarios exclude large parts of the $\stl$-$\chiz$ plane, we see that
+pMSSM scenarios with relatively low $\stl$ masses (500\GeV) are
+not significantly disfavored by the CMS searches considered. This is attributed to the fact that top squarks in
+the full model are allowed to decay in a variety of ways, whereas a given SMS model assumes the top squarks decay with 100\% probability through a single mode, typically $\stl\to$ t$\chiz$. 
+
+\begin{figure}[p]
+  \centering
+  \figTwoD{mg_rebin_VS_mz1_rebin}\\
+  \figTwoD{mLCSP_rebin_VS_mz1_rebin}\\
+    \figTwoD{mt1_rebin_VS_mz1_rebin}\\
+  \figTwoD{log10_xsect_8TeV_rebin_VS_mz1_rebin}
+\vspace{1mm}
+  \caption{Marginalized \preCMS distributions (first column),
+    compared with posterior distributions (second column)
+    and survival probabilities (third column) after inclusion of all CMS data,
+    are shown for the
+    $\chiz$ mass versus gluino mass (first row), the LCSP mass
+    (second row), the top squark mass (third row),  and the
+    logarithm of the cross section for inclusive sparticle production at 8\TeV (bottom row).
+  }
+  \label{fig:twoD}
+\end{figure}
+
+Studies were carried out to assess how the conclusions would change if a 
+different choice of initial prior had been made. A log-uniform prior ($p_0(\theta)$ in Eq. \ref{eq:prior}) was found to yield posterior densities very similar to those from the nominal uniform prior. The most significant exception is that 
+the densities for the masses of the $\chiz$ and  $\chipm$ were shifted 10-20\% 
+toward higher values with respect to the densities derived from the
+uniform prior. It was found that the marginalized 
+likelihood distributions are consistent with the profile likelihoods, suggesting that a 
+frequentist analysis based on the profile likelihoods would yield similar conclusions.
+
+
+
+
+
+\section{Change of prior}
+Whatever the provenance of a prior (elicited or formal) there will be some parameterization in which the prior density is constant (that is, uniform or flat). The difficult question to answer is: in which parameterization is the prior density constant? In the pMSSM paper, the hr-prior is taken to be uniform prior density in a physically motivated parameterization. However, \emph{a priori} it is not clear that this
+is the parameterization in which the prior should be flat.  
+Foregoing a discussion of how this parameterization is to be found,   we examine how our results change with a toggling of the choice of ur-prior. 
+
+Figures \ref{fig:mg}-\ref{fig:mApole} show the prior and posterior density projections onto a suite of parameters presented in the paper, given the choice of a flat prior (red) and a prior proportional to the product of the log of each parameter (blue), which we refer to as the ``log" prior. The main conclusions of the paper stand with respect to this change, namely that:
+\begin{itemize}
+\item pMSSM points with gluino masses below 500 GeV are excluded, but a small number points with 550 GeV gluinos survive (Fig. \ref{fig:mg});
+\item the probability density of the light top squark mass is not significantly shifted by the CMS analyses considered (Fig. \ref{fig:mt1});
+\item no LSP mass can be excluded (Fig. \ref{fig:mz1}), and
+\item the MPV of the signal cross section has been pushed down by a factor of 10 (Fig. \ref{fig:xsect8TeVpb}).
+\end{itemize}
+The posterior MPVs for most parameters agree within 5\% between the flat and log priors. The most significant difference is in the impact on the LSP mass, where the log prior prefers slightly larger values of the LSP mass (Fig. \ref{fig:mz1}). This is because the LSP in general exhibits a high density in the low mass region, and this region is suppressed due to the log Jacobian.  The result is that the bulk of the prior and posterior is shifted down.
+
+
+\begin{figure}[h]
+\centering
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mgprepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mgratio.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/muLprepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/muLratio.pdf}
+
+}
+\caption{Left: posterior/prior of mg (top) and muL (bottom). Right: Ratio of the posterior to the prior of mg (top) and muL (bottom).}
+\label{fig:mg_muL}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/muRprepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/muRratio.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mt1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mt1ratio.pdf}
+
+}
+\caption{Left: posterior/prior of mg (top) and muL (bottom). Right: Ratio of the posterior to the prior of mg (top) and muL (bottom).}
+\label{fig:mg_muL}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mz1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mz1ratio.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mb1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mb1ratio.pdf}
+
+}
+\caption{Left: posterior/prior of mg (top) and muL (bottom). Right: Ratio of the posterior to the prior of mg (top) and muL (bottom).}
+\label{fig:mg_muL}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/Ml1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/Ml1ratio.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mtau1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mtau1ratio.pdf}
+
+}
+\caption{Left: posterior/prior of mg (top) and muL (bottom). Right: Ratio of the posterior to the prior of mg (top) and muL (bottom).}
+\label{fig:mg_muL}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mw1prepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mw1ratio.pdf}
+}\\
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mApoleprepost.pdf}
+}
+\subfloat[]{
+\includegraphics[width=0.5\linewidth]{figures/pMSSMpaper/Prior/mApoleratio.pdf}
+}
+\caption{Left: posterior/prior of mg (top) and muL (bottom). Right: Ratio of the posterior to the prior of mg (top) and muL (bottom).}
+\label{fig:mg_muL}
+\end{figure}
+
+
+\newpage
+%\FloatBarrier
+\section{Profile vs Marginal likelihoods}
+Experience suggests that when profile and marginal likelihoods are in approximate agreement, the conclusions obtained via frequentist and Bayesian methods  approximately agree. Therefore, it is
+instructive to examine the profile likelihoods. To do so, 
+we construct a smooth analytic expression for the 19-D non-DCS likelihood. The non-DCS likelihood can be factorized as a separable component equal to the product of 19 1-D functions, and a correction function that accounts for the statistical dependencies among parameters, which, for simplicity, we shall refer to using the slightly imprecise term ``correlation":
+\begin{equation}
+P(D^{\rm non\textendash DCS}|\vec{\theta}\ ) = {\rm C}(\vec{\theta}\ ) \cdot \prod_{i}^{19}f(\theta_{i}),
+\label{eq:Likelihood}
+\end{equation}
+where $\vec{\theta}$ is a vector of the 19 pMSSM parameters of which $\theta_i$ is the $i$th element, the $f(\theta_{i})$ functions are the 1-D non-DCS marginal likelihoods,
+\begin{equation}
+f(\theta_i) = \int_1 d\theta_1 \cdots \int_j d\theta_j \cdots P(D^{\rm non\textendash DCS}|\vec{\theta}\ ) \, \pi_F(\vec{\theta}\ ) \quad j \neq i,
+\end{equation}
+ using a flat ur-prior, $\pi_F(\vec{\theta}\ )$, and C($\vec{\theta}$\ ) encodes the correlations between the pMSSM parameters induced by the non-DCS measurements and constraints. 
+
+The 1-D functions, $f(*)$, are estimated using TMVA regression methods. For each regression, the swarm of points that constitute a discretized approximation to the non-DCS likelihood is projected onto a single pMSSM parameter, forming a 1-D histogram. The heights of the histogram bins are taken as the target, and the centers of the bins are taken as the input variable. A multi-layer perceptron (MLP) is trained using the call \texttt{TMVA::Factory::BookMethod}
+\begin{quote}
+\texttt{factory.BookMethod( TMVA.Types.kMLP, "MLP",\\
+        `!H:!V:VarTransform=Norm:NeuronType=tanh:NCycles=5000:\\
+        HiddenLayers=N+5,N+2:TestRate=6:TrainingMethod=BFGS:Sampling=0.2:'+\\
+        `SamplingEpoch=0.985:ConvergenceImprove=1e-6')}\\
+\end{quote}
+The resulting $f(\theta_i) \equiv$ MLP($\theta_i$) functions are shown in Figures \ref{fig:KdeMlp}, along with the target histograms. The MLP approximations are seen to be reasonable.
+
+The correlation function C($\theta$) is estimated using a multivariate classifier whose training sample consists of ``signal" events corresponding to the original scan points, and ``background" events consisting of pseudo-data generated from a sampling of the separable regression product. The classifier is an MLP whose output (see Figure \ref{fig:Classifier}) can be interpreted generally as
+\begin{equation}
+D = \frac{p(\vec{\theta} | {\rm s})}{p(\vec{\theta} | {\rm s})+p(\vec{\theta} | {\rm b})},
+\end{equation}
+given that the training was performed with equal numbers of signal (s) and background (b) events. In our case, the output is
+\begin{equation}
+D = \frac{p(D^{\rm non-DCS}|\vec{\theta}\ )}{p(D^{\rm non-DCS}|\vec{\theta}\ )+ \prod_{i}^{19}f(\theta_{i})}.
+\label{eq:MLP}
+\end{equation}
+Rearranging Eq.(\ref{eq:MLP}) gives
+\begin{equation}
+P(D^{\rm non\textendash DCS}|\vec{\theta}\ ) = \frac{D}{1-D}\prod_{i}^{19}f(\theta_{i}),
+\label{eq:Like}
+\end{equation}
+and the correlation function (Eq.(\ref{eq:Likelihood})) is identified as
+\begin{equation}
+{\rm C}(\vec{\theta}\ ) = \frac{D}{1-D}.
+\end{equation}
+The 1-D profile likelihoods were derived by maximizing Equation \ref{eq:Like} with respect to the $n-1=18$ parameters. 
+
+Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likelihoods are given in Figures \ref{fig:PandP1}-\ref{fig:PandP4}.  The comparison shows, general agreement to within $\sim$10\%, with a couple of exceptions. The first notable difference is in the bino mass Lagrangian parameter $M_1$, where the profile likelihood is relatively enhanced at large absolute values of $M_1$. If the LSP is bino-like,  confidence levels (CLs) based on the posterior densities would tend to under-exclude LSP masses; however, no LSP mass is excluded by the Z-significance, and so this does not alter the statement about LSPs made in the paper. The difference in distributions for the Higgsino mass parameter $\mu$ is due to a bug in the fitter. Finally, the trilinear coupling $A_t$ appears to have a roughly 30\% enhancement in the negative region for the likelihood with respect to the marginal likelihood. However, the paper makes no explicit statement about the impact of CMS analysis on the trilinear couplings. The otherwise general similarity of the two sets suggests that a frequentist analysis based on the profile likelihoods would yield conclusions consistent with those in the pMSSM paper.  The Z-significance is a mapping of the Bayes factor that very roughly maps to a frequentist n-sigma, the only difference being that rather than maximizing the likelihood to eliminate nuisance parameters, the likelihood is marginalized. 
+
+\newgeometry{left=0.1cm,bottom=0.0cm, right=0.1cm,top=1.0cm}
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\begin{figure}[htbp]
+\centering
+\hspace{-2mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_M1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_M2}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_M3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_mu}
+}
+\hspace{-8mm}
+\subfloat[]{   % ???
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_mA_pole}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_tanb}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mq1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mq3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mu1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mu3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Md1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Md3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Ml1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Ml3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mr1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Mr3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_At}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Ab}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=55mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Al}
+}
+\caption{The results of the 19 MLP regressions on the pMSSM parameters. }
+\label{fig:KdeMlp}
+\end{figure}
+\restoregeometry
+
+
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.6\linewidth]{figures/pMSSMpaper/Prior/CompareFrequentist/figpmssmnettrain}
+\caption{The output of the MLP used to derive the correction function. The red distribution is the original set of pMSSM points and the blue distribution is the set generated by a random sampling of the separable likelihood function. }
+\label{fig:Classifier}
+\end{figure}
+
+\newgeometry{left=0.1cm,right=0.1cm}
+\begin{figure}[h]
+\centering
+\subfloat[]{
+  \includegraphics[width=0.9\linewidth]{figures/pMSSMpaper/Prior/CompareFrequentist/ParCorCorrFunction.pdf}
+  }
+\caption{A parallel coordinates plot of showing the correlation function D/(1-D) and its dependence on a few pMSSM parameters. The correlation function is not dominantly correlated with any one variable. The pMSSM parameters have each been normalized to a unit interval.}
+\label{fig:LlhdVs19dMva}
+\end{figure}
+\restoregeometry
+
+\newgeometry{left=0.1cm,bottom=0.0cm, right=0.1cm,top=1.0cm}
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\begin{figure}[htbp]
+\centering
+\hspace{-2mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorM1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorM2}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorM3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriormu}
+}
+\hspace{-8mm}
+\subfloat[]{   % ???
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriormApole}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriortanb}
+}
+\caption{Comparison of the frequentist profile likelihood (dashed blue line) to the non-DCS prior (solid black line) for 6 of the pMSSM parameters. }
+\label{fig:PandP1}
+\end{figure}
+\restoregeometry
+
+
+
+
+\newgeometry{left=0.1cm,bottom=0.0cm, right=0.1cm,top=1.0cm}
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\begin{figure}[htbp]
+\centering
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMq1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMq3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMu1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMu3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMd1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMd3}
+}
+\caption{Comparison of the frequentist profile likelihood (dashed blue line) to the non-DCS prior (solid black line) for an additional 6 of the pMSSM parameters. }
+\label{fig:PandP2}
+\end{figure}
+\restoregeometry
+
+
+\newgeometry{left=0.1cm,bottom=0.0cm, right=0.1cm,top=1.0cm}
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\begin{figure}[htbp]
+\centering
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMl1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMl3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMr1}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorMr3}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorAt}
+}
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorAb}
+}
+\caption{Comparison of the frequentist profile likelihood (dashed blue line) to the non-DCS prior (solid black line) for an additional 6 of the pMSSM parameters. }
+\label{fig:PandP3}
+\end{figure}
+\restoregeometry
+
+
+\newgeometry{left=0.1cm,bottom=0.0cm, right=0.1cm,top=1.0cm}
+\renewcommand*\thesubfigure{\arabic{subfigure}}
+\begin{figure}[htbp]
+\centering
+\hspace{-8mm}
+\subfloat[]{
+  \includegraphics[width=100mm]{figures/pMSSMpaper/Prior/CompareFrequentist/CompareProfileLhdWithPriorAl}
+}
+\caption{Comparison of the frequentist profile likelihood (dashed blue line) to the non-DCS prior (solid black line) for a pMSSM parameter. }
+\label{fig:PandP4}
+\end{figure}
+\restoregeometry
+
+
+
+
+

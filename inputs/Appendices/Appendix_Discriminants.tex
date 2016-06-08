@@ -1,0 +1,42 @@
+It has been demonstrated~\cite{bishop2012pattern} that machine learning algorithms that take raw data as input can typically achieve a better discrimination than observables constructed by humans. However, multivariate algorithms that rely on so-called human-assisted variables, that is, discriminants that take the human-constructed observables as input, perform the best. Therefore, it is worth pointing out that, to achieve maximum sensitivity to the pMSSM, multivariate techniques may need to be applied that take into account the many observables that have been invented by the particle physics community. 
+
+This appendix discusses a subset of observables that have proved particularly effective at probing physics models that predict the pair production of new heavy particles that decay semi-invisibly\textemdash that is, each heavy particle decays into one detectable particle and one invisible particle. This signature is the hallmark of a number of BSM models, such as generic models of dark matter, 4$^{th}$ generation leptons, and mostly relevantly, R-parity conserving \SUSY. I will now describe a few of these discriminating observables.
+
+\subsection{Observables probing \SUSY}
+
+In the following, $q_1 ^\mu=(E_1, \vec{q}_1)^\mu$ and $q_2 ^\mu=(E_2, \vec{q}_2) ^\mu$ are taken to be the lab frame four-vectors of the visible daughters emanating from heavy particles 1 and 2. $\nu_1 ^\mu=(E_{\nu1}, \vec{\nu}_1)^\mu$ and $\nu_2 ^\mu=(E_{\nu2}, \vec{\nu}_2) ^\mu$ are the unknown four-vectors vectors of the invisible daughters of heavy particles 1 and 2. 
+
+It is not required that the new heavy particles decay to exactly two daughters. To accommodate potentially complex decay chains that would give rise to a large number of final state particles, the events are partitioned into two ``mega-jets''\cite{Aad:2012naa} or hemispheres, where a mega-jet is the four-vector sum of all final state particles within a hemisphere. $q_1 ^\mu$ and $q_2 ^\mu$ are then taken to be the mega-jet four-vectors. 
+
+
+\subsubsection{Razor variables}
+The Razor variables \cite{Rogan:2010kb} \RazorMr~and \RazorRsq~have been shown \cite{Chatrchyan:2012uea} to be a probe of R-parity conserving \SUSY~models. They exploit the fact that should new heavy particles be created as result of the high energy reach of the LHC, they will likely be produced on threshold, and have nearly zero kinetic energy in the \CMframe~of the colliding partons. In this case, a single Lorentz boost in the $\hat{\eta}$ direction suffices to translate from the lab frame to the \CMframe~of the hard interaction, where the conservation of momentum assures that all four daughter systems have the same momentum magnitude. The value of this momentum, written in terms of lab frame observables is referred to as \RazorMr, and is equal to
+\begin{equation}
+M_{R}=2\sqrt{\frac{(q_{2z}E_{1}-q_{1z}E_{2})^2}{(q_{1z}-q_{2z})^2-(E_{1}-E_{2})^2}}.
+\label{eq:Mr}
+\end{equation}
+The distribution of \RazorMr~in a sample of signal events is a peak somewhere in the vicinity of the mass of the mother particle. In the \RazorMr~range of immediate interest, a large contribution from \SM~processes is expected, so an additional variable $R$ is constructed to suppress these backgrounds, defined as
+\begin{equation}
+\label{eq:R}
+R\equiv M_{T}^{R}/M_{R}.
+\end{equation}
+where
+\begin{equation}
+M_{T}^{R}=\sqrt{\frac{E_{T}^{miss}}{2}(q_{1T}+q_{2T})-\vec{E}_{T}^{miss}\cdot(\vec{q}_1+\vec{q}_2)}.
+\end{equation}
+Events arising from \SM~processes give rise to a smoothly falling distribution in the \RazorRsq-\RazorMr~plane, and signal-like events give rise to a 2-dimensional peak far from the origin. In the case of an observed excess over the \SM~prediction, an analysis of the extracted signal can provide information about the underlying physics process, including the difference in mass between the new mother and daughter particle.
+
+\subsubsection{Stransverse mass \MTTwo}
+The transverse mass \mt~has been used to study events in which a single heavy particle is produced and undergoes a semi-invisible decay\textemdash for example, when a W boson decays to a charged lepton and a neutrino.  Assuming the detectable daughter has four-momentum $q^\mu=(E, \vec{q})^\mu$ and the invisible daughter's transverse momentum is inferred from the presence of missing transverse energy, the transverse mass is written as
+\begin{equation}
+m_{T}(q^\mu,p_T^{miss})=\sqrt{2q_{T}E_{T}^{miss}(1-cos(\phi^{miss}-\phi_{q}))}.
+\end{equation}
+When \mt~is computed for a set of signal events with one invisible particle in the final state, a distribution with a kinematic endpoint is yielded, and the mass of the mother particle can be inferred as the value of the endpoint. This technique has been used to perform some of the most precise measurements of the W boson mass to date \cite{Abbott:1997ww}.
+
+The stransverse mass \MTTwo~\cite{Lester:1999tx} is an extension of \mt~to systems with two invisible particles in the final state instead of one, and is defined as 
+\begin{equation}
+M_{T2}=\substack{\text{\normalsize{min}}\\\text{\normalsize{$\vec{\nu}_1\!+\!\vec{\nu}_2\!=\!\METvec$}}}\,\text{\Large{[}}\text{max}\{m_T(q_1^\mu,\nu_1^\mu),m_T(q_2^{\mu},\nu_2^\mu)\}\text{\Large{]}}.
+\end{equation}
+\MTTwo~has been shown \cite{Khachatryan:2015vra} to not only provide discrimination between \SM~events and \SUSY-like events, but to exhibit once again a kinematic endpoint whose value indicates the mass of the heavy mother particle. 
+
+Other observables include $\alpha_{\text{T}}$,  \cite{Randall:2008rw}, the jet mass, and the contransverse mass $m_{\text{CT}}$, and may be worth including in a multivariate discriminant.

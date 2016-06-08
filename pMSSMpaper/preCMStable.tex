@@ -1,0 +1,52 @@
+\begin{table}[htb]
+\caption{The measurements that are the basis of the \preCMS prior
+  $p^\mpreCMS(\theta)$ for the pMSSM parameters, their observed values and likelihoods. The observables are the decay branching fractions ${\cal B}({\rm b} \rightarrow
+  {\rm s}\gamma)$ and ${\cal B}({\rm B}_{\rm s} \rightarrow \mu \mu)$,
+  the SUSY to SM ratio for the
+  branching fraction of the decay B$^{\rm +}\rightarrow \tau \nu$ (R$[$B$^{\rm +}\rightarrow \tau \nu])$,
+  the difference in the muon anomolous magnetic moment from its SM
+  prediction $\Delta a_\mu$, the strong coupling constant
+  at the Z boson mass $\alpha_{\rm s}(m_{\rm Z})$,  the top and bottom quark masses
+  $m_{\rm t}$ and $m_{\rm b}(m_{\rm b})$, the Higgs boson mass $m_{\rm h}$ and signal strength $\mu_{\rm h}$, and sparticle mass limits from LEP.  All data except $\mu_{\rm h}$ were used in the initial MCMC scan. See text for details.}
+\label{tab:preCMS}
+
+
+
+
+\vspace{1ex}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c|r|r|r|r}
+\hline
+$i$     & Observable    & Constraint   & Likelihood function & Comment \\
+        & $\mu_i(\theta)$  & $D^\mpreCMS_i$  &  $L[D^\mpreCMS_i|\mu_i(\theta)]$ & \\
+\hline\hline
+1 & ${\cal B}({\rm b} \rightarrow {\rm s}\gamma)$~\cite{Amhis:2014hma} & $(3.43 \pm 0.21^{\rm
+  stat} \pm 0.24^{\rm th} \pm 0.07^{\rm sys})\times 10^{\rm -4}$ & Gaussian & reweight \\
+\hline
+2 & ${\cal B}({\rm B}_{\rm s} \rightarrow \mu \mu)$~\cite{CMS:2014xfa} & $(2.9 \pm
+0.7 \pm 0.29^{\rm th})\times 10^{-9}$ & Gaussian & reweight \\
+\hline
+3 & R(B$^{\rm +}\rightarrow \tau \nu$)\cite{Amhis:2014hma} & $1.04\pm 0.34$ & Gaussian & reweight \\
+\hline
+4 & $\Delta a_\mu$~\cite{Hagiwara:2011af} & $(26.1 \pm 6.3^{\rm
+  exp}\pm 4.9^{\rm SM} \pm 10.0^{\rm SUSY})\times 10^{\rm -10}$ & Gaussian & \\
+\hline
+5 & $\alpha_{\rm s}(m_{\rm Z})$~\cite{Agashe:2014kda} & $0.1184 \pm 0.0007$ & Gaussian & \\
+\hline
+6 & $m_{\rm t}$~\cite{CDF:2013jga} & $173.20\pm0.87^{\rm stat}\pm1.3^{\rm sys}$~GeV & Gaussian & reweight \\
+\hline
+7 & $m_{\rm b}(m_{\rm b})$~\cite{Agashe:2014kda} & $4.19^{\rm +0.18}_{\rm -0.06}$~GeV & Two-sided Gaussian & \\
+\hline
+\multirow{2}{*}{8} & \multirow{2}{*}{$m_{\rm h}$} & \multirow{2}{*}{LHC: $m_{\rm h}^{\rm low} = 120$\GeV, $m_{\rm h}^{\rm high} = 130$\GeV }& 1 if
+$m_{\rm h}^{\rm low} \le m_{\rm h} \le m_{\rm h}^{\rm high}$ & \multirow{2}{*}{reweight} \T\B\\
+   &             &                               & 0 if $m_{\rm h} <
+   m_{\rm h}^{\rm low}$ or $m_{\rm h} > m_{\rm h}^{\rm high}$ & \B\\
+\hline
+9 & $\mu_{\rm h}$ & CMS and ATLAS in LHC Run 1, Tevatron & {\sc Lilith} 1.01~\cite{Bernon:2014vta,Bernon:2015hsa} & post-MCMC \\
+\hline
+\multirow{2}{*}{10} & Sparticle & LEP \cite{lepsusy} & 1 if allowed & \\
+   & masses & (via {\sc micrOmega}~\cite{Belanger:2001fz,Belanger:2004yn,Belanger:2008sj}) & 0 if excluded &  \\
+\hline
+\end{tabular}
+}
+\end{table}

@@ -1,0 +1,359 @@
+\section{Results}
+\label{sec:results}
+
+We present the results of our study using three
+different approaches to assess what we have learned about the pMSSM.  In the first approach, we compare the distributions of the $Z$-significances.
+In the second approach, we compare the prior and posterior densities of the pMSSM parameters.
+In the third approach, we use a measure of the parameter space that remains after inclusion of the CMS search results.  This measure, the survival probability in a region $\Theta$ of the pMSSM parameter space, is defined by
+\begin{equation}
+  \frac{\int_\Theta p(\theta)H(Z + 1.64)d\theta}{\int_\Theta p(\theta) \, d\theta},
+\end{equation}
+where $p(\theta)$ is the posterior density, $H$ is the
+Heaviside step function with a threshold value $Z = -1.64$, which
+again is the threshold for exclusion at the 95\% CL. 
+
+%%%%%%%%%%%%%%%%%%
+% Z
+%%%%%%%%%%%%%%%%%%
+\subsection{Global signifiance}
+Distributions of $Z$-significance are shown in Fig. \ref{fig:Z} for all the CMS
+searches included in this study: 8\TeV searches, combinations of 7\TeV searches, and combinations of
+7$+$8\TeV searches. The farther a $Z$ distribution is from zero, the
+greater the impact of the analysis on the pMSSM parameter space.   As
+noted in Section \ref{sec:anl}, negative and positive values indicate a preference for the background only ($H_0$) and the signal plus background ($H_1$) hypotheses, respectively.
+
+All 8\TeV searches lead to distributions with negative tails,
+indicating that each disfavors some region of the parameter space.
+The searches making the greatest impact are the \HT{}$+$\MHT{} and \MTtwo{}
+searches, which disfavor a significant portion of the parameter space.
+The \MTtwo{}, \HT{}$+$\MET{}$+b$-jets, EW, and OS dilepton searches,
+which yield modest excesses over the SM predictions, have
+$Z$-significances up to 4. This indicates that
+the data are more consistent with small regions of the pMSSM space than with the SM.
+
+As expected, the combined 7$+$8\TeV result has a greater impact than any individual analysis. 
+Overall, the impact of the 7\TeV combined result is relatively small as indicated by the high peak around zero.  The dip around zero in the combined 7$+$8\TeV distribution arises from the way we combine $Z$-significances. As expressed in Eq.~(\ref{eq:Zmulti}), the maximum $Z$-significance values are used in the combination.
+
+%{\color{red} SS: Should we say something quantitative about what percent of the pMSSM space is excluded, etc here? {\color{blue} HP: No! This may open a can of worms!}}
+
+\begin{figure}[t]
+\centering
+\resizebox{0.8\linewidth}{!}{
+  \begin{tabular}{c}
+  \incfigNum{(a)}{inclusive.pdf}
+  \incfigNum{(b)}{hadExcl.pdf} \\
+  \incfigNum{(c)}{leptonic.pdf} 
+  \incfigNum{(d)}{combined.pdf}
+  \end{tabular}
+}
+\vspace{1mm}
+\caption{The $Z$-significance distributions for the individual 8\TeV searches (a-c), and for 7\TeV combined and 7$+$8\TeV combined searches (d). The leftmost bin contains the underflow entries.}
+\label{fig:Z}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%
+% gluino mass
+%%%%%%%%%%%%%%%%%%
+\subsection{Impact on parameters}
+Figure \ref{fig:mg} shows the impact of the CMS searches on our
+knowledge of the gluino mass. Figures \ref{fig:mg} (a)-(d) show marginalized
+distributions of the gluino mass.  Posterior distributions obtained
+using three  signal strength modifier values $\mu = 0.5, 1.0, 1.5$
+illustrate the effect of a $\pm50$\% systematic uncertainty in the
+predicted SUSY cross sections.  Figure \ref{fig:mg} (a) shows the strong impact of
+the inclusive analyses on the gluino mass distribution.  The
+\HT{}$+$\MHT{} search strongly disfavors the region below 1200\GeV,
+while the \MTtwo{} search leads to a distribution with two preferred
+regions, one at relatively low mass, around 600 to 1000\GeV, and one
+above 1200\GeV.  In Fig. \ref{fig:mg} (b) we observe that the other hadronic
+analyses also disfavor the low-mass region, though to a lesser degree,
+ and two of these analyses (the \HT{}$+$\MET{}$+$b-jets and the
+ hadronic third generation) also exhibit secondary
+ preferred regions around 1100\GeV, while Fig. \ref{fig:mg} (c) shows that the leptonic
+ analyses have little impact on the gluino mass distribution.
+Figure \ref{fig:mg} (d) compares the  prior distribution to posterior distributions after inclusion of the combined 7\TeV and combined 7$+$8\TeV data.  The 7\TeV data already strongly disfavor the low-mass region, a conclusion that is strengthened 
+after adding the 8\TeV data.  The enhancements induced by the hadronic
+searches in the 800\textendash1300\GeV range disappear in the combination
+since the observed excesses driving the enhancements are not
+consistently predicted by a single point or group of points.
+%The binary likelihood combination results in an ascending probability density.
+%{\color{red} HP: It is not clear what point we wish to make with the last sentence}.
+%This is consequence of the important drawback, loss of information, of the binary likelihood method used to calculate the CMS likelihood for the distributions for combinations of CMS searches.
+
+
+\begin{figure}[t]
+    \sixpackNum{mg}
+\vspace{1mm}
+    \caption{\captionOneD{gluino mass}{gluino mass}}
+    \label{fig:mg}
+\end{figure}
+
+Figure \ref{fig:mg} (e) shows the survival probability as a function of gluino mass
+for the combined 7\TeV, and 7$+$8\TeV results. 
+The CMS searches exclude all the pMSSM points we have considered with a gluino mass below 500\GeV, and can probe scenarios up to the highest masses covered in the scan.  Of course, masses of order 3\TeV are not probed directly but rather through the production of lighter particles in the model.   
+Finally, Fig. \ref{fig:mg} (f) shows the $Z$-significance versus gluino mass.  A
+slight negative correlation for positive $Z$ values and gluino masses
+is observed below 1200\GeV; $Z$ declines slightly as mass
+increases, which indicates that some small excesses of events observed by the various searches are consistent with models with light gluinos.  
+
+%%%%%%%%%%%%%%%%%%
+% squark LCSP mass
+%%%%%%%%%%%%%%%%%%
+
+Figures \ref{fig:mq} and~\ref{fig:mLCSP} similarly summarize the impact
+of searches on the first- and second-generation right-handed up squark mass and the mass of the lightest colored SUSY particle (LCSP), respectively.  The picture is similar to that for the gluino mass.  For both $\suL$ and the LCSP, the \MTtwo{} search shows a preference for masses from 500 to 1100\GeV.  The overall impact of the searches on $\suL$ is less than the impact on the gluino mass owing to the more diverse gluino decay structure that can be accessed by a greater number of searches.  For the LCSP, the overall impact is the least  because the LCSP has the fewest decay channels; nevertheless CMS searches can conclusively exclude cases with LCSPs below 300\GeV.  We also see that the searches can be sensitive to scenarios with LCSP masses up to $\sim$1500\GeV.  Again we find that the
+Higgs boson results  make a negligible contribution. In each case we find a negative correlation between the $Z$-significance and the sparticle mass for positive $Z$ values and masses below 1200 GeV; this is most pronounced for the LCSP.
+
+\begin{figure}[t]
+    \sixpackNum{muL}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\suL$ mass (equivalently, the $\scL$ mass)}{$\suL$ mass}}
+    \label{fig:mq}
+\end{figure}
+
+\begin{figure}[t]
+    \sixpackNum{mLCSP}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{mass of the lightest colored SUSY particle (LCSP)}{LCSP mass}}
+    \label{fig:mLCSP}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% stop mass
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Figure \ref{fig:mt1} illustrates what information has been gained about the mass of the lightest top squark $\stl$.   
+The difference between the prior and posterior distributions is minor. The reason is that 
+ the measurements of the b $\to$ s $\gamma$ branching fraction (see 
+Table \ref{tab:preCMS}) impose much stronger constraints on the mass of the  $\stl$
+than do the LHC data. This highlights the
+importance of using a prior that encodes as much experimental information as possible in order to arrive at
+a meaningful assessment of the
+added value of data from the LHC.
+The exception to the statement about the $\stl$ is the posterior distribution for the \MTtwo{} search which, relative to the \preCMS distribution, has a preference for low $\stl$ masses. 
+% {\color{red} HP - unclear what point is being made: The survival probability shows this to be rather independent of the $\stl$ mass}. 
+ In the distribution of the top squark mass versus $Z$, the positive $Z$ values have a slight negative correlation with the $\stl$ mass below 1200\GeV. The overall conclusion is that light top squarks with masses of the order of 500\GeV cannot be excluded.
+ 
+\begin{figure}[t]
+    \sixpackNum{mt1}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\stopi$ mass}{$\stopi$ mass}}
+    \label{fig:mt1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% mz1 and mLNDw
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Turning now to the EW sector, we first show, in
+Fig. \ref{fig:mz1}, the effect of the CMS data on our knowledge of the
+mass of the lightest neutralino $\chiz$.  We see that the hadronic
+inclusive searches disfavor low $\chiz$ masses; the hadronic
+searches targeting specific topologies also have an effect, although
+smaller, and the leptonic searches have a marginal impact.  The
+7$+$8\TeV combined distribution is very similar to the \MTtwo{}
+distribution, especially in the lower mass region, making this the
+search most sensitive to the $\chiz$ mass.  The
+significant impact on the $\chiz$ mass is indirect.  Since $\chiz$ is
+the LSP, its mass is constrained by the masses of
+the heavier sparticles.  As CMS searches push the probability
+distributions for the colored particles to higher values, more phase
+space opens for $\chiz$ and the $\chiz$ distributions shift to higher
+values.  The survival probability distribution shows that no $\chiz$
+mass is totally excluded at the 95\% CL by CMS.  In general, the nonexcluded points with light $\chiz$ are those with heavy colored sparticles.  The fact that the survival probability decreases below a $\chiz$ mass of $\sim$700\GeV shows that CMS searches are sensitive up to this mass value.
+%{\color{red} Question from JG: What is the definition of sensitive, and why 700\GeV?}
+The Higgs boson data disfavor neutralino masses below about 60\GeV, that is,
+the mass range in which invisible decays
+$h\to\tilde\chi^0_1\tilde\chi^0_1$ could occur; this is visible in the
+first bin in Fig. \ref{fig:mz1} (d) (See Ref.~\cite{Bernon:2014vta}).
+
+\begin{figure}[t]
+    \sixpackNum{mz1}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{$\chiz$ mass}{$\chiz$ mass}}
+    \label{fig:mz1}
+\end{figure}
+
+
+In the MSSM, the lightest chargino becomes degenerate with the lightest neutralino for the condition 
+$|M_1| \geq \min(|M_2|,|\mu|)$.  
+Therefore, we define the lightest non-degenerate (LND) chargino
+chargino as
+\begin{equation}
+    \mathrm{LND~}{\chi^\pm} =
+    \begin{cases}
+        \tilde{\chi}^\pm_1 & \mbox{if~~~} |M_1| < \min(|M_2|,|\mu|) \\
+        \tilde{\chi}^\pm_2 & \mbox{if~~~} |M_1| > \min(|M_2|,|\mu|).
+    \end{cases}
+\end{equation}
+Figure \ref{fig:mLNDw} summarizes what information has been gained about the mass of the 
+LND chargino. 
+%{\color{red} SS: Sabine or Jack, is the LND content ok?}.
+Again, the impact of the CMS searches is found to be rather limited and no chargino mass
+can be reliably excluded.
+%We note the rather limited impact of the CMS data.
+It is worth noticing the impact of the leptonic searches.
+In Fig. \ref{fig:mLNDw} (c), the distributions differ from the \preCMS distribution,
+while these searches have negligible impact on most of the other  SUSY observables and parameters considered in this study. We also note that the survival probability is lowest in the first bin where LND mass is between 0 and 200\GeV, but a small percentage of points still survive.
+
+\begin{figure}[t]
+  \sixpackNum{mLNDw}
+  \vspace{1mm}
+  \caption{\captionOneDReduced{the mass of the lightest non-degenerate (LND) chargino}{LND $\widetilde{\chi}^\pm$ mass} }
+  \label{fig:mLNDw}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% xsect
+%%%%%%%%%%%%%%%%%%%%%%%
+
+A more generic view is  possible by looking at the overall CMS impact on the inclusive SUSY production cross section for 8\TeV, which is shown in Fig. \ref{fig:xsect}. 
+Before adding the CMS results, the most probable cross section is
+around 100\,$\fb$; the effect of the CMS SUSY searches is to reduce this
+value by an order of magnitude.  The inclusive \HT{}$+$\MHT{} search
+has the largest individual contribution to this because of its ability to address a great diversity of final states comprising different sparticle compositions.  The survival probability distribution confirms that CMS is sensitive to SUSY scenarios with total cross sections as low as 1\,$\fb$.  The cross section is the variable found to correlate most strongly with the
+$Z$-significance, so we conclude that the cross section is the observable to which the analyses are most sensitive.  The $Z$ values above $\sim$1\,$\fb$ are all nonzero, which implies that CMS data are capable of making an impact above that value.
+
+%\sigma^{8\TeV}_{\rm SUSY}
+\begin{figure}[t]
+    \sixpackNum{log10_xsect_8TeV}
+    \vspace{1mm}
+    \caption{\captionOneDReduced{the logarithm of the cross
+        section for inclusive sparticle production in 8~TeV pp
+        collisions, $\log_{10}(\sigma^{8\TeV}_{\rm SUSY})$,}{$\log_{10}(\sigma^{8\TeV}_{\rm SUSY})$}}
+    \label{fig:xsect}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% more 1D
+%%%%%%%%%%%%%%%%%%%%%%%
+
+In Fig. \ref{fig:more1D}, the  \preCMS and post CMS distributions are
+compared after 7 and 7$+$8\TeV data for several other important
+observables.  We first note that the impact of the CMS data on the
+first and second generation right-handed up squarks is lower than on the
+corresponding left-handed up squarks. This is because left-handed up squarks in
+the MSSM form doublets with mass-degenerate left-handed down squarks, while
+the right-handed up and down squarks are singlets and their
+masses are unrelated.  Therefore, for the left-handed up squarks, the CMS
+sensitivity for a given mass is increased by the left-handed down squarks,
+which have the same mass.  We also observe a mild impact on the bottom
+squark mass, where CMS disfavors masses below 400\GeV.  The CMS
+searches also have some sensitivity to the selectron and stau masses,
+which comes from the leptonic searches.  The impact on $\chitz$ and
+$\chipm$ masses is relatively larger, mostly due to the dedicated EW
+analyses. The CMS SUSY searches have no impact on the masses of the light and heavy pseudoscalar Higgs
+bosons. The preference of the Higgs data for negative values of the higgsino mass parameter $\mu$ comes primarily from the fact that the measured signal 
+strength normalized to its SM value for Vh$\to$b$\bar{\text{b}}$ (where V is a W or a Z boson) is currently slightly below one. In a SUSY model, this requires that radiative corrections reduce the bottom Yukawa coupling, thereby creating a preference for $\mu<0$~\cite{Dumont:2013npa}. The $\tan\beta$ distribution is largely unaffected by both the CMS SUSY searches and the current Higgs boson data evaluated via {\sc Lilith} 1.01. 
+
+We also investigate the effect of CMS searches on some observables
+related to dark matter related. Figure \ref{fig:more1D_dm}  shows distributions of the
+dark matter relic density, the spin-dependent (SD) direct detection cross section,
+and spin-independent (SI) direct detection cross section. 
+%{\col{red} TODO - SS: Sabine, I leave this to you.}
+
+\begin{figure}[p]
+\centering
+\makebox[.33\textwidth][c]{
+\incfigNum{(a)}{combined_higgs/combined_higgs_muR_rebin.pdf}
+\incfigNum{(b)}{combined_higgs/combined_higgs_mb1_rebin.pdf}
+\incfigNum{(c)}{combined_higgs/combined_higgs_meL_rebin.pdf}
+}\\
+\makebox[.33\textwidth][c]{
+\incfigNum{(d)}{combined_higgs/combined_higgs_mtau1_rebin.pdf}
+\incfigNum{(e)}{combined_higgs/combined_higgs_mz2_rebin.pdf}
+\incfigNum{(f)}{combined_higgs/combined_higgs_mw1_rebin.pdf}
+}\\
+\makebox[.33\textwidth][c]{
+\incfigNum{(g)}{combined_higgs/combined_higgs_mu.pdf}
+\incfigNum{(h)}{combined_higgs/combined_higgs_tanb_rebin.pdf}
+\incfigNum{(i)}{combined_higgs/combined_higgs_mA_pole_rebin.pdf}
+}
+\vspace{1mm}
+\caption{Comparison of prior and posterior distributions after several combinations of data from the CMS searches for the
+$\suR,\scR$ mass, $\sb_{1}$ mass, $\seL,\smuL$ mass, $\stauOne$ mass, $\chitz$ mass, $\chipm$ mass, the higgsino mass parameter $\mu$, $\tanb$, and $A$ mass.}
+\label{fig:more1D}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  \makebox[.33\textwidth][c]{
+  \incfigNum{(a)}{combined_higgs/combined_higgs_log10_omgh2_rebin.pdf}
+  \incfigNum{(b)}{combined_higgs/combined_higgs_log10_sigSD_rebin.pdf}
+  \incfigNum{(c)}{combined_higgs/combined_higgs_log10_sigSI_rebin.pdf}}\\
+        }
+        \vspace{1mm}
+    \caption{Comparison of prior and posterior distributions after several
+  combinations of data from the CMS searches for $\Omega_{\tilde{\chi}^{0}_{1}}$, $\xi\sigma^{\text{SD}}(p\tilde{\chi}_{1}^{0})$, and $\xi\sigma^{\text{SI}}(p\tilde{\chi}_{1}^{0})$.}
+    \label{fig:more1D_dm}
+\end{figure}
+
+
+%\begin{figure}
+%\makebox[.33\textwidth][c]{
+%\incfigNum{(a)}{combined_higgs/combined_higgs_log10_omgh2_rebin.pdf}
+%\incfigNum{(b)}{combined_higgs/combined_higgs_log10_sigSD_rebin.pdf}
+%\incfigNum{(c)}{combined_higgs/combined_higgs_log10_sigSI_rebin.pdf}
+%}
+%\caption{Comparison of prior and posterior distributions after several
+%  combinations of data from the CMS searches considered for
+ % respectively the $\Omega_{\tilde{\chi}^{0}_{1}}h^{2}$, $\xi\sigma^{SD}(p\tilde{\chi}_{1}^{0})$, and $\xi\sigma^{SI}(p\tilde{\chi}_{1}^{0})$.}
+%\label{fig:more1D_dm}
+%\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% 2D
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%{\color{red} SS FIXME include the stop-$\chiz$ plot.} 
+
+\subsection{Correlations among pMSSM parameters}
+A virtue of high-dimensional models like the pMSSM is that they
+enable the examination of correlations among parameters not 
+possible in the context of more constrained models.
+
+Figure \ref{fig:twoD} compares marginalized distributions in 2-dimensions of \preCMS (left) to post-CMS distributions (middle), and also shows the post-CMS to \preCMS survival probability (right) for several observable pairs.  The first two rows show that the CMS impact on our knowledge of 
+the $\chiz$ mass is strongly correlated with the gluino or the LCSP mass.  Since $\chiz$ is the LSP,  light colored particles imply a light $\chiz$.
+% and therefore the exclusion of scenarios with light colored particles.  
+Consequently, since colored particles are more dominant in the pMSSM than in constrained models, the disfavoring of light colored sparticles implies the disfavoring of a light $\chiz$.  In the last row, we see that the $\chiz$ mass is correlated most strongly with the cross section and that  light $\chiz$ LSPs are indeed disfavored for the reason just given.  
+We note, however, that scenarios with $\chiz$ masses around 100\GeV
+can still survive even though they have cross sections above 1\,pb.
+In the third row, we show the probability distributions and survival
+probability for $\chiz$ versus $\stl$ mass.  Here we see that, although the
+post-CMS probabilities shift towards higher values, the survival
+probabilities never really go down to zero.  Although current SMS
+scenarios exclude large parts of the $\stl$-$\chiz$ plane, we see that
+pMSSM scenarios with relatively low $\stl$ masses (500\GeV) are
+not significantly disfavored by the CMS searches considered. This is attributed to the fact that top squarks in
+the full model are allowed to decay in a variety of ways, whereas a given SMS model assumes the top squarks decay with 100\% probability through a single mode, typically $\stl\to$ t$\chiz$. 
+
+\begin{figure}[p]
+  \centering
+  \figTwoD{mg_rebin_VS_mz1_rebin}\\
+  \figTwoD{mLCSP_rebin_VS_mz1_rebin}\\
+    \figTwoD{mt1_rebin_VS_mz1_rebin}\\
+  \figTwoD{log10_xsect_8TeV_rebin_VS_mz1_rebin}
+\vspace{1mm}
+  \caption{Marginalized \preCMS distributions (first column),
+    compared with posterior distributions (second column)
+    and survival probabilities (third column) after inclusion of all CMS data,
+    are shown for the
+    $\chiz$ mass versus gluino mass (first row), the LCSP mass
+    (second row), the top squark mass (third row),  and the
+    logarithm of the cross section for inclusive sparticle production at 8\TeV (bottom row).
+  }
+  \label{fig:twoD}
+\end{figure}
+
+Studies were carried out to assess how the conclusions would change if a 
+different choice of initial prior had been made. A log-uniform prior ($p_0(\theta)$ in Eq. \ref{eq:prior}) was found to yield posterior densities very similar to those from the nominal uniform prior. The most significant exception is that 
+the densities for the masses of the $\chiz$ and  $\chipm$ were shifted 10-20\% 
+toward higher values with respect to the densities derived from the
+uniform prior. It was found that the marginalized 
+likelihood distributions are consistent with the profile likelihoods, suggesting that a 
+frequentist analysis based on the profile likelihoods would yield similar conclusions.
+

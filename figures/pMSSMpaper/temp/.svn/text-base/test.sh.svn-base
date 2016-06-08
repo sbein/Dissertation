@@ -1,0 +1,10 @@
+mv distributions_1D_sel/combined/*.pdf ../distributions_1D_sel/combined/
+mv distributions_1D_sel/combined_higgs/*.pdf ../distributions_1D_sel/combined_higgs/
+mv distributions_1D_sel/hadExcl/*.pdf ../distributions_1D_sel/hadExcl/
+mv distributions_1D_sel/inclusive/*.pdf ../distributions_1D_sel/inclusive/
+mv distributions_1D_sel/leptonic/*.pdf ../distributions_1D_sel/leptonic/
+mv distributions_2D_sel/combined7and8TeV_surv_100/*.pdf ../distributions_2D_sel/combined7and8TeV_surv_100/
+mv distributions_2D_sel/preCMS/*.pdf ../distributions_2D_sel/preCMS/
+mv distributions_2D_sel_sp/combined7and8TeV_surv_100/*.pdf ../distributions_2D_sel_sp/combined7and8TeV_surv_100/
+mv distributions_2D_sel_sp/preCMS/*.pdf ../distributions_2D_sel_sp/preCMS/
+mv survprob_sel/combined_sp/*.pdf ../survprob_sel/combined_sp/

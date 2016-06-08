@@ -1,0 +1,360 @@
+\usepackage[]{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{dsfont}
+\usepackage{subfig}
+\usepackage{tabularx}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage{physics}
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%\newcommand{\bra}[1]{\ensuremath{\left\langle#1\right|}}
+%\newcommand{\ket}[1]{\ensuremath{\left|#1\right\rangle}}
+%\newcommand{\bracket}[2]{\ensuremath{\left\langle#1 \vphantom{#2}\right| \left. #2 \vphantom{#1}\right\rangle}}
+%\newcommand{\matrixel}[3]{\ensuremath{\left\langle #1 \vphantom{#2#3} \right| #2 \left| #3 \vphantom{#1#2} \right\rangle}}
+\newcommand{\ttbar}{t\bar{t}}
+
+
+\bibliographystyle{ieeetr}%Choose a bibliograhpic style
+
+\newcommand{\qft}{quantum field theory}
+\newcommand{\qfts}{quantum field theories}
+\newcommand{\SM}{\text{Standard\ Model}}
+\newcommand{\sm}{\text{Standard\ Model}}
+\newcommand{\SUSY}{\text{supersymmetry}}
+\newcommand{\susy}{\text{SUSY}}
+\newcommand{\fb}{fb}
+\newcommand{\invfb}{\text{fb}^{-1}}
+\newcommand{\TeV}{\text{TeV}}
+\newcommand{\GeV}{\text{GeV}}
+\newcommand{\phitwo}{\varphi}
+
+\newcommand{\uone}{\rm U(1)_{Y}}
+\newcommand{\sutwo}{\rm SU(2)_{L}}
+\newcommand{\suthree}{\rm SU(3)_{C}}
+\newcommand{\cutoff}{\Lambda_{\rm UV}}
+
+\newcommand{\VEV}{VEV}
+\newcommand{\MET}{$E_{\text{T}}^{\text{miss}}$}
+\newcommand{\MHT}{$H_{\text{T}}^{\text{miss}}$}
+\newcommand{\NJets}{$N_{\rm jets}$}
+\newcommand{\HT}{$H_{\text{T}}$}  
+\newcommand{\Pt}{$p_{\text{T}}$}
+\newcommand{\METvec}{\vec{p}_{\text{T}}^{\,\text{miss}}\!}
+
+\newcommand{\met}{E_{\text{T}}^{\rm miss}}
+\newcommand{\mht}{H_{\text{T}}^{\rm miss}}
+\newcommand{\njets}{N_{\rm jets}}
+\newcommand{\Ht}{H_{\rm T}}  
+\newcommand{\pt}{p_{\text{T}}}
+\newcommand{\metvec}{\vec{p}_{\text{T}}^{\,miss}\!}
+
+\newcommand{\CMframe}{center of momentum frame}
+\newcommand{\phimiss}{{\phi}^{miss}}
+\newcommand{\MTTwo}{$M_{\text{T}2}$}
+\newcommand{\mt}{$m_{\text{T}}$}
+\newcommand{\RazorMr}{$M_{R}$}
+\newcommand{\RazorRsq}{$R^{2}$}
+\newcommand{\ztwo}{\mathds{Z}_2}
+\newcommand{\lumi}{\mathcal{L}}
+\newcommand{\pif}{{\rm P}(i\rightarrow f)}
+\newcommand{\Lag}{\mathcal{L}}
+\newcommand{\unitspin}{j}
+\newcommand{\nature}{\rm nature}
+\newcommand{\vp}{\vphantom{\sum_{i=1}^{3}}}
+\newcommand{\vps}{\vphantom{\frac{1}{2}}}
+\newcommand{\EW}{\rm electroweak}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\newcommand{\fbinv}{\text{fb}^{-1}}
+\newcommand{\ntops}{$n_{\text{t}}$}
+\newcommand{\NBJets}{$n_{\text{b}}$}
+\newcommand{\nbjets}{N_{\text{b-jets}}}
+
+\newcommand\T{\rule{0pt}{2.7ex}}       % Top strut
+\newcommand\B{\rule[-1.1ex]{0pt}{0pt}} % Bottom strut
+\newcommand{\eightZeroMat}
+{
+\left(
+\begin{smallmatrix} 
+0&0&0\\ 
+0&0&0\\
+0&0&1\\
+ \end{smallmatrix} 
+\right)\\
+}
+
+
+
+
+
+
+
+
+%%%from pMSSM paper:
+%% JGs definitions:
+
+\def\hh{H}
+\def\mhh{m_{\hh}}
+\def\ha{A}
+\def\mha{m_{\ha}}
+\def\hpm{H^\pm}
+\def\mhpm{m_{\hpm}}
+\def\hl{h}
+\def\mhl{m_{\hl}}
+\def\stopone{\tilde t_1}
+\def\mstopone{m_{\tilde t_1}}
+\def\zbest{Z}
+
+\def\tb{\tan\beta}
+\def\MS{M_{S}}
+\def\fbi{~{\rm fb}^{-1}}
+\def\pbi{~{\rm pb}^{-1}}
+\def\ie{{\it i.e.}}
+\def\anti{\overline}
+\def\sigsi{\sigma_{\rm SI}}
+\def\mz{m_Z}
+\def\gev{~\mbox{GeV}}
+\def\tev{~\mbox{TeV}}
+\def\mev{~\mbox{MeV}}
+\def\tev{~{\rm TeV}}
+\def\beq{\begin{equation}}
+\def\eeq{\end{\equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\gam{\gamma}
+\def\kap{\kappa}
+\def\lam{\lambda}
+\def\akap{A_\kap}
+\def\alam{A_\lam}
+\def\mhalf{m_{1/2}}
+\def\mhu{m_{H_u}}
+\def\mhd{m_{H_d}}
+\def\mhusq{m_{H_u}^2}
+\def\mhdsq{m_{H_d}^2}
+\def\omghsq{\Omega_{\cnone} h^2}
+\def\amu{a_\mu}
+\def\damu{\delta \amu}
+\def\br{{\rm BR}}
+\def\gamhtot{\Gamma_h^{\rm tot}}
+\def\hsm{h_{\rm SM}}
+\def\rgamgam{R(\gam\gam)}
+\def\rh{R^h}
+\def\rhi{R^{h_1}}
+\def\rhii{R^{h_2}}
+\def\to{\rightarrow}
+\def\hi{h_1}
+\def\hii{h_2}
+\def\ai{a_1}
+\def\aii{a_2}
+\def\mhi{m_{\hi}}
+\def\mhii{m_{\hii}}
+\def\mai{m_{\ai}}
+\def\maii{m_{\aii}}
+\def\mh{m_h}
+\def\wtil{\widetilde}
+\def\chisqatlas{\chi^2_{\rm ATLAS}}
+\def\stau{\widetilde \tau}
+\def\cnone{\widetilde \chi_1^0}
+\def\cpone{\widetilde \chi_1^\pm}
+\def\mcnone{m_{\cnone}}
+\def\mcpone{m_{\cpone}}
+\def\cpmone{\wtil\chi_1^{\pm}}
+\def\mcpmone{m_{\cpmone}}
+\def\cntwo{\wtil\chi_2^0}
+\def\mcntwo{m_{\cntwo}}
+\def\cnthree{\wtil\chi_3^0}
+\def\mcnthree{m_{\cnthree}}
+\def\cnfour{\wtil\chi_4^0}
+\def\mcnfour{m_{\cnfour}}
+
+\def\mcptwo{m_{\cptwo}}
+\def\cpmtwo{\wtil\chi_2^\pm}
+\def\mcpmtwo{m_{\cpmtwo}}
+\def\hsm{h_{\rm SM}}
+\def\mhsm{m_{\hsm}}
+\def\msq{m_{\tilde q}}
+\def\mgl{m_{\tilde g}}
+\def\stopi{\tilde t_1}
+\def\stopii{\tilde t_2}
+\def\mstopii{m_{\stopii}}
+\def\mstopi{m_{\stopi}}
+\def\ms{(\mstopi\mstopii)^{1/2}}
+\def\m{m_{\tilde t_1}}
+\def\tanb{\tan\beta}
+\def\cotb{\cot\beta}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\mhir{\mhi\in[123-128]\gev}
+\def\mhiir{\mhii\in[123-128]\gev}
+\def\rhigg#1{R_{gg}^{\hi}(#1)}
+\def\rhiigg#1{R_{gg}^{\hii}(#1)}
+\def\rhivv#1{R_{VV}^{\hi}(#1)}
+\def\rhiivv#1{R_{VV}^{\hii}(#1)}
+\def\sgn{{\rm sgn}}
+\def\mw{m_W}
+
+\def\HT{$H_{\rm T}$}
+\def\MET{$E_{\rm T}^{\rm miss}$}
+\def\MHT{$H_{\rm T}^{\rm miss}$}
+\def\MTtwo{$M_{\rm T2}$}
+
+\def\rts{\sqrt s}
+\def\lsim{\mathrel{\raise.3ex\hbox{$<$\kern-.75em\lower1ex\hbox{$\sim$}}}}
+\def\gsim{\mathrel{\raise.3ex\hbox{$>$\kern-.75em\lower1ex\hbox{$\sim$}}}}
+
+\def\bit{\begin{itemize}}
+\def\eit{\end{itemize}}
+\def\bec{\begin{center}}
+\def\eec{\end{center}}
+
+\newcommand{\nc}{\newcommand}
+
+%% WWs definitions:
+
+\def\chitz{\widetilde{\chi}^0_2}
+\def\chiz{\widetilde{\chi}^0_1}
+\def\chipm{\widetilde{\chi}^\pm_1}
+\def\gl{\tilde{\text{g}}}
+\def\sq{\tilde{\text{q}}}
+\def\sb{\tilde{\text{b}}}
+\def\st{\tilde{\text{t}}}
+\def\stl{\tilde{\text{t}}_1}
+\def\fb{\mathrm{fb}}
+
+\def\SMSallpoints{7205 }
+\def\SMSlttwo{4504 }
+\def\SMSunexplored{2198 }
+\def\SMSewkpoint{1188 }
+\def\SMSsquarkpoint{757 }
+
+%% lukas definitions
+
+\def\sg{\tilde{\text{g}}}
+\def\suL{\tilde{\text{u}}_\text{L}}
+\def\scL{\tilde{\text{c}}_\text{L}}
+\def\suR{\tilde{\text{u}}_\text{R}}
+\def\scR{\tilde{\text{c}}_\text{R}}
+\def\sdR{\tilde{\text{d}}_\text{R}}
+\def\ssR{\tilde{\text{s}}_\text{R}}
+\def\sbOne{\tilde{\text{b}}_1}
+\def\stOne{\tilde{\text{t}}_1}
+\def\seL{\tilde{\text{e}}_\text{L}}
+\def\stauOne{\tilde{\tau}_1}
+\def\smuL{\tilde{\mu}_\text{L}}
+\def\preCMS{non-DCS}
+%\newcommand\mhyphen{{\mbox{-}}}
+\def\mCMS{\text{CMS}}
+\def\mpreCMS{{\text{non-DCS}}}
+\def\ctauC1{c\,\tau(\tilde\chi^\pm_1)}
+
+
+%\newcommand{\incfig}[2]{\includegraphics[width=0.9\linewidth/\real{#1}]{#2}}
+\newcommand{\incfig}[2]{\includegraphics[width=0.33\linewidth]{#2}}
+\newcommand{\incfigNum}[2]{
+        \setlength{\unitlength}{\linewidth}
+        \begin{picture}(.33,.33)
+         \put(0,0){\includegraphics[width=0.33\unitlength]{#2}}
+         \put(.166,-0.01){\scriptsize #1}
+        \end{picture}
+        }
+
+
+\newcommand{\sixpack}[1]{
+  \centering
+  \makebox[.33\textwidth][c]{
+  \incfig{3}{inclusive/inclusive_#1_rebin.pdf}
+  \incfig{3}{hadExcl/hadExcl_#1_rebin.pdf}
+  \incfig{3}{leptonic/leptonic_#1_rebin.pdf}}\\
+   \makebox[.33\textwidth][c]{	
+  \incfig{3}{combined_higgs/combined_higgs_#1_rebin.pdf}
+  \incfig{3}{combined_sp/combined_sp_#1_rebin.pdf}
+  \incfig{3}{#1_finebin_VS_combined7and8TeV_Z_100_finebin.pdf}
+  }
+}
+
+\newcommand{\sixpackNum}[1]{
+  \centering
+  \makebox[.33\textwidth][c]{
+  \incfigNum{(a)}{inclusive/inclusive_#1_rebin.pdf}
+  \incfigNum{(b)}{hadExcl/hadExcl_#1_rebin.pdf}
+  \incfigNum{(c)}{leptonic/leptonic_#1_rebin.pdf}}\\
+   \makebox[.33\textwidth][c]{	
+  \incfigNum{(d)}{combined_higgs/combined_higgs_#1_rebin.pdf}
+  \incfigNum{(e)}{combined_sp/combined_sp_#1_rebin.pdf}
+  \incfigNum{(f)}{#1_finebin_VS_combined7and8TeV_Z_100_finebin.pdf}
+        }
+}
+
+
+\newcommand{\figOneD}[1]{
+  \makebox[.33\textwidth][c]{
+  \incfig{3}{inclusive/inclusive_#1.pdf}
+  \incfig{3}{hadExcl/hadExcl_#1.pdf}
+  \incfig{3}{leptonic/leptonic_#1.pdf}
+  }
+}
+
+\newcommand{\figTwoD}[1]{
+  \makebox[.33\textwidth][c]{
+  \incfig{3}{preCMS/preCMS_#1.pdf}
+  \incfig{3}{combined7and8TeV_surv_100/combined7and8TeV_surv_100_#1.pdf}
+  \incfig{3}{combined7and8TeV_surv_100/combined7and8TeV_surv_100_#1_sp.pdf}
+  }
+}
+
+\newcommand{\captionOneD}[2]{
+    A summary of the impact of CMS searches on our knowledge of the #1 in the pMSSM parameter space.
+    Plots (a)-(d) compare the \preCMS prior distribution of the #2 (blue filled histograms) to posterior distributions after data from various CMS searches (line histograms), where (d) shows the combined effect of CMS searches and the Higgs boson results.    
+    Plot (e) shows survival probabilities as a function of the #2 for
+    various combinations of CMS data and data from Higgs boson
+    measurements, where the shaded grey band gives the the statistical uncertainty on the
+    black histogram.
+    Plot (f) shows the distribution of the #2 versus the $Z$-significance calculated from the combination of all searches.}
+
+\newcommand{\captionOneDReduced}[2]{
+    A summary of the impact of CMS searches on our knowledge of the #1 in the pMSSM parameter space.
+    Plots (a)-(d) compare the \preCMS prior distribution of the #2 to posterior distributions after data from various CMS searches, where (d) shows the combined effect of CMS searches and the Higgs boson results.    
+    Plot (e) shows survival probabilities as a function of the #2 for various combinations of CMS data and data from Higgs boson measurements.
+    Plot (f) shows the distribution of the #2 versus the $Z$-significance calculated from the combination of all searches. See Fig. \ref{fig:mg} for a description of the shading.}
+
+\newcommand{\captionSurvProbOneD}[3]{
+    Survival probabilities as a function of #3,
+    after the data from the #1 performed by CMS~\cite{#2}.
+    Line histograms show survival probabilities after 7\TeV (blue),
+    8\TeV (red), and 7+8\TeV (black) data.
+    The solid curves show survival probabilities obtained while assuming the 
+    central values for the signal cross section ($\mu=1$), whereas the dashed and
+    dotted lines show survival probabilities obtained with $\pm50\%$ variations of the signal cross section ($\mu=0.5$, $\mu=1.5$).
+    The filled area represents the statistical uncertainty.}
+
+
+\newcommand{\captionTwoD}[3]{Marginalized 2-dimensional distributions of #3. 
+                    In each row,  the left plot shows the \preCMS prior distribution, the middle plot shows the DCS posterior distribution including the data from the 7+8\TeV #1 performed by CMS~\cite{#2}, while the plot on the right shows the ratio of the two.  
+}
+
+\newcommand{\captionTwoDOneLine}[3]{Marginalized 2-dimensional distributions of #3. 
+The left plot shows the \preCMS prior distribution, the middle plot shows the DCS posterior distribution including the data from the 7+8\TeV #1 performed by CMS~\cite{#2}, while the plot on the right shows the ratio of the two.  
+}
+
+\newcommand{\captionTwoDPrior}[1]{Marginalized 2-dimensional prior distributions of #1.} 
+%\newcommand\T{\rule{0pt}{2.5ex}}       % Top strut
+%\newcommand\B{\rule[-1.1ex]{0pt}{0pt}} % Bottom strut
+
+
+\newcommand{\zinv}{Z\rightarrow \nu\bar{\nu}}
+\newcommand{\zll}{Z\rightarrow l^+l^-}
+\newcommand{\zee}{Z\rightarrow e^+e^-}
+\newcommand{\zmumu}{Z\rightarrow \mu^+\mu^-}
+
+
+\newcommand{\madanalysis}{{\sc MadAnalysis~5}}
+\newcommand{\sampleanalyzer}{{\sc SampleAnalyzer}}
+\newcommand{\delphes}{{\sc Delphes}}
+\newcommand{\python}{{\sc Python}}
+\newcommand{\pythia}{{\sc Pythia}}
+\newcommand{\cpp}{{\sc C++}}
+\newcommand{\eg}{{\it e.g.}}
+\def\ma{\madanalysis}

@@ -1,0 +1,140 @@
+\chapter{The $\SM$}
+\label{chap:SM}
+The $\SM$ ($\sm$) is the quantum field theory that describes the fundamental fields and symmetries observed in nature thus far.  These fields, artistically represented in Figure \ref{fig:SMcircle}, and symmetries are discussed here. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=.6\linewidth]{figures/SM/StandardModel2.png}
+\caption{The fields of the $\SM$. From inside out, concentric annuli represent the spin-0, spin-1, and spin-$\frac{1}{2}$ fields.}
+\label{fig:SMcircle}
+\end{figure}
+
+\section{$\sm$ fields and symmetries}
+Like all QFTs, the $\sm$ is symmetric under transformations of the 10 non-spin related spacetime degrees of freedom, which map to the 10 generators of the Poincare group. 
+
+In addition to the usual spacetime symmetries, the $\sm$ exhibits invariance under transformations of three gauge groups, each group being associated with a set of massless spin-1 (vector) fields:
+\begin{itemize}
+\item the circle group $\uone$, whose transformation can be represented by a unitary scalar operator (complex one) multiplied by a charge called the weak hypercharge Y. The associated vector field is called ${\rm B}_{\mu}$;
+\item the $n=2$ special unitary group $\sutwo$, whose three transformations can be represented by the $2\times2$ Pauli matrices $\sigma_{i}$ ($i=1,2,3$) multiplied by a charge called the weak isospin $T_3$. The three associated vector fields are $W_{\mu}^{1,2,3}$;
+\item the $n=3$ special unitary group $\suthree$, whose eight operations can be represented by the $3\times3$ Gell-Mann matrices $\lambda^{j}$ ($j=1,...,8$) multiplied by a charge called the color $C=(r,g,b)$. The eight associated vector fields are $G_{\mu}^{1,...,8}$.
+\end{itemize}
+In total, that makes 12 vector fields associated with three gauge symmetries, all of which can be summarized by the tensor product of groups that defines the gauge symmetry of the $\sm$:
+\begin{equation}
+\uone \cross \sutwo \cross \suthree.
+\label{eq:symm}
+\end{equation}
+The $\sm$ also has 12 spin-1/2 (fermion) fields $\psi$, sometimes referred to as ``matter fields,'' 6 of which are the lepton fields and 6 are quark fields.  Of the lepton fields, there are three charged fields, electron (e$^-$), muon ($\mu^-$), and tau ($\tau^-$), and three neutral fields, electron neutrino ($\nu_{\rm e}$), muon neutrino ($\nu_{\mu}$), and tau neutrino ($\nu_{\tau}$). Of the quark fields, there are three ``up-type'' fields, up (u), charm (c), and top (t), and three ``down-type'' fields, down (d), strange (s), and bottom (b). Fermions contain a property called chirality, and they can either be left-chiral, or right-chiral, which are sometimes referred to as left- or right- handed. For mysterious but experimentally verified reasons, left-handed fermion fields transform differently under the SU(2)$_{\rm L}$ gauge symmetry than do the right-handed fermion fields, which results in an asymmetry in the properties of fermions; specifically, there are left-handed and right-handed charged leptons, left-handed neutrinos, but no right-handed neutrinos.
+
+The last field in the $\sm$ is a complex scalar doublet field ($\phi$), named the Higgs field after one of the theorists who predicted its existence in 1964 \cite{Higgs:1964pj}. 
+
+\section{$\sm$ Lagrangian}
+The $\sm$ Lagrangian \cite{Langacker:1995hi} can be written in a somewhat simplified form as
+\begin{align}
+\begin{split}
+\Lag_{\rm SM} =& \frac{1}{2}(\partial_\mu \phi)^2 
+- \frac{1}{2}\mu^2\phi^{2}
+-\frac{\lambda}{4}\phi^{4}
++\frac{1}{4}g_{1}^{2}({\rm B}_{\mu})^2\phi^2 + \frac{1}{4}\sum_{i=1}^{3}g_{2}^2 (\sigma^{i} {\rm W}^{i}_{\mu})^2\phi^2 \\
+&+ \sum_{i,j=1}^{9}\psi_i y_{ij} \psi_{j}\phi
++\sum_{i=1}^{8}\frac{1}{4}\bigg[\partial_\mu {\rm G}^{i}_\nu - \partial_\nu {\rm G}^{i}_\mu - \sum_{j,k=1}^{8}g_s f_{ijk} {\rm G}^{j}_{\mu}{\rm G}^{k}_{\nu}\bigg]^2
++\Lag_{\rm gauge, kin}.
+\end{split}
+\end{align}
+The first three terms are much like the $\phi^4$ scalar Lagrangian introduced in Section \ref{sss:QFT}, except for one trivial and one non-trivial difference. The trivial difference is that the names of the coefficients on $\phi^2$ and $\phi^4$ have been tweaked slightly to reflect their true meaning (the scalar mass and a coupling constant, respectively), and the non-trivial difference is that the field $\phi$ is now a complex scalar doublet rather than a real-valued number, and so $\phi^2\equiv\phi^{\dag}\phi$, where $^\dag$ denotes hermitian conjugation. The fourth and fifth term are determined from invariance under the $\uone\cross\sutwo$ (electroweak) symmetry and are the allowed interactions of the W and B vector fields with the scalar field, where $g_{1}$ and $g_{2}$ are coupling constants. The sixth term features a sum over all pairs of charged fermion fields, and amounts to the set of allowed interaction terms between the fermion fields and the scalar; the constants $y_{ij}$ are called Yukawa couplings. The seventh term defines the properties of the gluon fields, where $g_s$ is the strong coupling constant and $f_{ijk}$ are so-called structure constants determined by the SU(3) symmetry group. The final term, $\Lag_{\rm gauge, kin}$ includes terms for the kinetic energy of fermion and gauge boson fields and a few higher-order interaction terms, but is not essential for this discussion.
+
+\section{Electroweak symmetry breaking}
+
+One conspicuous feature of this Lagrangian is the absence of any mass terms apart from the scalar mass term. The symmetry in Expression \ref{eq:symm} actually forbids quadratic terms for either the fermion or gauge boson fields, and so one might expect this model to describe a system which does not contain massive particles\textemdash certainly not our universe. However, as with the unbroken $\phi^4$ theory described earlier, this Lagrangian does not explicitly reveal all the dynamics. The coefficient of the quadratic term (in this case $\mu^2$) is measured to be negative, and this causes the scalar potential $V(\phi)$ to exhibit a minimum value at
+\begin{equation}
+|\phi|_{min}={\rm VEV}=\sqrt{\frac{-\mu^2}{\lambda}}.
+\end{equation}
+The universe is thought to have long ago slipped into the ground state with $\phi$ centered on the vacuum expectation value VEV. In this case, the Lagrangian can be re-expressed in terms of the fields through the replacement
+\begin{align*}
+\phi\rightarrow {\rm VEV} + {\rm h}, 
+\end{align*}
+where VEV acts as a constant and h is the new dynamic field, the Higgs field. The above replacement yields a Lagrangian that no longer respects the $\uone\cross\sutwo$ symmetry:
+\begin{align}
+\setlength{\jot}{25pt}
+\abovedisplayskip=-20pt
+\belowdisplayskip=-20pt
+\vp \Lag_{\rm SM} \rightarrow\  & \Lag_{\rm SM}'
+\nonumber \\\vp 
+\Lag_{\rm SM}'=& \frac{1}{2}(\partial_\mu [{\rm VEV}+{\rm h}])^2 
+- \frac{1}{2}\mu^2[{\rm VEV}+{\rm h}]^{2}
+-\frac{\lambda}{4}[{\rm VEV}+{\rm h}]^{4}
+\nonumber \\\vp 
++&\frac{1}{4}g_{1}^{2}({\rm B}_{\mu})^2[{\rm VEV}+{\rm h}]^2 + \frac{1}{4}\sum_{i=1}^{3}g_{2}^2 (\sigma^{i} {\rm W}^{i}_{\mu})^2[{\rm h}+{\rm \vp \vp VEV}]^2 
+\nonumber \\\vp +& \sum_{i,j=1}^{9}\psi_i y_{ij} \psi_{j}[{\rm VEV}+{\rm h}]
++\sum_{i=1}^{8}\frac{1}{4}\bigg[\partial_\mu {\rm G}^{i}_\nu 
+- \partial_\nu {\rm G}^{i}_\mu - \sum_{j,k=1}^{8}g_s f_{ijk} {\rm G}^{j}_{\mu}{\rm G}^{k}_{\nu}\bigg]^2
+\nonumber \\\vp 
++&\Lag_{\rm gauge, kin}, %%%
+\end{align}
+\begin{align}
+\hphantom{\Lag_{\rm SM}'=}=&\frac{1}{2}(\partial_\mu {\rm h})^2 
++ \frac{1}{2}\mu^2 {\rm h}^{2}
+- \lambda{\rm VEV}{\rm h}^{3} 
+- \frac{\lambda}{4}{\rm h}^{4}
++  {\color{blue} \frac{1}{4}g_{1}^{2}{\rm VEV}^2({\rm B}_{\mu})^2}
+\nonumber \\\vp
++ &\frac{1}{2}g_{1}^{2}{\rm VEV}({\rm B}_{\mu})^2{\rm h}
++ \frac{1}{4}g_{1}^{2}({\rm B}_{\mu})^2{\rm h}^2 
++ {\color{blue}\frac{1}{4}g_{2}^2{\rm VEV}^2\sum_{i=1}^{3}(\sigma^{i} {\rm W}^{i}_{\mu})^2)}
+\nonumber \\\vp
++ & \frac{1}{2}g_{2}^2 {\rm VEV}\sum_{i=1}^{3}(\sigma^{i} {\rm W}^{i}_{\mu})^2{\rm h}^2
++ \frac{1}{4}g_{2}^2\sum_{i=1}^{3}(\sigma^{i} {\rm W}^{i}_{\mu})^2{\rm h}^4
++ \sum_{i,j=1}^{9}\psi_i y_{ij} \psi_{j}{\rm h}
+\nonumber \\\vp 
++ & {\color{blue}({\rm VEV})\hspace{-.1cm}\sum_{i,j=1}^{9}\psi_i y_{ij} \psi_{j}}
++ \frac{1}{4}\sum_{i=1}^{8}\bigg[\partial_\mu {\rm G}^{i}_\nu - \partial_\nu {\rm G}^{i}_\mu - \sum_{j,k=1}^{8}g_s f_{ijk} {\rm G}^{j}_{\mu}{\rm G}^{k}_{\nu}\bigg]^2 
+\nonumber \\\vp 
++ &\Lag_{\rm gauge, kin}.
+\end{align}
+The terms highlighted in blue are quadratic in the fields and indicate that several $\sm$ particles have ``acquired'' mass through their interactions with the Higgs field. The third blue term indicates that the 9 charged $\sm$ fermions each now have an associated mass equal to the VEV multiplied by their respective Yukawa coupling. Similarly, the first and second blue terms show that the gauge fields B and W are associated with masses as well; the electroweak symmetry has been spontaneously broken. Note that there are still no terms quadratic in the gluon fields G, and so the gluons remain massless; the $\suthree$ symmetry remains unbroken. We are left with a model that more closely resembles $\nature$, but there is one stone left unturned. It is known that nature retains one massless electroweak gauge boson, the photon $\gamma$, and so it must be that one of the $\EW$ field terms has a quadratic term equal to zero. This is achieved through a mixing of the B and W fields, wherein new fields are defined as various combinations of the old fields:
+\begin{align}
+\vps W_{\mu}^{+} =& \frac{1}{\sqrt{2}}(W_{\mu}^1 - i W_{\mu}^2)\\
+\vps W_{\mu}^{-} =& \frac{1}{\sqrt{2}}(W_{\mu}^1 + i W_{\mu}^2)\\
+\vps Z_{\mu} =& -{\rm sin}\theta_{W}{\rm B}_\mu+{\rm cos}\theta_{W}W_{\mu}^3\\
+\vps A_{\mu} =&+{\rm cos}\theta_{W}{\rm B}_\mu+{\rm sin}\theta_{W}W_{\mu}^3,
+\end{align}
+where $\theta_W$ is the electroweak mixing angle (the Weinberg angle), defined as:
+\begin{equation}
+\theta_{W}={\rm tan}^{-1}(g_1/g_2).
+\end{equation}
+The new gauge fields are associated with masses equal to
+\begin{align}
+\vps m_{W} &= \frac{1}{2}{\rm VEV}g_{2}, \\
+\vps m_{Z} &= \frac{1}{2}{\rm VEV}\sqrt{g_{1}^{2}+g_{2}^{2}},\\
+\vps m_{A} &= 0.
+\end{align}
+The massless field $A_{\mu}$ is identified as the electromagnetic field, or the photon field. This field respects a new U(1) symmetry, the symmetry of electromagnetism, ${\rm U(1)}_{\rm EM}$, whose generator of transformations is the well-known electric charge $Q=T_3+\frac{1}{2}Y$. It is said that the electroweak symmetry breaks to the electromagnetic symmetry:
+\begin{equation}
+\uone\cross\sutwo\cross\suthree\rightarrow{\rm U(1)}_{\rm EM}\cross\suthree
+\end{equation}
+
+\section{SM parameters and visualization}
+\label{sec:parcor}
+A summary of the $\SM$ fields and particles is given in Table \ref{tab:SM}.  
+\input{inputs/StandardModel/SM_table.tex}
+In total, the $\sm$ has 19 free parameters, all of which have been measured. They are
+\begin{itemize}
+\item{9 fermion mass parameters, one for each charged fermion;}
+\item{1 Higgs mass parameter $m_h$ (the Higgs boson was discovered and $m_h$ measured in 2012 \cite{Chatrchyan:2012xdj}); 
+\item 1 vacuum expectation value, the VEV;}
+\item{3 field strength constants, $g_1$, $g_2$, and $g_3$}; and
+\item{5 additional mixing parameters appearing in $\Lag_{\rm gauge, kin}$ not discussed herein: $\theta_{12}$, $\theta_{23}$, and $\theta_{13}$, $\delta$, and $\theta_{\rm QCD}$.}
+\end{itemize}
+The values of these parameters can be represented using the technique of parallel coordinates visualization~\cite{bib:parcor}. In a parallel coordinates plot, independent variables are represented by vertical parallel axes, and points in the hyperspace spanned by the independent variables are represented by horizontal lines traversing the plot from left to right. In Figure \ref{fig:parcorSM}, the $\sm$ is represented as the red line, intersecting each axis at the value of the parameter assumed by the theory, in this case the measured value.  
+
+The information in Equation \ref{eq:symm}, Table \ref{tab:SM}, and Figure \ref{fig:parcorSM} fully defines the $\sm$.
+\begin{sidewaysfigure}[h]
+\begin{centering}
+\makebox[\textwidth][c]{
+\hspace{-.5cm}
+\includegraphics[width=1.0\linewidth]{figures/parallel_coordinates/ParCorSM.pdf}
+}
+\caption{A parallel coordinates plot of the 19 $\SM$ parameters. Values on the black axes have dimensions of energy and are read from the left, while the values on the blue axes are read from the right.}
+\label{fig:parcorSM}
+\end{centering}
+\end{sidewaysfigure}
+
+\include{inputs/StandardModel/Problems.tex}

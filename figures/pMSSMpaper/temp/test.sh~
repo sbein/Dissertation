@@ -1,0 +1,10 @@
+mv combined//*.pdf ../combined
+mv combined_higgs//*.pdf ../combined_higgs
+mv hadExcl//*.pdf ../hadExcl
+mv inclusive//*.pdf ../inclusive
+mv leptonic//*.pdf ../leptonic
+mv combined7and8TeV_surv_100//*.pdf ../combined7and8TeV_surv_100
+mv preCMS//*.pdf ../preCMS
+mv combined7and8TeV_surv_100//*.pdf ../combined7and8TeV_surv_100
+mv preCMS//*.pdf ../preCMS
+mv combined_sp//*.pdf ../combined_sp

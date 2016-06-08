@@ -1,0 +1,61 @@
+
+Designing analyses to target the non-excluded regions of the pMSSM is challenging for a number of reasons. The fact that the signal events in this subset contain soft objects and low $\met$ means that the observables typically used to distinguish between \SM~backgrounds and the signal no longer function as excellent discriminators. 
+
+However, the situation is not completely dire. The  $\Ht$, $\met$, and the prevalence of high $p_{T}$ objects are popular largely because they exploit relatively well-understood differences between typical new physics signals and background. There are presumably other aspects of collision events that may differ between events arising from supersymmetry those from Standard Model processes, such as the relative angles between particles, the presence and characteristics of leptons and heavy-flavor quarks in the events, certain Lorentz invariant event properties, as well as various combinations of the four-vectors of particles. Information not considered in most searches, but to which we have ready access, include the $\pt$, $\eta$, and $\phi$ of particles in the event. Correlations among these observables may serve to distinguish between $\sm$ events and BSM events. 
+
+\subsubsection{New techniques with new events}
+Can our sensitivity to the pMSSM be increased through the use of multivariate discriminants? Addressing a few questions is key in order to proceed: 
+\begin{enumerate}
+\item Does the collection of particle four-vectors actually contain information that distinguishes signal events from background events?
+\item Can this information be accurately modeled in real and simulated events?
+\item Is any such discrimination power generalizable to a large class of interesting models, or is it limited to a narrowly-defined subset of models or a single model?
+\end{enumerate}
+In this section, I set out to answer these questions by considering events in two kinematic regions that are notoriously background-dominated, but which was established in Chapter \ref{chap:run1pmssm} to potentially be populated by large numbers of signal events, namely, the low-$\met$ region and the low-$\Ht$ region. For simplicity, I define two signal regions according to the baseline selection of the CMS multi-jet $+$ $\mht$ search (Section \ref{sec:ra2b2015}), but relaxing the threshold on the $\mht$  such that I consider events in the range $\mht=150$$-$$200$ GeV for the first signal region, and relaxing the threshold on either the $\Ht$  such that I consider events in the range $\Ht=400$$-$$500$ GeV for the second signal region. In each signal region, a separate multivariate discriminant is trained and tested, making full use of the data-driven background estimation methods described earlier. To answer questions 1$-$3, I address each signal region separately.
+
+\subsubsection{Low-$\mht$ discriminant}
+The kinematic region defined by the range $\mht=150$$-$$200$ GeV is largely dominated by QCD multi-jet events. Therefore, I focus on rejecting QCD events while accepting hypothetical SUSY events by following a strategy where I
+\begin{itemize}
+\item create a pure sample of QCD events using the data-driven QCD generator based on the rebalance and smear method (Section \ref{sec:qcd});
+\item obtain a few samples of SUSY signal events corresponding to models that are nearly excluded by the existing CMS searches (I consider SUSY models within the SMS framework, T1qqqq with $m_{\tilde{\text{g}}}=1000$ GeV and $m_{\tilde{\chi}^{0}_{1}}=800$ GeV,  T1bbbb with $m_{\tilde{\text{g}}}=1000$ GeV and $m_{\tilde{\chi}^{0}_{1}}=900$ GeV, and T1tttt with $m_{\tilde{\text{g}}}=1200$ GeV and $m_{\tilde{\chi}^{0}_{1}}=800$ GeV);
+\item train a discriminant using the QCD sample for the background events, and pooled events from the three SUSY models for the signal training events;
+\item observe the accuracy of the modeling of the discriminant output in simulated QCD events, and
+\item observe potential sensitivity to a range of signal models.
+\end{itemize}
+
+A boosted decision tree is trained using the signal and background samples, taking the $\pt$, $\eta$, and $\phi$ of each of the four leading jets, as well as the $\mht$, $\Ht$, and $\njets$ as inputs. The output of the discriminant for signal and background is shown in Fig. \ref{fig:SusyBdt}. The modeling of the QCD background in simulation by the rebalance and smear method is shown in Fig. \ref{fig:SusyBdt}, overlaid with the distribution of a few signal model points. Good consistency is observed between the prediction and expectation, a demonstration that the Bayesian rebalance and smear method can accurately model the correlations of up to 19 observables. Also shown are the BDT output distributions for the three chosen signal models, as well as the tradeoff between the signal efficiency and background rejection (ROC curve). It is evident that additional discrimination can be achieved through multivariate discriminants, that such discriminants can be modeled in the data, and that such discriminants can be used to probe a broad class of models.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/SusySearches/MvaLowMht.pdf}
+\includegraphics[width=0.7\linewidth]{figures/SusySearches/RocCurvesLowMht_QCDVsSUSY.pdf}
+\caption{Top: the distribution of the output of the low-$\mht$ data-driven discriminant for a sample of simulated QCD events, compared with the distribution obtained by applying the rebalance and smear method to simulation. Also shown are the distributions of the output for a few signal points corresponding to various SMS scenarios. Bottom: the efficiency of selecting signal events vs that of selecting background events, based on a scan through all possible thresholds on the discriminant.}
+\label{fig:SusyBdt}
+\end{figure}
+
+\subsubsection{low-$\Ht$ discriminant}
+A similar procedure can be applied in the low-$\Ht$ region, defined by the baseline selection of the CMS multi-jet $\mht$ search, but restricted to an $\Ht$ window of $\Ht=400$$-$500. In this region, the dominant Standard Model background is the production of $Z$ bosons in association with jets, where the $Z$ decays into neutrinos. Therefore, I focus on rejecting $\zinv$ events while accepting SUSY signal events with high efficiency. Using the data-driven $\zinv$ background estimation methods described in Section \ref{sec:zinv}, and staying with the idea that multivariate discriminants can be trained using data control samples for the background training events, I
+\begin{itemize}
+\item obtain a $\zinv$ prediction sample based on a data control sample of $\zmumu$ events that have been cleaned of muons and reweighted to account for inefficiencies of lepton selection (as described in Section \ref{sec:zinv});
+\item obtain the same samples of SUSY signal events used earlier, namely, T1qqqq with $m_{\tilde{\text{g}}}=1000$ GeV and $m_{\tilde{\chi}^{0}_{1}}=800$ GeV,  T1bbbb with $m_{\tilde{\text{g}}}=1000$ GeV and $m_{\tilde{\chi}^{0}_{1}}=900$ GeV, and T1tttt with $m_{\tilde{\text{g}}}=1200$ GeV and $m_{\tilde{\chi}^{0}_{1}}=800$ GeV);
+\item train a multivariate discriminant using the muon-based $\zinv$ prediction sample for the background events, and the  SUSY model point for the signal events;
+\item observe the accuracy of the modeling of the discriminant output using the data-driven prediction applied in simulation to the dielectron sample compared with direct $\zinv$ simulation, and
+\item observe potential sensitivity to the signal models.
+\end{itemize}
+The modeling of the BDT output distribution for a simulated sample of $\zinv$ events is shown in Fig. \ref{fig:SusyBdt2}, along with the distribution for the sample obtained by applying dielectron prediction method to $\zee$ simulation. Overlaid with these distributions are distributions of the chosen signal model points. It is once again evident that additional significant sensitivity increases can be achieved through multivariate discriminants, that such discriminants can be modeled in the data, and that such discriminants can be used to probe a broad class of models.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/SusySearches/MvaLowHt.pdf}
+\includegraphics[width=0.7\linewidth]{figures/SusySearches/RocCurvesLowHt_ZinvVsSUSY.pdf}
+\caption{Top: The distribution of the output of the low-$\Ht$ muon data-driven multivariate discriminant for a sample of simulated $\zinv$ events, compared with the distribution obtained by applying the data-driven dielectron prediction method to simulation. Also shown are the distributions of the output for a few signal points corresponding to various SMS scenarios. Bottom: the efficiency of selecting signal events vs that of selecting background events, based on a scan through all possible thresholds on the discriminant.}
+\label{fig:SusyBdt2}
+\end{figure}
+
+\subsubsection{Potential future work}
+The signal samples chosen here pertain to simplified SUSY models. Ideally, nonexcluded pMSSM signal events can be used to train future discriminants. The exact procedure for how to pool the signal events from the pMSSM points to achieve good sensitivity to broad regions of the nonexcluded subspace must be developed. It was just shown that an unweighted pooling of signal events from different models can result in a discriminant that performs well over all models. 
+
+A suggested procedure is to train a multivariate discriminant for each domain of the pMSSM model space, where a domain is defined as the set of points corresponding to a single principal process (Chapter \ref{chap:run1pmssm} Section \ref{sec:unexplored}, particularly Fig. \ref{fig:diagrams1}). For each discriminant, either an unweighted pooling of signal events can be used in the training, or alternatively, events could be weighted by the Z-signficance of the pMSSM points, or by the cross section. Studies would be required to optimize this procedure.
+
+It is possible that providing more sophisticated variables as input to a multivariate discriminate could result in better performance than that achieved by the discriminants discussed here. Appendix \ref{app:discriminators} gives a brief introduction to a few such observables, some of which have been central to CMS and/or ATLAS searches for supersymmetry. Studies that evaluate the effectiveness with which these observables probe the pMSSM, taken alone and in combinations with each other, may prove to be informative.
+
+
+
+

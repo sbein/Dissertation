@@ -1,0 +1,281 @@
+% don't forget: repeat usage of micromegas when showing dark matter distributions
+
+\section{Analysis}
+\label{sec:anl}
+The purpose of this study is to assess how the current data constrain the MSSM using the more tractable pMSSM as a proxy.  We use the results from several CMS analyses, which cover a
+variety of final states, to construct posterior densities of model
+parameters, masses, and observables. The posterior density of the
+model parameters, which are denoted by $\theta$, is given by
+\begin{equation}
+	p(\theta|D^\textrm{CMS}) \propto L(D^\textrm{CMS} | \theta ) \, p^\textrm{non-DCS}(\theta),
+	\label{eq:posterior}
+\end{equation}
+where $D^\textrm{CMS}$ denotes the data analyzed by the direct CMS
+SUSY searches, $L(D^\textrm{CMS} | \theta )$ is the associated CMS
+likelihood that
+incorporates the impact of these direct CMS searches, and
+$p^\textrm{non-DCS}(\theta)$ is the prior density constructed from
+results not based on direct CMS SUSY searches (non-DCS results).
+%where $D^\textrm{CMS}$ denotes the CMS data, $L(D^\textrm{CMS} | \theta )$ the associated CMS likelihood, and $p^\textrm{non-DCS}(\theta)$ the prior density constructed from results other than those from direct CMS searches (DCS). 
+The posterior density for an observable $\lambda$ is obtained as follows,
+\begin{equation}
+	p(\lambda|D^\textrm{CMS}) = \int \delta[\lambda- \lambda^\prime(\theta)] \, p(\theta| D^\textrm{CMS}) \, d\theta,
+	\label{eq:lambda}
+\end{equation}
+where $\lambda^\prime(\theta)$ is the value of the observable as
+predicted by model point $\theta$. Equation \ref{eq:lambda} is approximated using Monte Carlo (MC) integration.  In the following, we describe the construction of the prior density and CMS likelihoods.
+
+\subsection{Construction of the prior}
+\label{sec:prior}
+If the posterior density for a given parameter differs significantly from its prior density (or prior, for short), then we may conclude that the data have provided useful information about the parameter; otherwise, the converse is true. However, for such conclusions to be meaningful, it is necessary to start with a prior that encodes as much relevant information as
+possible. In this study, the prior $p^\textrm{non-DCS}(\theta)$
+encodes several constraints: the parameter space boundary, some
+theoretical conditions, the chargino lifetimes, and most importantly
+the constraints from non-DCS data, such as precision measurements or pre-LHC new physics searches.
+
+The prior $p^\textrm{non-DCS}(\theta)$ is formulated as a product of four factors,
+\begin{align}
+	p^\textrm{non-DCS}(\theta) &\propto \left [ \prod_j L(D_j^\textrm{non-DCS} | \lambda_j(\theta)) \right] \,
+		\cdot p(c\tau(\tilde{\chi}^\pm) < \textrm{10\mm}| \theta) \,
+		 \cdot p(\textrm{theory}|\theta) \,
+		 \cdot p_0(\theta).
+		\label{eq:prior}
+\end{align}
+The initial prior $p_0(\theta)$ is taken to be uniform in the pMSSM sub-space,
+\begin{eqnarray}
+	&-3 \le M_1, M_2 \le 3\TeV,& \nonumber\\
+	&0 \le M_3 \le 3\TeV,			& \nonumber\\
+	&-3 \le \mu \le 3\TeV,		& \nonumber\\
+	&0 \le m_{\rm A} \le 3\TeV,			& \nonumber\\
+	&2 \le \tan\beta \le 60,		& \nonumber\\
+	&0 \le m_{{\tilde{\text{Q}}_{1,2}}}, m_{{\tilde{\text{U}}_{1,2}}}, m_{{\tilde{\text{D}}_{1,2}}}, m_{{\tilde{\text{L}}_{1,2}}}, m_{{\tilde{\text{E}}_{1,2}}}, m_{{\tilde{\text{Q}}_3}}, m_{{\tilde{\text{U}}_3}}, m_{{\tilde{\text{D}}_3}},m_{{\tilde{\text{L}}_3}}, m_{{\tilde{\text{E}}_3}} \le 3\TeV,	& \nonumber\\
+	&-7 \le A_{\text{t}}, A_{\text{b}}, A_\tau \le 7\TeV,
+\label{eq:subspace}
+\end{eqnarray}
+and the formally unbounded 
+SM subspace defined by $m_{\rm t}$, $m_{\rm b}(m_{\rm
+  b})$, and $\alpha_{\rm s}(m_{\rm Z})$; the non-DCS measurements constrain these parameters within narrow ranges.  A point in this sub-space is denoted by $\theta$.
+The sub-space defined in Eqs. (\ref{eq:subspace}) 
+covers the 
+phenomenologically viable parameter space for the LHC and 
+is large enough to cover sparticle masses to which the LHC might
+conceivably be 
+ultimately sensitive.  The lower bound of 2 for $\tanb$ evades non-perturbative effects in the top-quark Yukawa coupling after evolution up to the GUT scale. These effects typically become a very serious issue for $\tanb\lsim 1.7$~\cite{Das:2000uk}.  
+%{\color{red} TODO: SK, JG - Add a note on the range of $A_i$}. 
+The term $p(\textrm{theory} | \theta)$  imposes the theoretical constraints listed at the end of Section~\ref{sec:pmssm}, while $p(c\tau(\tilde{\chi}^\pm)<10\mm | \theta)$ imposes the prompt chargino constraint. Both  $p(\textrm{theory} | \theta)$ 
+and $p(c\tau(\tilde{\chi}^\pm)<10\mm | \theta)$ are unity if the
+inequalities are satisfied and zero otherwise. 
+
+
+The product of likelihoods $L(D^\mpreCMS|\lambda(\theta))$ in
+Eq. (\ref{eq:prior}) over measurements $j$ is associated with \preCMS data $D^\mpreCMS$,
+which imposes constraints from precision measurements and a selection
+of pre-LHC searches for new physics.
+%\subsection{Initial prior probability density}
+%\label{sec:initprior}
+%
+%The initial prior probability density $p_0(\theta)$ is chosen to be uniform and greater than zero for
+%pMSSM parameter values $\theta$ that are allowed by the theoretical constraints listed in Section~\ref{sec:pMSSM},
+%that result in mean proper chargino lifetimes shorter than $10~\mathrm{mm}/c$,
+%and are within the bounds
+%For other parameter values the initial prior density is chosen to be zero.
+%As explained later in this section, the chargino lifetime condition is required to enable a proper calculation of CMS likelihoods.
+%\subsubsection{The \preCMS likelihood}
+%\label{sec:precmslhd}
+%The \preCMS likelihood $L(D^\mpreCMS|\theta)$ is the product of the likelihoods of several precision measurements
+%and of direct searches for new physics performed at LEP.
+The data and their associated likelihoods are listed in Table~\ref{tab:preCMS}.
+To avoid introducing any bias from cosmological assumptions (e.g., dark matter density and distribution, assumption of one thermal relic, no late entropy production, etc.), we do not include data from dark matter experiments in the prior.  
+%\subsubsection{Sampling of prior}
+
+Since the explicit functional dependence of the prior $p^\textrm{non-DCS}(\theta)$ on
+$\theta$ is not available \emph{a priori}, but the predictions $\lambda(\theta)$ are available point by point, it is natural to represent the prior as set of points sampled from it.  Owing to the complexity of the parameter space, the sampling is done
+using a Markov chain Monte Carlo (MCMC) 
+method~\cite{MCMC1,MCMC2,MCMC3,MCMC4,Bayes:2}. 
+
+
+% The \preCMS data included in the prior are shown in
+% Table~\ref{tab:preCMS}.  All data except Higgs signal strenths $\mu_h$
+% were used in the original MCMC scan.  However, measurements marked
+% "reweight" in the last column were updated during this study, and the
+% scanned points were reweighted to take into account the updated
+% effects, as described in Appendix~\ref{sec:mcmcorigvars}, along with
+% the original measurement values. 
+
+All data in Table~\ref{tab:preCMS} except the Higgs boson signal strengths $\mu_{\rm h}$ were used in the
+original MCMC scan. The $\mu_{\rm h}$ measurements were incorporated into the prior post-MCMC.    
+A number of measurements, marked ``reweight"€™ in the last
+column, were updated during the course of this study as new results
+became available.  The weights, applied to the subset of scan points which were selected for simulation, were computed as the likelihood ratio of the new measurements shown in
+Table~\ref{tab:preCMS} to the previously available measurements.    
+%the original ones used in the MCMC sampling and the reweighting procedure are detailed in Appendix~\ref{sec:mcmcorigvars}. 
+
+For a given point $\theta$, the predictions $\lambda(\theta)$ --- including those needed
+to calculate the likelihoods $L(D^\mpreCMS|\lambda(\theta))$ --- are obtained as follows. 
+The physical masses and interactions are calculated 
+using the SUSY spectrum generator {\sc SoftSUSY } 3.3.1~\cite{Allanach:2001kg},
+with the input parameters $\theta$ defined at $m_{\rm SUSY}$. 
+This calculation includes 1-loop corrections for sparticle masses and mixings, 
+as well as 2-loop corrections for the small Higgs boson mass.
+Low-energy constraints are calculated with {\sc SuperIso}
+v3.3~\cite{Mahmoudi:2008tp}. {\sc micrOMEGAs} 2.4.5~\cite{Belanger:2001fz,Belanger:2004yn,Belanger:2008sj} is used 
+to check the compatibility of pMSSM points with direct detection cross section limits from LEP and other pre-LHC sparticle mass limits. {\sc micrOMEGAs} is also used to compute the dark matter relic density $\Omega_{\tilde{\chi}^0_1}h^2$ shown in Fig. \ref{fig:more1D_dm} (a). The program  {\sc SDECAY} 1.3~\cite{Muhlleitner:2003vg} is used to calculate sparticle decay tables and 
+{\sc HDECAY} 5.11~\cite{Djouadi:1997yw} to calculate Higgs boson decay tables.
+For evaluating the Higgs boson signal likelihood based on the latest ATLAS~\cite{ATLAS-CONF-2014-009}
+and CMS~\cite{Khachatryan:2014jba} measurements, we use {\sc Lilith} 1.01~\cite{Bernon:2014vta,Bernon:2015hsa}, following the approach
+explained in Section~2.3 of Ref.~\cite{Dumont:2013npa}. The experimental results used in {\sc Lilith} are the signal strengths
+of the Higgs boson decay modes $Y=(\gamma\gamma,\,{\rm WW}^*,\,{\rm ZZ}^*,{\rm
+  b}\bar {\rm b},\tau\tau)$ in terms of the primary Higgs boson production modes
+gluon-gluon fusion (ggF), vector boson fusion (VBF), associated
+production with a W or Z boson (Wh and Zh, commonly denoted as
+Vh), and associated production with a top-quark pair (t$\bar{\text{t}}$h) as
+published by ATLAS, CMS,
+and Tevatron experiments.
+When these signal strengths are given as 2-dimensional (2D) CL contours in, e.g., the
+$\lambda_{\rm ggF+tth}(Y)$ versus $\mu_{\rm VBF+Vh}(Y)$ plane, the
+likelihood is reconstructed by fitting a 2D Gaussian function to the 68\%~CL
+contour provided by the experiments.
+For each experiment, the likelihood is then given by $- 2 \log L_Y
+= \chi_Y^2$ for each decay mode $Y$, and the combined likelihood is
+then obtained by summing over all the individual $\chi_Y^2$ values.
+Additional information on signal strengths (and invisible decays) in
+one dimension is included analogously, using the published likelihood function
+when available or else the Gaussian approximation.
+ 
+The uncertainty in the anomalous magnetic moment of the muon includes a component that accounts for theoretical uncertainties in the SUSY calculations.
+
+The large window on the Higgs boson mass of 120--130 GeV covers the theoretical uncertainty in the Higgs boson
+mass calculation in the MSSM. All tools use the SUSY Les Houches accord~\cite{Skands:2003cj} for
+data entry and output.  Approximately 20 million points are sampled from $p^\textrm{non-DCS}(\theta)$ using multiple MCMC chains, but omitting the prompt chargino requirement. When that requirement is imposed, the number of sampled points is reduced by 30\%. A random subsample of 7200 points is selected for simulation studies. Given the large dimensionality of the model, this is a rather sparse scan. However, the scan density is sufficient to learn much about the viability of the pMSSM model space.
+
+
+
+\input{preCMStable}
+
+
+\subsection{Incorporation of the CMS data}
+\label{sec:cmslhd}
+We consider the analyses given in Table~\ref{tab:CMS}, which explore final-state topologies 
+characterized by a variety of event-level observables:
+the scalar sum of the transverse momenta of jets (\HT{}); the magnitude of the vector sum of 
+the transverse momenta of final-state particles (\MET{} or \MHT{}); a measure of the transverse
+mass in events with two semi-invisibly decaying particles (\MTtwo{}); the multiplicity of \cPqb-tagged jets; and a
+range of lepton multiplicities, including opposite-sign (OS) and
+like-sign (LS) lepton pairs.  The searches together comprise hundreds of signal regions and address a large diversity of possible signal topologies.
+
+\input{CMStable} 
+
+The CMS likelihoods $L(D^\mCMS|\theta)$ are calculated for each of these analyses (or combinations of analyses), using different forms of likelihood depending on the nature of the results that are available.
+The first form of likelihood (\emph{counts}) uses observed counts,
+$N$, and associated background estimates, $B \pm \delta B$; the second
+($\chi^2$) uses profile likelihoods, $T(\mu, \theta)$, where $\mu =
+\sigma / \sigma^\textrm{SUSY}(\theta)$ is the signal strength modifier
+and $\sigma$ and $\sigma^\textrm{SUSY}(\theta)$ are the observed and
+predicted SUSY cross sections, respectively; while the third
+(\emph{binary}) joins either of the first two kinds of result together
+with a signal significance measure $Z$, and is used for combining
+results from overlapping search regions. In the following, we describe the three forms of the
+likelihood used and the signal significance measure $Z$.
+
+%Details of these likelihoods and the signal significance measure are given in Appendix~\ref{sec:likelihoods}.
+
+\paragraph*{Counts likelihood}
+For a single-count analysis, the likelihood is given by  
+\begin{equation}
+L(D^\mCMS|\theta) = \int \textrm{Poisson}(N | s(\theta) + b) \, p(b|B, \delta B) db,
+\label{eq:lhd_counts}
+\end{equation}
+where $N$ is the observed count,
+$s(\theta)$ and $b$ are the expected number of signal and background counts, respectively,
+and $B \pm\delta B$ is the estimated number of background event counts and its uncertainty.
+The prior density for $b$, $p(b|B, \delta B)$, is modeled as a gamma density, 
+$\textrm{gamma}(x;\alpha,\beta) = \beta \exp(-\beta x)  (\beta x)^{\alpha-1}/\Gamma(\alpha)$,
+with $\alpha$ and $\beta$ defined such that the mode and variance of the gamma density are  $B$ and $(\delta B)^2$, respectively. 
+%This likelihood provides an accurate description of statistical uncertainties and
+%describes systematic uncertainties in an approximative way.
+For analyses that yield multiple independent counts, the likelihood is
+the product of the likelihoods of the individual counts. For analyses
+with multiple counts, we neglect the correlations between
+the background predictions for the different search regions.  Systematic effects on the signal counts are taken into account by varying the signal yield by multiplying it with a signal strength modifier $\mu$ with values $1-\delta\mu, 1, 1+\delta\mu$, where $\delta\mu$ is the fractional value of the systematic uncertainty.
+
+\paragraph*{$\chi^2$ likelihood}
+This likelihood is used for CMS searches that provide profile
+likelihoods, $T(\mu,\theta) \equiv
+L(D^\mCMS|\mu,\theta,\hat\nu(\mu,\theta))$, for the signal strength
+modifier $\mu$, where $\nu$ represents the nuisance parameters and
+$\hat\nu(\mu,\theta)$ their conditional maximum likelihood
+estimates. Taking $\hat\mu$ to be the signal strength modifier that
+maximizes $T(\mu,\theta)$, it can be shown that the quantity $t =
+-2\ln\left[T(1,\theta)/T(\hat\mu,\theta)\right]$ follows a $\chi^2$
+density with one degree of freedom in the
+asymptotic limit~\cite{Wilks:1938dza},
+\begin{eqnarray}
+L(D^\mCMS|\theta) & = &\exp(-t/2) / \sqrt{2\pi t}, 
+  ~\label{eq:lhd_chi2}
+\end{eqnarray}
+which we adopt as the CMS likelihood in this case. Systematic uncertainty in the signal yield can again be incorporated by varying the value of $\mu$.
+%This likelihood provides a good description of systematic and statistical uncertainties.
+
+\paragraph*{$Z$-significance}
+This study uses a signal significance measure defined by 
+\begin{align}
+  Z(\theta) = \textrm{sign} [\ln B_{10}(D, \theta )] \sqrt{2 | \ln B_{10}(D, \theta )|} ,
+  \label{eq:Zsingle}
+\end{align}
+where 
+\begin{equation}
+  B_{10}(D, \theta) = \frac{L(D | \theta, H_1)}{L(D | H_0)} 
+  \label{eq:B10}
+\end{equation}
+is the local Bayes factor for data $D$, at point $\theta$, and $L(D | \theta, H_1)$ and $L(D  | H_0)$
+are the likelihoods for the signal plus background ($H_1$) and background only ($H_0$) hypotheses, respectively.  The function $Z(\theta)$ is a signed Bayesian analog of the frequentist ``$n$-sigma".
+The case $Z \gg 0$ would indicate the presence of a signal 
+at a significance of $Z$ standard deviations, while the case $Z \ll 0$ would indicate the absence of signal, i.e., an \emph{exclusion} at a significance of $Z$ standard deviations.  The $Z$-significance is the basis of the binary likelihood.
+
+\paragraph*{Binary likelihood}
+This likelihood is used for combining results from search regions in
+which data may not be independent, for example, multiple counts from
+overlapping search regions.  We first divide the data into subsets for
+which either a count or $\chi^2$ likelihood can be calculated.  For
+each subset $j$, with data $D_j$, we compute $Z_j(\theta)$ using Eq. 
+(\ref{eq:Zsingle}).  An overall significance measure that includes all subsets under consideration is defined by
+\begin{equation}
+  Z(\theta) \equiv  Z_{j\rm max}(\theta),
+  \label{eq:Zmulti}
+\end{equation}
+where $j$max is the index of the maximum element in the set \{$|Z_j(\theta)|$\}.
+This quantity is used to define the binary likelihood as follows,
+\begin{equation}
+  L(D^\mCMS|\theta) =
+  \begin{cases}
+    1 & \text{if } Z(\theta) > -1.64, \\
+    0 & \text{if } Z(\theta) \leq -1.64,
+  \end{cases}
+  \label{eq:lhd_binary}
+\end{equation}
+where $Z(\theta) =-1.64$ corresponds to the frequentist threshold for
+exclusion at the 95\% confidence level (CL). Systematic uncertainties are incorporated by computing each $Z_j(\theta)$ by varying the value of $\mu$, and using these recalculated $Z_j(\theta)$ to compute the binary likelihood.  
+Although use of the binary likelihood entails a loss of information, it is a convenient approach in cases of non-disjoint data, where a proper likelihood calculation is not feasible without more information.  In this study, we use binary likelihoods for monojet searches, which have overlapping search regions, and for combining the 7 TeV, 8 TeV, and 7$+$8 TeV results, where the considered analyses use nondisjoint data.
+
+In order to compute likelihoods and $Z$-significances,  expected signal counts for
+the search regions of every analysis under consideration were computed
+for the 7200 pMSSM points.  The individual CMS analysis teams
+provided these counts by analyzing simulated signal events that were generated using {\sc pythia} 6.4~\cite{Sjostrand:2006za} and processed with the CMS fast detector simulation program~\cite{Abdullin:2011zz}.  
+For each pMSSM point, 10\,000 events were simulated.  
+
+
+
+%The binary likelihoods for the monojet searches,
+%a $Z$-significance is computed for each search region.
+%These significances are combined using Equation~(\ref{eq:Zmulti}) and inserted into Equation~(\ref{eq:lhd_binary}),
+%where the likelihoods in Equation~(\ref{eq:B10}) are calculated with the counts-based likelihood.
+%The binary likelihoods for the combinations of results, requires first the calculation of
+%a $Z$ significance for each of the results.
+%For each result, with the exception of those from the monojet searches,
+%this $Z$ significance is calculated using Equation~(\ref{eq:Zsingle}).
+%For the monojet searches, the $Z$ significance is
+%the combined $Z$ value just described.
+%The combined likelihood is then obtained by combining these significances using Equation~(\ref{eq:Zmulti}) and inserting them in Equation~(\ref{eq:lhd_binary}).
+%
+
+
