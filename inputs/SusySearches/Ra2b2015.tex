@@ -3,8 +3,7 @@ This search~\cite{Khachatryan:2016kdk} looks for an anomalously high rate of eve
 with four or more jets,
 no identified isolated electron or muon
 or isolated charged track,
-large scalar sum $\Ht$ of jet transverse momenta,
-and large missing transverse momentum $\mht$.
+large $\Ht$, and large $\mht$.
 The principal~\sm~backgrounds are
  events with top quarks,
 W bosons and jets,
@@ -13,20 +12,21 @@ and QCD multi-jet production,
 and are evaluated using control samples in the data as well 
 as information based on simulated events.
 
-This search targets the following simplified model scenarios:
-gluino pair production
-followed by the decay of each gluino to an undetected
-lightest SUSY particle (LSP) $\tilde{\chi}^{0}_{1}$
-and to a bottom quark-antiquark pair (T1bbbb model),
-a top quark-antiquark pair (T1tttt model),
-or a light-flavored quark-antiquark pair (T1qqqq model).
-We also consider a scenario corresponding to gluino pair
+The search targets simplified model scenarios corresponding to  
+gluino pair production,
+followed by the decay of each gluino to an LSP
+and a b$\bar{\text{b}}$ pair (T1bbbb model),
+to an LSP and a 
+t$\bar{\text{t}}$ pair  (T1tttt model),
+or to an LSP and  a light flavor q$\bar{\text{q}}$ pair (T1qqqq model).
+Simplified models corresponding to gluino pair
 production followed by the decay of each gluino to
-a light-flavored quark-antiquark pair and to either
-a next-to-lightest neutralino $\tilde{\chi}^{0}_{2}$
-or a lightest chargino $\chi^{\pm}_{1}$ (T5qqqqVV model). These models are shown in 
+a q$\bar{\text{q}}$ pair and
+a next-to-lightest EWkino, $\tilde{\chi}^{0}_{2}$ or $\chi^{\pm}_{1}$ (T5qqqqVV model), 
+are also targeted.
+These models are shown in 
 Fig. \ref{fig:Ra2bSMS}.
-\begin{figure}[h]
+\begin{figure}[tb!]
 \centering
 \includegraphics[width=0.45\textwidth]{figures/SusySearches/Ra2b2015/T1bbbb.pdf}
 \includegraphics[width=0.45\textwidth]{figures/SusySearches/Ra2b2015/T1tttt.pdf}\\
@@ -39,8 +39,47 @@ Fig. \ref{fig:Ra2bSMS}.
 \label{fig:Ra2bSMS}
 \end{figure}
 
-Events are collected using the hadronic trigger discussed in Section \ref{sec:anatrig}. At level 1 of the trigger system, events are triggered if they have a calorimeter-based $\Ht$ of 175 GeV. If the event is accepted, the
-HLT trigger then requires a calorimeter-based $\Ht>$ 280 GeV and a calorimeter-based $\met>$ 70 GeV. Finally, the HLT trigger applies a lower threshold of 350 GeV on the $\Ht$ in coincidence with a threshold on the $\met$ above 100 GeV computed using all particles reconstructed from information from the tracker and calorimeters.
+Events are collected using the hadronic trigger named
+\begin{itemize}
+  \item \texttt{HLT\_PFHT350\_PFMET100\_*},
+\end{itemize}
+where the text PFHT and PFMET refer to the online $\Ht$ and $\met$ computed using the particle flow (PF) algorithm (Section \ref{sec:reconstruction}), and the numbers 350 and 100 refer to the respective triggering thresholds in units of GeV.
+
+At level 1 of the trigger system, events are triggered if they have a calorimeter-based $\Ht$ of 175 GeV. If the event is accepted, the HLT trigger then requires a calorimeter-based $\Ht>$ 280 GeV and a calorimeter-based $\met>$ 70 GeV. Finally, the HLT trigger applies a lower threshold of 350 GeV on the $\Ht$ in coincidence with a threshold on the $\met$ above 100 GeV computed using all particles reconstructed from information from the tracker and calorimeters.
+
+\begin{figure}[tb!]
+  \begin{center}
+    \includegraphics[width=0.95\linewidth]{figures/trigger/EfficiencyRatioMethodTruth.pdf}
+    \caption{
+      The ratio of the trigger efficiency for events passing the single
+      electron reference trigger to the trigger efficiency for all
+      events in a simulated t$\bar{\text{t}}$ sample, as a function of the offline $\Ht$
+      and $\mht$. The ratio is consistent with 1 within the region of
+      the baseline selection of $\Ht>500$ GeV and $\mht>200$ GeV of the CMS hadronic searches.
+    }
+    \label{fig:2dEffRatio}
+  \end{center}
+\end{figure}
+It is seen that this choice of reference trigger allows for an unbiased estimate of the trigger efficiency in the region $\mht>150$ GeV and $\Ht>500$, which fortunately includes the baseline selection of the analyses that use this trigger; the baseline region definitions impose offline selections of $\mht>200$ GeV and $\Ht>500$ GeV, indicated below. 
+
+The efficiency, estimated without bias using Equation \ref{eq:trigeff}, is shown as a function of the offline $\Ht$ and $\mht$, each in 1-dimension, in Fig. \ref{fig:trigger-turnon} using the entire 2015 dataset. 
+\begin{figure}[tb!]
+  \begin{center}
+    \includegraphics[width=0.49\linewidth]{figures/trigger/EffVsHt2_3InvFb.png}
+    \includegraphics[width=0.49\linewidth]{figures/trigger/EffVsMht2_3InvFb.png}
+    \caption{
+      The trigger efficiency for \texttt{HLT\_PFHT350\_PFMET100*} 
+      as a function of the search variables $\Ht$ and $\mht$. The dashed (solid) blue
+      lines show the distributions of the denominator (numerator) samples. These results were used in the CMS PAS on the commissioning of 13 TeV observables for SUSY searches~\cite{CMS-DP-2015-035}.
+      }
+    \label{fig:trigger-turnon}
+  \end{center}
+\end{figure}
+The statistical uncertainties in the plot are the 68\% CL Clopper-Pearson
+intervals~\cite{Clopper:Pearson}. Additionally, a systematic uncertainty is assigned to the efficiency
+equal to the difference between the efficiency obtained from applying the method described to a
+sample of simulated t$\bar{\text{t}}$ events and that derived
+from a set of simulated signal events. Such differences may arise due to any number of subtle differences in the content of the events in t$\bar{\text{t}}$ and signal samples. 
 
 The probability for the trigger to fire on an event that passes the baseline selection is greater than 97\%. The baseline event selection can be summarized as follows. Events are accepted if they have
 \begin{itemize}
@@ -49,14 +88,14 @@ The probability for the trigger to fire on an event that passes the baseline sel
 \item $\Ht>500$ GeV;
 \item $\mht>200$ GeV;
 \item $\njets\geq$ 4, where jets are required to have a $\pt>30$ GeV and $|\eta|<2.4$, and
-\item an azimuthal separation between the $\mht$ and the leading four jets $\Delta\phi(\mht$, jet$_{1,2,3,4})>$ 0.5, 0.5, 0.3, 0.3.
+\item $\Delta\phi(\mht$, jet$_{1,2,3,4})>$ 0.5, 0.5, 0.3, 0.3.
 \end{itemize}
 After this selection, events are further subdivided into 72 exclusive bins
 in a four-dimensional array of $\mht$,
 the number of jets,
 the number of tagged bottom quark jets,
-and $\Ht$. Figure \ref{fig:ra2bArray} shows the boundaries of 6 bins in the $\Ht-\mht$ plane, and 12 bins in the plane of $\njets$$-$$\nbjets$. The 72 bins included in this search are defined by each unique combination of a box in the $\mht$$-$$\Ht$ plane and a box in the $\njets$$-$$\nbjets$ plane. The relative contribution of each~\sm~background in the selected regions is also shown. 
-\begin{figure}[h]
+and $\Ht$. Figure \ref{fig:ra2bArray} shows the boundaries of 6 bins in the $\Ht-\mht$ plane, and 12 bins in the plane of $\njets$$-$$\nbjets$. The 72 bins included in this search are defined by each unique combination of a box in the $\mht$$-$$\Ht$ plane and a box in the $\njets$$-$$\nbjets$ plane. 
+\begin{figure}[tb!]
 \centering
 \includegraphics[height=0.442\textwidth]{figures/SusySearches/Ra2b2015/aux/MC_BG_Pie_NB0.pdf}
 \hspace{-1cm}
@@ -68,7 +107,35 @@ search. The pie charts represent the relative contributions
 \end{figure}
 
 
-\begin{figure}[ht]
+\subsubsection{Background estimation}
+The relative contribution of each~\sm~background in the selected regions is also shown in Fig. \ref{fig:ra2bArray}. The t$\bar{\text{t}}$, W$+$jets, and Z$+$jets backgrounds are estimated by data-driven methods are detailed in  \cite{Khachatryan:2016kdk}, but are not discussed thoroughly here. The QCD background is most dominant in regions of low $\mht$ and high $\Ht$, and its estimation is detailed here.
+
+The QCD background is estimated using two independent data-driven methods, one making use of a control region defined analogously to the baseline selection but with the $\Delta\phi$ requirement inverted, and by the rebalance and smear method described in Section \ref{sec:qcd}. The two methods are considered independent because the predictions are derived from nearly disjoint data control samples and distinctly different methodology. In the $\Delta\phi$ method, the counts in the inverted $\Delta\phi$ control region are related to the counts in the signal region. Factors relating the high- and low- $\Delta\phi$ counts are derived from a combination of input from real and simulated data, where the information from the real data is derived from events in the least sensitive analysis bins so as to minimize potential signal contamination. Further details about the inverted $\Delta\phi$ method are given in the literature.
+
+The bin-by-bin prediction based on the rebalance and smear method, along with the systematic uncertainties described in Section \ref{sec:qcd}, are shown in Fig. \ref{fig:2015CompareQCD}, with the predictions and uncertainties based on the inverted $\Delta\phi$ method superimposed. 
+
+
+tindependent from the rebalance and smear method described earlier. 
+The comparison between the prediction for the two methods is shown in Fig. \ref{fig:2015CompareQCD}. No evidence of inconsistency is seen between the two independent predictions.
+\begin{figure}[tb!]
+\centering
+\includegraphics[width=\linewidth]{figures/SusySearches/Ra2b2015/2015CompareQCD.pdf}
+\caption{
+  The QCD prediction based on the $\Delta\phi$ extrapolation method compared with that of the of rebalance and smear method.}
+\label{fig:2015CompareQCD}
+\end{figure}
+
+
+
+The observed numbers of events in the 72 search regions
+are shown in Fig.~\ref{fig:fit-results}
+in comparison to the summed predictions for the SM backgrounds,
+with numerical values tabulated in Appendix A of~\cite{Khachatryan:2016kdk}. The predicted background is observed to be statistically compatible
+with the data for all 72 regions.
+Therefore, we do not observe evidence for new physics.
+These results are interpreted in the context of the simplified models shown in Fig. \ref{fig:Ra2bSMS}.
+
+\begin{figure}[tb!]
 \centering
 \includegraphics[width=\linewidth]{figures/SusySearches/Ra2b2015/results-plot-prefit.pdf}
 \caption{
@@ -77,28 +144,11 @@ search. The pie charts represent the relative contributions
   in the 72 search regions of the analysis,
   with fractional differences shown in the lower panel.
   The shaded regions indicate the total uncertainties in the background
-  predictions. For the precise numbering scheme, please see Appendix A of~\cite{Khachatryan:2016kdk}.
+  predictions. For the precise numbering scheme, as well as the final expected and observed counts, please see Appendix \ref{app:anatables}.
 }
 \label{fig:fit-results}
 \end{figure}
 
-
-The observed numbers of events in the 72 search regions
-are shown in Fig.~\ref{fig:fit-results}
-in comparison to the summed predictions for the SM backgrounds,
-with numerical values tabulated in Appendix A of~\cite{Khachatryan:2016kdk}. The estimation of the QCD background was performed using a data-driven method \cite{Khachatryan:2016kdk} that relates the counts in an inverted $\Delta\phi$ control region to the counts in the signal region. This method is independent from the rebalance and smear method described earlier. 
-The comparison between the prediction for the two methods is shown in Fig. \ref{fig:2015CompareQCD}. No evidence of inconsistency is seen between the two independent predictions.
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\linewidth]{figures/SusySearches/Ra2b2015/2015CompareQCD.pdf}
-\caption{
-  The QCD prediction based on the $\Delta\phi$ extrapolation method compared with that of the of rebalance and smear method.}
-\label{fig:2015CompareQCD}
-\end{figure}
-The predicted background is observed to be statistically compatible
-with the data for all 72 regions.
-Therefore, we do not observe evidence for new physics.
-These results are interpreted in the context of the simplified models shown in Fig. \ref{fig:Ra2bSMS}.
 
 For the interpretation, a likelihood fit to data is used to set limits on
 the production cross sections of the signal scenarios.

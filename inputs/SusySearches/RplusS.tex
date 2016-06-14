@@ -1,8 +1,8 @@
 
-Purely hadronic events originating from QCD interactions in proton-proton collisions account for the vast majority of events observed at the LHC. Not surprisingly, these events are a major background to new physics signals that may manifest in the hadronic channel. Several features of multi-jet QCD events are poorly modeled, including the production cross section, jet multiplicity, and relationships between the directions of jets. This motivates the development of data-driven approaches to QCD estimation. Typically, one takes advantage of the particularly well-modeled aspects of event simulation, but relies on the real data to model as many features as possible. As with any data-driven approach the method must be robust against possible signal contamination that may enter into control regions. 
+Purely hadronic events originating from QCD interactions in proton-proton collisions account for the vast majority of events observed at the LHC. Not surprisingly, these events are a major background to new physics signals that may manifest in the hadronic channel, particularly in regions of low $\met$. Several features of multi-jet QCD events are poorly modeled, including the production cross section, jet multiplicity, and relationships between the directions of jets. This motivates the development of data-driven approaches to QCD estimation. Generally, one takes advantage of the particularly well-modeled aspects of event simulation, but relies on the real data to model as many features as possible. As with any data-driven approach the method must be robust against possible signal contamination that may enter into control regions. 
 
 \subsection{The origin of $\met$ in QCD events}
-In order to estimate the QCD background contribution in signal regions with large $\met$, it is helpful to make use of the knowledge that the only stable particles in the $\SM$ that are invisible to the CMS detector are neutrinos. Apart from rare final states containing heavy-flavor jets,  QCD events are free of neutrinos, and therefore exhibit little or no $\met$ at the parton level.  For this reason, the $\met$ typically serves as an excellent discriminating variable between the large QCD background and events with significant $\met$, such as models of $R$-parity conserving supersymmetry (see Chapter \ref{chap:susy}). However, QCD events {\it only} exhibit zero $\met$ at the parton level $(\met)_{\rm part}$. The final-state particles are detected by a tracker and calorimeters with finite momentum and energy resolution. Mis-measurements of the jet momenta propagate into the measured missing transverse energy, inducing a sometimes significant missing transverse energy measurement $(\met)_{\rm meas}$, resulting in the QCD events occupying a similar kinematic region as events predicted by models of new physics.  These statements can be summarized as follows:
+In order to estimate the QCD background contribution in signal regions with large $\met$, it is relevant to note that the only stable particles in the $\SM$ that are invisible to the CMS detector are neutrinos. Apart from rare final states containing heavy-flavor jets,  QCD events are free of neutrinos, and therefore exhibit little or no $\met$ at the parton level.  For this reason, the $\met$ typically serves as an excellent discriminating variable between the large QCD background and events with significant $\met$, such as models of $R$-parity conserving supersymmetry. However, QCD events {\it only} exhibit zero $\met$ at the parton level $(\met)_{\rm part}$. The final-state particles are detected by a tracker and calorimeters with finite momentum and energy resolution. Mis-measurements of the jet momenta propagate into the measured missing transverse energy, which can result in the measurement of large missing transverse energy, $(\met)_{\rm meas}$, and so QCD events can occupy a similar kinematic region as events predicted by models of new physics.  These statements can be summarized as follows:
 \begin{align}
 %\begin{split}
 (\vec{E}_{ T}^{\rm miss})_{\rm part} &\equiv -\sum_{i=1}^{n}(\vec{p}_{T})_{i,\rm part\ }=0\\
@@ -30,7 +30,7 @@ Additionally, an isolation criterion,
 \begin{equation}
 p_{\rm T}/\sum_{i=1}^{\njets}[(p_{\rm T})_{i}\cdot\Theta(0.5-\Delta R(p^{\mu}_{i},p^{\mu}))]<1.01,
 \end{equation}
-is applied both to the parton-level jets and to the reconstruction-level jets that contribute to the likelihood. The likelihood, as shown in Figure \ref{fig:SmearEx}, is derived in bins of parton-level jet $p_T$ and $\eta$.
+is applied both to the parton-level jets and to the reconstruction-level jets that contribute to the likelihood. The jet $\pt$ likelihoods (jet response functions), as shown in Fig. \ref{fig:SmearEx}, are derived in simulation. The likelihoods are measured in 800 finely-spaced bins of parton-level jet $p_T$ and $\eta$.
 \begin{figure}[h]
 \centering
 \subfloat[]{
@@ -45,10 +45,10 @@ is applied both to the parton-level jets and to the reconstruction-level jets th
 
 
 \subsection{Rebalance and smear method}
-The rebalance and smear method, originally developed by the authors of the Dissertations~\cite{Koay:2011qqa}\cite{Schroder:2012lqa}\cite{Goebel:2015kca} and the paper~\cite{Chatrchyan:2014lfa}, exploits the relationships given in Equations \ref{eq:metTrue}, along with the jet energy resolution, to form a transfer function between the measured and parton-level jets. The first step of the method is to identify the optimal matrix of scale factors $\hat{C}$ that transforms the collection of reconstruction-level jets into a set that resembles a parton-level jet collection, and (historically) yields an event with $\mht=0$; jets in the resulting collection are referred to as the rebalanced jets. In the second step, the four-vectors of the rebalanced jets are smeared according to the likelihood for the scale factor given in Equation \ref{eq:JetEnergyLikelihood}. This procedure, applied to all events in a QCD-enriched data control sample, yields event sample that is the basis of the QCD background prediction. Predictions for the QCD background in the signal regions are derived from cuts applied to this sample, which we may refer to as the prediction event sample. I have adapted key aspects of the methodology, which I will now describe step-by-step.
+The rebalance and smear method, originally developed by the authors of the Dissertations~\cite{Koay:2011qqa}\cite{Schroder:2012lqa}\cite{Goebel:2015kca} and the paper~\cite{Chatrchyan:2014lfa}, exploits the relationships given in Equations \ref{eq:metTrue}, along with the jet energy resolution, to form a transfer function between the measured and parton-level jets. The first step of the method is to identify the optimal matrix of scale factors $\hat{C}$ that transforms the collection of reconstruction-level jets into a set that resembles a parton-level jet collection, and (historically) yields an event with $\mht=0$; jets in the resulting collection are referred to as the rebalanced jets. In the second step, the four-vectors of the rebalanced jets are smeared according to the likelihood for the scale factor given in Equation \ref{eq:JetEnergyLikelihood}; events can be smeared as many times as is necessary to make predictions in all signal regions. The above procedure, applied to all events in a QCD-enriched data control sample, yields an event sample that is the basis of the QCD background prediction. Predictions for the QCD background in the signal regions are derived from cuts applied to this sample, which we may refer to as the prediction event sample. I have adapted key aspects of the methodology, which I will now describe step-by-step.
 
 \subsubsection{Rebalance procedure: a Bayesian approach}
-In the re-envisioned approach to the rebalancing procedure,  it is possible to systematically  incorporate prior knowledge about the true $\mht$ distribution and jet response functions to constrain the jets. The objective is to rebalance the collection of measured jets so that it resembles a parton-level collection. An inversion of the likelihood function for the jet energy scale factors is performed using Bayes' theorem (see the Chapter \ref{chap:run1pmssm} for a brief introduction). The probability density for the parton-level jet collection can be written as
+The objective is to rebalance the collection of measured jets so that it resembles a parton-level collection. In the re-envisioned approach,  it is possible to systematically  incorporate prior knowledge about the true $\mht$ distribution and jet response functions to constrain the jets.  An inversion of the likelihood function for the jet energy scale factors is performed using Bayes' theorem (see Chapter \ref{chap:run1pmssm} for a brief introduction). The probability density for the parton-level jet collection can be written as
 \begin{equation}
 {\rm P}(\vec{J}_{\rm part}|\vec{J}_{\rm meas}) \sim {\rm P}(\vec{J}_{\rm meas}|\vec{J}_{\rm part})\cdot \pi(\vec{J}_{\rm part}),
 \label{eq:posterior1}
@@ -62,11 +62,11 @@ Treating the jets as mutually independent allows the likelihood to be factorized
 \end{split}
 \label{eq:likelihood1}
 \end{align}
-The prior allows our knowledge about the parton-level missing transverse energy outlined in Equation \ref{eq:metTrue} to constrain the rebalance of the jets. However, while equations \ref{eq:metTrue} are true for the $E_{T}^{\rm miss}$, the analysis at hand uses the missing transverse hadronic energy $\mht$, defined as
+The prior allows our knowledge about the parton-level missing transverse energy outlined in Equation \ref{eq:metTrue} to constrain the rebalance of the jets. However, while equations \ref{eq:metTrue} are true for the $E_{T}^{\rm miss}$, high pileup conditions necessitate the use of the so-called missing transverse hadronic energy $\mht$, defined as
 \begin{equation}
 \vec{H}_{T}^{\rm miss} \equiv -\sum_{i=1}^{{\rm N}_{\rm jet}}(\vec{p}_{T})_{i}\cdot\Theta(30{\rm\ GeV}-(p_{T})_{i}).
 \end{equation}
-The threshold on the $p_{T}$ applied via the Heaviside function to remove jets originating from pileup interactions spoils the equality in Equation \ref{eq:metTrue}. Jets with $p_{T}$ less than 30 GeV can recoil off harder jets, and this produces non-zero true $\mht$. However, the parton-level $\mht$ is still small compared to the reconstruction-level $\mht$, as seen in the distribution of parton- and reconstruction-level $\mht$ in Figure \ref{fig:Mht}, implying that the underlying $\mht$ distribution may provide a meaningful constraint on our knowledge of the parton-level system. A difference is also seen in the angular distribution of the $\mht$, in the polar coordinate system with the z-axis defined along the direction of the leading jet, and this information can likewise be incorporated, as will now be demonstrated.
+The threshold on the $p_{T}$ applied via the Heaviside function to remove jets originating from pileup interactions spoils the equality in Equation \ref{eq:metTrue}. Jets with $p_{T}$ less than 30 GeV can recoil off harder jets, and this produces non-zero true $\mht$. However, the parton-level $\mht$ is still small compared to the reconstruction-level $\mht$, as seen in the distribution of parton- and reconstruction-level $\mht$ in Fig. \ref{fig:Mht}, implying that the underlying $\mht$ distribution may provide a meaningful constraint on our knowledge of the parton-level system. A difference is also seen in the angular distribution of the $\mht$, in the polar coordinate system with the z-axis defined along the direction of the leading jet, and this information can likewise be incorporated, as will now be demonstrated.
 \begin{figure}[h]
 \centering
 \subfloat[]{
@@ -79,7 +79,7 @@ The threshold on the $p_{T}$ applied via the Heaviside function to remove jets o
 \label{fig:Mht}
 \end{figure}
 
-The parton-level information contained in the red distributions can be incorporated into the posterior density via an expression relating the $\mht$ to the jet energy scale factors, and taking the red distributions to be factors in the prior. The templates for the $\Delta\phi$ between the $\mht$ and the leading jet are derived separately in bins of the b-jet multiplicity, for the bins of 0, 1, and $\geq$ 2 b-jets.  This choice and its implications are discussed later. For the case where there are one or more b-jets, the $\Delta\phi$ between the $\mht$ and the leading b-jet is used. Combining Eqs. \ref{eq:posterior1}, \ref{eq:likelihood1} gives
+The expression relating the parton-level $\mht$ to the jet energy scale factors can be used, in conjunction with the red probability densities, to form factors in the prior. The templates for the $\Delta\phi$ between the $\mht$ and the leading jet are derived separately in bins of the b-jet multiplicity, for the bins of 0, 1, and $\geq$ 2 b-jets.  This choice and its implications are discussed later. For the case of one or more b-jets, the $\Delta\phi$ between the $\mht$ and the leading b-jet is used. Combining Eqs. \ref{eq:posterior1} and \ref{eq:likelihood1} gives
 \begin{equation}
 {\rm P}(\vec{J}_{\rm part}|\vec{J}_{\rm meas}) \sim
 \prod_{i=1}^{\njets}{\rm P}(p^{\mu}_{i,\rm meas}|p^{\mu}_{i,\rm part})\cdot \text{P}[\mht(\vec{J}_{\rm part})]\cdot \text{P}[\Delta\phi_{\mht,p_{T}^1}(\vec{J}_{\rm part})]\cdot \pi_0(\vec{J}_{\rm part}),
@@ -96,11 +96,19 @@ Bayes' theorem suggests that incorporating new relevant information will lead to
 \caption{The jet energy response for the leading jet (left) and sub-leading jet (right) for reconstructed jets (green) and rebalanced jets (blue). Parton-level jets are required to have $\pt>30$ GeV and $|\eta|<2.4$. The resolution of rebalanced jets is better (smaller) than that of reconstruction-level jets by bout 10\%.}
 \label{fig:rebareso}
 \end{figure}
-We also observe the peak of the response to be lower for rebalanced jets than for reconstructed jets. This is consistent with the peak of the jet $\pt$ likelihood functions being centered at values slightly higher than 1, as seen in Fig. \ref{fig:SmearEx}. 
+We also observe the peak of the response to be slightly lower for rebalanced jets than for reconstructed jets. This is consistent with the peak of the jet $\pt$ likelihood functions being centered at values slightly higher than 1, as seen in Fig. \ref{fig:SmearEx}. 
 \FloatBarrier
 
-\subsubsection{Closure}
-The rebalance and smear prediction is applied to simulated events and compared with the the result obtained directly from the simulation. Figures \ref{fig:BaselineRplusS} through \ref{fig:BaselineRplusS2} show this comparison for a number of observables after the baseline selection of the CMS multi-jet SUSY search, which is described in Section \ref{sec:2015results}. Then, Figs. \ref{fig:LowDeltaPhiRplusS} through \ref{fig:LowDeltaPhiRplusS2} show the comparison in the so-called inverted $\Delta \phi$ region, which has a selection equivalent to the baseline, but with the inverse of the selection on the $\Delta \phi$ between the $\mht$ and the jets. Figure \ref{fig:RplusSCorrelation} shows the comparison in two dimensions for selected pairs of observables. 
+\subsection{Closure}
+The rebalance and smear prediction is applied to simulated events and compared with the result obtained directly from the simulation. A baseline selection, similar to that applied in the search \cite{Khachatryan:2016kdk}, is applied. Events are required to have:
+\begin{itemize}
+\item no reconstructed, isolated particle track with a $\pt>10$ GeV and $|\eta|<2.4$;
+\item $\Ht>500$ GeV;
+\item $\mht>150$ GeV;
+\item $\njets\geq$ 4, where jets are required to have a $\pt>30$ GeV and $|\eta|<2.4$, and pass a loose set of quality selection criteria.
+\item an azimuthal separation between the $\mht$ and the leading four jets $\Delta\phi(\mht$, jet$_{1,2,3,4})>$ 0.5, 0.5, 0.3, 0.3.
+\end{itemize}
+Figures \ref{fig:BaselineRplusS} through \ref{fig:BaselineRplusS2} show this comparison for a number of observables after the baseline selection of the CMS multi-jet SUSY search, which is described in Section \ref{sec:2015results}. The distributions are ``n-1'' distributions, meaning all baseline selection have been applied except that of the x-axis variable. Then, Figs. \ref{fig:LowDeltaPhiRplusS} through \ref{fig:LowDeltaPhiRplusS2} show the comparison in the so-called inverted $\Delta \phi$ region, which has a selection equivalent to the baseline, but with the inverse of the selection on the $\Delta \phi$ between the $\mht$ and the jets. Figure \ref{fig:RplusSCorrelation} shows the comparison in two dimensions for selected pairs of observables. 
 
 \begin{figure}[h]
 \centering
@@ -118,24 +126,6 @@ The rebalance and smear prediction is applied to simulated events and compared w
 }
 \caption{Comparisons of kinematic distributions between the direct simulation and the rebalance and smear method applied to simulation, after the baseline selection of the multi-jet SUSY search.}
 \label{fig:BaselineRplusS}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/Baseline_Jet1Pt.pdf}
-}
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/Baseline_Jet1Eta.pdf}
-}\\
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/Baseline_Jet2Pt.pdf}
-}
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/Baseline_Jet2Eta.pdf}
-}
-\caption{Comparisons of kinematic distributions between the direct simulation and the rebalance and smear method applied to the after the baseline selection of the multi-jet SUSY search.}
-\label{fig:BaselineRplusSb}
 \end{figure}
 
 
@@ -175,23 +165,6 @@ The rebalance and smear prediction is applied to simulated events and compared w
 \label{fig:LowDeltaPhiRplusS}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/LowDeltaPhi_Jet1Pt.pdf}
-}
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/LowDeltaPhi_Jet1Eta.pdf}
-}\\
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/LowDeltaPhi_Jet2Pt.pdf}
-}
-\subfloat[]{
-\includegraphics[width=0.5\linewidth]{figures/SusySearches/Ra2b2016/LowDeltaPhi_Jet2Eta.pdf}
-}
-\caption{Comparisons of kinematic distributions between the direct simulation and the rebalance and smear method applied to simulation, in the inverted $\Delta \phi$ control region of the multi-jet SUSY search.}
-\label{fig:LowDeltaPhiRplusSb}
-\end{figure}
 
 \begin{figure}[h]
 \centering
@@ -230,12 +203,12 @@ The rebalance and smear prediction is applied to simulated events and compared w
 \end{figure}
 \FloatBarrier
 \noindent
-The degree of consistency between the prediction and the expectation in most distributions represents a significant step for QCD modeling. Not only are the relevant 1-dimensional distributions accurately modeled, but the examined pairwise correlations of the kinematic observables are accurately modeled as well. This includes correlations between the directions and magnitudes of the momenta of jets within an event, as well as relationships between the directions of the $\mht$ and the jets, and the magnitudes of the $\mht$ and $\Ht$. The most significant exception to these statements is in the distribution of the multiplicity of b-tagged jets,  where non-closure is evident for events with $\geq 3$ b-jets on the order $\approx50\%$. A possible source of this discrepancy is the choice of binning for the parton-level $\mht$ templates that constitute the prior, namely, $\nbjets=$ 0, 1, and $\geq$ 2.  A modification of this choice to include templates for the individual bins of $\nbjets=$ 2, 3, and $\geq 4$ may lead to improved results in the region of large b-jet multiplicity. 
+The degree of consistency between the prediction and the expectation in most distributions represents a significant step for QCD modeling. Not only are the relevant 1-dimensional distributions accurately modeled, but all examined pairwise correlations of the kinematic observables show acceptable closure. This includes correlations between the directions and magnitudes of the momenta of jets within an event, as well as relationships between the directions of the $\mht$ and the jets, and the magnitudes of the $\mht$ and $\Ht$. The most significant exception to these statements is with the distribution of the multiplicity of b-tagged jets,  where non-closure is evident for events with $\geq 3$ b-jets on the order $\approx50\%$. A possible source of this discrepancy is the choice of binning for the parton-level $\mht$ templates that constitute the prior, namely, $\nbjets=$ 0, 1, and $\geq$ 2.  A modification of this choice to include templates for the individual bins of $\nbjets=$ 2, 3, and $\geq 4$ may lead to improved results in the region of large b-jet multiplicity. 
 
-The method is ready to be applied to the data, but the results are saved for the summary of the CMS hadronic multi-jet analysis, given in Section \ref{sec:ra2b2015}. I'll conclude now give a summary of the key developments, an try to reiterate the added value of this method.
+The method is ready to be applied to the data, but the results are saved for the summary of the CMS hadronic multi-jet analysis, given in Section \ref{sec:ra2b2015}. I conclude for the moment with a summary of the key developments.
 
 \subsubsection{What were the key developments?}
-The door has been opened for techniques that make use of correlations among jets in QCD events as a means of achieving signal-background discrimination in kinematic regions dominated by QCD, such as the regions of low-$\mht$ and low $\Ht$. Furthermore, the possibility of applying the method in the low-$\mht$ region is for the first time feasible, since the classical method did not accurately model the QCD kinematics in this region (see Fig. \ref{fig:OldVsNew}). 
+It appears to be feasible to use of correlations among jets in QCD events as a means of achieving signal-background discrimination in kinematic regions dominated by QCD, such as the regions of low-$\mht$ and low $\Ht$. The possibility of applying the method in the low-$\mht$ region is for the first time feasible, since the classical method does not accurately model the QCD kinematics in this region (see Fig. \ref{fig:OldVsNew}). 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.49\linewidth]{figures/SusySearches/Ra2b2016/RnSClassicMht.jpg}
@@ -243,14 +216,51 @@ The door has been opened for techniques that make use of correlations among jets
 \caption{Comparisons of the $\mht$ distribution between prediction and expectation using the classical method (left) and the new method (right).}
 \label{fig:OldVsNew}
 \end{figure}
-The primary reasons for these improvements with respect to the classical method are that a realistic parton-level $\mht$ constraint is used in the rebalance procedure, whereas, in the classical method, every event is rebalanced to an $\mht$ of 0 or a constant value chosen by the user, amounting to a delta function constraint. Second, the full jet response has been used in the likelihood maximization, rather than gaussian approximations. This effect can lead to mis-modeling of the jet $\pt$ or $\mht$ spectrum in events containing jets with small $\pt$, which exhibit a highly non-Gaussian response. 
+The primary reasons for these improvements with respect to the classical method are that a realistic parton-level $\mht$ constraint is used in the rebalance procedure, whereas, in the classical method, every event is rebalanced to an $\mht$ of 0 or a constant value chosen by the user, amounting to a delta function constraint. Second, the full jet response has been used in the likelihood maximization, rather than gaussian approximations. Gaussian approximations can lead to mis-modeling of the jet $\pt$ or $\mht$ spectrum in events containing jets with small $\pt$, which exhibit a highly non-Gaussian response. 
 
-It is worth pointing out that there are two main strengths of the rebalance and smear method. The first is that it is robust against contamination from signal events in the prediction sample. The reason is that the rebalance procedure displaces signal-like, high-$\met$ events from the high-$\met$ region, to regions of low-$\met$; after smearing, the proportion of events in the high-$\met$ region truly originating from QCD processes is nearly 100\% (see Fig. \ref{fig:RplusSContamination}). 
-\begin{figure}[t]
+The rebalance and smear method is robust against contamination from signal events in the prediction sample. The reason is that the rebalance procedure displaces signal-like, high-$\met$ events from the high-$\met$ region, to regions of low-$\met$; after smearing, the proportion of events in the high-$\met$ region truly originating from QCD processes is nearly 100\% (see Fig. \ref{fig:RplusSContamination}). 
+\begin{figure}[tb!]
 \centering
 \includegraphics[width=0.6\linewidth]{figures/SusySearches/Ra2b2016/RplusSContam.pdf}
 \caption{Signal contaimination removal. The midnight blue (and yellow) histograms show the distribution of QCD (and signal) events taken directly from simulation. The black (and red) histograms show the distributions of QCD (and signal) and after being processed by the rebalance and smear procedure. The signal has been removed from the high-$\mht$ region, leaving an accurately modeled QCD contribution.}
 \label{fig:RplusSContamination}
 \end{figure}
-The robustness of the prediction to possible signal contamination in the control region allows for real events to be used directly for the prediction. The second strength is that the rebalanced events can be smeared an indefinite number of times, which allows for the accumulation of an indefinitely large prediction sample, computer resources permitting. Therefore, good estimates of the expected QCD event count and uncertainty can be made in extreme tails, even in regions for which no simulated QCD events are available. Alternatively, the rebalanced events can be smeared once to generate a training sample of background events for a multivariate discriminant, and subsequently smeared again to generate a statistically-independent prediction sample. Essentially, we have a QCD event generator, based on the data. 
+The robustness of the prediction to possible signal contamination in the control region allows for real events to be used directly for the prediction. Another strength is that the rebalanced events can be smeared an indefinite number of times, which allows for the accumulation of an indefinitely large prediction sample, computer resources permitting. Therefore, good estimates of the expected QCD event count and uncertainty can be made in extreme tails, even in regions for which no simulated QCD events are available. Alternatively, the rebalanced events can be smeared once set of times to generate a training sample of background events for a multivariate discriminant, and subsequent smearing can generate a statistically-independent prediction sample. This is further explored in Chapter \ref{chap:money}. Essentially, we have a data-driven QCD event generator.
 \FloatBarrier
+
+\subsection{Applying the method in data}
+To derive the rebalance and smear prediction, data samples are collected with a series of pre-scaled $\Ht$ triggers,
+\begin{itemize}
+  \item \texttt{HLT\_PFHT200\_*},
+    \item \texttt{HLT\_PFHT300\_*},
+      \item \texttt{HLT\_PFHT350\_*},
+        \item \texttt{HLT\_PFHT600\_*},
+\end{itemize}
+and the un-prescaled trigger,
+\begin{itemize}
+  \item \texttt{HLT\_PFHT800\_*}.
+\end{itemize}
+Events collected by these triggers are pooled into a single sample, here referred to as the $\Ht$ control sample. Events are rejected if the trigger with the highest possible $\Ht$ threshold that could have fired did not fire. This criterion ensures that the probability of an event being selected is equal to the pre-scale. Distributions of the weighted and un-weighted online $\Ht$, and un-weighted offline $\Ht$ are shown in Fig. \ref{fig:PrescaleWeights}.
+\begin{figure}[tb!]
+\centering
+\includegraphics[width=0.6\linewidth]{figures/SusySearches/Ra2b2016/PrescaleWeightsHT2.pdf}
+\caption{The distribution of the $\Ht$ in the $\Ht$ control sample for the unweighted offline $\Ht$ (red), the unweighted online $\Ht$ (pink), and the online $\Ht$ weighted by the pre-scale values.}
+\label{fig:PrescaleWeights}
+\end{figure}
+The online pre-scale weighted $\Ht$ is smooth, as expected. The jet $\pt$ likelihoods are modified by jet resolution scale factors, derived by the jet/$\met$ POG \cite{jetmet2} to ensure the compatibility of the smearing with the true jet resolution. Rebalanced events are smeared a number of times proportional to the event's pre-scale value, which serves to apply the pre-scale weight, and ensures that all prediction events have equal weight.
+
+\subsection{Uncertainties in the prediction}
+Uncertainties in the final prediction include statistical uncertainty in the prediction, statistical uncertainty associated with the $\Ht$ control sample, uncertainty in the jet energy resolution, uncertainty in the parton-level $\mht$ prior density, and uncertainty corresponding to any non-closure. 
+
+The statistical uncertainty in the prediction is the poisson uncertainty in the weighted number of counts in each bin. This uncertainty can, in principle, but reduced to arbitrarily small values by increasing the number of smearing trials. Given independent search regions, statistical uncertainties are uncorrelated across bins. 
+
+The statistical uncertainty in the control sample is evaluated by making the prediction once using the entire data set, and once having randomly discarded half the control sample events. Scaling the half-discarded prediction up by a factor of two and taking the discrepancy with the original prediction yields a bin-by-bin systematic uncertainty. Uncertainties are once treated as uncorrelated across all bins.
+
+The uncertainty in the jet energy resolution is evaluated by taking the difference between the nominal prediction and the prediction obtained by modifying the jet $\pt$ likelihoods according to the jet energy resolution uncertainties provided by  \cite{jetmet2}. Rather than evaluating the bin-by-bin discrepancy, the discrepancy in the inclusive $\mht$ distribution integrated over the bounds of each signal region between the nominal and modified predictions is taken as a percent uncertainty. This methods ensures that statistical uncertainties are not duplicated based on the limited statistics of the control sample. Uncertainties are taken to be fully correlated across all bins.
+
+Uncertainty in the $\mht$ prior is evaluated in an analogous way as the previous uncertainty, except the difference in predictions is that between the nominal prediction and the prediction made with a modified $\mht$ prior density. The modified prior density is obtained by reweighting the nominal $\mht$ prior by the ratio of the of real reconstructed $\mht$ to the simulated reconstructed $\mht$ in the region between the values of $\mht=0$ and 200 GeV in a QCD-enriched kinematic region. The weights are order 1 with negligible uncertainties. Uncertainties are treated as correlated across bins.
+
+An uncertainty of 50\% is assigned to search bins with greater than 2 b-tags to accommodate the non-closure in simulation. In the future, this uncertainty may be eliminated by modifying the binning of the prior template as prescribe in the previous section. Non-closure uncertainties are treated as uncorrelated across bins. 
+
+The values of the uncertainties, along with the bin-by-bin prediction, for the multi-jet$+$$\mht$ SUSY search are given in Section \ref{sec:2015results}.
+

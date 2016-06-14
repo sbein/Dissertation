@@ -143,6 +143,10 @@ J.~Wess, ``{SUPERSYMMETRY AND SUPERGRAVITY},'' in {\em {22nd International
 C.~F. Berger, J.~S. Gainer, J.~L. Hewett, and T.~G. Rizzo, ``{Supersymmetry
   Without Prejudice},'' {\em JHEP}, vol.~02, p.~023, 2009.
 
+\bibitem{Khachatryan:2016nvf}
+V.~Khachatryan {\em et~al.}, ``{Phenomenological MSSM interpretation of CMS
+  searches in pp collisions at sqrt(s) = 7 and 8 TeV},'' 2016.
+
 \bibitem{Carena:2012he}
 M.~Carena, J.~Lykken, S.~Sekmen, N.~R. Shah, and C.~E.~M. Wagner, ``{The pMSSM
   Interpretation of LHC Results Using Rernormalization Group Invariants},''
@@ -201,6 +205,10 @@ V.~Veszpremi, ``{Operation and performance of the CMS tracker},'' {\em JINST},
 A.~Hocker {\em et~al.}, ``{TMVA - Toolkit for Multivariate Data Analysis},''
   {\em PoS}, vol.~ACAT, p.~040, 2007.
 
+\bibitem{Cacciari:2008gp}
+M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The Anti-$k_t$ jet clustering
+  algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
+
 \bibitem{Bilki:2015rla}
 B.~Bilki, ``{CMS Forward Calorimeters Phase II Upgrade},'' {\em J. Phys. Conf.
   Ser.}, vol.~587, no.~1, p.~012014, 2015.
@@ -225,10 +233,40 @@ R.~Brun and F.~Rademakers, ``{ROOT: An object oriented data analysis
 H.~Jeffreys, ``{Scientific Inference, Third edition},'' {\em Cambridge
   University Press; 3rd edition}, 1974.
 
-\bibitem{Das:2000uk}
-C.~Das and M.~Parida, ``{New formulas and predictions for running fermion
-  masses at higher scales in SM, 2 HDM, and MSSM},'' {\em Eur. Phys. J. C},
-  vol.~20, p.~121, 2001.
+\bibitem{fastsim}
+S.~Abdullin, P.~Azzi, F.~Beaudette, P.~Janot, and A.~Perrotta, ``{The fast
+  simulation of the CMS detector at LHC},'' {\em J. Phys. Conf. Ser.},
+  vol.~331, p.~032049, 2011.
+
+\bibitem{Bayes:1}
+C.~P. Robert, {\em {The Bayesian Choice: from Decision-Theoretic Foundations to
+  Computational Implementation}}.
+\newblock Springer Verlag, New York, 2nd~ed., 2007.
+
+\bibitem{Bayes:2}
+A.~O'Hagan, {\em {Bayesian Inference}}, vol.~2B of {\em Kendall's Advanced
+  Theory of Statistics}.
+\newblock Edward Arnold, London, 1994.
+
+\bibitem{Sekmen:2011cz}
+S.~Sekmen, S.~Kraml, J.~Lykken, F.~Moortgat, S.~Padhi, {\em et~al.},
+  ``{Interpreting LHC SUSY searches in the phenomenological MSSM},'' {\em
+  JHEP}, vol.~02, p.~075, 2012.
+
+\bibitem{Chatrchyan:2011zy}
+S.~Chatrchyan {\em et~al.}, ``{Search for Supersymmetry at the LHC in Events
+  with Jets and Missing Transverse Energy},'' {\em Phys. Rev. Lett.}, vol.~107,
+  p.~221804, 2011.
+
+\bibitem{Chatrchyan:2011gqa}
+S.~Chatrchyan {\em et~al.}, ``{Search for new physics with same-sign isolated
+  dilepton events with jets and missing transverse energy},'' {\em Phys. Rev.
+  Lett.}, vol.~109, p.~071803, 2012.
+
+\bibitem{Chatrchyan:2012te}
+S.~Chatrchyan {\em et~al.}, ``{Search for new physics in events with
+  opposite-sign leptons, jets, and missing transverse energy in pp collisions
+  at $\sqrt{s}=7$ TeV},'' {\em Phys. Lett. B}, vol.~718, p.~815, 2013.
 
 \bibitem{MCMC1}
 A.~A. Markov, {\em {Extension of the limit theorems of probability theory to a
@@ -249,11 +287,6 @@ W.~K. Hastings, ``Monte carlo sampling methods using markov chains and their
 B.~A. Berg, {\em {Markov chain monte carlo simulations and their statistical
   analysis}}.
 \newblock World Scientific, Singapore, 2004.
-
-\bibitem{Bayes:2}
-A.~O'Hagan, {\em {Bayesian Inference}}, vol.~2B of {\em Kendall's Advanced
-  Theory of Statistics}.
-\newblock Edward Arnold, London, 1994.
 
 \bibitem{Amhis:2014hma}
 Y.~Amhis {\em et~al.}, ``{Averages of b-hadron, c-hadron, and $\tau$-lepton
@@ -427,9 +460,9 @@ T.~Sj{\"o}strand, S.~Mrenna, and P.~Z. Skands, ``{PYTHIA 6.4 Physics and
 C.~Collaboration, ``{The fast simulation of the CMS detector at LHC},'' {\em
   J.Phys.Conf.Ser.}, vol.~331, p.~032049, 2011.
 
-\bibitem{Cacciari:2008gp}
-M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The Anti-$k_t$ jet clustering
-  algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
+\bibitem{bib:SezenTrigger}
+W.~D. P.~H. Sekmen, Sezen;~Teo, ``{Modeling Trigger Efficiencies Without
+  Prejudice},'' 2011.
 
 \bibitem{Koay:2011qqa}
 S.~A. Koay, {\em {A Search for Dark Matter Production with Jets and Missing
@@ -451,6 +484,11 @@ S.~Chatrchyan {\em et~al.}, ``{Search for new physics in the multijet and
   missing transverse momentum final state in proton-proton collisions at
   $\sqrt{s}= 8$ TeV},'' {\em JHEP}, vol.~06, p.~055, 2014.
 
+\bibitem{jetmet2}
+``Jet resolution scale factors.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMS/JetResolution}.
+\newblock CMS twiki.
+
 \bibitem{bib:ElectronID}
 ``Egamma pog recommendations.''
   \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/CutBasedElectronIdentificationRun2}.
@@ -463,10 +501,6 @@ S.~Chatrchyan {\em et~al.}, ``{Search for new physics in the multijet and
 C.~J. Clopper and E.~S. Pearson, ``{The Use of Confidence of Fiducial Limits
   Illustrated in teh Case of the Binomial},'' {\em Biometrika}, vol.~26, no.~4,
   pp.~404--413, 1934.
-
-\bibitem{bib:SezenTrigger}
-W.~D. P.~H. Sekmen, Sezen;~Teo, ``{Modeling Trigger Efficiencies Without
-  Prejudice},'' 2011.
 
 \bibitem{Cowan:2010js}
 G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
@@ -506,6 +540,26 @@ M.~Botje, J.~Butterworth, A.~Cooper-Sarkar, A.~de~Roeck, J.~Feltesse, S.~Forte,
 S.~Chatrchyan {\em et~al.}, ``{Search for gluino mediated bottom- and
   top-squark production in multijet final states in pp collisions at 8~TeV},''
   {\em Phys. Lett. B}, vol.~725, p.~243, 2013.
+
+\bibitem{bishop2012pattern}
+C.~M. Bishop and ???, ``Pattern recognition and machine learning, 2006,'' {\em
+  ???????}, vol.~60, no.~1, pp.~78--78, 2012.
+
+\bibitem{Rogan:2010kb}
+C.~Rogan, ``{Kinematical variables towards new dynamics at the LHC},'' 2010.
+
+\bibitem{Chatrchyan:2012uea}
+S.~Chatrchyan {\em et~al.}, ``{Inclusive search for supersymmetry using the
+  razor variables in $pp$ collisions at $\sqrt{s}=7$ TeV},'' {\em Phys. Rev.
+  Lett.}, vol.~111, no.~8, p.~081802, 2013.
+
+\bibitem{Abbott:1997ww}
+B.~Abbott {\em et~al.}, ``{A measurement of the $W$ boson mass},'' {\em Phys.
+  Rev.}, vol.~D58, p.~092003, 1998.
+
+\bibitem{Randall:2008rw}
+L.~Randall and D.~Tucker-Smith, ``{Dijet Searches for Supersymmetry at the
+  LHC},'' {\em Phys. Rev. Lett.}, vol.~101, p.~221803, 2008.
 
 \bibitem{Kraml:2014sna}
 S.~Kraml, S.~Kulkarni, U.~Laa, A.~Lessa, V.~Magerl, W.~Magerl,
@@ -563,10 +617,10 @@ C.~Collaboration, ``{Search for supersymmetry in pp collisions at sqrt(s) = 8
   \url{http://madanalysis.irmp.ucl.ac.be/wiki/PhysicsAnalysisDatabase#no1}.
 
 \bibitem{inspire}
-``Inspire hep.'' \url{http://inspirehep.net/help/data-submission},.
+``Inspire hep.'' \url{http://inspirehep.net/help/data-submission}.
 
 \bibitem{doi}
-``Doi citation framework.'' \url{http://www.datacite.org},.
+``Doi citation framework.'' \url{http://www.datacite.org}.
 
 \bibitem{Chatrchyan:2013sza}
 S.~Chatrchyan {\em et~al.}, ``{Interpretation of Searches for Supersymmetry
@@ -591,30 +645,10 @@ B.~Dumont, B.~Fuks, and C.~Wymant, ``{MadAnalysis 5 implementation of
 
 \bibitem{CMS:DataPolicy}
 ``{CMS data preservation, re-use and open access policy}.''
-  \url{https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/ShowDocument?docid=6032},.
+  \url{https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/ShowDocument?docid=6032}.
 
 \bibitem{MA5-CMS-SUS-14-001}
 P.~Atmasiddha, S.~Bein, and S.~Sharma, ``{MadAnalysis 5 implementation of
   CMS-SUS-14-001-TopTag},'' 2015.
-
-\bibitem{bishop2012pattern}
-C.~M. Bishop and ???, ``Pattern recognition and machine learning, 2006,'' {\em
-  ???????}, vol.~60, no.~1, pp.~78--78, 2012.
-
-\bibitem{Rogan:2010kb}
-C.~Rogan, ``{Kinematical variables towards new dynamics at the LHC},'' 2010.
-
-\bibitem{Chatrchyan:2012uea}
-S.~Chatrchyan {\em et~al.}, ``{Inclusive search for supersymmetry using the
-  razor variables in $pp$ collisions at $\sqrt{s}=7$ TeV},'' {\em Phys. Rev.
-  Lett.}, vol.~111, no.~8, p.~081802, 2013.
-
-\bibitem{Abbott:1997ww}
-B.~Abbott {\em et~al.}, ``{A measurement of the $W$ boson mass},'' {\em Phys.
-  Rev.}, vol.~D58, p.~092003, 1998.
-
-\bibitem{Randall:2008rw}
-L.~Randall and D.~Tucker-Smith, ``{Dijet Searches for Supersymmetry at the
-  LHC},'' {\em Phys. Rev. Lett.}, vol.~101, p.~221803, 2008.
 
 \end{thebibliography}

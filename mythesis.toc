@@ -10,14 +10,14 @@
 \contentsline {section}{\numberline {2.7}Conserved quantities}{12}{section.2.7}
 \contentsline {section}{\numberline {2.8}Symmetry breaking}{12}{section.2.8}
 \contentsline {section}{\numberline {2.9}Commutation relations}{15}{section.2.9}
-\contentsline {chapter}{\numberline {3}The $\text {Standard\ Model}$}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}$\text {Standard\ Model}$ fields and symmetries}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}$\text {Standard\ Model}$ Lagrangian}{18}{section.3.2}
+\contentsline {chapter}{\numberline {3}The Standard Model}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}SM fields and symmetries}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}SM Lagrangian}{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}Electroweak symmetry breaking}{18}{section.3.3}
 \contentsline {section}{\numberline {3.4}SM parameters and visualization}{21}{section.3.4}
-\contentsline {section}{\numberline {3.5}Problems with the $\text {Standard\ Model}$}{24}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Observations in tension with the $\text {Standard\ Model}$}{24}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Fine tuning and unexplained patterns in the $\text {Standard\ Model}$}{27}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.5}Problems with the standard model}{24}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Observations in tension with the standard model}{24}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Fine tuning and unexplained patterns in the standard model}{27}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}This document}{29}{section.3.6}
 \contentsline {chapter}{\numberline {4}Supersymmetry}{32}{chapter.4}
 \contentsline {subsection}{\numberline {4.0.1}Supersymmetry in our universe}{33}{subsection.4.0.1}
@@ -32,10 +32,10 @@
 \contentsline {subsection}{\numberline {5.3.1}The objective of high energy}{47}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}The objective of high luminosity}{47}{subsection.5.3.2}
 \contentsline {chapter}{\numberline {6}The Compact Muon Solenoid}{48}{chapter.6}
-\contentsline {section}{\numberline {6.1}Coordinates and Observables}{49}{section.6.1}
+\contentsline {section}{\numberline {6.1}Coordinates and observables}{49}{section.6.1}
 \contentsline {section}{\numberline {6.2}Silicon tracker}{50}{section.6.2}
 \contentsline {section}{\numberline {6.3}Electromagnetic calorimeter}{51}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}ECAL Calibration}{54}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}ECAL calibration}{54}{subsection.6.3.1}
 \contentsline {section}{\numberline {6.4}Hadronic calorimeter}{61}{section.6.4}
 \contentsline {section}{\numberline {6.5}Superconducting solenoid}{62}{section.6.5}
 \contentsline {section}{\numberline {6.6}Muon system}{62}{section.6.6}
@@ -46,64 +46,74 @@
 \contentsline {subsubsection}{Jet/$E_{\rm T}^{\rm miss}$analysis.}{69}{section*.35}
 \contentsline {chapter}{\numberline {7}The Viability of SUSY: The pMSSM Interpretation}{74}{chapter.7}
 \contentsline {section}{\numberline {7.1}Bayes' theorem}{74}{section.7.1}
-\contentsline {section}{\numberline {7.2}Methods for the combination CMS analyses}{75}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Construction of the prior}{76}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Incorporation of the CMS data}{79}{subsection.7.2.2}
-\contentsline {paragraph}{*.}{81}{section*.39}
-\contentsline {paragraph}{*.}{81}{section*.40}
-\contentsline {paragraph}{*.}{82}{section*.41}
-\contentsline {paragraph}{*.}{82}{section*.42}
-\contentsline {section}{\numberline {7.3}Results}{83}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Global significance}{83}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Impact on parameters}{85}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Correlations among pMSSM parameters}{99}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Change of prior}{101}{section.7.4}
-\contentsline {section}{\numberline {7.5}Profile vs Marginal likelihoods}{107}{section.7.5}
-\contentsline {section}{\numberline {7.6}Nonexcluded regions in the pMSSM parameter space}{115}{section.7.6}
-\contentsline {chapter}{\numberline {8}CMS Searches for Supersymmetry at $\sqrt {s}=13$ TeV}{129}{chapter.8}
-\contentsline {section}{\numberline {8.1}Trigger methods}{129}{section.8.1}
-\contentsline {subsubsection}{A better trigger: monojet trigger.}{133}{section*.75}
-\contentsline {subsubsection}{Multivariate efficiency .}{134}{section*.77}
-\contentsline {section}{\numberline {8.2}QCD background estimation}{138}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}The origin of $E_{\text {T}}^{\rm miss}$ in QCD events}{138}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Model assumptions and likelihood}{139}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Rebalance and smear method}{140}{subsection.8.2.3}
-\contentsline {subsubsection}{Rebalance procedure: a Bayesian approach.}{141}{section*.80}
-\contentsline {subsubsection}{Posterior density of jet momenta.}{143}{section*.82}
-\contentsline {subsubsection}{Closure.}{143}{section*.84}
-\contentsline {subsubsection}{What were the key developments?.}{151}{section*.92}
-\contentsline {section}{\numberline {8.3}Z$\rightarrow \nu \mathaccentV {bar}016{\nu }$ background estimation}{153}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}The relationship between $Z\rightarrow \nu \mathaccentV {bar}016{\nu }$ and $Z\rightarrow l^+l^-$}{154}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Procedure with 13 TeV data}{155}{subsection.8.3.2}
-\contentsline {subsubsection}{Acceptance $\epsilon ^{\text {Z}}_{\text {acc}}$.}{156}{section*.96}
-\contentsline {subsubsection}{Reconstruction efficiency $\epsilon ^{\text {Z}}_{\text {rec}}$.}{157}{section*.98}
-\contentsline {subsubsection}{Isolation efficiency $\epsilon ^{\text {Z}}_{\text {iso}}$.}{157}{section*.100}
-\contentsline {subsection}{\numberline {8.3.3}Closure}{159}{subsection.8.3.3}
-\contentsline {subsection}{\numberline {8.3.4}Comparison with prediction based on $Z\rightarrow \mu ^+\mu ^-$ events}{164}{subsection.8.3.4}
-\contentsline {section}{\numberline {8.4}Results of 2015 SUSY searches}{167}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Multi-jet $+$ $H_{\text {T}}^{\rm miss}$ SUSY search: targeting gluino production with the 2015 data}{167}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Search for $\text {supersymmetry}$ in events with top-tagged jets using 2015 data}{176}{subsection.8.4.2}
-\contentsline {chapter}{\numberline {9}Targeting the nonexcluded pMSSM with multivariate discriminants}{181}{chapter.9}
-\contentsline {subsubsection}{New techniques with new events.}{181}{section*.116}
-\contentsline {subsubsection}{Low-$H_{\text {T}}^{\rm miss}$ discriminant.}{182}{section*.117}
-\contentsline {subsubsection}{low-$H_{\rm T}$ discriminant.}{183}{section*.119}
-\contentsline {subsubsection}{Potential future work.}{184}{section*.121}
-\contentsline {chapter}{\numberline {10}Summary and Conclusion}{187}{chapter.10}
-\contentsline {backmatter}{Bibliography}{192}{chapter*.122}
-\contentsline {appendix}{Appendix}{202}{appendix.A}
-\contentsline {chapter}{\numberline {A}Phenomenology outside the collaboration}{203}{appendix.A}
-\contentsline {section}{\numberline {A.1}Toward a public analysis database for LHC new physics searches using {\sc MadAnalysis\nobreakspace {}5}}{203}{section.A.1}
-\contentsline {section}{\numberline {A.2}Implemented Analyses and their Validation}{205}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{206}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Limit setting}{209}{section.A.3}
-\contentsline {section}{\numberline {A.4}{\sc MadAnalysis\nobreakspace {}5}\ conclusions}{211}{section.A.4}
-\contentsline {section}{\numberline {A.5}Implementation of (SUS-13-012)}{213}{section.A.5}
-\contentsline {subsection}{\numberline {A.5.1}T1qqqq simplified model}{213}{subsection.A.5.1}
-\contentsline {subsection}{\numberline {A.5.2}T1tttt simplified model}{218}{subsection.A.5.2}
-\contentsline {subsection}{\numberline {A.5.3}T5VV simplified model}{222}{subsection.A.5.3}
-\contentsline {subsection}{\numberline {A.5.4}T2qq simplified model}{226}{subsection.A.5.4}
-\contentsline {subsection}{\numberline {A.5.5}Exclusion Limits}{230}{subsection.A.5.5}
-\contentsline {chapter}{\numberline {B}Other discriminating variables}{241}{appendix.B}
-\contentsline {subsection}{\numberline {B.0.6}Observables probing \text {supersymmetry}}{242}{subsection.B.0.6}
-\contentsline {subsubsection}{Razor variables.}{242}{section*.172}
-\contentsline {subsubsection}{Stransverse mass $M_{\text {T}2}$.}{243}{section*.173}
+\contentsline {section}{\numberline {7.2}The pMSSM interpretation}{75}{section.7.2}
+\contentsline {section}{\numberline {7.3}Methods for the combination CMS analyses}{76}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Construction of the prior}{76}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Incorporation of the CMS data}{80}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Results}{83}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Global significance}{84}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Impact on parameters}{85}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Correlations among pMSSM parameters}{99}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Nonexcluded regions in the pMSSM parameter space}{101}{section.7.5}
+\contentsline {subsubsection}{Decomposition into processes.}{101}{section*.50}
+\contentsline {subsection}{\numberline {7.5.1}Characterization of signal events}{104}{subsection.7.5.1}
+\contentsline {subsubsection}{Signal fiducial cross sections.}{106}{section*.54}
+\contentsline {subsubsection}{A note on low-mass gluinos.}{112}{section*.60}
+\contentsline {chapter}{\numberline {8}CMS Searches for Supersymmetry at $\sqrt {s}=13$ TeV}{113}{chapter.8}
+\contentsline {section}{\numberline {8.1}Trigger methods}{114}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Measuring the efficiency without bias}{115}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Multivariate classification}{119}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}QCD background estimation}{122}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}The origin of $E_{\text {T}}^{\rm miss}$ in QCD events}{122}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Model assumptions and likelihood}{123}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Rebalance and smear method}{123}{subsection.8.2.3}
+\contentsline {subsubsection}{Rebalance procedure: a Bayesian approach.}{125}{section*.66}
+\contentsline {subsubsection}{Posterior density of jet momenta.}{127}{section*.68}
+\contentsline {subsection}{\numberline {8.2.4}Closure}{127}{subsection.8.2.4}
+\contentsline {subsubsection}{What were the key developments?.}{134}{section*.75}
+\contentsline {subsection}{\numberline {8.2.5}Applying the method in data}{136}{subsection.8.2.5}
+\contentsline {subsection}{\numberline {8.2.6}Uncertainties in the prediction}{137}{subsection.8.2.6}
+\contentsline {section}{\numberline {8.3}Z$\rightarrow \nu \mathaccentV {bar}016{\nu }$ background estimation}{139}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}The relationship between $Z\rightarrow \nu \mathaccentV {bar}016{\nu }$ and $Z\rightarrow l^+l^-$}{139}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Procedure with 13 TeV data}{140}{subsection.8.3.2}
+\contentsline {subsubsection}{Acceptance $\epsilon ^{\text {Z}}_{\text {acc}}$.}{142}{section*.80}
+\contentsline {subsubsection}{Reconstruction efficiency $\epsilon ^{\text {Z}}_{\text {rec}}$.}{143}{section*.82}
+\contentsline {subsubsection}{Isolation efficiency $\epsilon ^{\text {Z}}_{\text {iso}}$.}{143}{section*.84}
+\contentsline {subsection}{\numberline {8.3.3}Closure}{145}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Applying the method in data}{150}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}Uncertainties in the prediction}{153}{subsection.8.3.5}
+\contentsline {section}{\numberline {8.4}Results of 2015 SUSY searches}{155}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Multi-jet $+$ $H_{\text {T}}^{\rm miss}$ SUSY search: targeting gluino production at $\sqrt {s}=13$ TeV}{155}{subsection.8.4.1}
+\contentsline {subsubsection}{Background estimation.}{159}{section*.97}
+\contentsline {subsection}{\numberline {8.4.2}Search for SUSY in events with top-tagged jets at $\sqrt {s}=13$ TeV}{164}{subsection.8.4.2}
+\contentsline {subsubsection}{Systematic uncertainty in $Z\rightarrow \nu \mathaccentV {bar}016{\nu }$ prediction.}{166}{section*.102}
+\contentsline {subsubsection}{Systematic uncertainties.}{166}{section*.104}
+\contentsline {chapter}{\numberline {9}Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{170}{chapter.9}
+\contentsline {subsection}{\numberline {9.0.3}New techniques with new events}{170}{subsection.9.0.3}
+\contentsline {subsection}{\numberline {9.0.4}Low-$H_{\text {T}}^{\rm miss}$ discriminant}{171}{subsection.9.0.4}
+\contentsline {subsection}{\numberline {9.0.5}low-$H_{\rm T}$ discriminant}{172}{subsection.9.0.5}
+\contentsline {subsection}{\numberline {9.0.6}Potential future work}{173}{subsection.9.0.6}
+\contentsline {chapter}{\numberline {10}Summary and Conclusion}{177}{chapter.10}
+\contentsline {backmatter}{Bibliography}{182}{chapter*.109}
+\contentsline {appendix}{Appendix}{192}{appendix.A}
+\contentsline {chapter}{\numberline {A}Additional pMSSM Checks and Studies}{193}{appendix.A}
+\contentsline {section}{\numberline {A.1}Change of prior}{193}{section.A.1}
+\contentsline {section}{\numberline {A.2}Profile vs marginal likelihoods}{199}{section.A.2}
+\contentsline {chapter}{\numberline {B}Analysis Tables}{207}{appendix.B}
+\contentsline {chapter}{\numberline {C}Other Discriminating Variables}{210}{appendix.C}
+\contentsline {subsection}{\numberline {C.0.1}Observables probing \text {supersymmetry}}{211}{subsection.C.0.1}
+\contentsline {subsubsection}{Razor variables.}{211}{section*.123}
+\contentsline {subsubsection}{Stransverse mass $M_{\text {T}2}$.}{212}{section*.124}
+\contentsline {chapter}{\numberline {D}Public Database of LHC Searches}{213}{appendix.D}
+\contentsline {section}{\numberline {D.1}Toward a public analysis database for LHC new physics searches using {\sc MadAnalysis\nobreakspace {}5}}{213}{section.D.1}
+\contentsline {section}{\numberline {D.2}Implemented Analyses and their Validation}{215}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{216}{subsection.D.2.1}
+\contentsline {section}{\numberline {D.3}Limit setting}{221}{section.D.3}
+\contentsline {section}{\numberline {D.4}{\sc MadAnalysis\nobreakspace {}5}\ conclusions}{222}{section.D.4}
+\contentsline {section}{\numberline {D.5}Validation document: SUS-13-012}{223}{section.D.5}
+\contentsline {subsubsection}{T1qqqq simplified model.}{224}{figure.caption.138}
+\contentsline {subsubsection}{T1tttt simplified model.}{228}{figure.caption.146}
+\contentsline {subsubsection}{T5VV simplified model.}{232}{figure.caption.154}
+\contentsline {subsubsection}{T2qq simplified model.}{236}{figure.caption.162}
+\contentsline {subsubsection}{Exclusion Limits.}{240}{section*.163}
+\contentsline {section}{\numberline {D.6}Validation document: SUS-14-002}{242}{section.D.6}

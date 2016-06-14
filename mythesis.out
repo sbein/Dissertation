@@ -13,13 +13,13 @@
 \BOOKMARK [1][-]{section.2.8}{Symmetry breaking}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.9}{Commutation relations}{chapter.2}% 14
 \BOOKMARK [0][-]{chapter.3}{The Standard Model}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Standard Model fields and symmetries}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Standard Model Lagrangian}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.1}{SM fields and symmetries}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{SM Lagrangian}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.3}{Electroweak symmetry breaking}{chapter.3}% 18
 \BOOKMARK [1][-]{section.3.4}{SM parameters and visualization}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{Problems with the Standard Model}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.5.1}{Observations in tension with the Standard Model}{section.3.5}% 21
-\BOOKMARK [2][-]{subsection.3.5.2}{Fine tuning and unexplained patterns in the Standard Model}{section.3.5}% 22
+\BOOKMARK [1][-]{section.3.5}{Problems with the standard model}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.5.1}{Observations in tension with the standard model}{section.3.5}% 21
+\BOOKMARK [2][-]{subsection.3.5.2}{Fine tuning and unexplained patterns in the standard model}{section.3.5}% 22
 \BOOKMARK [1][-]{section.3.6}{This document}{chapter.3}% 23
 \BOOKMARK [0][-]{chapter.4}{Supersymmetry}{}% 24
 \BOOKMARK [1][-]{subsection.4.0.1}{Supersymmetry in our universe}{chapter.4}% 25
@@ -34,10 +34,10 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{The objective of high energy}{section.5.3}% 34
 \BOOKMARK [2][-]{subsection.5.3.2}{The objective of high luminosity}{section.5.3}% 35
 \BOOKMARK [0][-]{chapter.6}{The Compact Muon Solenoid}{}% 36
-\BOOKMARK [1][-]{section.6.1}{Coordinates and Observables}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.1}{Coordinates and observables}{chapter.6}% 37
 \BOOKMARK [1][-]{section.6.2}{Silicon tracker}{chapter.6}% 38
 \BOOKMARK [1][-]{section.6.3}{Electromagnetic calorimeter}{chapter.6}% 39
-\BOOKMARK [2][-]{subsection.6.3.1}{ECAL Calibration}{section.6.3}% 40
+\BOOKMARK [2][-]{subsection.6.3.1}{ECAL calibration}{section.6.3}% 40
 \BOOKMARK [1][-]{section.6.4}{Hadronic calorimeter}{chapter.6}% 41
 \BOOKMARK [1][-]{section.6.5}{Superconducting solenoid}{chapter.6}% 42
 \BOOKMARK [1][-]{section.6.6}{Muon system}{chapter.6}% 43
@@ -47,45 +47,55 @@
 \BOOKMARK [2][-]{subsection.6.9.1}{Calorimeter research and development}{section.6.9}% 47
 \BOOKMARK [0][-]{chapter.7}{The Viability of SUSY: The pMSSM Interpretation}{}% 48
 \BOOKMARK [1][-]{section.7.1}{Bayes' theorem}{chapter.7}% 49
-\BOOKMARK [1][-]{section.7.2}{Methods for the combination CMS analyses}{chapter.7}% 50
-\BOOKMARK [2][-]{subsection.7.2.1}{Construction of the prior}{section.7.2}% 51
-\BOOKMARK [2][-]{subsection.7.2.2}{Incorporation of the CMS data}{section.7.2}% 52
-\BOOKMARK [1][-]{section.7.3}{Results}{chapter.7}% 53
-\BOOKMARK [2][-]{subsection.7.3.1}{Global significance}{section.7.3}% 54
-\BOOKMARK [2][-]{subsection.7.3.2}{Impact on parameters}{section.7.3}% 55
-\BOOKMARK [2][-]{subsection.7.3.3}{Correlations among pMSSM parameters}{section.7.3}% 56
-\BOOKMARK [1][-]{section.7.4}{Change of prior}{chapter.7}% 57
-\BOOKMARK [1][-]{section.7.5}{Profile vs Marginal likelihoods}{chapter.7}% 58
-\BOOKMARK [1][-]{section.7.6}{Nonexcluded regions in the pMSSM parameter space}{chapter.7}% 59
+\BOOKMARK [1][-]{section.7.2}{The pMSSM interpretation}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.3}{Methods for the combination CMS analyses}{chapter.7}% 51
+\BOOKMARK [2][-]{subsection.7.3.1}{Construction of the prior}{section.7.3}% 52
+\BOOKMARK [2][-]{subsection.7.3.2}{Incorporation of the CMS data}{section.7.3}% 53
+\BOOKMARK [1][-]{section.7.4}{Results}{chapter.7}% 54
+\BOOKMARK [2][-]{subsection.7.4.1}{Global significance}{section.7.4}% 55
+\BOOKMARK [2][-]{subsection.7.4.2}{Impact on parameters}{section.7.4}% 56
+\BOOKMARK [2][-]{subsection.7.4.3}{Correlations among pMSSM parameters}{section.7.4}% 57
+\BOOKMARK [1][-]{section.7.5}{Nonexcluded regions in the pMSSM parameter space}{chapter.7}% 58
+\BOOKMARK [2][-]{subsection.7.5.1}{Characterization of signal events}{section.7.5}% 59
 \BOOKMARK [0][-]{chapter.8}{CMS Searches for Supersymmetry at s=13 TeV}{}% 60
 \BOOKMARK [1][-]{section.8.1}{Trigger methods}{chapter.8}% 61
-\BOOKMARK [1][-]{section.8.2}{QCD background estimation}{chapter.8}% 62
-\BOOKMARK [2][-]{subsection.8.2.1}{The origin of ETmiss in QCD events}{section.8.2}% 63
-\BOOKMARK [2][-]{subsection.8.2.2}{Model assumptions and likelihood}{section.8.2}% 64
-\BOOKMARK [2][-]{subsection.8.2.3}{Rebalance and smear method}{section.8.2}% 65
-\BOOKMARK [1][-]{section.8.3}{Z background estimation}{chapter.8}% 66
-\BOOKMARK [2][-]{subsection.8.3.1}{The relationship between Z and Zl+l-}{section.8.3}% 67
-\BOOKMARK [2][-]{subsection.8.3.2}{Procedure with 13 TeV data}{section.8.3}% 68
-\BOOKMARK [2][-]{subsection.8.3.3}{Closure}{section.8.3}% 69
-\BOOKMARK [2][-]{subsection.8.3.4}{Comparison with prediction based on Z+- events}{section.8.3}% 70
-\BOOKMARK [1][-]{section.8.4}{Results of 2015 SUSY searches}{chapter.8}% 71
-\BOOKMARK [2][-]{subsection.8.4.1}{Multi-jet + HTmiss SUSY search: targeting gluino production with the 2015 data}{section.8.4}% 72
-\BOOKMARK [2][-]{subsection.8.4.2}{Search for supersymmetry in events with top-tagged jets using 2015 data}{section.8.4}% 73
-\BOOKMARK [0][-]{chapter.9}{Targeting the nonexcluded pMSSM with multivariate discriminants}{}% 74
-\BOOKMARK [0][-]{chapter.10}{Summary and Conclusion}{}% 75
-\BOOKMARK [0][-]{chapter*.122}{Bibliography}{}% 76
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 77
-\BOOKMARK [0][-]{appendix.A}{Phenomenology outside the collaboration}{}% 78
-\BOOKMARK [1][-]{section.A.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.A}% 79
-\BOOKMARK [1][-]{section.A.2}{Implemented Analyses and their Validation}{appendix.A}% 80
-\BOOKMARK [2][-]{subsection.A.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.A.2}% 81
-\BOOKMARK [1][-]{section.A.3}{Limit setting}{appendix.A}% 82
-\BOOKMARK [1][-]{section.A.4}{MadAnalysis 5 conclusions}{appendix.A}% 83
-\BOOKMARK [1][-]{section.A.5}{Implementation of \(SUS-13-012\)}{appendix.A}% 84
-\BOOKMARK [2][-]{subsection.A.5.1}{T1qqqq simplified model}{section.A.5}% 85
-\BOOKMARK [2][-]{subsection.A.5.2}{T1tttt simplified model}{section.A.5}% 86
-\BOOKMARK [2][-]{subsection.A.5.3}{T5VV simplified model}{section.A.5}% 87
-\BOOKMARK [2][-]{subsection.A.5.4}{T2qq simplified model}{section.A.5}% 88
-\BOOKMARK [2][-]{subsection.A.5.5}{Exclusion Limits}{section.A.5}% 89
-\BOOKMARK [0][-]{appendix.B}{Other discriminating variables}{}% 90
-\BOOKMARK [1][-]{subsection.B.0.6}{Observables probing supersymmetry}{appendix.B}% 91
+\BOOKMARK [2][-]{subsection.8.1.1}{Measuring the efficiency without bias}{section.8.1}% 62
+\BOOKMARK [2][-]{subsection.8.1.2}{Multivariate classification}{section.8.1}% 63
+\BOOKMARK [1][-]{section.8.2}{QCD background estimation}{chapter.8}% 64
+\BOOKMARK [2][-]{subsection.8.2.1}{The origin of ETmiss in QCD events}{section.8.2}% 65
+\BOOKMARK [2][-]{subsection.8.2.2}{Model assumptions and likelihood}{section.8.2}% 66
+\BOOKMARK [2][-]{subsection.8.2.3}{Rebalance and smear method}{section.8.2}% 67
+\BOOKMARK [2][-]{subsection.8.2.4}{Closure}{section.8.2}% 68
+\BOOKMARK [2][-]{subsection.8.2.5}{Applying the method in data}{section.8.2}% 69
+\BOOKMARK [2][-]{subsection.8.2.6}{Uncertainties in the prediction}{section.8.2}% 70
+\BOOKMARK [1][-]{section.8.3}{Z background estimation}{chapter.8}% 71
+\BOOKMARK [2][-]{subsection.8.3.1}{The relationship between Z and Zl+l-}{section.8.3}% 72
+\BOOKMARK [2][-]{subsection.8.3.2}{Procedure with 13 TeV data}{section.8.3}% 73
+\BOOKMARK [2][-]{subsection.8.3.3}{Closure}{section.8.3}% 74
+\BOOKMARK [2][-]{subsection.8.3.4}{Applying the method in data}{section.8.3}% 75
+\BOOKMARK [2][-]{subsection.8.3.5}{Uncertainties in the prediction}{section.8.3}% 76
+\BOOKMARK [1][-]{section.8.4}{Results of 2015 SUSY searches}{chapter.8}% 77
+\BOOKMARK [2][-]{subsection.8.4.1}{Multi-jet + HTmiss SUSY search: targeting gluino production at s=13 TeV}{section.8.4}% 78
+\BOOKMARK [2][-]{subsection.8.4.2}{Search for SUSY in events with top-tagged jets at s=13 TeV}{section.8.4}% 79
+\BOOKMARK [0][-]{chapter.9}{Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{}% 80
+\BOOKMARK [1][-]{subsection.9.0.3}{New techniques with new events}{chapter.9}% 81
+\BOOKMARK [2][-]{subsection.9.0.4}{Low-HTmiss discriminant}{subsection.9.0.3}% 82
+\BOOKMARK [2][-]{subsection.9.0.5}{low-HT discriminant}{subsection.9.0.3}% 83
+\BOOKMARK [2][-]{subsection.9.0.6}{Potential future work}{subsection.9.0.3}% 84
+\BOOKMARK [0][-]{chapter.10}{Summary and Conclusion}{}% 85
+\BOOKMARK [0][-]{chapter*.109}{Bibliography}{}% 86
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 87
+\BOOKMARK [0][-]{appendix.A}{Additional pMSSM Checks and Studies}{}% 88
+\BOOKMARK [1][-]{section.A.1}{Change of prior}{appendix.A}% 89
+\BOOKMARK [1][-]{section.A.2}{Profile vs marginal likelihoods}{appendix.A}% 90
+\BOOKMARK [0][-]{appendix.B}{Analysis Tables}{}% 91
+\BOOKMARK [0][-]{appendix.C}{Other Discriminating Variables}{}% 92
+\BOOKMARK [1][-]{subsection.C.0.1}{Observables probing supersymmetry}{appendix.C}% 93
+\BOOKMARK [0][-]{appendix.D}{Public Database of LHC Searches}{}% 94
+\BOOKMARK [1][-]{section.D.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.D}% 95
+\BOOKMARK [1][-]{section.D.2}{Implemented Analyses and their Validation}{appendix.D}% 96
+\BOOKMARK [2][-]{subsection.D.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.D.2}% 97
+\BOOKMARK [1][-]{section.D.3}{Limit setting}{appendix.D}% 98
+\BOOKMARK [1][-]{section.D.4}{MadAnalysis 5 conclusions}{appendix.D}% 99
+\BOOKMARK [1][-]{section.D.5}{Validation document: SUS-13-012}{appendix.D}% 100
+\BOOKMARK [1][-]{section.D.6}{Validation document: SUS-14-002}{appendix.D}% 101
