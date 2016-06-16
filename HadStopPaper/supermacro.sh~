@@ -1,0 +1,14 @@
+source macro.sh analysisDescription.tex              
+source macro.sh appendixBackgroundPredictions.tex    
+source macro.sh backgroundIntroduction.tex           
+source macro.sh conclusion.tex                     
+source macro.sh detector.tex                       
+source macro.sh introduction.tex            
+source macro.sh invisibleZ.tex              
+source macro.sh pdefs.tex                   
+source macro.sh qcd.tex		       
+source macro.sh resultsAndInterpretation.tex
+source macro.sh SUS-16-006.tex  
+source macro.sh ttbarAndWjets.tex
+source macro.sh ttZandRareSM.tex
+

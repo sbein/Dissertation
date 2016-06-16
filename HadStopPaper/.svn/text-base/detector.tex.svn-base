@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detector and event reconstruction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------
+The CMS detector is a multi-purpose apparatus of cylindrical design with respect to the beams.  
+%
+The main features of the detector relevant to this analysis are described here; more details can be found in Ref.~\cite{CMS}.
+%
+A polar angle $\theta$ is defined with respect to the counterclockwise beam direction.  
+%
+A convenient coordinate is the pseudo-rapidity $\eta$, defined as $\eta = -\ln \tan (\theta/2)$.
+%
+Charged particle trajectories are measured by the silicon pixel and strip tracker, covering $|\eta| < 2.5$.
+%
+The tracker is immersed in a $3.8 \T$ magnetic field provided by a superconducting solenoid of $6{\rm m}$ in diameter that also encircles several calorimeters.
+%
+The tracker provides resolution of the transverse momentum, represented by \pt, of approximately 1.5\% for charged particles with $\pt\sim100$\GeVc.
+%
+A lead-tungstate crystal electromagnetic calorimeter (ECAL) and a brass-scintillator hadronic calorimeter (HCAL) surround the tracking volume and cover the region $|\eta| < 3$. 
+%
+Quartz-steel forward hadron calorimeters extend the coverage to $|\eta|\le 5$.
+%
+Muons are identified in gas ionization detectors embedded in the steel return yoke of the magnet.
+%
+The data for this analysis are recorded using a two level trigger system described in Ref.~\cite{CMS}.
+
+%-------------
+The recorded events are reconstructed using the particle-flow algorithm~\cite{PFT-09-001}. 
+%
+This algorithm reconstructs charged hadrons, neutral hadrons, photons, muons, and electrons using the information from the tracker, the ECAL and HCAL calorimeters, and the muon system.
+%
+The \METv is defined as the negative vector sum of the transverse momentum of all particles reconstructed in the event and \MET is the magnitude of the \METv vector.
+%
+All photons and neutral hadrons in an event, but only those charged particles which originate from the primary interaction, are clustered into jets using the anti-$k_\mathrm{T}$ clustering algorithm with the size parameter $0.4$~\cite{antikt}.
+%
+Neutral particles from overlapping pp interactions (``pileup"), and from the underlying events, are subtracted using the Fastjet technique~\cite{PU_JET_AREAS,JET_AREAS}, which is based on the calculation of the $\eta$-dependent transverse momentum density, evaluated on an event-by-event basis.
+%
+Jet energy-momenta are corrected using factors derived from simulation, and, for jets in data, an additional residual energy-momentum correction is applied to account for differences in the jet energy-momentum scales~\cite{JETJINST} between simulations and data.
+%
+Only jets with $\pt>30\GeVc$ are used in this search.
+
+%-------------
+For this analysis, a jet is considered a b-quark jet (b-tagged) if it passes  
+the medium working point requirements of the "Combined Secondary Vertex" (CSV) method~\cite{bTagPAS}.
+%
+The b-quark identification efficiency is  67\% overall.
+%
+The probability of a jet originating from a light quark or gluon to be mis-identified as a b-quark jet is 1.4\%, averaged over \pt in \ttbar events~\cite{bTagPAS}.
+%
+For this analysis, b-tagged jets are required to have $\pt>30$\GeVc and be within $|\eta|<2.4$. 
+
+%-------------
+Muons are reconstructed using the muon detectors and by finding compatible track segments in the silicon tracker, and are required to be within $|\eta|<2.1.$
+%
+Electron candidates are reconstructed starting from a cluster of energy deposits in the ECAL that is then matched to the momentum associated with a track in the silicon tracker.
+%
+Electron candidates are required to have $|\eta|<1.44$ or $1.56<|\eta|<2.5$ to avoid the transition region between the ECAL barrel and the endcap.
+%
+Muon and electron candidates are required to originate within 2\,mm of the beam axis in the transverse plane.
+
+%Jets are reconstructed with the Particle Flow (PF) technique and clustered with the anti-$k_\mathrm{T}$ algorithm with a resolution parameter D=0.4~\cite{antikt} (AK4).

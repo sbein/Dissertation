@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Backgrounds from misidentified leptons in top quark or W boson processes}
+\label{sec:wtop}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% LOST LEPTON %%%%%%%%%%
+
+%-------------
+The lepton veto does not succeed in rejecting events when light leptons (electrons or muons) are not isolated, not identified/reconstructed, or are out of the acceptance region. 
+%
+About 70\% of the expected SM background (integrated over all search bins) comes from \ttbar and {\PW}+jets events with a lepton that is ``lost''.  
+
+%-------------
+These ``lost'' leptons are modeled using appropriately weighted data events from a control sample which consists mainly of $\ttbar$ events. 
+%
+This control sample is defined by the same critera as the pre-selection, but the muon veto is replaced by requiring exactly one well identified and isolated muon and no isolated track veto is applied.
+%
+To reduce possible signal contamination in this control sample, only events with a transverse mass less than 100 \gev are considered, with $m_{\rm T}$ reconstructed from the muon \pt and the event missing transverse energy as $m_{\rm T} = \sqrt{2 p_{\rm T}(\mu) E^{\rm miss}_{\rm T} (1 - \cos(\Delta \phi))}$, where $\Delta \phi$ is the distance in $\phi$ between the muon and the $\MET$. 
+%
+For the electroweak muon control sample, $\MET$ originates from a neutrino, \mt represents the transverse $W$-mass, and therefore the distribution falls sharply above $80$~GeV.
+
+%-------------
+A detailed desciption of the method is available in~\cite{LostLepton} and in~\cite{8TeVstopAN}. In short, the predicted number of \ttbar, $W$+jets and single top events with lost leptons, $N_{LostLepton}$ contributing to the search sample is calculated as
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+N_{LostLepton}= \sum_{CS} (\sum_{i={e,\mu}}({F_{ISO}}^{i}+{F_{ID}}^{i}+{F_{Acc}}^{i}) \times F_{dilepton}^{i}) \times E_{Mtw} \times \epsilon_{isotrack}
+\label{eq:lostleptonequation}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $\sum_{CS}$ is the sum over the events measured directly in the control sample after the search selection cuts, ${F_{ISO}}^{i}$, ${F_{ID}}^{i}$ and ${F_{Acc}}^{i}$ are the factors that convert the number of events in the control sample to the number of lost lepton events due to respectively isolation, reconstruction or acceptance criteria, $F_{dilepton}^{i}$ the correction factor for dilepton contribution, $E_{Mtw}$ the correction factor due to the $m_{\rm T}$ cut and $\epsilon_{isotrack}$ the correction factor to compensate the isolated track veto. 
+%
+The control sample is normalized up ($E_{Mtw}$) to compensate for the reduction of efficiency due to the $m_{\rm T}<100$~GeV cut.
+%
+The isolation and reconstruction efficiencies as well as the acceptance are obtained from simulated \ttbar events.
+%
+The acceptance efficiencies are derived for each search bin from \ttbar simulated events, selected following the pre-selection criteria. 
+
+%-------------
+Dilepton events may also contribute to the background if both leptons are lost.
+%
+In the muon control sample, there are dilepton events that contribute when one lepton is lost while the other one is reconstructed and identified as a muon.
+%
+This effect is evaluated in simulated \ttbar events as the ratio between the number of events with one or two lost leptons over the number of events with one lost lepton plus twice the number of events with two lost lepton. 
+%
+Separate correction factors are applied,  $F_{dilepton}^{\mu}$=$99.3\pm0.02$ for muons and $F_{dilepton}^{e}$=$96.9\pm0.02$ for electrons.
+%
+Finally, the isolated track veto efficiency factor is applied in Eq.~\ref{eq:lostleptonequation} to get the final number of predicted lost lepton background events. 
+
+%-------------
+The following sources of systematic uncertainty are included for the lost-lepton background prediction: lepton isolation efficiency, lepton reconstruction/ID efficiency, lepton acceptance from uncertainty in the parton distribution functions (PDF), control sample purity, corrections due to the presence of dileptons, efficiency of the $M_T$ selection cut, isolated-track veto, and precision of the closure tests.
+
+%-------------
+The lost lepton background prediction analysis is applied to collider data event samples (collected with the search triggers described in section~\ref{sec:trig}) corresponding to an integrated luminosity of $2.3\fbinv$. 
+%
+The final predictions for all search bins are listed in Appendix~\ref{sec:bkgpred} in Tab.~\ref{tab:LLpred}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Backgrounds from hadronic decays of tau leptons in top quark or W boson processes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% HADRONIC TAU %%%%%%%%%%
+
+%-------------
+The hadronic decay of $\tau$ leptons (\tauh) is one of the largest components of the background from \ttbar, \wpj and single-top events contributing to the search regions. 
+%
+When a $W$ boson decays to a neutrino and a hadronically decaying $\tau$ lepton ($\tauh$), the presence of neutrinos in the final state results in \METv, and the event passes the lepton veto because the hadronically decaying $\tau$ is reconstructed as a jet. 
+%
+A veto on isolated tracks is used to reduce the hadronic $\tau$ background while sustaining a minimal impact on signal efficiency. 
+%
+After applying the veto, the remnant hadronic $\tau$ events are then predicted using the method described below. 
+
+%-------------
+The estimate of this background is based on a control sample of $\mu$\,+\,jets events selected from data using a $\mu+\HT$-based trigger, and requiring exactly one $\mu$ with $\pt^{\mu}>20\GeV$ and $|\eta|<2.4$.
+%
+A cut on the transverse mass of the $W$, $m_\mathrm{T}=\sqrt{2\pt^{\mu}\MET(1-\cos\Delta\phi)}<$ 100 \gev, is required to select events containing a $\W\to\mu\nu$ decay and to suppress possible new physics signal contamination, i.e., signal events present in the $\mu$\,+\,jets sample. 
+%
+Here, $\Delta\phi$ is the azimuthal angle between the $\vec{\pt}^\mu$ and the \METv directions.
+%
+Because the $\mu$\,+\,jets and \tauh{}\,+\,jets events arise from the same physics processes, the hadronic component of the two samples is the same except for the response of the detector to the muon or the $\tauh$ jet. 
+%
+The strategy employed consists of replacing the muon \pt by a random sample of a simulated \tauh jet response ``template'' distributions for a hadronically-decaying $\tau$ lepton. 
+%
+The global variables of the event are recalculated with this $\tauh$ jet, and the search selections are applied to predict the \tauh background.
+
+%-------------
+The probability to mistag a $\tauh$ jet as a b-jet is significant.
+%
+This mistag rate must be taken into account in order to accurately predict the \nbjets distribution of $\tauh$ background events, and correctly assign \tauh background events to search bins depending on the b-jet multiplicity. 
+%
+The dependence of b-mistag rate with $\tauh$ jet \pt is larger for \ttbar events than for \wpj events. 
+%
+This is because of the overlap of the $\tauh$ jet with the nearby b-quark from the same top quark decay in case of the \ttbar sample. 
+%
+In order to take into account this mistag rate in the $\mu$+jets control sample, we randomly select a simulated tau-jet and count it as a b-jet with the probability obtained from the simulated mistag rate \wpj for the corresponding $\tauh$ jet \pt bin.
+
+%-------------
+The veto of isolated tracks helps to reject hadronically decaying $\tau$ leptons, mostly one prong taus. 
+%
+However, it also vetoes the events containg isolated muons or electrons.
+%
+Thus the veto cannot be directly applied to the $\mu$+jets control sample as part of the search sample selection. 
+%
+In this case, the isolated track veto efficiency ($\epsilon_\text{isotrack}$) for $\tauh$ is measured and the  $\mu$+jets control sample yield is multiplied by this factor to get a prediction with the isolated track veto applied. 
+%
+This efficiency is determined from simulated \ttbar, \wpj and single-top events by matching isolated tacks to a $\tauh$ jets and computing the ratio of the number of tracks passing the isolation criteria over the total.
+
+%-------------
+The $\tauh$ background prediction is calculated as follows:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+N_{\tau_{h}} = \sum\limits_i^{N_\mathrm{CS}^\mu}\left(\sum\limits_j^\text{Template bins}(P_{\tau_h}^\text{resp})
+\frac{\epsilon_{\tau \rightarrow \mu}}{\epsilon^{\mu}_\text{trigger}\,\epsilon^{\mu}_\text{reco}\,\epsilon^{\mu}_\text{iso}\,\epsilon^{\mu}_\text{acc}\,\epsilon^{\mu}_{m_\text{T}}}
+%%\,\,\frac{1}{}\,\frac{1}{}\,(1 - )\frac{1}{}
+\dfrac{ \mathcal{B}(W \rightarrow \tau_h)}{\mathcal{B}(W \rightarrow \mu)}
+\,\epsilon_\text{isotrack}
+%\frac{1}{}
+\,F_\text{dilepton}\right)
+\label{eqn:tauh}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where the first summation is over the events in the $\mu$ + jets control sample, the second is over the bins of the $\tau_h$ response template and $P_{\tau_h}^\text{resp}$ is the probability of $\tau_h$ response from each bin. 
+%
+The various correction factors applied to convert $\mu$ + jets events into $\tauh$ + jets events to construct the final $\tauh$ sample are: the branching ratio $\mathcal{B}(\W \rightarrow \tauh)/\mathcal{B}(\W \rightarrow \mu)$ = 0.65; the muon reconstruction and identification efficiency $\epsilon^{\mu}_\text{reco}$ and the muon isolation efficiency $\epsilon^{\mu}_\text{iso}$; the muon kinematic and geometric acceptance $\epsilon^{\mu}_\text{acc}$; the $m_{T}$ selection efficiency $\epsilon_{m_\text{T}}$; the contamination in the control sample by the $\mu$'s coming from $\tau$ decays, $\epsilon_{\tau \rightarrow \mu}$; the isolated track tagging efficiency of $\tauh$, $\epsilon_\text{isotrack}$; the $\tauh$ contribution that overlaps with the lost-lepton prediction (double-conting) due to dileptonic event contamination ($F_\text{dilepton}$) in the control sample; and a correction for $\mu$ trigger efficiency, $\epsilon^{\mu}_{trigger}$. 
+%
+The muon reconstruction and identification efficiency and the muon isolation efficiency are the same used for the lost-lepton background determination. 
+%
+%Block parentheses indicates the variables the corrections are parametrized in terms of the search region binning. 
+
+%-------------
+Systematic uncertainties are evaluated for each of the following sources: uncertainties in the hadronic tau response template, uncertainties in the muon reconstruction and isolation efficiency, uncertainties in the acceptance due to  uncertainties in the parton distribution functions (PDF), uncertainties in the b quark mistag rate of the hadronic tau jet, uncertainties in the efficiency of the $m_{T}$ cut due to uncertainties in the \met scale, uncertainties in the efficiency of the isolated track veto, uncertainties due to contamination from lost-leptons, uncertainties in the trigger efficiency, and uncertainties in the precision of the closure tests.
+
+%-------------
+The hadronic tau background predictions and systematic uncertainties from the single muon dataset scaled to a luminosity of $2.3\fbinv$ are listed in Appendix~\ref{sec:bkgpred} in Tab.~\ref{tab:TAUpred}.  

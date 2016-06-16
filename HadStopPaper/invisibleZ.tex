@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Backgrounds from neutrinos in decays of Z bosons}
+\label{sec:zinv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------
+Ideally, one would use a data driven approach based on $\cPZ$+Jets events where the $\cPZ$ boson decays to a pair of muons. 
+%
+The kinematics of such events are indistinguishable from the kinematics of events where $\cPZ$ decays to neutrinos.  
+%
+However, such a strategy suffers from low sample sizes due to the small branching ratio for $\cPZ \rightarrow \mu \mu$, the b-tagging requirements, and the other kinematic requirements placed on the control region to make it as similar to the signal region as possible.  
+%
+To mitigate the large statistical errors that would occur when using the above method, a strategy incorporating data-validated Monte Carlo (MC) simulation is used instead.  
+%
+In this multistage process the final estimate is taken from the $\cPZ \rightarrow \nu \nu$ simulation, which is corrected for any differences observed between data and simulation in a control region with loosened cuts.
+
+%-------------
+The central value of the $\cPZ \rightarrow \nu \nu$ background prediction for each search bin $B$ can be written as
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+\widehat{N}_B = R_\textrm{norm} \cdot \sum_{\textrm{events}\in B} S_{DY}(N_\textrm{jet}) w_\textrm{MC},
+\label{eq:zinv_pred}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+with $\widehat{N}_B$ the predicted number of $\cPZ \rightarrow \nu \nu$ background events in search bin $B$, and $w_\textrm{MC}$ a standard MC event weight including the assumed $\cPZ \rightarrow \nu \nu$ cross section, the data luminosity, and the measured trigger efficiency. 
+%
+Each MC event is corrected using two scale factors. The first, $R_\textrm{norm}$, is an overall normalization factor for the $\cPZ \rightarrow \nu \nu$ simulation that is derived in a tight control region in data.
+%
+This tight control region has the same selection as the search region, apart from the requirement that there be two muons (treated as if they were neutrinos) and without any requirements on b-tagged jets, so it is a very good proxy for the signal region.
+%
+The second scale factor, $S_{DY}$, depends on the number of jets $(N_\textrm{jet})$ in the event and is derived in a loose control region in which the signal region requirements on \MET, \HT, \MTTwo and the number of top-tagged jets in the event are relaxed. 
+%
+The scale factor is derived separately for events with 0 and ${\geq}1$ $\cPqb$-tagged jets. 
+%
+It corrects both the observed mismodelling of the jet multiplicity distribution in the simulation and the difference in normalization between data and simulation in this loose region. 
+
+%-------------
+The loose control region requirements are the following: two muons are required within the $\cPZ$-boson mass window; each event is required to have $\HT > 200\GeV$; each event must contain at least 4 jets, with the same \pt requirements as for the pre-selection; and a $\Delta\phi$ cut between the jets and \MET is required as in the pre-selection. 
+%
+We additionally divide the events based on the $\cPqb$-tagged jet multiplicity ($0$ and $\geq 1 \cPqb$-tagged jets). 
+%
+The main goal for the loose control region is to provide a data sample that is close to the signal region in terms of kinematic requirements, \eg the number of jets, but is loose enough to have sufficient events to do a shape comparison for the main analysis variables. 
+
+%-------------
+The tight control region adds a few more requirements to the loose one (the tight region is thus fully incorporated in the loose region): each event must have $\MET > 200$ \gev and $\HT > 500$ \gev, and each event must contain at least one top-tagged candidate and have a corresponding $M_{T2} > 200$ \gev.
+%
+Comparing this to the signal region, the only difference is the requirement that there be no $\cPqb$-tagged jets, and the requirement that there be two muons. 
+%
+The tight region is very close to the signal region in terms of kinematic properties, but it suffers from a lack of events. Therefore, we cannot bin it in all the signal bins, and only use it to derive an overall normalization for the simulation. 
+
+%-------------
+The validation of the Drell-Yan (DY) simulation, in terms of both normalization and shape, is performed with respect to data in the loose $\mu\mu$ control region. 
+%
+This control region has a good purity for DY$\rightarrow\mu\mu$ events, especially in the 0 $\cPqb$-tagged jet category. 
+%
+However, for larger jet and $\cPqb$-tagged jet multiplicities the relative composition of the \ttbar process and the DY process become similar. 
+%
+Hence, it is important to account for the contributions from \ttbar processes; this is accomplished using simulation, corrected by data in a separate $e\mu$ sideband.
+%
+Studies in that sideband show some shape disagreement between data and simulation for the \ttbar samples, especially in the lower jet multiplicity bins and including a slight overall normalization difference.  
+%
+Each bin in the jet multplicity distribution of the \ttbar MC sample is corrected using a $N_\textrm{jet}$-dependent scale factor.  
+%
+Once the \ttbar simulation is corrected, the simulated DY sample is subsequently corrected for any remaining observed disagreements between data and simulation.  
+%
+This is similarly accomplished by reweighting the simulated DY sample in the loose control region by applying $N_\textrm{jet}$-dependent scale factors, $S_{DY}(N_\textrm{jet})$, which are determined separately for events with 0 $\cPqb$-tagged jets and ${\geq} 1$ $\cPqb$-tagged jets. 
+ 
+%-------------
+Having derived the $S_{DY}(N_\textrm{jet})$ scale factors that correct the DY simulation to match the data in the loose control region, we must determine the final prediction for $\cPZ \rightarrow \nu \nu$ in the signal region, for which we have designed a good proxy: the tight $\mu\mu$ control region. 
+%
+We use this region to constrain the overall normalization $R_\textrm{norm}$ of the $\cPZ\rightarrow\nu\nu$ MC in the signal region.
+%
+We find that $R_\textrm{norm} = 0.799 \pm 0.147$, where the uncertainty includes only the statistical uncertainties on data and simulation. 
+
+%-------------
+The systematic uncertainties for the $\cPZ\rightarrow\nu\nu$ background prediction can be divided in two broad categories: uncertainties associated to the use of MC simulation and uncertainties specifically associated to the background prediction method.  
+%
+The first category includes systematic uncertainties such as PDF and renormalization/factorization scale choices, jet and \MET energy scale uncertainties, $\cPqb$-tag scale factor uncertainties and trigger efficiency uncertainties.  
+%
+The second category include uncertainties from the method used to determine $R_\textrm{norm}$ and the $S_{DY}(N_\textrm{jet})$ scale factors. 
+%
+The uncertainties associated with that scale factor are related to residual shape uncertainties (after applying the $S_{DY}(N_\textrm{jet})$ scale factor) in variables other than $N_\textrm{jet}$, which are evaluated in the loose control region.  
+%
+The uncertainty in $R_\textrm{norm}$ is directly propagated as a flat 18.4\% uncertainty in each search bin. 
+
+%-------------
+To account for any differences of shape in the kinematic observables used by this analysis, additional systematic uncertainties are assigned based upon any differences observed between data and simulation in the loose control region, with the additional requirement that $\ntops \ge 1$ and $\ntops + \nbjets \ge 2$.  
+%
+Specifically, we investigate the \HT, \MET, \MTTwo, $N_\cPqb$ and $N_t$ variables, and for each one, we apply the corresponding cut from the tight region (\eg $\HT>500\GeV$) on top of the loose region, and assess whether the difference between data and simulation change for the other variables. 
+%
+The statistical uncertainties on the ratios between data and simulation are taken as a systematic uncertainty, in addition to any shift of the central value between data and simulation.
+
+The  $\cPZ \rightarrow \nu \nu$ background predictions for each search bin, including the statistical and systematic uncertainties, are listed in Appendix~\ref{sec:bkgpred} in Tab.~\ref{tab:Zinv_prediction}.
+ 

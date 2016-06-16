@@ -1,0 +1,272 @@
+\newcommand{\todo}[1]{{\color{magenta}{FIXME: #1}}}
+\renewcommand{\fixme}[1]{\todo{#1}}
+\newcommand{\sectionauthor}[1]{\texorpdfstring{{\color{blue} #1}}{#1}}
+\newcommand{\disclaimer}[1]{\emph{Outlook: #1}}
+
+\newcommand{\update}[1]{{\color{blue}{#1}}}
+
+% some more units
+\newcommand{\T}{\ensuremath{\,\text{T}}\xspace}                % Tesla unit
+\newcommand{\meter}{\ensuremath{\,\text{m}}\xspace}            % m unit
+\newcommand{\um}{\mu\ensuremath{\,\text{m}}\xspace}            % micron unit
+\newcommand{\ns}{\ensuremath{\,\text{ns}}\xspace}              % ns unit
+\newcommand{\us}{\mu\ensuremath{\,\text{s}}\xspace}            % ns unit
+\newcommand{\mrad}{\ensuremath{\,\text{mrad}}\xspace}          % mrad unit
+\newcommand{\urad}{\mu\ensuremath{\,\text{rad}}\xspace}        % micro rad.
+\newcommand{\kHz}{\ensuremath{\,\text{kHz}}\xspace}            % kHz unit
+\newcommand{\MHz}{\ensuremath{\,\text{MHz}}\xspace}            % MHz unit
+\newcommand{\GHz}{\ensuremath{\,\text{GHz}}\xspace}            % GHz unit
+\newcommand{\rad}{\ensuremath{\,\text{rad}}\xspace}            %  rad.
+\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
+
+% some more particles
+\def\antibar#1{\ensuremath{#1\bar{#1}}}
+\newcommand{\ppbar}{\antibar{\mathrm{p}}\xspace}
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}\xspace}
+\newcommand{\e}{\ensuremath{\mathrm{e}}\xspace}
+\newcommand{\epm}{\ensuremath{\mathrm{e^{\pm}}}\xspace}
+\newcommand{\W}{\ensuremath{\mathrm{W}}\xspace}
+
+%%%%%%%%% For dijet resolution by max likelihood %%%%%%%%%%%%%%%
+\newcommand{\pti}[1]{\ensuremath{p_{\text{T},#1}}\xspace}
+\newcommand{\ptgen}{\ensuremath{\pt^{\text{gen}}}\xspace}
+\newcommand{\pttrue}{\ensuremath{\pt^{\text{true}}}\xspace}
+\newcommand{\ptmin}{\ensuremath{\pt^{\text{min}}}\xspace}
+\newcommand{\ptmax}{\ensuremath{\pt^{\text{max}}}\xspace}
+\newcommand{\ptreco}{\ensuremath{\pt(\text{recoJet})}\xspace}
+\newcommand{\ptave}{\ensuremath{\pt^{\text{ave}}}\xspace}
+\newcommand{\ptavemin}{\ensuremath{\pt^{\text{ave,min}}}\xspace}
+\newcommand{\ptavemax}{\ensuremath{\pt^{\text{ave,max}}}\xspace}
+\newcommand{\ptref}{\ensuremath{\pt^{\text{ref}}}\xspace}
+\newcommand{\ppl}{\ensuremath{p_{||}}\xspace}
+\newcommand{\ppli}[1]{\ensuremath{p_{||,#1}}\xspace}
+\newcommand{\dif}[1]{\ensuremath{\text{d}#1}\xspace}
+\newcommand{\mean}[1]{\ensuremath{\langle#1\rangle}}
+\newcommand{\tev}{\TeV}
+\newcommand{\mht}{\ensuremath{\slash\mkern-12mu{H}_{\text{T}}}\xspace}
+\newcommand{\njets}{\ensuremath{N_{\text{jets}}}\xspace}
+\newcommand{\ntops}{\ensuremath{N_{\text{tops}}}\xspace}
+\newcommand{\nbjets}{\ensuremath{N_{\text{b-jets}}}\xspace}
+
+%%%%%%%%% For resolution by MPF %%%%%%%%%%%%%%%
+\newcommand{\pthat}{\ensuremath{\hat{\text{p}}_\mathrm{T}}\xspace}
+\newcommand{\ptrecjet}{\ensuremath{p_{\mathrm{T}}^{\mathrm{recoJet}}}\xspace}
+\newcommand{\ptparjet}{\ensuremath{p_{\mathrm{T}}^{\mathrm{particleJet}}}\xspace}
+\newcommand{\ptgenjet}{\ensuremath{p_{\mathrm{T}}^{\mathrm{GenJet}}}\xspace}
+\newcommand{\ptg}{\ensuremath{p_{\mathrm{T}}^{\gamma}}\xspace}
+\newcommand{\ptj}{\ensuremath{p_{\mathrm{T}}^{\mathrm{jet}}}\xspace}
+\newcommand{\ptja}{\ensuremath{p_{\mathrm{T}}^{\mathrm{jet1}}}\xspace}
+\newcommand{\ptjb}{\ensuremath{p_{\mathrm{T}}^{\mathrm{jet2}}}\xspace}
+\newcommand{\ptjc}{\ensuremath{p_{\mathrm{T}}^{\mathrm{jet3}}}\xspace}
+\newcommand{\rj}{\ensuremath{R_{\mathrm{jet}}}\xspace}
+\newcommand{\rg}{\ensuremath{R_{\mathrm{G}}}\xspace}
+\newcommand{\ptiv}[1]{\ensuremath{\mathbf{p}_{\mathrm{T},#1}}\xspace}
+\newcommand{\ptivsq}[1]{\ensuremath{|{\mathbf{p}_{\mathrm{T},#1}|}^{2}}\xspace}
+\newcommand{\ptivsqm}[1]{\ensuremath{|{\mathbf{p}_{\mathrm{T},#1}^{\mathrm{meas}}|}^{2}}\xspace}
+\newcommand{\ptivsqt}[1]{\ensuremath{|{\mathbf{p}_{\mathrm{T},#1}^{\mathrm{true}}|}^{2}}\xspace}
+\newcommand{\ptivm}[1]{\ensuremath{\mathbf{p}_{\mathrm{T},#1}^{\mathrm{meas}}}\xspace}
+\newcommand{\ptivt}[1]{\ensuremath{\mathbf{p}_{\mathrm{T},#1}^{\mathrm{true}}}\xspace}
+\newcommand{\ptjeta}{\ensuremath{\mathbf{p}_{\mathrm{T}}^{\mathrm{jet1}}}\xspace}
+\newcommand{\ptjetb}{\ensuremath{\mathbf{p}_{\mathrm{T}}^{\mathrm{jet2}}}\xspace}
+\newcommand{\ptjetc}{\ensuremath{\mathbf{p}_{\mathrm{T}}^{\mathrm{jet3}}}\xspace}
+\newcommand{\ptjetd}{\ensuremath{\mathbf{p}_{\mathrm{T}}^{\mathrm{jet4}}}\xspace}
+\newcommand{\metSM}{\ensuremath{E_{\mathrm{T}}^{\mathrm{Estimated}}}\xspace}
+\newcommand{\metC}{\ensuremath{E_{\mathrm{T}}^{\mathrm{C}}}\xspace}
+\newcommand{\metbf}{\ensuremath{{\mathbf{E}}_{\mathrm{T}}^{\mathrm{miss}}}\xspace}
+\newcommand{\met}{\MET}
+
+%%%%%%% More definitions
+\newcommand\defRTDR{\ensuremath{ R2 = \sqrt{[\pi-\Delta\phi(J_{1},\mht) ]^2 +[\Delta\phi(J_{2},\mht) ]^2}    }}
+\newcommand\wpj{\ensuremath{\W + {\rm jets}}\xspace}
+\newcommand\zpj{\ensuremath{\Z + {\rm jets}}\xspace}
+\renewcommand{\ttbar}{\ensuremath{{\rm t\bar{t}}}\xspace}
+\newcommand\qqbar{\ensuremath{{\rm q\bar{q}}}\xspace}
+\newcommand\ttbarMuNu{\ensuremath{\ttbar ( \mu \nu ) {\rm +jets}}\xspace}
+\newcommand\wtauhad{\ensuremath{\W \rightarrow \tau_{\rm h} \nu}\xspace}
+\newcommand\ttbarTAUHNu{\ensuremath{\ttbar \rightarrow \tau_{\rm h} \nu + {\rm jets}}\xspace}
+\newcommand\ttbarDITAUHNu{\ensuremath{\ttbar \rightarrow \tau_{\rm h} \nu + \tau_{\rm h} \nu + {\rm jets}}\xspace}
+\newcommand\ttbarMUTAUHNu{\ensuremath{\ttbar ( \mu \nu + \tau_{\mu} \nu) {\rm +jets}}\xspace}
+\newcommand\defMHT{\ensuremath{ {\rm MHT} = \mht = | - \sum_{i} \vec{p_{T} (jet_{i}) }|}}
+\newcommand{\ztautau}{\ensuremath{\Z \rightarrow \tau \tau}\xspace}
+\newcommand{\zmumu}{\ensuremath{\Z \rightarrow \mu^{+} \mu^{-}}\xspace}
+\newcommand{\zee}{\ensuremath{\Z \rightarrow \e^{+} \e^{-}}\xspace}
+\newcommand{\znunu}{\ensuremath{\Z \rightarrow \nu \bar{\nu}}\xspace}
+\newcommand{\zll}{\ensuremath{\Z \rightarrow \ell^{+}\ell^{-}}\xspace}
+\newcommand{\wlnu}{\ensuremath{\W \rightarrow \ell\nu}\xspace}
+\newcommand{\wenu}{\ensuremath{\W \rightarrow \e\nu}\xspace} 
+\newcommand{\wmunu}{\ensuremath{\W \rightarrow \mu \nu}\xspace}
+\newcommand{\zellell}{\ensuremath{\Z \rightarrow \ell^{+} \ell^{-}}\xspace}
+\newcommand{\znunubr}{\ensuremath{\Z ( \nu \bar{\nu} )}\xspace}
+\newcommand{\zellellbr}{\ensuremath{\Z ( \ell^{+} \ell^{-} )}\xspace}
+\newcommand{\wmunubr}{\ensuremath{\W (\mu \nu )}\xspace}
+\newcommand{\wenubr}{\ensuremath{\W (\e\nu )}\xspace}
+\newcommand{\wlnubr}{\ensuremath{\W (\ell \nu )}\xspace}
+\newcommand{\wellnubr}{\ensuremath{\W (\ell \nu )}\xspace}
+\newcommand{\wtaunubr} {\ensuremath{\W (\tau \nu )}\xspace}
+\newcommand{\ztautaubr}{\ensuremath{\Z (\tau \tau)}\xspace}
+\newcommand{\zmumubr}  {\ensuremath{\Z (\mu \mu)}\xspace}
+\newcommand{\zeebr}    {\ensuremath{\Z (\e \e)}\xspace}
+\newcommand{\tauh}{\ensuremath{\tau_\mathrm{h}}\xspace}
+
+\newcommand{\topquark}{\ensuremath{{\rm t}}\xspace}
+\newcommand{\bottomquark}{\ensuremath{{\rm b}}\xspace}
+\newcommand{\charmquark}{\ensuremath{{\rm c}}\xspace}
+\newcommand{\jet}{\ensuremath{{\rm j}}\xspace}
+\newcommand{\proton}{\ensuremath{{\rm p}}\xspace}
+\newcommand{\Wboson}{\ensuremath{{\rm W}}\xspace}
+
+\newcommand{\susy}{{\sc susy}\xspace}
+\newcommand{\squark}{\sQua}
+\newcommand{\gluino}{\sGlu}
+\newcommand{\supq}{\sUp}
+\newcommand{\sdown}{\sDw}
+\newcommand{\sstrange}{\ensuremath{\tilde{s}}\xspace}
+\newcommand{\scharm}{\ensuremath{\tilde{c}}\xspace}
+\newcommand{\sbottom}{\sBot}
+\newcommand{\chiOneZero}{\ensuremath{\tilde{\chi}^{0}_{1}}\xspace}
+\newcommand{\chiOnePlus}{\ensuremath{\tilde{\chi}^{\pm}_{1}}\xspace}
+
+\renewcommand{\sTop}{\ensuremath{\tilde{{\mathrm t}}}\xspace}
+\newcommand{\santiTop}{\ensuremath{\tilde{{\mathrm t}}^\ast}\xspace}
+\newcommand{\stopair}{\ensuremath{\tilde{{\mathrm t}}\tilde{{\mathrm t}}^\ast}\xspace}
+
+\newcommand{\MEt}{\not\!\! E_{\mathrm{T}}}
+
+%%%%%%%%
+\newcommand{\mhtv}[1]{\ensuremath{\slash\mkern-15mu{\vec{H}}_{\text{T}}^{#1}}\xspace}
+%\newcommand{\METv}{\ensuremath{\slash\mkern-12mu{\vec{E}}_{\text{T}}}\xspace}
+\renewcommand{\MET}{\ensuremath{p^{\rm miss}_{\rm T}}\xspace} 
+\newcommand{\METv}{\ensuremath{\vec{p}^{\rm miss}_{\rm T}}\xspace} 
+\newcommand{\ptv}{\ensuremath{\vec{p}_{\rm T}}\xspace} 
+\newcommand{\MHT}{\mht}
+\newcommand{\MHTv}{\mhtv{}}
+\newcommand{\MPT}{\mathrm{MPT}}
+\newcommand{\seed}{\mathrm{seed}}
+\newcommand{\reco}{\mathrm{reco}}
+\newcommand{\gen}{\mathrm{gen}}
+\newcommand{\soft}{\mathrm{soft}}
+\newcommand{\true}{\mathrm{true}}
+\newcommand{\smeared}{\mathrm{smeared}}
+\newcommand{\ptcl}{\mathrm{particle}}
+\newcommand{\recoJet}{\mathrm{recoJet}}
+\newcommand{\genJet}{\mathrm{genJet}}
+\newcommand{\ptSoft}{\ensuremath{p_{\mathrm{T,\soft}}}}
+\newcommand{\ptSoftV}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}}}
+\newcommand{\recoSoft}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}^{\,\reco}}}
+\newcommand{\genSoft}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}^{\,\ptcl}}}
+\newcommand{\trueSoft}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}^{\,\true}}}
+\newcommand{\seedSoft}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}^{\,\seed}}}
+\newcommand{\ptV}{\ensuremath{\vec{p}_{\mathrm{T}}}}
+\newcommand{\ppp}[3]{\ensuremath{p_{#1,#2}^{#3}}}
+\newcommand{\ppt}[2]{\ppp{\mathrm{T}}{#1}{#2}}
+\newcommand{\pptV}[2]{\ensuremath{\vec{p}_{\mathrm{T},#1}^{\,#2}}}
+\newcommand{\ptInv}{\ptV^{\,\mathrm{invisible}}}
+\newcommand{\ptAve}[1]{\langle\pt^{#1}\rangle}
+\newcommand{\particleJet}{\mathrm{particleJet}}
+\newcommand{\seedJet}{\mathrm{seedJet}}
+\newcommand{\seedJets}{\mathrm{seedJets}}
+\newcommand{\seedMHT}{\MHT^{\seed}}
+\newcommand{\seedMHTv}{\mhtv{\seed}}
+\newcommand{\seedHT}{\mathrm{seedHT}}
+\newcommand{\partonHT}{\mathrm{partonHT}}
+\newcommand{\Dphi}{\Delta\phi}
+\newcommand{\DphiMPTMHT}{\Delta\phi(\MPT,\MHT)}
+\newcommand{\DphiMHTjet}[1]{\Delta\phi(\MHT,\mathrm{jet\,1\mbox{-}#1})}
+\newcommand{\minDphi}{\mathrm{min}\,\Delta\phi(\MHT,\mathrm{jet\,1\mbox{-}3})}
+\newcommand{\ssoftT}{\sigma_{\mathrm{T}}^{\soft}}
+\newcommand{\ssoftPhi}{\sigma_{\mathrm{\phi}}^{\soft}}
+\newcommand{\E}[1]{\times10^{#1}}
+\newcommand{\maxL}{\mathrm{max\mbox{-}}\rsL}
+\newcommand{\rsN}{(\mathrm{R}+\mathrm{S})^{N}}
+\newcommand{\effMu}{\varepsilon_{\mu}}
+\newcommand{\fakeMu}{\ensuremath{\slash\mkern-12mu{\mu}}\xspace}
+\newcommand{\effSplit}{\varepsilon_{\mathrm{split}}}
+\newcommand{\ptRel}{\ensuremath{\pt^{\mathrm{rel}}}}
+\newcommand{\ptMu}{\ensuremath{\ptV^{\,\mu}}}
+\newcommand{\ptJet}{\ensuremath{\ptV^{\,\mathrm{jet}}}}
+\newcommand{\footnoteremember}[2]{\footnote{#2}\newcounter{#1}\setcounter{#1}{\value{footnote}}}
+\newcommand{\footnoterecall}[1]{\footnotemark[\value{#1}]} 
+
+\newcommand{\minus}{\mbox{-}}
+\newcommand{\plus}{\mbox{+}}
+\newcommand{\genParticle}{\mathrm{genParticle}}
+\newcommand{\minSeedPT}{p_{\mathrm{T,min}}^{\mathrm{seed}}\xspace}
+\newcommand{\smearedMHT}{\MHT^{\smeared}}
+\newcommand{\smearedMHTv}{\mhtv{\smeared}}
+\newcommand{\jet}{\mathrm{jet}}
+\newcommand{\rsL}{L}
+\newcommand{\rsLjets}{\rsL_{\mathrm{jets}}}
+\newcommand{\rsLsoft}{\rsL_{\mathrm{soft}}}
+\newcommand{\rsLcooled}{L_{\mathrm{cooled}}}
+\newcommand{\lnLjs}[2]{\minus\ln\rsL_{#1\mathrm{j}+#2\mathrm{s}}^{\max}}
+\newcommand{\minLnL}{\min(-\ln\rsL)}
+\newcommand{\fcool}{f_{\mathrm{cool}}}
+\newcommand{\calo}{\mathrm{calo}}
+\newcommand{\caloSoft}{\ensuremath{\vec{p}_{\mathrm{T,\soft}}^{\,\calo}}}
+\newcommand{\bisector}{\hat{\eta}}
+\newcommand{\along}{\hat{\xi}}
+\newcommand{\rs}{\mathrm{R}\mbox{+}\mathrm{S}}
+\newcommand{\softRes}{R_{\soft}}
+\newcommand{\lfrac}[2]{l_{#1}^{#2}}
+\newcommand{\lfracApprox}[2]{l_{#1}^{\prime#2}}
+\newcommand{\mufrac}[2]{\mu_{#1}^{#2}}
+\newcommand{\mufracApprox}[2]{\mu_{#1}^{\prime#2}}
+\newcommand{\br}{\mathrm{BR}}
+\newcommand{\brMu}{\br_{\mu}}
+\newcommand{\res}{r}
+\newcommand{\resLep}{\res_{\mathrm{lep}}}
+\newcommand{\resHad}{\res_{\mathrm{had}}}
+\newcommand{\resBad}{\res_{\mathrm{bad}}}
+\newcommand{\resGood}{\res_{\mathrm{good}}}
+\newcommand{\resLepApprox}{\resLep^{\prime}}
+\newcommand{\resHadApprox}{\resHad^{\prime}}
+\newcommand{\distLep}{h_{\mathrm{lep}}^{\prime}}
+\newcommand{\distHad}{h_{\mathrm{had}}^{\prime}}
+\newcommand{\gausGood}{\mathcal{G}_{\mathrm{good}}}
+\newcommand{\fracBad}{w_{\mathrm{bad}}}
+\newcommand{\fracGood}{w_{\mathrm{good}}}
+\newcommand{\dope}[2]{d_{#1}^{#2}}
+\newcommand{\dopeApprox}[2]{d_{#1}^{\prime#2}}
+\newcommand{\dopeMu}{d_{n,\mu\mbox{-}\mathrm{tag}}}
+\newcommand{\dijet}{\mathrm{dijet}}
+\newcommand{\ndof}{\mathrm{ndof}}
+\newcommand{\METvJ}{\ensuremath{\slash\mkern-12mu{\,\vec{J}}_{\text{T}}}\xspace}
+\newcommand{\badFrac}{\ensuremath{f_{\mathrm{ECAL}}^{\mathrm{masked}}}\xspace}
+
+\newcommand{\DeltaPhi}{\ensuremath{\Delta\phi} }
+\newcommand{\DeltaPhiMin}{\ensuremath{\Delta\phi_{\text{min}}} }
+
+\newcommand{\MTTwo}{\ensuremath{M_{\mathrm{T2}}}\xspace}
+\newcommand{\mt}{\ensuremath{M_{\mathrm{T}}}\xspace}
+\newcommand{\MT}{\mt}
+\newcommand{\MTt}{\ensuremath{M^{\mbox{\scriptsize 3-jet}}_{\mathrm{T}}}\xspace}
+\newcommand{\MTb}{\ensuremath{M^{\mathrm{Rsys}}_{\mathrm{T}}}\xspace}
+\newcommand{\pTopv}{\ensuremath{\vec{p}^{\mbox{\scriptsize 3-jet}}}\xspace}
+\newcommand{\pTopT}{\ensuremath{p_{\mathrm{T}}^{\mbox{\scriptsize 3-jet}}}\xspace}
+\newcommand{\pTop}{\ensuremath{p^{\mbox{\scriptsize 3-jet}}}\xspace}
+\newcommand{\pTopFourVec}{\ensuremath{\boldsymbol{p}^{\mbox{\scriptsize 3-jet}}}\xspace}
+\newcommand{\ptTop}{\ensuremath{p_{\mathrm T}^{\mbox{\scriptsize 3-jet}}}\xspace}
+\newcommand{\pRsystemFourVec}{\ensuremath{\boldsymbol{p}^{\mathrm{Rsys}}}\xspace}
+\newcommand{\pRsystem}{\ensuremath{p^{\mathrm{Rsys}}}\xspace}
+\newcommand{\pRsystemv}{\ensuremath{\vec{p}^{\mathrm{Rsys}}}\xspace}
+\newcommand{\ptRsys}{\ensuremath{p_{\mathrm T}^{\mathrm{Rsys\,top}}}\xspace}
+
+\newcommand{\RQCD}{\ensuremath{R_\mathrm{QCD}}\xspace}
+\newcommand{\ttbarZ}{\ensuremath{{\ttbar{}\Z}}\xspace}
+\newcommand{\ttbarW}{\ensuremath{{\ttbar{}\W}}\xspace}
+ 
+\newcommand{\RmumuDataMC}{\ensuremath{R^{\mu\mu}_\mathrm{data/MC}}\xspace}
+
+\newcommand{\powheg}{{\sc powheg}\xspace}
+
+\newcommand{\ifb}{\ensuremath{\fbinv}}
+
+\newcommand{\zjets}{{{\cPZ}+jets}\xspace}
+\newcommand{\wjets}{{{\PW}+jets}\xspace}
+
+%\symexamp{MADGRAPH}{\MADGRAPH}
+%\symexamp{cPqt}{\cPqt}
+
+\newcommand{\mlsp}{\ensuremath{m_{{\PSGcz}_1}}\xspace}
+\newcommand{\mstop}{\ensuremath{m_{\sTop}}\xspace}
+

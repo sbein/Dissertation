@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Backgrounds from QCD production of multijets}
+\label{sec:qcd}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------
+One of the challenging consequences of the excellent veto power of the selection criteria is that the QCD contribution is also very small in the "sideband" samples typically used for residual background estimation. 
+%
+Further, the fact that these control samples are most frequently dominated by \ttbar processes make it difficult to use the more common background estimation techniques which would extrapolate QCD dominated distributions from the sidebands into the signal regions. 
+%
+The procedure adopted here consists in selecting a signal-depleted data control sample, rich in QCD events, from which significant contributions of other SM backgrounds, such as \ttbar, $W$+jets, $Z$+jets, are subtracted. 
+%
+These backgrounds (contaminations to the pure QCD process) are estimated using the same procedures described in the preceeding sections.  
+%
+Following that, a translation factor, partly determined by data and partly by simulation, is used to convert the number of QCD events measured in the data control region into a QCD prediction for each search region bin. 
+%-------------
+The signal depleated, QCD enriched control sample is defined by applying the full set of pre-selection cuts to the search triggers described in Sec.~\ref{sec:trig}, except for the $\Delta\phi(\MET, jets)$ requirements, which are inverted to select multijet events, to maximize the number of events with fake \MET, which tend to be aligned with one of the leading jets.
+
+%-------------
+Although the contribution from QCD multijet events in this control sample is not negligible, it is still far from dominant.
+%
+We therefore must first subtract the contributions from lost leptons (LL), hadronic $\tau$'s (\tauh), and $Z$+jets ($Z\rightarrow \nu\nu$) processes from the number of data events counted in the inverted $\Delta\phi(\MET,jets)$ sample.
+%
+The remaining events make up the QCD contribution to the contol region, $N^{CR}_{QCD}$, and is calculated as
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+N^{CR}_{QCD} = N^{CR}_{Data} - N^{CR}_{LL} - N^{CR}_{\tauh} - N^{CR}_{Z\rightarrow \nu\nu} \; ,
+\label{eq:Nqcd}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The contributions from lost-leptons $N^{CR}_{LL}$, hadronic $\tau$'s $N^{CR}_{\tauh}$, and $Z$+jets $N^{CR}_{Z \rightarrow \nu\nu}$ are all estimated using the same methods as described in the previous sections, but applied to this QCD enriched control region. 
+
+%-------------
+In general the translation factor between the QCD enriched control region and the search region bins may depend on some of the kinematic observables used to define the search bins.  
+%
+Nevertheless, since the translation factor is a ratio, any such dependence is expected to be mild.
+%
+Because of the small size of the QCD enriched control sample in the high \MET regions, we constrain the value of the translation factor to a data measurement in a 175 \gev$<\MET<$ 200 \gev sideband, just below the pre-selected signal region, where the amount of data is sufficiently large to accurately measure the translation factor. 
+%
+We then account for any possible kinematic dependence on \MET or \MTTwo by using a 1st-order (linear) approximation derived from simulation, whose slope (in those variables) is taken from simulation and whose offset is fixed by the data measurement in the low \MET sideband.
+%
+The translation factors, $T_{QCD}$, then scale the number of pure QCD events measured in the QCD enriched control region into a QCD prediction for a given search region bin: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+N^{SR}_{QCD} = T_{QCD} \times N^{CR}_{QCD}  \; .
+\label{eq:QCDformula}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------
+The dominant sources of QCD background systematical uncertainty are the following: uncertainties in measuring the $T_{QCD}$ factors, uncertainties in the precision of closure tests, and the trigger efficiency.  
+The QCD background predictions for the full $2.3$fb$^{-1}$ dataset in all search bins are listed in Appendix~\ref{sec:bkgpred} in Tab.~\ref{tab:QCDpred}, which includes statistical and systematic uncertainties.
+
