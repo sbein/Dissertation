@@ -63,9 +63,9 @@ It is seen that the choice of reference trigger, namely the single electron trig
 \begin{itemize}
   \item \texttt{HLT\_Ele27\_eta2p1\_WPLoose\_Gsf\_v*}, 
 \end{itemize}
-allows for an unbiased estimate of the trigger efficiency in the region $\mht>150$ GeV and $\Ht>500$. The region in which the efficiency can be measured without bias fortunately includes the baseline selection, which imposes thresholds on the offline $\mht$ and $\Ht$ of 200 and 500 GeV. 
+allows for an unbiased estimate of the trigger efficiency in the region $\mht>150$ GeV and $\Ht>500$. The region in which the efficiency can be measured without bias includes the baseline selection, which imposes thresholds on the offline $\mht$ and $\Ht$ of 200 and 500 GeV. 
 
-The efficiency, estimated without bias using Equation \ref{eq:trigeff}, is shown as a function of the offline $\Ht$ and $\mht$, each in 1-dimension, in Fig. \ref{fig:trigger-turnon} using the entire 2015 dataset. 
+The efficiency, estimated without bias using Equation \ref{eq:trigeff}, is shown as a function of the offline $\Ht$ and $\mht$ in Fig. \ref{fig:trigger-turnon}, where the entire 2015 dataset has been used. 
 \begin{figure}[tb!]
   \begin{center}
     \includegraphics[width=0.49\linewidth]{figures/trigger/EffVsHt2_3InvFb.png}
@@ -78,11 +78,11 @@ The efficiency, estimated without bias using Equation \ref{eq:trigeff}, is shown
     \label{fig:trigger-turnon}
   \end{center}
 \end{figure}
-The statistical uncertainties in the plot are the 68\% CL Clopper-Pearson
-intervals~\cite{Clopper:Pearson}. Additionally, a systematic uncertainty is assigned to the efficiency
+The statistical uncertainties in the plot correspond to the 68\% CL Clopper-Pearson
+interval~\cite{Clopper:Pearson}. Additionally, a systematic uncertainty is assigned to the efficiency
 equal to the difference between the efficiency obtained from applying the method described to a
 sample of simulated t$\bar{\text{t}}$ events and that derived
-from a set of simulated signal events. Such differences may arise due to any number of subtle differences in the content of the events in t$\bar{\text{t}}$ and signal samples. 
+from a set of simulated signal events. Such discrepancies may arise due to any number of subtle differences in the content of the events in t$\bar{\text{t}}$ and signal samples. 
 
 The probability for the trigger to fire on an event that passes the baseline selection is greater than 97\%. The baseline event selection can be summarized as follows. Events are accepted if they have
 \begin{itemize}
@@ -97,7 +97,7 @@ After this selection, events are further subdivided into 72 exclusive bins
 in a four-dimensional array of $\mht$,
 the number of jets,
 the number of tagged bottom quark jets,
-and $\Ht$. Figure \ref{fig:ra2bArray} shows the boundaries of 6 bins in the $\Ht-\mht$ plane, and 12 bins in the plane of $\njets$$-$$\nbjets$. The 72 bins included in this search are defined by each unique combination of a box in the $\mht$$-$$\Ht$ plane and a box in the $\njets$$-$$\nbjets$ plane. 
+and $\Ht$. Figure \ref{fig:ra2bArray} shows the boundaries of 6 bins in the $\Ht-\mht$ plane, and 12 bins in the plane of $\njets$$-$$\nbjets$. The 72 bins included in this search are defined by each unique combination of a box in the $\mht$$-$$\Ht$ plane and a box in the $\njets$$-$$\nbjets$ plane. The bin numbering scheme is given in Appendix \ref{app:anatables}.
 \begin{figure}[tb!]
 \centering
 \includegraphics[height=0.442\textwidth]{figures/SusySearches/Ra2b2015/aux/MC_BG_Pie_NB0.pdf}
@@ -111,13 +111,13 @@ search. The pie charts represent the relative contributions
 
 
 \subsubsection{Background estimation}
-The relative contribution of each standard model background in selected regions is also shown in Fig. \ref{fig:ra2bArray}. The t$\bar{\text{t}}$, W$+$jets, and Z$+$jets backgrounds are estimated by data-driven methods detailed in  \cite{Khachatryan:2016kdk}, but are not discussed thoroughly here. The QCD background is most dominant in regions of low $\mht$ and high $\Ht$, and its bin-by-bin estimation is detailed here.
+The relative contribution of each standard model background in selected regions is also shown in Fig. \ref{fig:ra2bArray}. The t$\bar{\text{t}}$, W$+$jets, and Z$+$jets backgrounds are estimated by data-driven methods detailed in  \cite{Khachatryan:2016kdk}, but are not discussed thoroughly here. The QCD background is largest in regions of low $\mht$ and high $\Ht$, and its bin-by-bin estimation is detailed here.
 
-The QCD background is estimated using two independent data-driven methods, one making use of a control region defined analogously to the baseline selection but with the $\Delta\phi$ requirement inverted, and by the rebalance and smear method described in Section \ref{sec:qcd}. The two methods are considered independent because the predictions are derived from nearly disjoint data control samples using different methodology. 
+The QCD background is estimated using two independent data-driven methods, one making use of a control region defined analogously to the baseline selection but with the $\Delta\phi$ requirement inverted, and by the rebalance and smear method described in Section \ref{sec:qcd}. The two methods are considered independent because the predictions are derived from nearly disjoint data control samples, and because they use different methodology. 
 
 In the $\Delta\phi$ method, the counts in the inverted $\Delta\phi$ control region are related to the counts in the signal region by factors derived using a combination of input from real and simulated data. The information from the real data comes from events in the least sensitive search bins so as to minimize potential signal contamination. In this method, other standard model backgrounds are subtracted using estimates derived by the data-driven methods employed in the search. The largest sources of uncertainty come from the estimates of the standard model backgrounds that are subtracted. Further details about the inverted $\Delta\phi$ method are given in the literature.
 
-The bin-by-bin prediction based on the rebalance and smear method, along with the systematic uncertainties described in Section \ref{sec:qcd}, are shown in Fig. \ref{fig:2015CompareQCD}, with the predictions and uncertainties based on the inverted $\Delta\phi$ method superimposed. The uncertainties on the rebalance and smear counts derived based on the methodology described in Section \ref{sec:qcd}.
+The bin-by-bin prediction based on the rebalance and smear method, along with the systematic uncertainties described in Section \ref{sec:qcd}, are shown in Fig. \ref{fig:2015CompareQCD}, with the predictions and uncertainties based on the inverted $\Delta\phi$ method superimposed. The uncertainties in the rebalance and smear counts are derived based on the methodology described in Section \ref{sec:qcd}. For rebalance and smear, the largest uncertainty in bins with a large count is the uncertainty in the jet energy resolution, ranging from 10$-$30\%. In bins with exceptionally small predicted counts, the statistical uncertainty is dominant, ranging from 20$-$40\%. In bins with three or more b-tagged jets, the non-closure uncertainty is the largest, at 50\%. 
 \begin{figure}[tb!]
 \centering
 \includegraphics[width=\linewidth]{figures/SusySearches/Ra2b2015/2015CompareQCDErrors.pdf}
@@ -125,7 +125,7 @@ The bin-by-bin prediction based on the rebalance and smear method, along with th
 \label{fig:2015CompareQCD}
 \end{figure}
 
-No evidence of inconsistency is seen between the two predictions. The distribution of the fractional differences in the predictions of the two methods, divided by the uncertainty in the fraction (significance), is shown in Fig. \ref{fig:fractionalUnc} (a). After fitting the significance distribution  with a Gaussian function, as shown in the Figure, the best fit values for the mean and standard deviation indicate that the methods give a consistent prediction.
+No evidence of inconsistency is seen between the two predictions. The distribution of the fractional differences in the predictions of the two methods, divided by the uncertainty in the fraction (significance), is shown in Fig. \ref{fig:fractionalUnc} (a). After fitting the significance distribution  with a Gaussian function, as shown in the Figure, the best fit values for the mean and standard deviation indicate consistency between the two predictions.
 \begin{figure}[tb!]
 \centering
 \includegraphics[width=0.49\textwidth]{figures/SusySearches/Ra2b2015/FractionalUncertainty.pdf}
@@ -133,7 +133,7 @@ No evidence of inconsistency is seen between the two predictions. The distributi
 \caption{Left: the distribution of the significance of the deviation between the predictions from the inverted $\Delta\phi$ and rebalance and smear methods. Right: the distribution of the fractional uncertainties in the counts predicted by the two methods. The upper overflow bin is populated by bins for which the prediction is identically 0. }
 \label{fig:fractionalUnc}
 \end{figure}
-Fig. \ref{fig:fractionalUnc} (b) shows the distribution of fractional uncertainties in the inverted $\Delta\phi$ and rebalance and smear predictions. It is seen that the inverted $\Delta\Phi$ method has a prediction of zero for 22 of the search bins, whereas the rebalance and smear method gives a non-zero prediction for all but four bins. The fractional uncertainties in the rebalance and smear predictions are, overall, much smaller than those of the inverted $\Delta\phi$ predictions. This is the case in all 72 bins, except for bin 21, where the 50\% non-closure uncertainty in the rebalance and smear prediction renders an overall larger uncertainty. The bi-modal shape of the rebalance and smear distribution in Fig. \ref{fig:fractionalUnc} (b) is due to the b-tag non-closure systematic uncertainty; this uncertainty is responsible for the peak around 0.5.  Bin 35 was found to have an error in its kinematic definition, and so the prediction from the inverted $\Delta\Phi$ method has been used in its place.
+Fig. \ref{fig:fractionalUnc} (b) shows the distribution of fractional uncertainties in the inverted $\Delta\phi$ and rebalance and smear predictions. It is seen that the inverted $\Delta\phi$ method has a prediction of zero for 22 of the search bins, whereas the rebalance and smear method gives a non-zero prediction for all but four bins. The fractional uncertainties in the rebalance and smear predictions are, overall, much smaller than those of the inverted $\Delta\phi$ predictions. This is the case in all 72 bins, except for bin 21, where the 50\% non-closure uncertainty in the rebalance and smear prediction renders an overall larger uncertainty. The bi-modal shape of the rebalance and smear distribution in Fig. \ref{fig:fractionalUnc} (b) is due to the b-tag non-closure systematic uncertainty; this uncertainty is responsible for the peak around 0.5.  Bin 35 was found to have an error in its kinematic definition, and so the prediction from the inverted $\Delta\phi$ method has been used in its stead.
 
 
 
@@ -144,59 +144,41 @@ are shown in the Table in Appendix \ref{app:anatables}, along with the summed pr
 with the data in all 72 regions, within uncertainties. Therefore, I do not observe evidence for new physics.
 These results are interpreted in the context of the simplified models shown in Fig. \ref{fig:Ra2bSMS}.
 
+These results are interpreted in terms of limits on the signal cross section
+as a function of the gluino and LSP mass.
+A likelihood function $\mathcal{L}$ is constructed as the product of Poisson probability functions,
+one for each search bin, with various nuisance parameters accounting
+for the yields of the four background classes and the signal strength modifier.
+$\mathcal{L}$ also contains log-normal density functions that constrain the background 
+yields by their estimated uncertainties. Uncertainties in the signal yield are associated
+with the renormalization and factorization scales, ISR, the jet energy scale, the b-tagging efficiency,
+and statistical uncertainties based on the simulated sample sizes, and are determined
+as functions of $m_{\tilde{\chi}^{0}_{1}}$ and $m_{\tilde{\text{g}}}$.
 
-
-For the interpretation, a likelihood fit to data is used to set limits on
-the production cross sections of the signal scenarios.
-The fitted parameters are the SUSY signal strength,
-the yields of the four background classes,
-and various nuisance parameters.
-The limits are determined as a function of $m_{\tilde{\chi}^{0}_{1}}$ and $m_{\tilde{\text{g}}}$.
-The likelihood function is the product of Poisson probability functions,
-one for each search bin,
-and constraint terms that account for
-uncertainties in the background predictions and signal yields.
-These uncertainties are modeled as nuisance parameters
-with log-normal probability density functions.
-Correlations are taken into account where appropriate.
-The signal model uncertainties associated with
-the renormalization and factorization scales, ISR,
-the jet energy scale,
-the b-jet tagging,
-and the statistical fluctuations
-vary substantially with the event kinematics
-and are evaluated as a function of $m_{\tilde{\chi^{0}_{1}}}$ and $m_{\tilde{\text{g}}}$.
 The test statistic is
 $q_\mu =  - 2 \ln \left( \mathcal{L}_\mu/\mathcal{L}_\text{max} \right)$,
 where $\mathcal{L}_\text{max}$ is the maximum likelihood
-determined by allowing all parameters including the profile likelihood for the
-SUSY signal strength $\mu$ to vary,
+determined by a best fit to all parameters, including the signal strength modifier,
 and $\mathcal{L}_\mu$ is the maximum likelihood for a fixed signal strength.
-Asymptotic results for the test statistic~\cite{Cowan:2010js}
-and the CL$_\mathrm{s}$
-method described in Refs.~\cite{Junk1999,bib-cls} are used to set limits. 
-Uncertainties in the signal modeling are taken into account when the limits are determined: simulation sample size, luminosity determination ($4.6\%$), lepton and isolated track veto, b-tag efficiency corrections used to scale simulation to data, trigger efficiency, QCD renormalisation and factorization scales, initial/final state radiation (ISR/FSR), signal acceptance and efficiency arising from the jet energy-momentum corrections, jet energy-momentum resolutions, and propagated to \MET, and parton distribution functions (PDF) of the proton. More details are provided in Refs.~\cite{cms-note-2011-005,Khachatryan:2015vra}.
+Asymptotic formulae \cite{Cowan:2010js}
+and the CL$_\mathrm{s}$ \cite{Junk1999,bib-cls} are used to set limits. 
 
-
-Upper limits
-on the signal cross sections are evaluated at the 95\% confidence level (CL).
-The NLO+NLL SUSY cross section is used to
-to evaluate the 95\% CL exclusion on the sparticle masses.
-In addition to the observed limits,
-expected limits are derived by evaluating the
-expected Poisson fluctuations around the predicted
-numbers of background events when evaluating the test statistic.
+Upper limits on the sparticle masses are identified as the set of points 
+for which the 95\% confidence level upper limit on the cross section is equal to
+the SUSY signal cross section computed at NLO+NLL. Expected limits are 
+derived by evaluating the test statistic assuming Poisson fluctuations around
+the predicted numbers of background events.
 
 The limits are shown in Figs. \ref{fig:limitsT1qqqq}$-$\ref{fig:limitsT5vv}. For a massless LSP, gluinos are excluded with masses below 1460, 1550, 1600, and 1470 GeV,
-for the T1qqqq, T1tttt, T1bbbb, and T5VV scenarios. The band on the observed exclusion curves shows the effect of varying the signal cross section by changing the renormalization and factorization scales by a factor of 2 and using the PDF4LHC recommendation~\cite{Botje:2011sn} for the PDF uncertainty. This shows the sensitivity of the limits to uncertainties in the signal cross section. 
+for the T1qqqq, T1tttt, T1bbbb, and T5VV scenarios. The bands on the observed exclusion curves show the effect of varying the signal cross section by changing the renormalization and factorization scales by a factor of 2 and using the PDF4LHC recommendation~\cite{Botje:2011sn} for the PDF uncertainty. This shows the sensitivity of the limits to uncertainties in the signal cross section. 
 
-The expected limits based on the rebalance and smear prediction are comparable to those based on the inverted $\Delta\phi$ extrapolation.  Observed limits on the gluino and LSP masses in the T1qqqq, T1tttt, and T5VV models are stronger for rebalance and smear by 20$-$50 GeV, in the compressed region. In the uncompressed region, the T1qqqq and T5VV limits are stronger by 10 and 50 GeV. In all other comparisons, the observed mass limits are nearly indistinguishable. The difference in color between left and right plots shows the comparison in the upper limit on the signal cross section between the two methods, throughout the $m_{\tilde{\text{g}}}-m_{\tilde{\chi}_{1}^{0}}$ plane. In the compressed region of the T1tttt model, the limits using input from the rebalance and smear prediction represent the strongest limits of any published CMS result, at the time of this writing. The same is true for the T5VV model, throughout the $m_{\tilde{\text{g}}}-m_{\tilde{\chi}_{1}^{0}}$ plane.
+The expected limits based on the rebalance and smear prediction are comparable to those based on the inverted $\Delta\phi$ extrapolation.  Observed limits on the gluino and LSP masses in the T1qqqq, T1tttt, and T5VV models are stronger for rebalance and smear by 20$-$50 GeV, in the compressed region. In the uncompressed region, the T1qqqq and T5VV limits are stronger by 10 and 50 GeV with the rebalance and smear prediction. In all other comparisons, the observed mass limits are nearly indistinguishable. The difference in color between left and right plots shows the comparison in the upper limit on the signal cross section between the two methods, throughout the $m_{\tilde{\text{g}}}-m_{\tilde{\chi}_{1}^{0}}$ plane. In the compressed region of the T1tttt model, the limits using input from the rebalance and smear prediction represent the strongest limits of any published CMS result, at the time of this writing. The same is true for the T5VV model, throughout the $m_{\tilde{\text{g}}}-m_{\tilde{\chi}_{1}^{0}}$ plane.
 
-These results significantly extend those that were
-obtained at $\sqrt{s}=8$ TeV,
+These limits significantly surpass those that were
+set at $\sqrt{s}=8$ TeV,
 for which the corresponding limits are around
 1150 GeV \cite{Chatrchyan:2013wxa,Chatrchyan:2014lfa} for the
-three T1 models and 1280 GeV \cite{Chatrchyan:2014lfa} for the T5 model.
+three T1 models and 1280 GeV \cite{Chatrchyan:2014lfa} for the T5VV model.
 \begin{figure*}[tb!]
 \centering
     \includegraphics[width=0.48\textwidth]{figures/SusySearches/Ra2b2015/SMSqqqqXSEC.pdf}

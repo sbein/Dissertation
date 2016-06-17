@@ -84,28 +84,29 @@
 \contentsline {subsection}{\numberline {8.3.5}Uncertainties in the prediction}{153}{subsection.8.3.5}
 \contentsline {section}{\numberline {8.4}Results of 2015 SUSY searches}{155}{section.8.4}
 \contentsline {subsection}{\numberline {8.4.1}Multi-jet $+$ $H_{\text {T}}^{\rm miss}$ SUSY search: targeting gluino production at $\sqrt {s}=13$ TeV}{155}{subsection.8.4.1}
-\contentsline {subsubsection}{Background estimation.}{159}{section*.97}
+\contentsline {subsubsection}{Background estimation.}{160}{section*.97}
 \contentsline {subsubsection}{Results and interpretation.}{162}{section*.100}
 \contentsline {subsection}{\numberline {8.4.2}Search for SUSY in events with top-tagged jets at $\sqrt {s}=13$ TeV}{166}{subsection.8.4.2}
-\contentsline {subsubsection}{Background estimation.}{169}{section*.107}
-\contentsline {subsubsection}{Results and interpretation.}{169}{section*.109}
-\contentsline {subsection}{\numberline {8.4.3}Comparison with limits from other CMS searches at $\sqrt {s}=13$ TeV}{175}{subsection.8.4.3}
-\contentsline {chapter}{\numberline {9}Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{177}{chapter.9}
-\contentsline {subsection}{\numberline {9.0.4}New observables and new events; same methods}{177}{subsection.9.0.4}
-\contentsline {subsection}{\numberline {9.0.5}Low-$H_{\text {T}}^{\rm miss}$ discriminant}{178}{subsection.9.0.5}
-\contentsline {subsection}{\numberline {9.0.6}Low-$H_{\rm T}$ discriminant}{181}{subsection.9.0.6}
-\contentsline {subsection}{\numberline {9.0.7}Potential future work}{183}{subsection.9.0.7}
-\contentsline {chapter}{\numberline {10}Summary and Conclusion}{184}{chapter.10}
-\contentsline {backmatter}{Bibliography}{189}{chapter*.117}
-\contentsline {appendix}{Appendix}{199}{appendix.A}
-\contentsline {chapter}{\numberline {A}Additional pMSSM Checks and Studies}{200}{appendix.A}
-\contentsline {section}{\numberline {A.1}Change of prior}{200}{section.A.1}
-\contentsline {section}{\numberline {A.2}Profile vs marginal likelihoods}{206}{section.A.2}
-\contentsline {chapter}{\numberline {B}Analysis Tables}{214}{appendix.B}
+\contentsline {subsubsection}{Background estimation.}{168}{section*.107}
+\contentsline {subsubsection}{Results and interpretation.}{171}{section*.109}
+\contentsline {chapter}{\numberline {9}Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{175}{chapter.9}
+\contentsline {subsection}{\numberline {9.0.3}New observables and new events; same methods}{175}{subsection.9.0.3}
+\contentsline {subsection}{\numberline {9.0.4}Low-$H_{\text {T}}^{\rm miss}$ discriminant}{176}{subsection.9.0.4}
+\contentsline {subsection}{\numberline {9.0.5}Low-$H_{\rm T}$ discriminant}{179}{subsection.9.0.5}
+\contentsline {subsection}{\numberline {9.0.6}Potential future work}{181}{subsection.9.0.6}
+\contentsline {chapter}{\numberline {10}Summary and Conclusion}{182}{chapter.10}
+\contentsline {backmatter}{Bibliography}{188}{chapter*.115}
+\contentsline {appendix}{Appendix}{198}{appendix.A}
+\contentsline {chapter}{\numberline {A}Additional pMSSM Checks and Studies}{199}{appendix.A}
+\contentsline {section}{\numberline {A.1}Change of prior}{199}{section.A.1}
+\contentsline {section}{\numberline {A.2}Profile vs marginal likelihoods}{205}{section.A.2}
+\contentsline {chapter}{\numberline {B}Analysis Tables}{213}{appendix.B}
+\contentsline {section}{\numberline {B.1}$Z\rightarrow \nu \mathaccentV {bar}016{\nu }$ prediction for top squark search}{213}{section.B.1}
+\contentsline {section}{\numberline {B.2}Background prediction for multi-jet $H_{\text {T}}^{\rm miss}$ search}{213}{section.B.2}
 \contentsline {chapter}{\numberline {C}Other Discriminating Variables}{217}{appendix.C}
 \contentsline {subsection}{\numberline {C.0.1}Observables probing \text {supersymmetry}}{218}{subsection.C.0.1}
-\contentsline {subsubsection}{Razor variables.}{218}{section*.131}
-\contentsline {subsubsection}{Stransverse mass $M_{\text {T}2}$.}{219}{section*.132}
+\contentsline {subsubsection}{Razor variables.}{218}{section*.130}
+\contentsline {subsubsection}{Stransverse mass $M_{\text {T}2}$.}{219}{section*.131}
 \contentsline {chapter}{\numberline {D}Public Database of LHC Searches}{220}{appendix.D}
 \contentsline {section}{\numberline {D.1}Toward a public analysis database for LHC new physics searches using {\sc MadAnalysis\nobreakspace {}5}}{220}{section.D.1}
 \contentsline {section}{\numberline {D.2}Implemented Analyses and their Validation}{222}{section.D.2}
@@ -113,9 +114,9 @@
 \contentsline {section}{\numberline {D.3}Limit setting}{228}{section.D.3}
 \contentsline {section}{\numberline {D.4}{\sc MadAnalysis\nobreakspace {}5}\ conclusions}{229}{section.D.4}
 \contentsline {section}{\numberline {D.5}Validation document: SUS-13-012}{230}{section.D.5}
-\contentsline {subsubsection}{T1qqqq simplified model.}{231}{figure.caption.146}
-\contentsline {subsubsection}{T1tttt simplified model.}{235}{figure.caption.154}
-\contentsline {subsubsection}{T5VV simplified model.}{239}{figure.caption.162}
-\contentsline {subsubsection}{T2qq simplified model.}{243}{figure.caption.170}
-\contentsline {subsubsection}{Exclusion Limits.}{247}{section*.171}
+\contentsline {subsubsection}{T1qqqq simplified model.}{231}{figure.caption.145}
+\contentsline {subsubsection}{T1tttt simplified model.}{235}{figure.caption.153}
+\contentsline {subsubsection}{T5VV simplified model.}{239}{figure.caption.161}
+\contentsline {subsubsection}{T2qq simplified model.}{243}{figure.caption.169}
+\contentsline {subsubsection}{Exclusion Limits.}{247}{section*.170}
 \contentsline {section}{\numberline {D.6}Validation document: SUS-14-002}{249}{section.D.6}

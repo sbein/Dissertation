@@ -77,26 +77,27 @@
 \BOOKMARK [1][-]{section.8.4}{Results of 2015 SUSY searches}{chapter.8}% 77
 \BOOKMARK [2][-]{subsection.8.4.1}{Multi-jet + HTmiss SUSY search: targeting gluino production at s=13 TeV}{section.8.4}% 78
 \BOOKMARK [2][-]{subsection.8.4.2}{Search for SUSY in events with top-tagged jets at s=13 TeV}{section.8.4}% 79
-\BOOKMARK [2][-]{subsection.8.4.3}{Comparison with limits from other CMS searches at s=13 TeV}{section.8.4}% 80
-\BOOKMARK [0][-]{chapter.9}{Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{}% 81
-\BOOKMARK [1][-]{subsection.9.0.4}{New observables and new events; same methods}{chapter.9}% 82
-\BOOKMARK [2][-]{subsection.9.0.5}{Low-HTmiss discriminant}{subsection.9.0.4}% 83
-\BOOKMARK [2][-]{subsection.9.0.6}{Low-HT discriminant}{subsection.9.0.4}% 84
-\BOOKMARK [2][-]{subsection.9.0.7}{Potential future work}{subsection.9.0.4}% 85
-\BOOKMARK [0][-]{chapter.10}{Summary and Conclusion}{}% 86
-\BOOKMARK [0][-]{chapter*.117}{Bibliography}{}% 87
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 88
-\BOOKMARK [0][-]{appendix.A}{Additional pMSSM Checks and Studies}{}% 89
-\BOOKMARK [1][-]{section.A.1}{Change of prior}{appendix.A}% 90
-\BOOKMARK [1][-]{section.A.2}{Profile vs marginal likelihoods}{appendix.A}% 91
-\BOOKMARK [0][-]{appendix.B}{Analysis Tables}{}% 92
-\BOOKMARK [0][-]{appendix.C}{Other Discriminating Variables}{}% 93
-\BOOKMARK [1][-]{subsection.C.0.1}{Observables probing supersymmetry}{appendix.C}% 94
-\BOOKMARK [0][-]{appendix.D}{Public Database of LHC Searches}{}% 95
-\BOOKMARK [1][-]{section.D.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.D}% 96
-\BOOKMARK [1][-]{section.D.2}{Implemented Analyses and their Validation}{appendix.D}% 97
-\BOOKMARK [2][-]{subsection.D.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.D.2}% 98
-\BOOKMARK [1][-]{section.D.3}{Limit setting}{appendix.D}% 99
-\BOOKMARK [1][-]{section.D.4}{MadAnalysis 5 conclusions}{appendix.D}% 100
-\BOOKMARK [1][-]{section.D.5}{Validation document: SUS-13-012}{appendix.D}% 101
-\BOOKMARK [1][-]{section.D.6}{Validation document: SUS-14-002}{appendix.D}% 102
+\BOOKMARK [0][-]{chapter.9}{Targeting the Non-Excluded pMSSM with Multivariate Discriminants}{}% 80
+\BOOKMARK [1][-]{subsection.9.0.3}{New observables and new events; same methods}{chapter.9}% 81
+\BOOKMARK [2][-]{subsection.9.0.4}{Low-HTmiss discriminant}{subsection.9.0.3}% 82
+\BOOKMARK [2][-]{subsection.9.0.5}{Low-HT discriminant}{subsection.9.0.3}% 83
+\BOOKMARK [2][-]{subsection.9.0.6}{Potential future work}{subsection.9.0.3}% 84
+\BOOKMARK [0][-]{chapter.10}{Summary and Conclusion}{}% 85
+\BOOKMARK [0][-]{chapter*.115}{Bibliography}{}% 86
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 87
+\BOOKMARK [0][-]{appendix.A}{Additional pMSSM Checks and Studies}{}% 88
+\BOOKMARK [1][-]{section.A.1}{Change of prior}{appendix.A}% 89
+\BOOKMARK [1][-]{section.A.2}{Profile vs marginal likelihoods}{appendix.A}% 90
+\BOOKMARK [0][-]{appendix.B}{Analysis Tables}{}% 91
+\BOOKMARK [1][-]{section.B.1}{Z prediction for top squark search}{appendix.B}% 92
+\BOOKMARK [1][-]{section.B.2}{Background prediction for multi-jet HTmiss search}{appendix.B}% 93
+\BOOKMARK [0][-]{appendix.C}{Other Discriminating Variables}{}% 94
+\BOOKMARK [1][-]{subsection.C.0.1}{Observables probing supersymmetry}{appendix.C}% 95
+\BOOKMARK [0][-]{appendix.D}{Public Database of LHC Searches}{}% 96
+\BOOKMARK [1][-]{section.D.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.D}% 97
+\BOOKMARK [1][-]{section.D.2}{Implemented Analyses and their Validation}{appendix.D}% 98
+\BOOKMARK [2][-]{subsection.D.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.D.2}% 99
+\BOOKMARK [1][-]{section.D.3}{Limit setting}{appendix.D}% 100
+\BOOKMARK [1][-]{section.D.4}{MadAnalysis 5 conclusions}{appendix.D}% 101
+\BOOKMARK [1][-]{section.D.5}{Validation document: SUS-13-012}{appendix.D}% 102
+\BOOKMARK [1][-]{section.D.6}{Validation document: SUS-14-002}{appendix.D}% 103
