@@ -24,11 +24,11 @@
 \BOOKMARK [2][-]{subsection.3.5.2}{Fine tuning and unexplained patterns in the standard model}{section.3.5}% 24
 \BOOKMARK [1][-]{section.3.6}{This document}{chapter.3}% 25
 \BOOKMARK [0][-]{chapter.4}{Supersymmetry}{}% 26
-\BOOKMARK [1][-]{subsection.4.0.1}{Supersymmetry in our universe}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.0.2}{The MSSM}{subsection.4.0.1}% 28
-\BOOKMARK [2][-]{subsection.4.0.3}{The cMSSM}{subsection.4.0.1}% 29
-\BOOKMARK [2][-]{subsection.4.0.4}{The pMSSM}{subsection.4.0.1}% 30
-\BOOKMARK [2][-]{subsection.4.0.5}{Dark matter candidate}{subsection.4.0.1}% 31
+\BOOKMARK [1][-]{section.4.1}{Supersymmetry in our universe}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{The MSSM}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.3}{The cMSSM}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.4}{The pMSSM}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.5}{Dark matter candidate}{chapter.4}% 31
 \BOOKMARK [0][-]{chapter.5}{The Large Hadron Collider}{}% 32
 \BOOKMARK [1][-]{section.5.1}{LHC key features}{chapter.5}% 33
 \BOOKMARK [1][-]{section.5.2}{The injection sequence}{chapter.5}% 34
@@ -88,21 +88,19 @@
 \BOOKMARK [2][-]{subsection.9.2.1}{Backgrounds}{section.9.2}% 88
 \BOOKMARK [2][-]{subsection.9.2.2}{Results}{section.9.2}% 89
 \BOOKMARK [0][-]{chapter.10}{Summary and Conclusion}{}% 90
-\BOOKMARK [0][-]{chapter*.125}{Bibliography}{}% 91
+\BOOKMARK [0][-]{chapter*.124}{Bibliography}{}% 91
 \BOOKMARK [0][-]{appendix.A}{Appendix}{}% 92
 \BOOKMARK [0][-]{appendix.A}{Additional pMSSM Checks and Studies}{}% 93
 \BOOKMARK [1][-]{section.A.1}{Change of prior}{appendix.A}% 94
 \BOOKMARK [1][-]{section.A.2}{Profile vs marginal likelihoods}{appendix.A}% 95
 \BOOKMARK [0][-]{appendix.B}{Analysis Tables}{}% 96
-\BOOKMARK [1][-]{section.B.1}{Z prediction for top squark search}{appendix.B}% 97
-\BOOKMARK [1][-]{section.B.2}{Background prediction for multi-jet HTmiss search}{appendix.B}% 98
-\BOOKMARK [0][-]{appendix.C}{Other Discriminating Variables}{}% 99
-\BOOKMARK [1][-]{subsection.C.0.1}{Observables probing supersymmetry}{appendix.C}% 100
-\BOOKMARK [0][-]{appendix.D}{Public Database of LHC Searches}{}% 101
-\BOOKMARK [1][-]{section.D.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.D}% 102
-\BOOKMARK [1][-]{section.D.2}{Implemented Analyses and their Validation}{appendix.D}% 103
-\BOOKMARK [2][-]{subsection.D.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.D.2}% 104
-\BOOKMARK [1][-]{section.D.3}{Limit setting}{appendix.D}% 105
-\BOOKMARK [1][-]{section.D.4}{MadAnalysis 5 conclusions}{appendix.D}% 106
-\BOOKMARK [1][-]{section.D.5}{Validation document: SUS-13-012}{appendix.D}% 107
-\BOOKMARK [1][-]{section.D.6}{Validation document: SUS-14-002}{appendix.D}% 108
+\BOOKMARK [0][-]{appendix.C}{Other Discriminating Variables}{}% 97
+\BOOKMARK [1][-]{subsection.C.0.1}{Observables probing supersymmetry}{appendix.C}% 98
+\BOOKMARK [0][-]{appendix.D}{Public Database of LHC Searches}{}% 99
+\BOOKMARK [1][-]{section.D.1}{Toward a public analysis database for LHC new physics searches using MadAnalysis 5}{appendix.D}% 100
+\BOOKMARK [1][-]{section.D.2}{Implemented Analyses and their Validation}{appendix.D}% 101
+\BOOKMARK [2][-]{subsection.D.2.1}{CMS-SUS-13-012: search for new physics through jet multiplicity and missing energy}{section.D.2}% 102
+\BOOKMARK [1][-]{section.D.3}{Limit setting}{appendix.D}% 103
+\BOOKMARK [1][-]{section.D.4}{MadAnalysis 5 conclusions}{appendix.D}% 104
+\BOOKMARK [1][-]{section.D.5}{Validation document: SUS-13-012}{appendix.D}% 105
+\BOOKMARK [1][-]{section.D.6}{Validation document: SUS-14-002}{appendix.D}% 106

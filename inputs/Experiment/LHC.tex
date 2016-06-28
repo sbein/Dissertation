@@ -14,22 +14,23 @@ The primary feature of the LHC is a meter-wide, 26.7 kilometer-long cryogenic va
 
 The LHC ring does not form a perfect circle, but rather is made of alternating curved and straight sections. The curved sections are 2500 meters long in arc length and are instrumented with superconducting dipole magnets. The straight sections are 530 meters long, and their centers (labeled as points 1-8 in Figure \ref{fig:LHCLayout}) have either been instrumented with hardware that serves necessary functions for the operation of the LHC, or with of the experimental facilities. 
 
-The hardware and functionality of each of the LHC's eight points is summarized in Table \ref{tab:LHCPoints}.  The primary experimental facilities, mentioned above, observe high energy proton and heavy ion collisions and perform both $\sm$ measurements and searches for BSM physics. In addition to the four primary experiments, Table \ref{tab:LHCPoints} lists in parentheses a few additional experimental facilities that share interaction points with the primary four. TOTEM shares the experimental cavern with CMS on the LHC ring at point 5 and measures, among other observables, proton-proton elastic scattering cross sections; MOEDAL shares the interaction point 8 with LHC-b and performs searches for particles with magnetic monopole moments, and LHC-f is a future experiment that will share interaction point 1 with ATLAS and study particles that travel nearly parallel with the beam direction (the forward direction).
+The hardware and functionality of each of the LHC's eight points is summarized in Table \ref{tab:LHCPoints}.  The primary experimental facilities, mentioned above, observe high energy proton and heavy ion collisions and perform both standard model measurements and searches for BSM physics. In addition to the four primary experiments, Table \ref{tab:LHCPoints} lists in parentheses a few additional experimental facilities that share interaction points with the primary four. TOTEM shares the experimental cavern with CMS on the LHC ring at point 5 and measures, among other observables, proton-proton elastic scattering cross sections; MOEDAL shares the interaction point 8 with LHC-b and performs searches for particles with magnetic monopole moments, and LHC-f is a future experiment that will share interaction point 1 with ATLAS and study particles that travel nearly parallel with the beam direction (the forward direction).
 
 
 \begin{table}
 \begin{centering}
+\caption{The hardware at the interaction points of the LHC.}
 \begin{tabularx}{\textwidth}{>{\setlength\hsize{0.11\hsize}\setlength\linewidth{\hsize}}X|>{\setlength\hsize{.45\hsize}\setlength\linewidth{\hsize}}X|>{\setlength\hsize{.7\hsize}\setlength\linewidth{\hsize}}X}
 \hline
 \hline
 point & hardware & functionality \\
 \hline
 \vspace{-3.00mm} 1 & \vspace{-3.00mm} ATLAS experiment \cite{Aad:2012naa}& 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item full coverage particle detector
 \item proton-proton collisions
-\item performs \SM~measurements and performs searches for evidence of new particles
+\item standard model measurements and searches for evidence of new particles
 \end{itemize}\\
 &\vspace{-4mm}LHC-f experiment \cite{Adriani:2008zz}&
 \vspace{-7mm}
@@ -38,31 +39,30 @@ point & hardware & functionality \\
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 2 & \vspace{-3.00mm} ALICE experiment \cite{Leistam:644017}& 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item partial coverage particle detector
 \item heavy ion collisions
-\item studies the \SM~and performs searches for new particles
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 3 & \vspace{-3.00mm} RF cavities & 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item momentum cleaning
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 4 & \vspace{-3.00mm} sextupole magnets & 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item acceleration
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 5 & \vspace{-3.00mm} CMS experiment \cite{Chatrchyan:2008aa}& 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item full coverage particle detector
 \item proton-proton collisions
-\item performs \SM~measurements and performs searches for new particles
+\item standard model measurements and searches for new particles
 \end{itemize}\\
 \vspace{-0.0cm}
 &\vspace{-4mm}TOTEM  experiment \cite{Anelli:2008zza}&
@@ -72,23 +72,22 @@ point & hardware & functionality \\
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 6 & \vspace{-3.00mm} quadrupole magnets & 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item beam focusing
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 7 & \vspace{-3.00mm} sextupole magnets & 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item betatron cleaning
 \end{itemize}\\
 \hline
 \vspace{-3.00mm} 8 & \vspace{-3.00mm} LHC-b experiment \cite{Alves:2008zz}& 
-\vspace{-7.5mm}
+\vspace{-6.5mm}
 \begin{itemize}
 \item partial coverage particle detector
 \item heavy ion collisions
-\item studies the \SM~and searches for evidence of new particles
 \end{itemize}\\
 &\vspace{-4mm}\small MOEDAL\normalsize~experiment~\cite{Pinfold:2015laa}&
 \vspace{-7mm}
@@ -98,7 +97,6 @@ point & hardware & functionality \\
 \hline
 \hline
 \end{tabularx}
-\caption{The hardware at the interaction points of the LHC.}
 \label{tab:LHCPoints}
 \end{centering}
 \end{table}
@@ -129,11 +127,7 @@ One of the goals of the LHC is to produce and observe new, heavy particles in th
 \begin{equation}
 N_{\rm SUSY} = \lumi\cdot \sigma_{\rm SUSY}.
 \end{equation}
-Here, $N_{\rm SUSY}$ is the number of events in which \susy~particles are present, where ``event'' is defined as the collection of particles emanating from a single collision. The quantity $\sigma_{\rm SUSY}$ is the interaction cross section, a measure of the probability for a supersymmetric interactions to occur during a collision, defined as
-\begin{equation}
-\sigma_{\rm SUSY} = |\sum_{f}M_{fi}|^2,
-\end{equation}
-where the sum runs over all final states $\ket{f}$ containing supersymmetric particles, and $|M_{fi}|$ is the amplitude (Section \ref{sec:Amp}) for a system to evolve from an initial state $\ket{i}$ containing two incoming protons into the given final state $\ket{f}$. The symbol $\lumi$ stands for the integrated luminosity, and is a measure of the total number of protons collided:
+Here, $N_{\rm SUSY}$ is the number of events in which \susy~particles are present, where ``event'' is defined as the collection of particles emanating from a single collision. The quantity $\sigma_{\rm SUSY}$ is the interaction cross section, a measure of the probability for a supersymmetric interactions to occur during a collision. The symbol $\lumi$ stands for the integrated luminosity, and is a measure of the total number of protons collided:
 \begin{equation}
 \lumi = \frac{N_{\rm collisions}}{\sigma_{\rm pp}}.
 \end{equation} 

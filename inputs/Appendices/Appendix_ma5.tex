@@ -118,12 +118,12 @@ a rectangular box volume in the space spanned by the variables $\njets$, $\Ht$, 
 \end{equation}
 
 The event selection was primarily determined from the documentation in \cite{Chatrchyan:2014lfa}. This document describes six baseline selection criteria on the events, named MET Cleaning, No Lepton, $\njets>2$, 
-$\Ht>500$~GeV, $\mht>200$~GeV, and Min $\Delta\phi$({\rm jets}, $\vec{\mht}$). We note that the MET Cleaning cut involves a detailed consideration of spurious signals in the CMS detector, which we cannot simulate with \delphes. Instead, we simply multiply our event count by the efficiency given by CMS. (We stress again that such efficiencies being publicly available is extremely helpful.)
+$\Ht>500$GeV, $\mht>200$GeV, and Min $\Delta\phi$({\rm jets}, $\vec{\mht}$). We note that the MET Cleaning cut involves a detailed consideration of spurious signals in the CMS detector, which we cannot simulate with \delphes. Instead, we simply multiply our event count by the efficiency given by CMS. (We stress again that such efficiencies being publicly available is extremely helpful.)
 
-We validated the recast code against cut-flow tables and distributions of the kinematic variables provided by the CMS analysis team as per our request. The benchmark scenarios used are $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV for the   T1qqqq, T1tttt and T5VV topologies, and $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$~GeV for the T2qq topology, 
+We validated the recast code against cut-flow tables and distributions of the kinematic variables provided by the CMS analysis team as per our request. The benchmark scenarios used are $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV for the   T1qqqq, T1tttt and T5VV topologies, and $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV for the T2qq topology, 
 with production cross sections of 10.2~fb and 63.4~fb, respectively~\cite{Kramer:2012bx}.  
 For the T5VV topology, one also needs the $\tilde\chi^\pm_1$ and $\tilde\chi^0_2$ masses; 
-they are set to $612.5$~GeV for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV benchmark point. 
+they are set to $612.5$GeV for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$ GeV benchmark point. 
 
 The complete validation material from CMS is available in form of the PDF documents  
 \texttt{ma5\_validation\_CMS-SUS-13-012.pdf} in the ``Attachments'' section 
@@ -138,7 +138,7 @@ We also checked the dependence on the jet energy scale (JES) correction, which i
 to have good agreement in the $\njets$, $H_{T}$ and $\mht$ distributions, and found JES=1.0 to be optimal. 
 
 \begin{table*}[!t]
-\caption{Summary of yields for the baseline cuts for the T1qqqq and T1tttt topologies, as compared to the official CMS-SUS-13-012 results posted on the CMS twiki. The results are for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV benchmark point.\label{table:CutFlowT1qqqq}}
+\caption{Summary of yields for the baseline cuts for the T1qqqq and T1tttt topologies, as compared to the official CMS-SUS-13-012 results posted on the CMS twiki. The results are for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$ GeV benchmark point.\label{table:CutFlowT1qqqq}}
 \begin{center}
 \begin{tabular}{ l ||c|c||c|c}
 \hline\noalign{\smallskip}
@@ -148,8 +148,8 @@ cut & CMS result & {\sc MA}\,5 result & CMS result & {\sc MA}5 result \\
 MET Cleaning & 190.6 & 190.6 & 190.5  & 190.5    \\ 
 No Lepton   & 190.3 & 190.6  &  95.9 & 101.0 \\
 + $\njets>2$        & 188.1 & 188.5  & 95.8 & 100.9  \\
-+ $\Ht > 500$~GeV   & 187.6 & 188.1  & 95.1  &  100.0\\
-+ $\mht >200$~GeV   &158.7  &  159.7 & 75.4 & 81.2  \\
++ $\Ht > 500$ GeV   & 187.6 & 188.1  & 95.1  &  100.0\\
++ $\mht >200$ GeV   &158.7  &  159.7 & 75.4 & 81.2  \\
 + Min $\Delta(\phi)$ & 130.8 & 131.1 &62.3 & 66.9 \\
 \noalign{\smallskip}\hline
 \end{tabular}
@@ -158,7 +158,7 @@ No Lepton   & 190.3 & 190.6  &  95.9 & 101.0 \\
 
 \begin{table*}[!t]
 \caption{Same as Table \ref{table:CutFlowT1qqqq}  but for the T2qq and T5VV topologies. 
-The benchmark points used are $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$~GeV for T2qq and $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV for T5VV.
+The benchmark points used are $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV for T2qq and $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV for T5VV.
 \label{table:CutFlowT5VV}}
 \begin{center}
 \begin{tabular}{ l ||c|c||c|c}
@@ -169,8 +169,8 @@ cut & CMS result & {\sc MA}\,5 result & CMS result & {\sc MA}5 result \\
 MET Cleaning & 1215.2 & 1215.2 &  189.9 & 189.9     \\ 
 No Lepton   & 1212.8 & 1215.2  & 136.2  & 142.1  \\
 + $\njets>2$        & 675.9 & 691.5  &135.9  & 141.7  \\
-+ $\Ht > 500$~GeV   & 619.5 & 638.4   & 135.5  & 141.3 \\
-+ $\mht >200$~GeV   & 524.0 & 539.6   & 108.8 & 115.2   \\
++ $\Ht > 500$GeV   & 619.5 & 638.4   & 135.5  & 141.3 \\
++ $\mht >200$GeV   & 524.0 & 539.6   & 108.8 & 115.2   \\
 + Min $\Delta(\phi)$ & 460.7 & 476.1  & 89.6 & 95.2 \\
 \noalign{\smallskip}\hline
 \end{tabular}
@@ -181,7 +181,7 @@ No Lepton   & 1212.8 & 1215.2  & 136.2  & 142.1  \\
 \centering
 \includegraphics[width=6.4cm]{figures/madanalysis5/cms-012-T2qqHT.pdf}
 \caption{Comparison between the official and \ma\ results  for the $\Ht$ distribution after all baseline cuts, 
-for the T2qq simplified model of CMS-SUS-13-012 with $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$~GeV.}
+for the T2qq simplified model of CMS-SUS-13-012 with $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV.}
 \label{fig:T2qqHT}
 \end{figure}
 
@@ -255,7 +255,7 @@ As an illustrative example, Fig.~\ref{fig:cms-016-limit} shows the 95\%~CL exclu
 \includegraphics[width=6cm]{figures/madanalysis5/cms-016-limit.pdf}
 \caption{The 95\%~CL exclusion limit (in red) in the $\tilde\chi^0_1$ versus $\tilde g$ mass plane reproduced 
 with the \ma\ implementation  \cite{MA5-CMS-SUS-13-016}  of CMS-SUS-13-016. For comparison, the full and dashed grey lines show the official CMS result with its $\pm1\sigma$ uncertainty from Fig.~6 of \cite{CMS:2013ija}. 
-The limit setting in the region where one of the tops from the gluino decay is off-shell, \ie\ for $m_{\tilde g}\lesssim 800$~GeV, is work in progress.} 
+The limit setting in the region where one of the tops from the gluino decay is off-shell, \ie\ for $m_{\tilde g}\lesssim 800$GeV, is work in progress.} 
 \label{fig:cms-016-limit}
 \end{figure}
 
@@ -333,10 +333,8 @@ for the T1qqqq signal model.}
 \hline
     \end{tabular}
     \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the  T1qqqq working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV. 
-    The second column is the official account as
-    reported by 
-    https://twiki.cern.ch/twiki/pub/CMSPublic/PhysicsResultsSUS13012/T1qqqq.pdf,
+    the  T1qqqq working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV. 
+    The second column is the official account
     and our own results are given in column 3. The official counts are
     normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
     counts are normalized to match the official count after the first cut, MET
@@ -527,9 +525,8 @@ for the T1tttt signal model.}
 \hline
     \end{tabular}
     \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T1tttt working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV.  
-    The second column is the official account as reported by
-    https://twiki.cern.ch/twiki/pub/CMSPublic/PhysicsResultsSUS13012/T1tttt.pdf,
+    the T1tttt working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
+    The second column is the official account
     and our own results are given in column 3. The official counts are
     normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
     counts are normalized to match the official count after the first cut, MET
@@ -720,9 +717,8 @@ for the T5VV signal model.}
 \hline
     \end{tabular}
     \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T5VV working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$~GeV.  
-    The second column is the official account as reported by
-    https://twiki.cern.ch/twiki/pub/CMSPublic/PhysicsResultsSUS13012/T5VV.pdf,
+    the T5VV working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
+    The second column is the official account
     and our own results are given in column 3. The official counts are
     normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
     counts are normalized to match the official count after the first cut, MET
@@ -913,10 +909,8 @@ for the T2qq signal model.}
 \hline
     \end{tabular}
     \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T2qq  working point  $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$~GeV. 
-    The second column is the official account as
-    reported by
-    https://twiki.cern.ch/twiki/pub/CMSPublic/PhysicsResultsSUS13012/T2qq.pdf,
+    the T2qq  working point  $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV. 
+    The second column is the official account
     and our own results are given in column 3. The official counts are
     normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 63.4$~pb, and our
     counts are normalized to match the official count after the first cut, MET
@@ -1090,12 +1084,11 @@ and $(m_{\tilde q},\,m_{\tilde\chi^0_1})$ mass planes.
 %T2qq ($\tilde{q}\to q \chi_{1}^{0} $), T1qqqq ($\tilde{g}\to q\bar{q}\chi_{1}^{0}$),
 %and T5VV ($\tilde{g} \to q\bar{q}V\chi_{1}^{0}$). 
 Figure~\ref{fig:limitplots}  shows the limit curves (in red) obtained with our 
-{\sc{MadAnalysis}}~5 implementation and using the {\tt{exclusion\_CLs.py}} code described in 
-\href{http://arxiv.org/abs/arXiv:1407.3278}{arXiv:1407.3278} 
+{\sc{MadAnalysis}}~5 implementation and using the {\tt{exclusion\_CLs.py}} code
 superimposed on the official CMS exclusion with its $\pm 1\sigma$ theoretical uncertainty (solid and dashed black lines).  For the T1qqqq ($\tilde{g}\to q\bar{q}\chi_{1}^{0}$) and T5VV ($\tilde{g} \to q\bar{q}V\chi_{1}^{0}$) simplified models, the limits are reproduced very well. 
 Also for T1tttt ($\tilde{g}\to t\bar{t}\chi_{1}^{0}$) the agreement is reasonably fine. 
 For T2qq ($\tilde{q}\to q \chi_{1}^{0} $), however, we encounter a rather erratic behavior for 
-LSP masses above about 200--250~GeV.
+LSP masses above about 200--250GeV.
 
 It should be noted that our limit setting procedure differs from that used by CMS, and so should be 
 considered a rough estimate. Our procedure is as follows. For any given point
@@ -1114,7 +1107,7 @@ exclusion limits, which can however be mitigated by demanding that jumps in excl
 neighbouring points close in mass be not too large. 
 As can be seen in Fig.!\ref{fig:limitplots}, we obtain excellent results for the T1qqqq and T5VV scenarios; the 
 exclusion curve for T1tttt shows more fluctuations but none the less matches the official result reasonably well. 
-The only problematic case is the T2qq topology with LSP masses above 200--250~GeV: here our procedure 
+The only problematic case is the T2qq topology with LSP masses above 200--250GeV: here our procedure 
 clearly does not well reproduce the official limit curve. To improve the situation, we would need the  
 statistical model from CMS for combining  the 36 SRs. Unfortunately, this is currently not available.   
 
@@ -1124,7 +1117,7 @@ statistical model from CMS for combining  the 36 SRs. Unfortunately, this is cur
         \includegraphics[width=0.48\textwidth]{figures/Appendices/Ma5ValidationSUS13012/cms-012-limit-T1tttt.pdf}\\
         \includegraphics[width=0.48\textwidth]{figures/Appendices/Ma5ValidationSUS13012/cms-012-limit-T5VV.pdf}
         \includegraphics[width=0.48\textwidth]{figures/Appendices/Ma5ValidationSUS13012/cms-012-limit-T2qq.pdf}
-\caption{The 95\% CL exclusion limits (in red) reproduced with our {\sc{MadAnalysis}}~5 implementation compared to the official limits (in black) from \href{https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsSUS13012}{CMS-SUS-13-012}. Top left: T1qqqq, top right: T1tttt, bottom left: T5VV, bottom right: T2qq simplified models.
+\caption{The 95\% CL exclusion limits (in red) reproduced with our {\sc{MadAnalysis}}~5 implementation compared to the official limits (in black). Top left: T1qqqq, top right: T1tttt, bottom left: T5VV, bottom right: T2qq simplified models.
 \label{fig:limitplots}}
         \end{figure} 
 \FloatBarrier
