@@ -16,9 +16,10 @@
 \usepackage[T1]{fontenc}
 \pagestyle{plain}
 \usepackage{rotating}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{placeins}
 \usepackage{afterpage}
+
 
 \title{Targeting the Minimal Supersymmetric Standard Model with the Compact Muon Solenoid Experiment}
 \author{Samuel Louis Bein}
@@ -66,7 +67,7 @@ There are so many to thank for so much; this is my attempt. Thank you Harrison f
 %\end{listofabbrevs}
 
 \begin{abstract}
-Developments in the search for supersymmetry at the Compact Muon Solenoid (CMS) experiment at the CERN Large Hadron Collider (LHC) are presented. An interpretation of CMS searches for evidence of supersymmetry in the context of the minimal supersymmetric Standard Model (MSSM) is given. It is found that supersymmetric particles (sparticles) with color charge are excluded in the mass range below about 400 GeV, but neutral and weakly-charged sparticles remain non-excluded in all mass ranges. Discussion of the non-excluded regions of the model parameter space is given, including details on the strengths and weaknesses of existing searches, and recommendations for future analysis strategies. Advancements in the modeling of events arising from quantum chromodynamics and electroweak boson production, which are major backgrounds in searches for new physics at the LHC, are also presented. These methods have been implemented as components of CMS searches that analyzed proton-proton collisions resulting in purely hadronic events (i.e., events with no identified leptons) at a center of momentum energy of 13 TeV. These searches, interpreted in the context of simplified supersymmetry models, exclude supersymmetric gluons (gluinos) up to masses of 1400 to 1600 GeV, depending on the model considered, and exclude scalar top quarks with masses up to about 800 GeV, assuming a massless lightest supersymmetric particle. New techniques that increase the sensitivity of searches to non-excluded supersymmetry models are described, including the use of multivariate methods for isolating potential signal candidate events, along with robust methods for predicting background distributions of the output of multivariate discriminants. Sensitivity to new physics models is achieved in background-dominated kinematic regions not typically considered by analyses.
+An interpretation of CMS searches for evidence of supersymmetry in the context of the minimal supersymmetric Standard Model (MSSM) is given. It is found that supersymmetric particles with color charge are excluded in the mass range below about 400 GeV, but neutral and weakly-charged sparticles remain non-excluded in all mass ranges. Discussion of the non-excluded regions of the model parameter space is given, including details on the strengths and weaknesses of existing searches, and recommendations for future analysis strategies. Advancements in the modeling of events arising from quantum chromodynamics and electroweak boson production, which are major backgrounds in searches for new physics at the LHC, are also presented. These methods have been implemented as components of CMS searches for supersymmetry in proton-proton collisions resulting in purely hadronic events (i.e., events with no identified leptons) at a center of momentum energy of 13 TeV. These searches, interpreted in the context of simplified models, exclude supersymmetric gluons (gluinos) up to masses of 1400 to 1600 GeV, depending on the model considered, and exclude scalar top quarks with masses up to about 800 GeV, assuming a massless lightest supersymmetric particle. A search for non-excluded supersymmetry models is also presented, which uses multivariate discriminants to isolate potential signal candidate events. The search achieves sensitivity to new physics models in background-dominated kinematic regions not typically considered by analyses, and rules out supersymmetry models that survived 7 and 8 TeV searches performed by CMS.
 \end{abstract}
 
 \mainmatter
@@ -84,8 +85,8 @@ Developments in the search for supersymmetry at the Compact Muon Solenoid (CMS) 
 \input{inputs/Targeting.tex}
 \input{inputs/Conclusion.tex}
 %\bibliographystyle{plain}
-\bibliography{myrefs}
 \input{inputs/Appendices.tex}
+\bibliography{myrefs}
 
 %\input chapter1
 %\input chapter2
@@ -105,8 +106,16 @@ Developments in the search for supersymmetry at the Compact Muon Solenoid (CMS) 
 
 
 
-%\begin{biosketch}
-%This is my biography.
-%\end{biosketch}
+\begin{biosketch}
+I attended the University of Colorado from 2007 to 2011, where I studied under the mentorship of theoretical nuclear physicist James R. Shepard. I conducted research on two- and three-nucleon interactions for my undergraduate honors thesis, and graduated with a bachelor's degree in physics and economics. From 2011 to 2016, I carried out research for my Ph.D. with Florida State University under the supervision of experimental particle physicist Harrison B. Prosper, and was based at the Fermi National Accelerator Laboratory for the final two years. This research included
+\begin{itemize}
+\item performing searches for supersymmetry in data collected by CMS;
+\item performing interpretations of CMS searches based on the minimal supersymmetric standard model;
+\item developing techniques for the modeling of standard model processes that are backgrounds to new physics searches;
+\item developing hardware and software for test beam experiments to study and characterize future components of the CMS detector;
+\item contributing to the creation of a database of public implementations of CMS and ATLAS searches for use by physicists outside the collaborations.
+\end{itemize}
+I defended my dissertation in June, 2016. In the fall of 2016, I will begin a postdoctoral fellowship with the University of Hamburg, where I will help to carry out searches for evidence of new physics with the CMS experiment and develop hardware for the CMS silicon tracker.
+\end{biosketch}
 
 \end{document}

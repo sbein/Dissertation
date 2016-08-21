@@ -1,0 +1,214 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mythesis.aux
+The style file: ieeetr.bst
+Database file #1: myrefs.bib
+I was expecting a `,' or a `}'---line 7 of file myrefs.bib
+ :      
+ :      pages           = "293",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 694 of file myrefs.bib
+ : @article{Chatrchyan:2012xdj
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 745 of file myrefs.bib
+ : @article{Martin:1997ns
+ :                       ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 785 of file myrefs.bib
+ : 
+ : %      eprint         = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1039 of file myrefs.bib
+ : @article{Berger:2008cq
+ :                       ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1392 of file myrefs.bib
+ :       
+ :       %note            = "\href{http://www.slac.stanford.edu/xorg/hfag/rare/2013/radll/OUTPUT/TABLES/radll.pdf"}{"http://www.slac.stanford.edu/xorg/hfag/rare/2013/radll/OUTPUT/\\TABLES/radll.pdf}"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1492 of file myrefs.bib
+ :       
+ :       %note           = "\href{http://lepsusy.web.cern.ch/lepsusy/}{http://lepsusy.web.cern.ch/lepsusy/}"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2037 of file myrefs.bib
+ : @article{Farrar:1982te
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2154 of file myrefs.bib
+ : @article{Golfand:1971iw
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2177 of file myrefs.bib
+ : @article{Wess:1974tw
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "Fermi:T1041" isn't style-file defined
+--line 2257 of file myrefs.bib
+Warning--entry type for "bib:EventDisplay" isn't style-file defined
+--line 2261 of file myrefs.bib
+Warning--entry type for "bib:ElectronID" isn't style-file defined
+--line 2265 of file myrefs.bib
+Repeated entry---line 2560 of file myrefs.bib
+ : @article{Chatrchyan:2013sza
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2609 of file myrefs.bib
+ : @article{Chatrchyan:2013xna
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2685 of file myrefs.bib
+ : @article{Khachatryan:2015vra
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3119 of file myrefs.bib
+ : @article{Chatrchyan:2012jx
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3357 of file myrefs.bib
+ : @article{Golfand:1971iw
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3398 of file myrefs.bib
+ : @article{Wess:1974tw
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3562 of file myrefs.bib
+ : @article{Sjostrand:2006za
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3760 of file myrefs.bib
+ : @article{Cacciari:2008gp
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3774 of file myrefs.bib
+ : @article{Martin:1997ns
+ :                       ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3990 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2010/281}{2010/281}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3997 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2011/277}{2011/277}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4004 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2010/383}{2010/383}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4011 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2010/354}{2010/354}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4094 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2010/309}{2010/309}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4101 of file myrefs.bib
+ :      
+ :      %VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS\%20AN-2010/402}{2010/402}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 4363 of file myrefs.bib
+ : @article{Chatrchyan:2014lfa
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4441 of file myrefs.bib
+ : @article{Conte:2014zja
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "ma5wiki" isn't style-file defined
+--line 4517 of file myrefs.bib
+Warning--entry type for "CMS:DataPolicy" isn't style-file defined
+--line 4521 of file myrefs.bib
+Warning--entry type for "inspire" isn't style-file defined
+--line 4535 of file myrefs.bib
+Warning--entry type for "doi" isn't style-file defined
+--line 4539 of file myrefs.bib
+Repeated entry---line 4580 of file myrefs.bib
+ : @misc{jetmet2
+ :              ,
+I'm skipping whatever remains of this entry
+Warning--empty author in CMS-DP-2015-035
+Warning--empty journal in CMS-DP-2015-035
+Warning--empty journal in CMS:2016nhb
+Warning--empty journal in MA5-CMS-SUS-13-016
+Warning--empty year in MA5-CMS-SUS-13-016
+Warning--empty journal in CMS:2013ija
+Warning--empty journal in Broglia:2012ef
+Warning--empty publisher in Peskin:1995ev
+Warning--empty publisher in bib:parcor
+Warning--empty journal in Martin:1997ns
+Warning--empty journal in Khachatryan:2016nvf
+Warning--empty journal in Leistam:644017
+Warning--empty journal in Amhis:2014hma
+Warning--empty journal in CDF:2013jga
+Warning--empty author in ATLAS-CONF-2014-009
+Too many commas in name 1 of "Sekmen, Sezen; Teo, Wee Don; Prosper, Harrison" for entry bib:SezenTrigger
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in bib:SezenTrigger
+Warning--empty note in Botje:2011sn
+Warning--empty journal in Rogan:2010kb
+Warning--empty journal in Kraml:2014sna
+Warning--empty journal in MA5-ATLAS-SUSY-2013-05
+Warning--empty year in MA5-ATLAS-SUSY-2013-05
+Warning--empty journal in MA5-ATLAS-SUSY-2013-11
+Warning--empty year in MA5-ATLAS-SUSY-2013-11
+Warning--empty note in Kramer:2012bx
+Warning--empty journal in MA5-CMS-SUS-13-012
+Warning--empty year in MA5-CMS-SUS-13-012
+Warning--empty journal in MA5-CMS-SUS-13-011
+Warning--empty year in MA5-CMS-SUS-13-011
+Warning--empty journal in MA5-CMS-SUS-14-001
+You've used 139 entries,
+            1876 wiz_defined-function locations,
+            1260 strings with 25131 characters,
+and the built_in function-call counts, 31806 in all, are:
+= -- 3138
+> -- 1145
+< -- 1
++ -- 445
+- -- 306
+* -- 1840
+:= -- 4393
+add.period$ -- 149
+call.type$ -- 139
+change.case$ -- 128
+chr.to.int$ -- 0
+cite$ -- 168
+duplicate$ -- 1968
+empty$ -- 3027
+format.name$ -- 306
+if$ -- 8094
+int.to.chr$ -- 0
+int.to.str$ -- 139
+missing$ -- 131
+newline$ -- 435
+num.names$ -- 129
+pop$ -- 500
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1428
+stack$ -- 0
+substring$ -- 1208
+swap$ -- 880
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 29
+while$ -- 248
+width$ -- 142
+write$ -- 1288
+(There were 29 error messages)

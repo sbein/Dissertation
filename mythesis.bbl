@@ -1,5 +1,46 @@
 \begin{thebibliography}{100}
 
+\bibitem{Agashe:2014kda}
+{Particle Data Group}, ``{Review of Particle Physics},'' {\em Chin. Phys. C},
+  vol.~38, p.~090001, 2014.
+
+\bibitem{vanAlbada:1984js}
+T.~S. van Albada, J.~N. Bahcall, K.~Begeman, and R.~Sancisi, ``{The
+  Distribution of Dark Matter in the Spiral Galaxy {NGC}-3198},'' {\em
+  Astrophys. J.}, vol.~295, pp.~305--313, 1985.
+
+\bibitem{Clowe:2006xq}
+D.~Clowe, S.~W. Randall, and M.~Markevitch, ``{Catching a bullet: Direct
+  evidence for the existence of dark matter},'' {\em Nucl. Phys. Proc. Suppl.},
+  vol.~173, pp.~28--31, 2007.
+
+\bibitem{Jean-Luc:841539}
+J.-L. Caron, ``{Cross section of LHC dipole.. Dipole LHC: coupe
+  transversale.}.'' AC Collection. Legacy of AC. Pictures from 1992 to 2002.,
+  May 1998.
+
+\bibitem{CMS-DP-2015-035}
+``{Commissioning the performance of key observables used in SUSY searches with
+  the first 13 TeV data},'' Aug 2015.
+
+\bibitem{Khachatryan:2016kdk}
+V.~Khachatryan {\em et~al.}, ``{Search for supersymmetry in the multijet and
+  missing transverse momentum final state in pp collisions at 13 TeV},'' {\em
+  Phys. Lett. B}, 2016.
+
+\bibitem{CMS:2016nhb}
+C.~Collaboration, ``{Search for direct production of top squark pairs decaying
+  to all-hadronic final states in pp collisions at sqrt(s) = 13 TeV},'' 2016.
+
+\bibitem{MA5-CMS-SUS-13-016}
+D.~Sengupta and S.~Kulkarni, ``{MadAnalysis 5 implementation of
+  CMS-SUS-13-016},''
+
+\bibitem{CMS:2013ija}
+C.~Collaboration, ``{Search for supersymmetry in pp collisions at sqrt(s) = 8
+  Tev in events with two opposite sign leptons, large number of jets, b-tagged
+  jets, and large missing transverse energy.},'' 2013.
+
 \bibitem{Rosner:2001zy}
 J.~L. Rosner, ``{The Standard model in 2001},'' in {\em {Heavy flavor physics:
   Theory and experimental results in heavy quark physics and CP violation.
@@ -65,16 +106,6 @@ E.~Komatsu {\em et~al.}, ``{Five-Year Wilkinson Microwave Anisotropy Probe
   (WMAP) Observations: Cosmological Interpretation},'' {\em Astrophys. J.
   Suppl.}, vol.~180, pp.~330--376, 2009.
 
-\bibitem{vanAlbada:1984js}
-T.~S. van Albada, J.~N. Bahcall, K.~Begeman, and R.~Sancisi, ``{The
-  Distribution of Dark Matter in the Spiral Galaxy {NGC}-3198},'' {\em
-  Astrophys. J.}, vol.~295, pp.~305--313, 1985.
-
-\bibitem{Clowe:2006xq}
-D.~Clowe, S.~W. Randall, and M.~Markevitch, ``{Catching a bullet: Direct
-  evidence for the existence of dark matter},'' {\em Nucl. Phys. Proc. Suppl.},
-  vol.~173, pp.~28--31, 2007.
-
 \bibitem{Undagoitia:2015gya}
 T.~M. Undagoitia and L.~Rauch, ``{Dark matter direct-detection experiments},''
   {\em J. Phys.}, vol.~G43, no.~1, p.~013001, 2016.
@@ -96,14 +127,9 @@ G.~Goldhaber, ``{The Acceleration of the Expansion of the Universe: A Brief
 S.~P. Martin, ``{A Supersymmetry primer},'' 1997.
 \newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
 
-\bibitem{Khachatryan:2016kdk}
-V.~Khachatryan {\em et~al.}, ``{Search for supersymmetry in the multijet and
-  missing transverse momentum final state in pp collisions at 13 TeV},'' {\em
-  Phys. Lett. B}, 2016.
-
-\bibitem{CMS:2016nhb}
-C.~Collaboration, ``{Search for direct production of top squark pairs decaying
-  to all-hadronic final states in pp collisions at sqrt(s) = 13 TeV},'' 2016.
+\bibitem{Khachatryan:2016nvf}
+V.~Khachatryan {\em et~al.}, ``{Phenomenological MSSM interpretation of CMS
+  searches in pp collisions at sqrt(s) = 7 and 8 TeV},'' 2016.
 
 \bibitem{Dumont:2014tja}
 B.~Dumont, B.~Fuks, S.~Kraml, S.~Bein, G.~Chalons, E.~Conte, S.~Kulkarni,
@@ -142,10 +168,6 @@ J.~Wess, ``{SUPERSYMMETRY AND SUPERGRAVITY},'' in {\em {22nd International
 \bibitem{Berger:2008cq}
 C.~F. Berger, J.~S. Gainer, J.~L. Hewett, and T.~G. Rizzo, ``{Supersymmetry
   Without Prejudice},'' {\em JHEP}, vol.~02, p.~023, 2009.
-
-\bibitem{Khachatryan:2016nvf}
-V.~Khachatryan {\em et~al.}, ``{Phenomenological MSSM interpretation of CMS
-  searches in pp collisions at sqrt(s) = 7 and 8 TeV},'' 2016.
 
 \bibitem{Carena:2012he}
 M.~Carena, J.~Lykken, S.~Sekmen, N.~R. Shah, and C.~E.~M. Wagner, ``{The pMSSM
@@ -186,11 +208,6 @@ A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
 \bibitem{Pinfold:2015laa}
 J.~L. Pinfold, ``{The MoEDAL experiment - a new light on LHC physics},'' {\em
   EPJ Web Conf.}, vol.~95, p.~03030, 2015.
-
-\bibitem{Jean-Luc:841539}
-J.-L. Caron, ``{Cross section of LHC dipole.. Dipole LHC: coupe
-  transversale.}.'' AC Collection. Legacy of AC. Pictures from 1992 to 2002.,
-  May 1998.
 
 \bibitem{Beaudette:2014cea}
 F.~Beaudette, ``{The CMS Particle Flow Algorithm},'' in {\em {Proceedings,
@@ -302,10 +319,6 @@ K.~Hagiwara, R.~Liao, A.~D. Martin, D.~Nomura, and T.~Teubner, ``{$(g-2)_{\mu}$
   and $\alpha(M_Z^2)$ re-evaluated using new precise data},'' {\em J.Phys.},
   vol.~G38, p.~085003, 2011.
 
-\bibitem{Agashe:2014kda}
-{Particle Data Group}, ``{Review of Particle Physics},'' {\em Chin. Phys. C},
-  vol.~38, p.~090001, 2014.
-
 \bibitem{CDF:2013jga}
 {Tevatron Electroweak Working Group, CDF and D0 Collaborations}, ``{Combination
   of CDF and D0 results on the mass of the top quark using up to 8.7 fb$^{-1}$
@@ -321,8 +334,6 @@ J.~Bernon and B.~Dumont, ``{Lilith: a tool for constraining new physics from
 
 \bibitem{lepsusy}
 {Joint LEP2 SUSY Working Group, the Aleph, Delphi, L3 and Opal Collaborations}.
-\newblock
-  \href{http://lepsusy.web.cern.ch/lepsusy/}{http://lepsusy.web.cern.ch/lepsusy/}.
 
 \bibitem{Belanger:2001fz}
 G.~Belanger, F.~Boudjema, A.~Pukhov, and A.~Semenov, ``{MicrOMEGAs: A program
@@ -493,10 +504,6 @@ S.~Chatrchyan {\em et~al.}, ``{Search for new physics in the multijet and
 ``Egamma pog recommendations.''
   \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/CutBasedElectronIdentificationRun2}.
 
-\bibitem{CMS-DP-2015-035}
-``{Commissioning the performance of key observables used in SUSY searches with
-  the first 13 TeV data},'' Aug 2015.
-
 \bibitem{Clopper:Pearson}
 C.~J. Clopper and E.~S. Pearson, ``{The Use of Confidence of Fiducial Limits
   Illustrated in teh Case of the Binomial},'' {\em Biometrika}, vol.~26, no.~4,
@@ -515,22 +522,6 @@ T.~Junk, ``{Confidence level computation for combining searches with small
 A.~L. Read, ``Presentation of search results: the ${CL}_s$ technique,'' {\em J.
   Phys. G}, vol.~28, p.~2693, 2002.
 
-\bibitem{cms-note-2011-005}
-{ATLAS and CMS Collaborations}, ``{Procedure for the LHC Higgs boson search
-  combination in Summer 2011},'' Tech. Rep. CMS-NOTE-2011-005,
-  ATL-PHYS-PUB-2011-11, 2011.
-
-\bibitem{Khachatryan:2015vra}
-V.~Khachatryan {\em et~al.}, ``{Searches for Supersymmetry using the M$_{T2}$
-  Variable in Hadronic Events Produced in pp Collisions at 8 TeV},'' {\em
-  JHEP}, vol.~05, p.~078, 2015.
-
-\bibitem{Borschensky:2014cia}
-C.~Borschensky, M.~Kr{\"a}mer, A.~Kulesza, M.~Mangano, S.~Padhi, T.~Plehn, and
-  X.~Portell, ``{Squark and gluino production cross sections in pp collisions
-  at $\sqrt{s}$ = 13, 14, 33 and 100 TeV},'' {\em Eur. Phys. J. C}, vol.~74,
-  p.~3174, 2014.
-
 \bibitem{Botje:2011sn}
 M.~Botje, J.~Butterworth, A.~Cooper-Sarkar, A.~de~Roeck, J.~Feltesse, S.~Forte,
   A.~Glazov, J.~Huston, R.~McNulty, and T.~Sj{\"o}strand, ``The {PDF4LHC}
@@ -540,10 +531,6 @@ M.~Botje, J.~Butterworth, A.~Cooper-Sarkar, A.~de~Roeck, J.~Feltesse, S.~Forte,
 S.~Chatrchyan {\em et~al.}, ``{Search for gluino mediated bottom- and
   top-squark production in multijet final states in pp collisions at 8~TeV},''
   {\em Phys. Lett. B}, vol.~725, p.~243, 2013.
-
-\bibitem{bishop2012pattern}
-C.~M. Bishop and ???, ``Pattern recognition and machine learning, 2006,'' {\em
-  ???????}, vol.~60, no.~1, pp.~78--78, 2012.
 
 \bibitem{Rogan:2010kb}
 C.~Rogan, ``{Kinematical variables towards new dynamics at the LHC},'' 2010.
@@ -556,6 +543,11 @@ S.~Chatrchyan {\em et~al.}, ``{Inclusive search for supersymmetry using the
 \bibitem{Abbott:1997ww}
 B.~Abbott {\em et~al.}, ``{A measurement of the $W$ boson mass},'' {\em Phys.
   Rev.}, vol.~D58, p.~092003, 1998.
+
+\bibitem{Khachatryan:2015vra}
+V.~Khachatryan {\em et~al.}, ``{Searches for Supersymmetry using the M$_{T2}$
+  Variable in Hadronic Events Produced in pp Collisions at 8 TeV},'' {\em
+  JHEP}, vol.~05, p.~078, 2015.
 
 \bibitem{Randall:2008rw}
 L.~Randall and D.~Tucker-Smith, ``{Dijet Searches for Supersymmetry at the
@@ -607,11 +599,6 @@ G.~Chalons, ``{MadAnalysis 5 implementation of ATLAS-SUSY-2013-05},''
 B.~Dumont, ``{MadAnalysis 5 implementation of ATLAS-SUSY-2013-11: di-leptons
   plus MET},''
 
-\bibitem{CMS:2013ija}
-C.~Collaboration, ``{Search for supersymmetry in pp collisions at sqrt(s) = 8
-  Tev in events with two opposite sign leptons, large number of jets, b-tagged
-  jets, and large missing transverse energy.},'' 2013.
-
 \bibitem{ma5wiki}
 ``\ma5 analysis package.''
   \url{http://madanalysis.irmp.ucl.ac.be/wiki/PhysicsAnalysisDatabase#no1}.
@@ -633,10 +620,6 @@ M.~Kr{\"{a}}mer, A.~Kulesza, R.~van~der Leeuw, M.~Mangano, S.~Padhi, T.~Plehn,
 
 \bibitem{MA5-CMS-SUS-13-012}
 S.~Bein and D.~Sengupta, ``{MadAnalysis 5 implementation of CMS-SUS-13-012},''
-
-\bibitem{MA5-CMS-SUS-13-016}
-D.~Sengupta and S.~Kulkarni, ``{MadAnalysis 5 implementation of
-  CMS-SUS-13-016},''
 
 \bibitem{MA5-CMS-SUS-13-011}
 B.~Dumont, B.~Fuks, and C.~Wymant, ``{MadAnalysis 5 implementation of

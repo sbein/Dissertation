@@ -97,7 +97,6 @@ Bayes' theorem suggests that incorporating new relevant information will lead to
 \label{fig:rebareso}
 \end{figure}
 We also observe the peak of the response to be slightly lower for rebalanced jets than for reconstructed jets. This is consistent with the peak of the jet $\pt$ likelihood functions being centered at values slightly higher than 1, as seen in Fig. \ref{fig:SmearEx}. 
-\FloatBarrier
 
 \subsection{Closure}
 The rebalance and smear prediction is applied to simulated events and compared with the result obtained directly from the simulation. A set of baseline selection, similar to that applied in the search \cite{Khachatryan:2016kdk}, is applied. Events are required to have:
@@ -201,7 +200,7 @@ Figures \ref{fig:BaselineRplusS} through \ref{fig:BaselineRplusS2} show this com
 \caption{The ratio of scatter plots of key observables for hadronic SUSY searches between the direct simulation and the rebalance and smear method applied to simulation.}
 \label{fig:RplusSCorrelation}
 \end{figure}
-\FloatBarrier
+
 \noindent
 The degree of consistency between the prediction and expectation is excellent in all considered kinematic regions, with the exception of large $\nbjets$ region. Not only are the relevant 1-dimensional distributions accurately modeled, but all pairwise correlations of the kinematic observables examined show good closure. This includes correlations between the directions and magnitudes of the momenta of jets within an event, as well as relationships between the directions of the $\mht$ and the jets, and the magnitudes of the $\mht$ and $\Ht$. The most significant exception to these statements is with the distribution of the multiplicity of b-tagged jets,  where non-closure is evident for events with $\geq 3$ b-jets on the order $\approx50\%$. A possible source of this discrepancy is the choice of binning for the parton-level $\mht$ templates that constitute the prior, namely, $\nbjets=$ 0, 1, and $\geq$ 2.  A modification of this choice to include templates for the individual bins of $\nbjets=$ 2, 3, and $\geq 4$ may lead to improved results in the region of large b-jet multiplicity. 
 
@@ -219,14 +218,13 @@ It appears to be feasible to use correlations among jets in QCD events as a mean
 The primary reasons for these improvements with respect to the classical method are that a realistic parton-level $\mht$ constraint is used in the rebalance procedure, whereas, in the classical method, every event is rebalanced to an $\mht$ of 0 or a constant value chosen by the user, amounting to a delta function constraint. Second, the full jet response has been used in the likelihood maximization, rather than gaussian approximations. Gaussian approximations can lead to mis-modeling of the jet $\pt$ or $\mht$ spectrum in events containing jets with small $\pt$, which exhibit a highly non-Gaussian response. 
 
 The rebalance and smear method is robust against contamination from signal events in the prediction sample. The reason is that the rebalance procedure displaces signal-like, high-$\met$ events from the high-$\met$ region, to regions of low-$\met$; after smearing, the proportion of events in the high-$\met$ region truly originating from QCD processes is nearly 100\% (see Fig. \ref{fig:RplusSContamination}). 
-\begin{figure}[tb!]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{figures/SusySearches/Ra2b2016/RplusSContam.pdf}
 \caption{Signal contaimination removal. The midnight blue (and yellow) histograms show the distribution of QCD (and signal) events taken directly from simulation. The black (and red) histograms show the distributions of QCD (and signal) and after being processed by the rebalance and smear procedure. The signal has been removed from the high-$\mht$ region, leaving an accurately modeled QCD contribution.}
 \label{fig:RplusSContamination}
 \end{figure}
 The robustness of the prediction to possible signal contamination in the control region allows for real events to be used directly for the prediction. Another strength is that the rebalanced events can be smeared an indefinite number of times, which allows for the accumulation of an indefinitely large prediction sample, computer resources permitting. Therefore, estimates of the expected QCD event count and uncertainty are made in extreme tails, even in regions for which no simulated QCD events are available, or for which the expected count is much less than 1. Alternatively, the rebalanced events can smeared once to generate a training sample of background events for a multivariate discriminant, and subsequent smearing can generate a statistically-independent prediction sample. This is further explored in Chapter \ref{chap:money}. Essentially, this approach establishes a data-driven QCD event generator.
-\FloatBarrier
 
 \subsection{Applying the method in data}
 To derive the rebalance and smear prediction using real data, samples are collected with a series of pre-scaled $\Ht$ triggers,
@@ -236,12 +234,9 @@ To derive the rebalance and smear prediction using real data, samples are collec
       \item \texttt{HLT\_PFHT350\_*},
         \item \texttt{HLT\_PFHT600\_*},
 \end{itemize}
-and the un-prescaled trigger,
-\begin{itemize}
-  \item \texttt{HLT\_PFHT800\_*}.
-\end{itemize}
+and the un-prescaled trigger, \texttt{HLT\_PFHT800\_*}.
 Events collected by these triggers are pooled into a single sample, here referred to as the $\Ht$ control sample. Events are rejected if the trigger with the highest possible $\Ht$ threshold that could have fired did not fire. This criterion ensures that the probability of an event being selected is equal to the the inverse of the pre-scale, since events with large $\Ht$ that happen to trigger one of the lower $\Ht$ triggers would otherwise inflate the probability slightly. Distributions of the weighted and un-weighted online $\Ht$, and un-weighted offline $\Ht$ are shown in Fig. \ref{fig:PrescaleWeights}.
-\begin{figure}[tb!]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{figures/SusySearches/Ra2b2016/PrescaleWeightsHT2.pdf}
 \caption{The distribution of the $\Ht$ in the $\Ht$ control sample for the unweighted offline $\Ht$ (red), the unweighted online $\Ht$ (pink), and the online $\Ht$ weighted by the pre-scale values.}
@@ -263,4 +258,4 @@ Uncertainty in the $\mht$ prior is evaluated in an analogous way as the previous
 An uncertainty of 50\% is assigned to predicted counts in search bins with greater than 2 b-tags to accommodate the non-closure in simulation. In the future, this uncertainty may be eliminated by modifying the binning of the prior template as prescribe in the previous section. Non-closure uncertainties are treated as uncorrelated across bins. 
 
 The values of the uncertainties, along with the bin-by-bin prediction, for the multi-jet$+$$\mht$ SUSY search are given in Section \ref{sec:2015results}.
-
+\FloatBarrier

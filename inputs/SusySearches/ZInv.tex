@@ -1,3 +1,4 @@
+
 Events in which $Z$ bosons are produced in association with jets account for a large fraction of the high-$\met$ all-hadronic events at the LHC. Not surprisingly, these events are a major background to new physics that may manifest signals in the hadronic channel. Since the jet multiplicity beyond 4 jets, as well as the relationships between the directions of jets, are not simulated accurately, it is generally advisable to employ data-driven methods for $\zinv$ background estimation, especially when the signal region is populated by events with several jets. Typically, data-driven approaches make use of similarities between the kinematics of $\zinv$ events and $Z\rightarrow X\bar{X}$ events, where $X$ is one of the other $Z$ boson decay products, or of the similarities between events with $Z$ bosons and events with photons. The former approach is adopted in the following.
 
 
@@ -82,7 +83,6 @@ Since the reconstruction efficiency is expected to vary with the lepton $\pt$ an
 \caption{The $Z$ boson reconstruction efficiency in simulated events with $\zee$ decays.}
 \label{fig:ZeeReconstruction}
 \end{figure}
-\FloatBarrier
 
 \subsubsection{Isolation efficiency $\epsilon^{\text{Z}}_{\text{iso}}$}
 The isolation efficiency is the fraction of $\zee$ events passing the acceptance and reconstruction criteria detailed in the previous sections for which there are two isolated electrons in the event. 
@@ -100,7 +100,6 @@ Figure \ref{fig:ZeeIsolation} shows the isolation efficiency map using this para
 \caption{The $Z$ boson isolation efficiency as a function of the $\Delta R$ between the two electrons and the geometric mean of the activities of the electrons in simulated events with $\zee$ decays.}
 \label{fig:ZeeIsolation}
 \end{figure}
-\FloatBarrier
 
 \subsection{Closure}
 The prediction is applied to simulated $\zll$ events and compared with the result obtained directly from $\zinv$ simulation. The baseline selection of \cite{Khachatryan:2016kdk}, 
@@ -162,6 +161,7 @@ described in greater detail in the Section \ref{sec:2015results}}, is applied. F
 \label{fig:ZInvCR_MetHtNjMt2}
 \end{figure}
 
+
 \begin{figure}[tb!]
 \centering
 \subfloat[]{
@@ -176,7 +176,6 @@ described in greater detail in the Section \ref{sec:2015results}}, is applied. F
 \noindent
 The prediction and expectation agree to within a few percent across all distributions, indicating the soundness of the method; in other words, the method closes. I note that the closure holds in the region of low to moderate $\met$, where it was previously determined that large nonexcluded SUSY signals could be manifest (see Chapter \ref{chap:run1pmssm}), and which will be considered in Chapter \ref{chap:money}. The method is now at a stage where it can be applied in a fully data-driven prediction. 
 
-\FloatBarrier
 \subsection{Applying the method in data}
 The final $\zinv$ prediction used in \cite{CMS:2016nhb} relies on a reweighting of simulated $\zinv$ events to account for differences between data and simulation. Weights are derived in bins of $\njets$ and $\nbjets$ by dividing the counts observed in a real dilepton data sample, which has been treated with the data-driven background estimation (Equation \ref{eq:zinv}), by the counts predicted directly by $\zinv$ simulation, after a loosened baseline selection has been applied. The loose selection is defined similarly to the baseline selection, but with
 \begin{itemize}
@@ -209,7 +208,6 @@ An overall simulation-to-data normalization factor is derived in a control regio
 \noindent
 The electron- and muon-derived normalization factors agree within statistical uncertainties, indicating that a trivial combination of the electron and muon data is justifiable in the derivation of the normalization factor and its uncertainty. After combining the electron and muon prediction samples, the systematic uncertainty in the $\zinv$ prediction associated with the normalization is reduced by approximately 30\%. Uncertainties are discussed now.
 
-\FloatBarrier
 \subsection{Uncertainties in the prediction}
 Uncertainties in the $\zinv$ prediction include the statistical uncertainty of the simulated samples, uncertainty in the normalization, uncertainty associated with differences between real and simulated data, the statistical uncertainty in the $\njets-\nbjets$ weights, and other small uncertainties related to jet energy, $\met$, factorization scale, and PDFs.  
 
@@ -240,4 +238,3 @@ Uncertainties associated with the differences in the shapes of simulated and rea
 
 The values of the uncertainties, along with the bin-by-bin prediction, for the search for SUSY in events with top-tagged jets, are given in Section \ref{sec:2015results}.
 
-\FloatBarrier

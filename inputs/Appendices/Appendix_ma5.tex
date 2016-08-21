@@ -44,7 +44,7 @@ on their analyses, in line with the Les Houches Recommendations~\cite{Kraml:2012
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Implemented Analyses and their Validation}\label{sec:implemended}
+\section{Implemented analyses and their validation}\label{sec:implemended}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -89,7 +89,7 @@ We hope that this will improve over time and the necessary information will be g
 either in the physics paper or in a performance note, 
 as also advertised in \cite{Kraml:2012sg}.
 
-Below we give some details on an example of a CMS analysis validated in the framework of \ma, namely, the CMS multi-jet $+$ $\mht$ search permed at $\sqrt{s}=8$ TeV. the level of documentation by the experimental collaboration, 
+Below are some details on an example of a CMS analysis validated in the framework of \ma, namely, the CMS multi-jet $+$ $\mht$ search permed at $\sqrt{s}=8$ TeV. the level of documentation by the experimental collaboration, 
 and the validation of our \ma\ implementations. 
 
 
@@ -138,8 +138,8 @@ We also checked the dependence on the jet energy scale (JES) correction, which i
 to have good agreement in the $\njets$, $H_{T}$ and $\mht$ distributions, and found JES=1.0 to be optimal. 
 
 \begin{table*}[!t]
-\caption{Summary of yields for the baseline cuts for the T1qqqq and T1tttt topologies, as compared to the official CMS-SUS-13-012 results posted on the CMS twiki. The results are for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$ GeV benchmark point.\label{table:CutFlowT1qqqq}}
 \begin{center}
+\caption{Summary of yields for the baseline cuts for the T1qqqq and T1tttt topologies, as compared to the official CMS-SUS-13-012 results posted on the CMS twiki. The results are for the $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$ GeV benchmark point.\label{table:CutFlowT1qqqq}}
 \begin{tabular}{ l ||c|c||c|c}
 \hline\noalign{\smallskip}
 & \multicolumn{2}{|c||}{T1qqqq} & \multicolumn{2}{c}{T1tttt}  \\
@@ -158,7 +158,9 @@ No Lepton   & 190.3 & 190.6  &  95.9 & 101.0 \\
 
 \begin{table*}[!t]
 \caption{Same as Table \ref{table:CutFlowT1qqqq}  but for the T2qq and T5VV topologies. 
-The benchmark points used are $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV for T2qq and $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV for T5VV.
+The benchmark points used are $(m_{\tilde
+  q},\,m_{\tilde\chi^0_1})=(700,\,100)$ GeV for T2qq and $(m_{\tilde
+  g},\,m_{\tilde\chi^0_1})=$ (1100, 125) GeV for T5VV.
 \label{table:CutFlowT5VV}}
 \begin{center}
 \begin{tabular}{ l ||c|c||c|c}
@@ -181,7 +183,8 @@ No Lepton   & 1212.8 & 1215.2  & 136.2  & 142.1  \\
 \centering
 \includegraphics[width=6.4cm]{figures/madanalysis5/cms-012-T2qqHT.pdf}
 \caption{Comparison between the official and \ma\ results  for the $\Ht$ distribution after all baseline cuts, 
-for the T2qq simplified model of CMS-SUS-13-012 with $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV.}
+for the T2qq simplified model of CMS-SUS-13-012 with $(m_{\tilde
+  q},\,m_{\tilde\chi^0_1})=(700,\,100)$ GeV.}
 \label{fig:T2qqHT}
 \end{figure}
 
@@ -262,7 +265,7 @@ The limit setting in the region where one of the tops from the gluino decay is o
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\ma\ conclusions}\label{sec:conclusions}
+\section{MadAnalysis 5 conclusions}\label{sec:conclusions}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -307,7 +310,7 @@ integrated luminosity. The normalization convention used by CMS was
 followed. Dashes hold the place of values that were not
 provided in the CMS cut flow tables. 
 
-\subsubsection{T1qqqq simplified model}
+%\subsubsection{T1qqqq simplified model}
 \begin{figure}[h!]
 \centering
 \includegraphics[width=7cm]{figures/Appendices/Ma5ValidationSUS13012/T1qqqq.pdf}
@@ -317,7 +320,14 @@ for the T1qqqq signal model.}
 \end{figure}
 
     \begin{table}[h!]
-    \begin{centering}
+\centering
+    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
+    the  T1qqqq working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV. 
+    The second column is the official account
+    and our own results are given in column 3. The official counts are
+    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
+    counts are normalized to match the official count after the first cut, MET
+    Cleaning.}
     \begin{tabular}{  c | c | c  }
     \hline
     \hline	
@@ -332,19 +342,14 @@ for the T1qqqq signal model.}
 \hline
 \hline
     \end{tabular}
-    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the  T1qqqq working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV. 
-    The second column is the official account
-    and our own results are given in column 3. The official counts are
-    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
-    counts are normalized to match the official count after the first cut, MET
-    Cleaning.}
     \label{table:CF1}
-    \end{centering}
     \end{table}
     
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS SUS-13-012 for the T1qqqq scenario 
+    after all selection has been applied. Column 2 is the official account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF1}.}
     \begin{tabular}{  l | c | c  }
     \hline
     \hline
@@ -424,11 +429,8 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 2.2 & 2.69\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS SUS-13-012 for the T1qqqq scenario 
-    after all selection has been applied. Column 2 is the official account obtained through generous correspondence with Christian Sanders,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF1}.}
     \label{table:CF2}
-    \end{centering}
+    
     \end{table}
     
 \begin{figure}
@@ -497,7 +499,7 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 2.2 & 2.69\\
 
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{T1tttt simplified model}
+%\subsubsection{T1tttt simplified model}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[h!]
@@ -509,7 +511,14 @@ for the T1tttt signal model.}
 \end{figure}
 
     \begin{table}[h!]
-    \begin{centering}
+    \centering
+    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
+    the T1tttt working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
+    The second column is the official account
+    and our own results are given in column 3. The official counts are
+    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
+    counts are normalized to match the official count after the first cut, MET
+    Cleaning.}
     \begin{tabular}{  c | c | c  }
     \hline
     \hline
@@ -524,19 +533,15 @@ for the T1tttt signal model.}
 \hline
 \hline
     \end{tabular}
-    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T1tttt working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
-    The second column is the official account
-    and our own results are given in column 3. The official counts are
-    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
-    counts are normalized to match the official count after the first cut, MET
-    Cleaning.}
     \label{table:CF2}
-    \end{centering}
+    
     \end{table}
     
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS SUS-13-012 for the T1tttt scenario 
+    after all selection has been applied. Column 2 is the official account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF2}.}
     \begin{tabular}{  l | c | c  }
     \hline
     \hline
@@ -616,10 +621,6 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 6.0 & 7.53\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS SUS-13-012 for the T1tttt scenario 
-    after all selection has been applied. Column 2 is the official account obtained through generous correspondence with Christian Sanders,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF2}.}
-    \end{centering}
     \end{table}
     
 \begin{figure}
@@ -689,7 +690,7 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 6.0 & 7.53\\
 
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{T5VV simplified model}
+%\subsubsection{T5VV simplified model}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[h!]
@@ -701,7 +702,14 @@ for the T5VV signal model.}
 \end{figure}
 
     \begin{table}[h!]
-    \begin{centering}
+    \centering
+    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
+    the T5VV working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
+    The second column is the official account
+    and our own results are given in column 3. The official counts are
+    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
+    counts are normalized to match the official count after the first cut, MET
+    Cleaning.}
     \begin{tabular}{  c | c | c  }
     \hline
     \hline
@@ -716,19 +724,15 @@ for the T5VV signal model.}
 \hline
 \hline
     \end{tabular}
-    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T5VV working point $(m_{\tilde g},\,m_{\tilde\chi^0_1})=(1100,\,125)$GeV.  
-    The second column is the official account
-    and our own results are given in column 3. The official counts are
-    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 10.17$~pb, and our
-    counts are normalized to match the official count after the first cut, MET
-    Cleaning.}
     \label{table:CF3}
-    \end{centering}
+    
     \end{table}
     
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS SUS-13-012 for the T5VV scenario 
+     after all selection has been applied. Column 2 is the official account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF3}.}
     \begin{tabular}{  l | c | c  }
     \hline
     \hline
@@ -808,10 +812,7 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 6.0 & 7.84\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS SUS-13-012 for the T5VV scenario 
-     after all selection has been applied. Column 2 is the official account obtained through generous correspondence with Christian Sanders,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF3}.}
-    \end{centering}
+    
     \end{table}
     
 \begin{figure}
@@ -881,7 +882,7 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 6.0 & 7.84\\
 
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{T2qq simplified model}
+%\subsubsection{T2qq simplified model}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[h!]
@@ -893,7 +894,14 @@ for the T2qq signal model.}
 \end{figure}
 
     \begin{table}[h!]
-    \begin{centering}
+    \centering
+    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
+    the T2qq  working point  $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV. 
+    The second column is the official account
+    and our own results are given in column 3. The official counts are
+    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 63.4$~pb, and our
+    counts are normalized to match the official count after the first cut, MET
+    Cleaning.}
     \begin{tabular}{  c | c | c  }
     \hline
     \hline
@@ -908,19 +916,15 @@ for the T2qq signal model.}
 \hline
 \hline
     \end{tabular}
-    \caption{The cut flow for the baseline selection in CMS SUS-13-012 for
-    the T2qq  working point  $(m_{\tilde q},\,m_{\tilde\chi^0_1})=(700,\,100)$GeV. 
-    The second column is the official account
-    and our own results are given in column 3. The official counts are
-    normalized to luminosity ${\cal L}=19.5$/fb and cross section $\sigma= 63.4$~pb, and our
-    counts are normalized to match the official count after the first cut, MET
-    Cleaning.}
     \label{table:CF4}
-    \end{centering}
+    
     \end{table}
     
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS SUS-13-012 for the T2qq scenario 
+    after all selection has been applied. Column 2 is the official account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF4}.}
     \begin{tabular}{  l | c | c  }
     \hline
     \hline
@@ -1000,11 +1004,8 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 0.3 & 0.13\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS SUS-13-012 for the T2qq scenario 
-    after all selection has been applied. Column 2 is the official account obtained through generous correspondence with Christian Sanders,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:CF4}.}
     \label{table:last}
-    \end{centering}
+    
     \end{table}
     
 \begin{figure}
@@ -1075,7 +1076,7 @@ NJets$>$7,  $H_T$$>$1500,  \MHT$>$200 & 0.3 & 0.13\\
         
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Exclusion Limits}
+%\subsubsection{Exclusion Limits}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 It is also instructive to reproduce the 95\%~CL exclusion lines in the $(m_{\tilde g},\,m_{\tilde\chi^0_1})$ 
@@ -1094,7 +1095,7 @@ It should be noted that our limit setting procedure differs from that used by CM
 considered a rough estimate. Our procedure is as follows. For any given point
 on the mass plane, the production cross section is taken from the LHC SUSY cross sections twiki 
 and the signal acceptance is computed with our {\sc{MadAnalysis}}~5 recast code for the analysis.
-Then, the most sensitive signal region (SR), out of the 36 total SRs, is determined based on the 
+Then, the most sensitive SR, out of the 36 total SRs, is determined based on the 
 number of expected signal and background counts. 
 Finally, the CLs exclusion value is determined from the expected signal, expected
 background, expected uncertainty on the background, and observed counts in the most sensitive
@@ -1120,7 +1121,6 @@ statistical model from CMS for combining  the 36 SRs. Unfortunately, this is cur
 \caption{The 95\% CL exclusion limits (in red) reproduced with our {\sc{MadAnalysis}}~5 implementation compared to the official limits (in black). Top left: T1qqqq, top right: T1tttt, bottom left: T5VV, bottom right: T2qq simplified models.
 \label{fig:limitplots}}
         \end{figure} 
-\FloatBarrier
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Validation document: SUS-14-002}
@@ -1153,7 +1153,10 @@ provided in the CMS cut flow tables.
 \end{figure}
 
 \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
+    model point T2tt-500-125 and the MA5 results are given in column 3.}
+    \label{table:T2tt-500-125}
     \begin{tabular}{  c | c | c  }
     \hline
     Cut Name & CMS Count(Eff) & MA5 Count(Eff)\\
@@ -1171,14 +1174,14 @@ provided in the CMS cut flow tables.
     MTsum$>$500 & 4.87 (39\%) & 4.95 (85\%)\\
 \hline
     \end{tabular}
-    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
-    model point T2tt-500-125 and the MA5 results are given in column 3.}
-    \label{table:T2tt-500-125}
-    \end{centering}
+    
     \end{table}
 
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS CMS-SUS-14-001 for
+    the signal model working pointT2tt-500-125 after all selection has been applied. Column 2 is the CMS account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-500-125}.}
     \begin{tabular}{  l | c | c  }
     \hline
     Signal Region Name & CMS & MA5\\
@@ -1193,16 +1196,15 @@ MET$>$350,  Nbjets$>$1 & 1.11 & 1.19\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS CMS-SUS-14-001 for
-    the signal model working pointT2tt-500-125 after all selection has been applied. Column 2 is the CMS account,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-500-125}.}
-    \end{centering}
+    
     \end{table}
 
 
 
 \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
+    model point T2tt-650-25 and the MA5 results are given in column 3.}
     \begin{tabular}{  c | c | c  }
     \hline
     Cut Name & CMS Count(Eff) & MA5 Count(Eff)\\
@@ -1220,14 +1222,15 @@ MET$>$350,  Nbjets$>$1 & 1.11 & 1.19\\
     MTsum$>$500 & 8.37 (47\%) & 8.52 (93\%)\\
 \hline
     \end{tabular}
-    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
-    model point T2tt-650-25 and the MA5 results are given in column 3.}
     \label{table:T2tt-650-25}
-    \end{centering}
+    
     \end{table}
 
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS CMS-SUS-14-001 for
+    the signal model working pointT2tt-650-25 after all selection has been applied. Column 2 is the CMS account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-650-25}.}
     \begin{tabular}{  l | c | c  }
     \hline
     Signal Region Name & CMS & MA5\\
@@ -1242,15 +1245,14 @@ MET$>$350,  Nbjets$>$1 & 3.48 & 3.43\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS CMS-SUS-14-001 for
-    the signal model working pointT2tt-650-25 after all selection has been applied. Column 2 is the CMS account,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-650-25}.}
-    \end{centering}
+    
     \end{table}
 
 
 \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
+    model point T2tt-350-0 and the MA5 results are given in column 3.}
     \begin{tabular}{  c | c | c  }
     \hline
     Cut Name & CMS Count(Eff) & MA5 Count(Eff)\\
@@ -1268,14 +1270,15 @@ MET$>$350,  Nbjets$>$1 & 3.48 & 3.43\\
     MTsum$>$500 & 182.9 (8\%) & 213.18 (67\%)\\
 \hline
     \end{tabular}
-    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
-    model point T2tt-350-0 and the MA5 results are given in column 3.}
     \label{table:T2tt-350-0}
-    \end{centering}
+    
     \end{table}
 
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS CMS-SUS-14-001 for
+    the signal model working pointT2tt-350-0 after all selection has been applied. Column 2 is the CMS account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-350-0}.}
     \begin{tabular}{  l | c | c  }
     \hline
     Signal Region Name & CMS & MA5\\
@@ -1290,23 +1293,22 @@ MET$>$350,  Nbjets$>$1 & 7.5 & 13.55\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS CMS-SUS-14-001 for
-    the signal model working pointT2tt-350-0 after all selection has been applied. Column 2 is the CMS account,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-350-0}.}
-    \end{centering}
+    
     \end{table}
     
    \begin{figure}
-  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
-    selection for the T2tt working point (350,0).}
   \centering
     \includegraphics[width=\textwidth]{figures/Appendices/Ma5ValidationSUS13012/T2tt-350-0.pdf}
+  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
+    selection for the T2tt working point (350,0).}
 \end{figure}
 
 
 
 \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
+    model point T2tt-500-100 and the MA5 results are given in column 3.}
     \begin{tabular}{  c | c | c  }
     \hline
     \hline
@@ -1326,14 +1328,15 @@ MET$>$350,  Nbjets$>$1 & 7.5 & 13.55\\
 \hline
     \hline
     \end{tabular}
-    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
-    model point T2tt-500-100 and the MA5 results are given in column 3.}
     \label{table:T2tt-500-100}
-    \end{centering}
+    
     \end{table}
 
     \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The SR counts in CMS CMS-SUS-14-001 for
+    the signal model working pointT2tt-500-100 after all selection has been applied. Column 2 is the CMS account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-500-100}.}
     \begin{tabular}{  l | c | c  }
     \hline
         \hline
@@ -1349,22 +1352,21 @@ MET$>$350,  Nbjets$>$1 & 19.8 & 23.50\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS CMS-SUS-14-001 for
-    the signal model working pointT2tt-500-100 after all selection has been applied. Column 2 is the CMS account,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-500-100}.}
-    \end{centering}
+    
     \end{table}
     
    \begin{figure}
-  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
-    selection for the T2tt working point (500,100).}
   \centering
     \includegraphics[width=\textwidth]{figures/Appendices/Ma5ValidationSUS13012/T2tt-500-100.pdf}
+  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
+    selection for the T2tt working point (500,100).}
 \end{figure}
 
 
 \begin{table}
-    \begin{centering}
+    \centering
+    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
+    model point T2tt-650-50 and the MA5 results are given in column 3.}
     \begin{tabular}{  c | c | c  }
     \hline
         \hline
@@ -1383,14 +1385,15 @@ MET$>$350,  Nbjets$>$1 & 19.8 & 23.50\\
     MTsum$>$500 & 22.7 (39\%) & 23.71 (93\%)\\
 \hline
     \end{tabular}
-    \caption{The acceptance cut flow for the baseline selection in CMS SUS-14-001 for
-    model point T2tt-650-50 and the MA5 results are given in column 3.}
     \label{table:T2tt-650-50}
-    \end{centering}
+    
+    \caption{The SR counts in CMS CMS-SUS-14-001 for
+    the signal model working pointT2tt-650-50 after all selection has been applied. Column 2 is the CMS account,
+    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-650-50}.}
     \end{table}
 
     \begin{table}
-    \begin{centering}
+    \centering
     \begin{tabular}{  l | c | c  }
     \hline
     Signal Region Name & CMS & MA5\\
@@ -1405,18 +1408,15 @@ MET$>$350,  Nbjets$>$1 & 9.3 & 9.49\\
  \hline 
 \hline
     \end{tabular}
-    \caption{The signal region (SR) counts in CMS CMS-SUS-14-001 for
-    the signal model working pointT2tt-650-50 after all selection has been applied. Column 2 is the CMS account,
-    and our own results displayed in column 3. These counts were determined by applying the SR selection to the end of the cut flow featured in table \ref{table:T2tt-650-50}.}
-    \end{centering}
+    
     \end{table}
 
 
    \begin{figure}
-  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
-    selection for the T2tt working point (650,50).}
   \centering
     \includegraphics[width=\textwidth]{figures/Appendices/Ma5ValidationSUS13012/T2tt-650-50.pdf}
+  \caption{MA5 and CMS unit-normalized kinematic distributions after the baseline
+    selection for the T2tt working point (650,50).}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

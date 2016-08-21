@@ -86,7 +86,7 @@ The initial prior $p_0(\theta)$ is taken to be uniform in the pMSSM sub-space (s
 \end{eqnarray}
 and the formally unbounded 
 SM subspace defined by $m_{\rm t}$, $m_{\rm b}(m_{\rm
-  b})$, and $\alpha_{\rm s}(m_{\rm Z})$; the non-DCS measurements, which are listed in Table~\ref{tab:preCMS}, constrain these SM parameters to narrow ranges.   
+  b})$, and $\alpha_{\rm s}(m_{\rm Z})$; the non-DCS measurements, which are listed in Table \ref{tab:precms}, constrain these SM parameters to narrow ranges.   
 The sub-space defined in Eqs. (\ref{eq:subspace}) 
 covers the 
 phenomenologically viable parameter space for the LHC and 
@@ -101,7 +101,7 @@ inequalities are satisfied and zero otherwise.
 The product of likelihoods $L(D^\mpreCMS|\lambda(\theta))$ in
 Equation (\ref{eq:prior}) over measurements $j$ is associated with \preCMS~ data, $D^\mpreCMS$,
 which imposes constraints from precision measurements and a selection
-of pre-LHC searches for new physics. The measurements used and their associated likelihoods are listed in Table~\ref{tab:preCMS}.
+of pre-LHC searches for new physics. The measurements used and their associated likelihoods are listed in Table \ref{tab:precms}.
 Data from DM experiments has not been included in the prior in order to avoid bias from cosmological assumptions (e.g., DM density and distribution, assumption of one thermal relic, no late entropy production, etc.).
 %\subsubsection{Sampling of prior}
 
@@ -112,7 +112,7 @@ method~\cite{MCMC1,MCMC2,MCMC3,MCMC4,Bayes:2}.
 
 
 % The \preCMS data included in the prior are shown in
-% Table~\ref{tab:preCMS}.  All data except Higgs signal strenths $\mu_h$
+% Table~\ref{tab:precms}.  All data except Higgs signal strenths $\mu_h$
 % were used in the original MCMC scan.  However, measurements marked
 % "reweight" in the last column were updated during this study, and the
 % scanned points were reweighted to take into account the updated
@@ -120,14 +120,68 @@ method~\cite{MCMC1,MCMC2,MCMC3,MCMC4,Bayes:2}.
 % the original measurement values.
 
 
-All data in Table~\ref{tab:preCMS} except the Higgs boson signal strengths $\mu_{\rm h}=\sigma/\sigma_{\text{SM}}$ were used in the
+All data in Table \ref{tab:precms} except the Higgs boson signal strengths $\mu_{\rm h}=\sigma/\sigma_{\text{SM}}$ were used in the
 original MCMC scan. The $\mu_{\rm h}$ measurements were incorporated into the prior post-MCMC.    
 A number of measurements, marked ``reweight'' in the last column, were updated during the course of this study as new results
 became available.  The weights, applied to the subset of scan points which were selected for simulation, were computed as the ratio of the likelihoods of the new measurements shown in
-Table~\ref{tab:preCMS} to the previous measurements.    
+Table \ref{tab:precms} to the previous measurements.    
 %the original ones used in the MCMC sampling and the reweighting procedure are detailed in Appendix~\ref{sec:mcmcorigvars}. 
 
-\input{pMSSMpaper/preCMStable}
+
+\begin{table}[htb]
+  %\label{tab:preCMS}
+\caption{The Measurements that are the basis of the \preCMS prior
+  $p^\mpreCMS(\theta)$ for the pMSSM parameters, their observed values and likelihoods. The observables are the decay branching fractions ${\cal B}({\rm b} \rightarrow
+  {\rm s}\gamma)$ and ${\cal B}({\rm B}_{\rm s} \rightarrow \mu \mu)$,
+  the SUSY to SM ratio for the
+  branching fraction of the decay B$^{\rm +}\rightarrow \tau \nu$ (R$[$B$^{\rm +}\rightarrow \tau \nu])$,
+  the difference in the muon anomolous magnetic moment from its SM
+  prediction $\Delta a_\mu$, the strong coupling constant
+  at the Z boson mass $\alpha_{\rm s}(m_{\rm Z})$,  the top and bottom quark masses
+  $m_{\rm t}$ and $m_{\rm b}(m_{\rm b})$, the Higgs boson mass $m_{\rm h}$ and signal strength $\mu_{\rm h}$, and sparticle mass limits from LEP.  All data except $\mu_{\rm h}$ were used in the initial MCMC scan. See text for details.}
+%\vspace{1ex}
+\begin{center}
+\resizebox{\textwidth}{!}{
+%\centering
+\begin{tabular}{c|r|r|r|r}
+\hline
+$i$     & Observable    & Constraint   & Likelihood function & Comment \\
+        & $\mu_i(\theta)$  & $D^\mpreCMS_i$  &  $L[D^\mpreCMS_i|\mu_i(\theta)]$ & \\
+\hline\hline
+1 & ${\cal B}({\rm b} \rightarrow {\rm s}\gamma)$~\cite{Amhis:2014hma} & $(3.43 \pm 0.21^{\rm
+  stat} \pm 0.24^{\rm th} \pm 0.07^{\rm sys})\times 10^{\rm -4}$ & Gaussian & reweight \\
+\hline
+2 & ${\cal B}({\rm B}_{\rm s} \rightarrow \mu \mu)$~\cite{CMS:2014xfa} & $(2.9 \pm
+0.7 \pm 0.29^{\rm th})\times 10^{-9}$ & Gaussian & reweight \\
+\hline
+3 & R(B$^{\rm +}\rightarrow \tau \nu$)\cite{Amhis:2014hma} & $1.04\pm 0.34$ & Gaussian & reweight \\
+\hline
+4 & $\Delta a_\mu$~\cite{Hagiwara:2011af} & $(26.1 \pm 6.3^{\rm
+  exp}\pm 4.9^{\rm SM} \pm 10.0^{\rm SUSY})\times 10^{\rm -10}$ & Gaussian & \\
+\hline
+5 & $\alpha_{\rm s}(m_{\rm Z})$~\cite{Agashe:2014kda} & $0.1184 \pm 0.0007$ & Gaussian & \\
+\hline
+6 & $m_{\rm t}$~\cite{CDF:2013jga} & $173.20\pm0.87^{\rm stat}\pm1.3^{\rm sys}$~GeV & Gaussian & reweight \\
+\hline
+7 & $m_{\rm b}(m_{\rm b})$~\cite{Agashe:2014kda} & $4.19^{\rm +0.18}_{\rm -0.06}$~GeV & Two-sided Gaussian & \\
+\hline
+\multirow{2}{*}{8} & \multirow{2}{*}{$m_{\rm h}$} & \multirow{2}{*}{LHC: $m_{\rm h}^{\rm low} = 120$\GeV, $m_{\rm h}^{\rm high} = 130$\GeV }& 1 if
+$m_{\rm h}^{\rm low} \le m_{\rm h} \le m_{\rm h}^{\rm high}$ & \multirow{2}{*}{reweight} \T\B\\
+   &             &                               & 0 if $m_{\rm h} <
+   m_{\rm h}^{\rm low}$ or $m_{\rm h} > m_{\rm h}^{\rm high}$ & \B\\
+\hline
+9 & $\mu_{\rm h}$ & CMS and ATLAS in LHC Run 1, Tevatron & {\sc Lilith} 1.01~\cite{Bernon:2014vta,Bernon:2015hsa} & post-MCMC \\
+\hline
+\multirow{2}{*}{10} & Sparticle & LEP \cite{lepsusy} & 1 if allowed & \\
+   & masses & (via {\sc micrOmega}~\cite{Belanger:2001fz,Belanger:2004yn,Belanger:2008sj}) & 0 if excluded &  \\
+\hline
+\end{tabular}
+}
+\label{tab:precms}
+\end{center}
+\end{table}
+
+%\input{pMSSMpaper/preCMStable}
 
 For a given point $\theta$, the predictions $\lambda(\theta)$ --- including those needed
 to calculate the likelihoods $L(D^\mpreCMS|\lambda(\theta))$ --- are obtained as follows. 
@@ -330,7 +384,6 @@ Overall, the impact of the 7 TeV combined result is relatively small as indicate
 \caption{The distribution of model points, weighted by the \preCMS~ prior density, of the $Z$-significance for the individual 8 TeV searches (a--c), and for 7 TeV combined and 7$+$8 TeV combined searches (d). The leftmost bins contain the underflow entries.}
 \label{fig:Z}
 \end{figure}
-\FloatBarrier
 %%%%%%%%%%%%%%%%%%
 % gluino mass
 %%%%%%%%%%%%%%%%%%
@@ -399,7 +452,7 @@ Higgs boson results  make a negligible contribution. In each case a negative cor
 Figure \ref{fig:mt1} illustrates what information the searches provide about the mass of the lightest top squark $\stl$.   
 The difference between the prior and posterior distributions is minor. The reason is that the low-energy measurements such as 
  the b $\to$ s $\gamma$ branching fraction (see 
-Table \ref{tab:preCMS}) impose much stronger constraints on the mass of the $\stl$ than do the analyses. 
+Table \ref{tab:precms}) impose much stronger constraints on the mass of the $\stl$ than do the analyses. 
 This is not to say the CMS analyses are insensitive to top squark masses. The posterior distribution for the \MTtwo{} 
 search exhibits an enhancement at $m_{\stl}<1~$ TeV relative to the \preCMS~distribution. This enhancement does not 
 appear in the combined posterior density because it is suppressed by observations of other more sensitive searches, which is a good illustration of the importance of doing global analyses.  
@@ -558,7 +611,6 @@ $\suR,\scR$ mass, $\sb_{1}$ mass, $\seL,\smuL$ mass, $\stauOne$ mass, $\chitz$ m
   combinations of data from the CMS searches for $\Omega_{\tilde{\chi}^{0}_{1}}$, $\xi\sigma^{\text{SD}}(p\tilde{\chi}_{1}^{0})$, and $\xi\sigma^{\text{SI}}(p\tilde{\chi}_{1}^{0})$.}
     \label{fig:more1D_dm}
 \end{figure}
-\FloatBarrier
 
 \subsection{Correlations among pMSSM parameters}
 A virtue of high-dimensional models like the pMSSM is that they
@@ -603,7 +655,6 @@ toward higher values with respect to the densities derived from the
 uniform prior. It is found that the marginalized 
 likelihood distributions are consistent with the profile likelihoods, suggesting that a 
 frequentist analysis based on the profile likelihoods would yield similar conclusions. More details are given in the next section. Details of these studies are provided in Appendix \ref{app:pMSSMstudies}.
-\FloatBarrier
 
 \section{Nonexcluded regions in the pMSSM parameter space}
 \label{sec:unexplored}
@@ -796,7 +847,6 @@ significantly impact our ability to exclude such a model point.
   RMS range of the dominance. }
     \label{fig:TopoHisto}
 \end{figure}
-\FloatBarrier
 
 Dedicated searches exist that correspond to some of the most frequent principal processes, indicating areas where the SMS approach is likely well optimized. For example, points with principal processes 1, $\tilde{\rm q}\tilde{\rm q}(\tilde{\rm q} \hspace{-1mm}\rightarrow \hspace{-1mm}{\rm q}\tilde{\chi}_{1}^{0})$, and 4, $\tilde{\rm b}\tilde{\rm b}(\tilde{\rm b} \hspace{-1mm}\rightarrow \hspace{-1mm}{\rm b}\tilde{\chi}_{1}^{0})$, enjoy searches that target these processes explicitly.   A few principal processes have not been explicitly targeted by the host of CMS SUSY searches, including processes 2, $\tilde{\chi}^{\pm}_{1}\tilde{\chi}^{0}(\tilde{\chi}^{\pm}_{1} \hspace{-1mm}\rightarrow \hspace{-1mm}{\rm W}^{\pm}\tilde{\chi}_{1}^{0})$, and 3, $\tilde{\chi}^{\pm}_{1}\tilde{\chi}^{0}_{2}(\tilde{\chi} \hspace{-1mm}\rightarrow \hspace{-1mm}{\rm V/h}\tilde{\chi}_{1}^{0})$, the asymmetric EW gaugino production modes. New searches that target these or the other overlooked processes may serve to broaden the overall sensitivity to the pMSSM.
 

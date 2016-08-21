@@ -3,7 +3,7 @@ For any choice of prior, there will be some parameterization in which the prior 
 is the parameterization in which the prior should be flat.  
 Foregoing a discussion of how best to choose a parametrization,  it is examined how the results are affected when the choice of ur-prior is changed.
 
-Figures \ref{fig:mg_prepost}-\ref{fig:mApole} show the prior and posterior density projections onto a suite of parameters presented in the paper \cite{pMSSMpaper}, given the choice of a flat prior (red) and a prior proportional to the product of the log of each parameter (blue), referred to here as the log prior. The main conclusions of the paper stand with respect to this change, namely that
+Figures \ref{fig:mg_prepost}-\ref{fig:mApole} show the prior and posterior density projections onto a suite of parameters presented in the paper \cite{Khachatryan:2016nvf}, given the choice of a flat prior (red) and a prior proportional to the product of the log of each parameter (blue), referred to here as the log prior. The main conclusions of the paper stand with respect to this change, namely that
 \begin{itemize}
 \item pMSSM points with gluino masses below 500 GeV are excluded, but a small number points with 550 GeV gluinos survive (Fig. \ref{fig:mg});
 \item the probability density of the light top squark mass is not significantly shifted by the CMS analyses (Fig. \ref{fig:mt1});
@@ -69,7 +69,6 @@ The posterior MPVs for most parameters agree within 5\% between the flat and log
 \caption{Left: posterior/prior of $m_{\tilde{\chi}^{0}_{1}}$ (top) and $m_{\tilde{\text{b}}_1}$ (bottom). Right: Ratio of the posterior to the prior of $m_{\chi^{0}_{1}}$ (top) and $m_{\tilde{\text{b}}_1}$ (bottom).}
 \label{fig:mb1ratio}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
@@ -108,7 +107,6 @@ The posterior MPVs for most parameters agree within 5\% between the flat and log
 \caption{Left: posterior/prior of $m_{\tilde{\chi}_{1}^{\pm}}$ (top) and $m_{A}$(pole) (bottom). Right: Ratio of the posterior to the prior of $m_{\tilde{\chi}_{1}^{\pm}}$ (top) and $m_{A}$(pole) (bottom).}
 \label{fig:mg_muL}
 \end{figure}
-\FloatBarrier
 
 \section{Profile vs marginal likelihoods}
 \label{sec:freqcheck}
@@ -149,7 +147,7 @@ and the correlation function (Equation(\ref{eq:Likelihood})) is identified as
 \end{equation}
 The 1-D profile likelihoods were derived by maximizing Equation \ref{eq:Like} with respect to the $n-1=18$ parameters. 
 
-Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likelihoods are given in Figures \ref{fig:PandP1}-\ref{fig:PandP4}.  The comparison shows general agreement to within $\sim$10\%, with a couple of exceptions. The first notable difference is in the bino mass Lagrangian parameter $M_1$, where the profile likelihood is relatively enhanced at large absolute values of $M_1$. If the LSP is bino-like,  confidence levels (CLs) based on the posterior densities would tend to under-exclude LSP masses; however, no LSP mass is excluded by the Z-significance, and so this does not alter the statement about LSPs made in the paper \ref{bib:pMSSM}. Finally, the trilinear coupling $A_t$ appears to have a roughly 30\% enhancement in the negative region for the likelihood with respect to the marginal likelihood. However, the paper makes no explicit statement about the impact of CMS analysis on the trilinear couplings. The otherwise general similarity of the two sets suggests that a frequentist analysis based on the profile likelihoods would yield conclusions consistent with those in the CMS pMSSM paper.  The Z-significance is a mapping of the Bayes factor that roughly maps to a frequentist n-sigma, the only difference being that rather than maximizing the likelihood to eliminate nuisance parameters, the likelihood is marginalized. 
+Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likelihoods are given in Figures \ref{fig:PandP1}-\ref{fig:PandP4}.  The comparison shows general agreement to within $\sim$10\%, with a couple of exceptions. The first notable difference is in the bino mass Lagrangian parameter $M_1$, where the profile likelihood is relatively enhanced at large absolute values of $M_1$. If the LSP is bino-like,  confidence levels (CLs) based on the posterior densities would tend to under-exclude LSP masses; however, no LSP mass is excluded by the Z-significance, and so this does not alter the statement about LSPs made in the paper \cite{Khachatryan:2016nvf}. Finally, the trilinear coupling $A_t$ appears to have a roughly 30\% enhancement in the negative region for the likelihood with respect to the marginal likelihood. However, the paper makes no explicit statement about the impact of CMS analysis on the trilinear couplings. The otherwise general similarity of the two sets suggests that a frequentist analysis based on the profile likelihoods would yield conclusions consistent with those in the CMS pMSSM paper.  The Z-significance is a mapping of the Bayes factor that roughly maps to a frequentist n-sigma, the only difference being that rather than maximizing the likelihood to eliminate nuisance parameters, the likelihood is marginalized. 
 
 \renewcommand*\thesubfigure{\arabic{subfigure}}
 \begin{figure}[htbp]
@@ -202,6 +200,13 @@ Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likeli
 \subfloat[]{
   \includegraphics[width=50mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Md3}
 }
+\caption{The results of 10 of the 19 MLP regressions on the pMSSM parameters. }
+\label{fig:KdeMlp}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
 \hspace{-8mm}
 \subfloat[]{
   \includegraphics[width=50mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Ml1}
@@ -230,10 +235,9 @@ Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likeli
 \subfloat[]{
   \includegraphics[width=50mm]{figures/pMSSMpaper/Prior/MLP/trainedRegression1_Al}
 }
-\caption{The results of the 19 MLP regressions on the pMSSM parameters. }
-\label{fig:KdeMlp}
+\caption{The results of the 9 of the 19 MLP regressions on the pMSSM parameters. }
+\label{fig:KdeMlp2}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[h]
 \centering
@@ -284,7 +288,6 @@ Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likeli
 \end{figure}
 
 
-\FloatBarrier
 
 \renewcommand*\thesubfigure{\arabic{subfigure}}
 \begin{figure}[htbp]
@@ -317,7 +320,6 @@ Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likeli
 \label{fig:PandP2}
 \end{figure}
 
-\FloatBarrier
 
 \renewcommand*\thesubfigure{\arabic{subfigure}}
 \begin{figure}[htbp]
@@ -350,7 +352,6 @@ Comparisons between the profile likelihoods and the 1-D non-DCS  marginal likeli
 \label{fig:PandP3}
 \end{figure}
 
-\FloatBarrier
 
 \renewcommand*\thesubfigure{\arabic{subfigure}}
 \begin{figure}[htbp]

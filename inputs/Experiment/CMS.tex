@@ -57,7 +57,7 @@ Upon reaching the outer edge of the CMS tracker, particles enter the electromagn
 \label{fig:CmsTracker}
 \end{figure}
 The material was chosen for its high density and high optical transparency, which, respectively, guarantee a short radiation length (X$_0$ = 0.89 cm) and efficient transmission of light. Highly-relativistic charged  particles emit bremsstrahlung radiation as they traverse the crystals, resulting in electromagnetic showers, and the light is collected by photodetectors mounted on the backs of the ECAL crystals. The amount of radiation produced is proportional to the energy of traversing particles, which key to determining the energy of particles during the event reconstruction. PbWO$_4$ is also chosen for its small Moli\`{e}re radius of 2.2 cm, which results in an improved spatial resolution of particles over that possible with other materials.
-\begin{figure}[t]
+\begin{figure}[tb!]
 \makebox[\textwidth][c]{
 \centering
 \subfloat[]{
@@ -78,7 +78,6 @@ The material was chosen for its high density and high optical transparency, whic
 \caption{The layout of the ECAL barrel (a) in $\eta$-$\phi$ coordinates, and the forward (c) and rear (b) ECAL endcaps in cartesian coordinates. The shading shows the occupancy of a given run. OT stands for out-of-time, indicating that the occupancy shown in the color plot is of energy deposits that were detected out of time with the LHC bunch crossings.} 
 \label{fig:EcalLayout}
 \end{figure}
-\FloatBarrier
 
 In the barrel, crystals are organized into rectangular modules composed of 400 or 500 crystals each, and modules are arranged in groups of four to form supermodules. There are 36 supermodules in total, which combine to cover a large rectangular area in the space of $\eta$ and $\phi$, as shown in Fig. \ref{fig:EcalLayout} (a). This large rectangle covers all values of $\phi$ and reaches an $\eta$ of $\pm$ 1.48. In the endcaps, crystals are arranged in groups whose number varies depending on the location. The modules combine to form sectors, of which there are a total of 18, shown in Fig. \ref{fig:EcalLayout} (b) and (c). Sectors, as well as supermodules, are each read out by a front end digitizer (FED).
 
@@ -106,7 +105,7 @@ The simulated distributions of these primitives for signal and background e/$\ga
 \end{equation}
 \end{itemize}
 Simulated distributions of these observables are shown for signal and background e/$\gamma$ candidates in Fig. \ref{fig:TriggerObservables} (b). 
-\begin{figure}[t]
+\begin{figure}[tb!]
 \makebox[\textwidth][c]{
 \centering
 \subfloat[]{
@@ -124,7 +123,7 @@ Simulated distributions of these observables are shown for signal and background
 }
 \caption{The trigger primitives available from the calorimeters available to the CMS L1 trigger (a), and the observables derived from the primitives designed to discriminate between signal and background e/$\gamma$ candidates.} 
 \label{fig:TriggerObservables}
-\end{figure}\FloatBarrier
+\end{figure}
 
 The efficiency, or fraction of e/$\gamma$ candidates matched to true electrons that are selected by the baseline selection of 
 \begin{itemize}
@@ -146,7 +145,6 @@ is shown in Fig. \ref{fig:EGammaEfficiencies} for various thresholds, shown in t
 \caption{The signal efficiency in the barrel and endcap as a function of the $p_T$ of the e/$\gamma$ candidates for various thresholds on the H/E and isolation.} 
 \label{fig:EGammaEfficiencies}
 \end{figure}
-\FloatBarrier
 
 The performance of the currently applied cut-based selection was investigated by comparing the existing performance with that obtained through the use of an idealized discriminator. The idealized discriminator chosen was a boosted decision tree (BDT)~\cite{Hocker:2007ht} whose input variables are the observables H/E and isolation. The BDT was trained using half of the available simulated signal candidates and half of the background candidates, while half of both collections was set aside as an independent test sample. Figure \ref{fig:ECALMva1} characterizes the performance of the cut-based and BDT selection, showing the trade-off between the signal efficiency and background contamination in the test sample. The performance of the idealized discriminant is comparable to the performance of the selected working points of the cut-based approach, indicating that the values of the currently-employed selection is well-optimized. 
 \begin{figure}[h]
@@ -170,7 +168,6 @@ The change in performance of the BDT with the centrality is shown in Fig. \ref{f
 \caption{The background efficiency vs the signal efficiency for cut-based selection, the plane BDT selection, and the selection of the BDT trained with the addition of the centrality variable. The ideal point is indicated by the gold circle located at full signal efficiency and zero background efficiency. For a given signal efficiency, a suppression of the background on the order of 10-15\% is possible. }
 \label{fig:ECALMva3}
 \end{figure}
-\FloatBarrier
 
 
 \section{Hadronic calorimeter}
@@ -181,7 +178,6 @@ Immediately surrounding the CMS ECAL and inside the CMS solenoid magnet is a sam
 \caption{A schematic view of the CMS HCAL. The direction of view is toward the center of the LHC.} 
 \label{fig:HCalLayout}
 \end{figure}
-\FloatBarrier
 
 
 \section{Superconducting solenoid}
@@ -207,7 +203,6 @@ to within 5\%.
 \caption{An event display of the CMS muon system. Two muons are reconstructed in the muon system.} 
 \label{fig:MuonSystem}
 \end{figure}
-\FloatBarrier
 
 \section{Trigger and DAQ}
 \label{sec:Trigger}
